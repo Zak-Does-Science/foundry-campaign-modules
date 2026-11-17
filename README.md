@@ -38,7 +38,7 @@ Players move their token with the arrow keys or WASD. The mall is drawn tile by 
 
 ![Walking past a bench reveals the hidden mall cat](docs/media/mall-secret.gif)
 
-**The art is generated, not drawn.** Every tile, prop, NPC sprite and shop sign comes from the Python tools in [`maul-mall-explorer/tools`](maul-mall-explorer/tools) (`pixcore.py`, `mall_tiles.py`, `mall_sprites.py`, `shop_signs.py`, …). Each tool draws pixel art in code with a shared palette and writes PNG sprite sheets. `render_mall.py` turns a mall's JSON into a full map preview.
+**How the art is made.** I drew the mall maps, working them out with my players. Most of the pixel art is generated from those maps by the Python tools in [`maul-mall-explorer/tools`](maul-mall-explorer/tools) (`pixcore.py`, `mall_tiles.py`, `mall_sprites.py`, `shop_signs.py`, …): the floor and wall tiles, props, shop signs and NPC sprites are drawn in code with a shared palette. Most character sprites are based on our own campaign art and the miniatures we made for the table. `render_mall.py` turns a mall's JSON into a full map preview.
 
 ## Campaign Codex
 
