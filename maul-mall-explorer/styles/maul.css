@@ -1,0 +1,430 @@
+/* MAUL Mall Explorer: 8-bit look. No external fonts: uses Press Start 2P / VT323 only if installed locally. */
+:root {
+  /* Every font listed has Latin-1 (ñ, é); the browser also falls back per glyph, so accents never show as boxes. */
+  --maul-font: "Press Start 2P", "PressStart2P", "VT323", "Pixelify Sans", "Lucida Console", "Consolas", "DejaVu Sans Mono", "Courier New", monospace;
+  --maul-ink: #1c1c28;
+  --maul-paper: #fbf7ea;
+  --maul-edge: #2a2a40;
+  --maul-accent: #e8443a;
+  --maul-gold: #ffd34d;
+  --maul-blue: #3c6fd8;
+}
+
+.maul-pixel, .maul-pixel * {
+  image-rendering: pixelated;
+  -webkit-font-smoothing: none;
+}
+.maul-pixel { font-family: var(--maul-font); }
+
+/* ---------- Dialogue box ---------- */
+#maul-dialogue {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translate(-50%, 20px);
+  width: min(760px, calc(100vw - 360px));
+  min-width: 360px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.12s steps(3), transform 0.12s steps(3);
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+}
+#maul-dialogue.open { opacity: 1; transform: translate(-50%, 0); }
+
+#maul-dialogue .maul-dlg-name {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: -4px;
+  padding: 8px 14px 10px;
+  background: var(--maul-blue);
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 var(--maul-ink);
+  border: 4px solid var(--maul-edge);
+  border-bottom: none;
+  position: relative;
+  z-index: 1;
+}
+#maul-dialogue.maul-kind-sign .maul-dlg-name,
+#maul-dialogue.maul-kind-object .maul-dlg-name { background: #6b7a3a; }
+#maul-dialogue.maul-kind-shop .maul-dlg-name { background: var(--maul-accent); }
+#maul-dialogue.maul-kind-secret .maul-dlg-name,
+#maul-dialogue.maul-kind-office .maul-dlg-name { background: #6a3fa0; }
+
+#maul-dialogue .maul-dlg-box {
+  position: relative;
+  min-height: 112px;
+  padding: 20px 28px 26px;
+  background: var(--maul-paper);
+  color: var(--maul-ink);
+  border: 4px solid var(--maul-edge);
+  /* stepped "pixel" double border */
+  box-shadow:
+    inset 0 0 0 4px #fff,
+    inset 0 0 0 8px #b9b4a3,
+    6px 6px 0 0 rgba(0, 0, 0, 0.45);
+}
+#maul-dialogue .maul-dlg-text {
+  font-size: 15px;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  min-height: 3.5em;
+}
+#maul-dialogue .maul-dlg-next {
+  position: absolute;
+  right: 22px;
+  bottom: 10px;
+  font-size: 14px;
+  color: var(--maul-accent);
+  visibility: hidden;
+}
+#maul-dialogue .maul-dlg-next.visible {
+  visibility: visible;
+  animation: maul-bob 0.6s steps(2) infinite;
+}
+#maul-dialogue .maul-dlg-count {
+  position: absolute;
+  left: 28px;
+  bottom: 8px;
+  font-size: 9px;
+  color: #8a8578;
+}
+@keyframes maul-bob { 0% { transform: translateY(0); } 100% { transform: translateY(4px); } }
+
+/* ---------- Week chip ---------- */
+#maul-week-chip {
+  position: fixed;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 60;
+  padding: 6px 12px;
+  background: var(--maul-paper);
+  color: var(--maul-ink);
+  border: 3px solid var(--maul-edge);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.45);
+  font-size: 10px;
+  white-space: nowrap;
+  pointer-events: auto;
+}
+#maul-week-chip .maul-chip-icon { color: #d18b00; }
+/* PA closing countdown (scripts/pa.js): sits under the week chip */
+#maul-pa-bar { position: fixed; top: 44px; left: 50%; transform: translateX(-50%); z-index: 61; max-width: 90vw;
+  padding: 8px 14px; background: #2b1d0e; color: #ffe14d; border: 3px solid #ffe14d; box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+  font-size: 12px; text-align: center; pointer-events: auto; }
+#maul-pa-bar .maul-pa-clock { font-size: 16px; color: #fff; margin: 0 4px; }
+#maul-pa-bar .maul-pa-sub { display: block; margin-top: 3px; font-size: 10px; color: #f0d9a8; }
+#maul-pa-bar.urgent { animation: maul-pa-blink 1s steps(2) infinite; }
+#maul-pa-bar.closed { background: #4a0f0f; border-color: #ff6b6b; color: #fff; }
+@keyframes maul-pa-blink { 50% { border-color: #ff6b6b; } }
+
+/* ---------- Shared app chrome ---------- */
+.maul-app .window-content {
+  background: var(--maul-paper);
+  color: var(--maul-ink);
+  padding: 12px;
+}
+.maul-app .window-header { background: var(--maul-edge); }
+.maul-app .maul-btn {
+  font-family: var(--maul-font);
+  font-size: 10px;
+  line-height: 1.4;
+  padding: 6px 10px;
+  background: #fff;
+  color: var(--maul-ink);
+  border: 3px solid var(--maul-edge);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  width: auto;
+  flex: 0 0 auto;
+}
+.maul-app .maul-btn:hover:not([disabled]) { background: var(--maul-gold); }
+.maul-app .maul-btn:active:not([disabled]) { transform: translate(2px, 2px); box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.35); }
+.maul-app .maul-btn[disabled] { opacity: 0.5; cursor: not-allowed; }
+.maul-app .maul-btn.small { font-size: 8px; padding: 3px 6px; }
+.maul-app .maul-btn.danger:hover:not([disabled]) { background: var(--maul-accent); color: #fff; }
+
+/* ---------- Shop ---------- */
+.maul-shop .maul-vendor { border-bottom: 3px dashed var(--maul-edge); padding-bottom: 8px; margin-bottom: 8px; }
+.maul-shop .maul-vendor-name { font-size: 13px; color: var(--maul-accent); }
+.maul-shop .maul-vendor-meta { font-size: 9px; margin-top: 4px; color: #6b6656; }
+.maul-shop .maul-wallet { display: flex; gap: 12px; font-size: 10px; margin-bottom: 10px; align-items: center; flex-wrap: wrap; }
+.maul-shop .maul-wallet .maul-coin { color: #a87400; }
+.maul-shop .maul-wallet .maul-voucher { color: #6a3fa0; }
+.maul-shop .maul-warn { color: var(--maul-accent); }
+.maul-shop .maul-stock { list-style: none; margin: 0; padding: 0; max-height: 60vh; overflow-y: auto; }
+.maul-shop .maul-stock-item {
+  border: 3px solid var(--maul-edge);
+  background: #fff;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.maul-shop .maul-stock-item.premium { border-color: #6a3fa0; }
+.maul-shop .maul-stock-head { display: flex; justify-content: space-between; gap: 8px; font-size: 10px; }
+.maul-shop .maul-stock-name { font-weight: bold; }
+.maul-shop .maul-stock-price { color: #a87400; white-space: nowrap; }
+.maul-shop .maul-stock-desc { font-family: Signika, sans-serif; font-size: 13px; margin: 6px 0; line-height: 1.35; }
+.maul-shop .maul-stock-foot { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 8px; }
+.maul-shop .maul-stock-foot .maul-btn { margin-left: auto; }
+.maul-shop .maul-stock-team { color: var(--maul-blue); }
+.maul-shop .maul-tag { border: 2px solid var(--maul-edge); padding: 1px 4px; }
+.maul-shop .maul-tag-warn { border-color: var(--maul-accent); color: var(--maul-accent); }
+.maul-shop .maul-stock-empty { font-size: 10px; padding: 12px; text-align: center; }
+
+/* ---------- GM tools ---------- */
+.maul-gm-tools fieldset { border: 3px solid var(--maul-edge); margin: 0 0 10px; padding: 8px 10px; }
+.maul-gm-tools legend { font-size: 10px; padding: 0 6px; }
+.maul-gm-tools .maul-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.maul-gm-tools .maul-row select { width: auto; font-family: var(--maul-font); font-size: 10px; }
+.maul-gm-tools .maul-week-now { font-size: 10px; margin-bottom: 8px; color: #a87400; }
+.maul-gm-tools table.maul-users { font-size: 9px; margin-top: 8px; border-collapse: collapse; width: 100%; }
+.maul-gm-tools table.maul-users th,
+.maul-gm-tools table.maul-users td { padding: 4px; border-bottom: 2px solid #d8d2bf; text-align: left; }
+.maul-gm-tools table.maul-users tr.online td:first-child::before { content: "\25CF "; color: #2fa84f; }
+.maul-gm-tools table.maul-users a { text-decoration: underline; cursor: pointer; }
+.maul-gm-tools .maul-actions { white-space: nowrap; }
+
+.maul-flags-view ul { list-style: none; padding: 0; margin: 0 0 8px; max-height: 260px; overflow-y: auto; }
+.maul-flags-view li { padding: 2px 0; }
+.maul-dim { color: #888; font-size: 0.85em; }
+
+/* ---------- Chat cards ---------- */
+.maul-chat-card h3 { font-family: var(--maul-font); font-size: 11px; border-bottom: 2px solid currentColor; margin-bottom: 4px; }
+.maul-chat-card .maul-flags { font-size: 0.85em; color: #666; }
+
+/* Ambient chatter: speech bubbles over NPCs */
+#maul-bubbles { position: fixed; inset: 0; pointer-events: none; z-index: 60; }
+.maul-bubble {
+  position: fixed; transform: translate(-50%, calc(-100% - 6px)) scale(0.9); opacity: 0;
+  max-width: 240px; padding: 6px 8px; background: #fffdf2; color: #1d1a24;
+  border: 3px solid #1d1a24; border-radius: 2px; box-shadow: 3px 3px 0 rgba(0,0,0,0.35);
+  font-size: 10px; line-height: 1.45; text-align: left; transition: opacity 0.25s, transform 0.25s;
+  image-rendering: pixelated;
+}
+.maul-bubble.show { opacity: 1; transform: translate(-50%, calc(-100% - 6px)) scale(1); }
+.maul-bubble::after {
+  content: ""; position: absolute; left: 50%; bottom: -9px; margin-left: -6px;
+  border: 6px solid transparent; border-top-color: #1d1a24; border-bottom: 0;
+}
+.maul-bubble-name { display: block; font-size: 8px; color: #6a3fa0; margin-bottom: 2px; text-transform: uppercase; }
+
+/* Codex links inside the dialogue box: subtle underline, opens the codex entry without advancing */
+#maul-dialogue .maul-codex-link {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--maul-blue);
+  cursor: pointer;
+}
+#maul-dialogue .maul-codex-link:hover { color: var(--maul-blue); text-decoration-style: solid; text-shadow: none; }
+
+/* Discoveries window + update previews */
+.maul-discoveries h3 { font-size: 11px; margin: 12px 0 2px; border-bottom: 2px solid var(--maul-edge); }
+.maul-discoveries h3 .maul-dim { margin-left: 6px; }
+.maul-discoveries code, .maul-flags-view code { font-size: 10px; }
+.maul-flags-view .maul-warn { color: var(--maul-accent); }
+.maul-gm-tools .maul-results { margin-top: 8px; font-size: 10px; }
+
+/* "Your store" chip (SPEC 21) */
+#maul-store-chip {
+  position: fixed; left: 50%; bottom: 150px; transform: translate(-50%, 10px); z-index: 70; opacity: 0;
+  padding: 6px 12px; background: var(--maul-paper); color: var(--maul-ink); border: 3px solid var(--maul-edge);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.45); font-size: 10px; cursor: pointer; transition: opacity 0.25s, transform 0.25s;
+}
+#maul-store-chip.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* Interactable images (posters, maps): crisp pixels */
+.maul-image img { image-rendering: pixelated; }
+
+/* Wardrobe picker (sprite previews) */
+.maul-forms { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0; }
+.maul-form { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px; border: 2px solid transparent; }
+.maul-form.current { border-color: var(--maul-gold); }
+.maul-form-preview { display: block; background-repeat: no-repeat; background-position: 0 0; image-rendering: pixelated; }
+
+/* Standings board */
+.maul-standings .window-content { overflow-y: auto; }
+.maul-standings h2 { font-size: 13px; margin: 0 0 8px; }
+.maul-standings h3 { font-size: 11px; margin: 12px 0 4px; }
+.maul-standings tr.mine td, .maul-standings span.mine { background: rgba(255, 211, 77, 0.35); font-weight: bold; }
+.maul-standings .maul-chip { display: inline-block; width: 10px; height: 10px; border: 2px solid var(--maul-edge); vertical-align: middle; }
+.maul-standings ul { margin: 0 0 6px; padding-left: 18px; }
+
+/* ---------- Mall Directory (M) ---------- */
+.maul-directory .window-content { padding: 0; background: var(--maul-paper); color: var(--maul-ink); }
+.maul-dir { display: flex; flex-direction: column; height: 100%; font-size: 11px; }
+.maul-dir-tabs { display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 10px 0; border-bottom: 4px solid var(--maul-edge); }
+.maul-dir-tab { flex: 0 0 auto; width: auto; font: inherit; font-size: 11px; padding: 6px 10px; margin: 0; line-height: 1.2;
+  background: #ddd6bf; color: var(--maul-ink); border: 3px solid var(--maul-edge); border-bottom: none; border-radius: 0; }
+.maul-dir-tab.active { background: var(--maul-blue); color: #fff; }
+.maul-dir-tab .fa-star { color: var(--maul-gold); }
+.maul-dir-body { flex: 1; display: flex; gap: 10px; min-height: 0; padding: 10px; }
+.maul-dir-mapwrap { flex: 1 1 62%; min-width: 0; overflow-x: hidden; overflow-y: auto; display: flex; flex-direction: column; align-items: center; }
+.maul-dir-map { position: relative; width: 100%; max-height: calc(100% - 24px); border: 4px solid var(--maul-edge); background: #000; }
+.maul-dir-map img { display: block; width: 100%; height: 100%; object-fit: fill; border: none; }
+.maul-dir-floorname { margin: 6px 0 0; text-align: center; }
+.maul-dir-pin { position: absolute; transform: translate(-50%, -50%); width: auto; min-width: 22px; height: 18px; margin: 0;
+  padding: 0 4px; font: inherit; font-size: 9px; line-height: 14px; color: #fff; background: var(--maul-accent);
+  border: 2px solid #fff; border-radius: 0; box-shadow: 2px 2px 0 var(--maul-ink); cursor: pointer; z-index: 2; }
+.maul-dir-pin.minor { min-width: 0; width: 10px; height: 10px; padding: 0; background: #8a8aa0; border-width: 2px; z-index: 1; }
+.maul-dir-pin:hover, .maul-dir-pin.focus { background: var(--maul-gold); color: var(--maul-ink); z-index: 3; }
+.maul-dir-pin.focus { animation: maul-dir-blink 0.6s steps(2) infinite; transform: translate(-50%, -50%) scale(1.35); }
+@keyframes maul-dir-blink { 50% { background: #fff; } }
+.maul-dir-pin.cat-food-drink { background: #d9822b; }
+.maul-dir-pin.cat-clothing-style { background: #b04aa8; }
+.maul-dir-pin.cat-gear-weapons { background: #5a6b7a; }
+.maul-dir-pin.cat-magic-curios { background: #6a3fa0; }
+.maul-dir-pin.cat-mounts-travel { background: #7a5a2b; }
+.maul-dir-pin.cat-home-gifts { background: #3a8a6a; }
+.maul-dir-pin.cat-fun-games { background: var(--maul-blue); }
+.maul-dir-pin.cat-services { background: #2b7a8a; }
+.maul-dir-pin.cat-arena { background: var(--maul-accent); }
+.maul-dir-you { position: absolute; transform: translate(-50%, -50%); color: var(--maul-gold); font-size: 20px; z-index: 4;
+  text-shadow: 2px 2px 0 var(--maul-ink), -1px -1px 0 var(--maul-ink); animation: maul-dir-bob 0.8s steps(2) infinite; pointer-events: auto; }
+@keyframes maul-dir-bob { 50% { margin-top: -4px; } }
+.maul-dir-travel { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin: 4px 0 6px; font-size: 11px; }
+.maul-dir-travel > span { margin-right: 4px; color: var(--maul-gold); }
+.maul-dir-spot { position: absolute; transform: translate(-50%, -50%); width: 22px; height: 22px; margin: 0; padding: 0;
+  font-size: 11px; line-height: 18px; color: var(--maul-ink); background: #7de07d; border: 2px solid #fff; border-radius: 50%;
+  box-shadow: 2px 2px 0 var(--maul-ink); cursor: pointer; z-index: 3; }
+.maul-dir-spot:hover { background: var(--maul-gold); }
+.maul-dir-legend { flex: 0 0 36%; overflow-y: auto; padding-right: 4px; }
+.maul-dir-cat h4 { margin: 8px 0 4px; padding: 3px 6px; font-size: 11px; color: #fff; background: var(--maul-edge); border: none; }
+.maul-dir-cat ul { list-style: none; margin: 0; padding: 0; }
+.maul-dir-cat li { display: grid; grid-template-columns: 34px 1fr; gap: 0 6px; padding: 4px 4px; cursor: pointer; border-bottom: 1px dotted #c9c0a4; }
+.maul-dir-cat li:hover, .maul-dir-cat li.focus { background: #fff1b8; }
+.maul-dir-cat li.other-floor { opacity: 0.6; }
+.maul-dir-unit { grid-row: span 2; font-weight: bold; color: var(--maul-accent); }
+.maul-dir-fl { font-size: 9px; padding: 0 3px; background: #ddd6bf; }
+.maul-dir-sells { grid-column: 2; font-family: "Signika", sans-serif; font-size: 12px; color: #4a4a5a; -webkit-font-smoothing: auto; }
+.maul-dir-foot { margin: 0; padding: 4px 10px 8px; font-size: 9px; color: #6a6a7a; }
+
+/* Notebook (J): notes for Zak about a spot, person, thing, store or item (SPEC 25) */
+.maul-notebook .window-content { overflow-y: auto; font-size: 10px; display: flex; flex-direction: column; gap: 10px; }
+.maul-notebook h3 { font-size: 11px; margin: 0 0 6px; border: none; }
+.maul-notebook .maul-nb-new { display: flex; flex-direction: column; gap: 6px; }
+.maul-notebook .maul-nb-modes { display: flex; flex-wrap: wrap; gap: 4px; }
+.maul-notebook .maul-btn.small { font-size: 9px; padding: 3px 6px; }
+.maul-notebook .maul-btn.active { background: var(--maul-gold); }
+.maul-notebook .maul-nb-target { margin: 2px 0; line-height: 1.5; }
+.maul-notebook select, .maul-notebook input[type=text], .maul-notebook textarea {
+  font-family: var(--maul-font); font-size: 10px; color: var(--maul-ink); background: #fff; border: 2px solid var(--maul-edge);
+}
+.maul-notebook textarea { resize: vertical; min-height: 90px; line-height: 1.5; }
+.maul-notebook .maul-nb-send { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.maul-notebook .maul-nb-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.maul-notebook .maul-nb-list li { border: 2px solid var(--maul-edge); padding: 5px 7px; background: #fff; line-height: 1.5; }
+.maul-notebook .maul-nb-meta { opacity: 0.75; display: flex; justify-content: space-between; gap: 6px; }
+.maul-notebook .maul-nb-status { color: #2c7a3b; }
+.maul-notebook .maul-nb-status.pending { color: var(--maul-accent); }
+.maul-notebook .maul-nb-about { font-weight: bold; }
+.maul-notebook .maul-nb-text { white-space: normal; overflow-wrap: anywhere; }
+#maul-pick-banner {
+  position: fixed; left: 50%; top: 70px; transform: translateX(-50%); z-index: 100; padding: 8px 12px; font-size: 10px;
+  background: var(--maul-paper); color: var(--maul-ink); border: 3px solid var(--maul-edge); box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.45);
+}
+#maul-pick-banner button { font-family: var(--maul-font); font-size: 9px; margin-left: 8px; width: auto; display: inline-block; }
+body.maul-picking #board { cursor: crosshair; }
+
+/* Notebook journal tab + Coworkers panel (SPEC 26) */
+.maul-notebook .maul-nb-tabs { display: flex; gap: 4px; }
+.maul-notebook .maul-nb-journal { display: flex; flex-direction: column; gap: 8px; }
+.maul-notebook .maul-nb-journal textarea { min-height: 70px; }
+.maul-notebook .maul-nb-del { width: auto; line-height: 1; padding: 1px 4px; font-size: 9px; background: none; border: none; cursor: pointer; }
+.maul-coworkers .window-content { overflow-y: auto; font-size: 10px; display: flex; flex-direction: column; gap: 10px; }
+.maul-coworkers h3 { font-size: 11px; margin: 0 0 4px; border: none; }
+.maul-coworkers .maul-cw-card { border: 2px solid var(--maul-edge); background: #fff; padding: 6px 8px; display: flex; flex-direction: column; gap: 4px; }
+.maul-coworkers .maul-cw-head { display: flex; gap: 10px; align-items: center; }
+.maul-coworkers .maul-cw-buttons { display: flex; gap: 4px; flex-wrap: wrap; }
+.maul-coworkers .maul-btn.small { font-size: 9px; padding: 3px 6px; width: auto; }
+.maul-coworkers .maul-btn.active { background: var(--maul-gold); }
+.maul-coworkers .maul-cw-picker { border: 2px dashed var(--maul-edge); padding: 4px; }
+.maul-coworkers .maul-cw-species { display: flex; flex-wrap: wrap; gap: 3px; }
+.maul-coworkers .maul-cw-option { background: none; cursor: pointer; width: auto; }
+.maul-coworkers .maul-cw-option:hover { border-color: var(--maul-blue); }
+.maul-coworkers .maul-cw-nosprite { display: inline-block; width: 48px; height: 48px; text-align: center; line-height: 48px; border: 2px dashed var(--maul-edge); }
+.maul-coworkers textarea { font-family: var(--maul-font); font-size: 10px; color: var(--maul-ink); background: #fff; border: 2px solid var(--maul-edge); resize: vertical; line-height: 1.5; }
+.maul-coworkers .maul-nb-send { display: flex; justify-content: space-between; align-items: center; }
+
+/* Live character counters near a cap (counter.js, SPEC 28) */
+.maul-count { font-size: 9px; min-height: 0; line-height: 1.4; text-align: right; }
+.maul-count:empty { display: none; }
+.maul-count.near { color: #b8860b; }
+.maul-count.over { color: var(--maul-accent, #e8443a); font-weight: bold; }
+
+/* Theatre shows (show.js, SPEC 31): narrator / title banner across the top of the screen */
+#maul-show-caption { position: fixed; top: 72px; left: 50%; transform: translate(-50%, -12px); z-index: 61;
+  pointer-events: none; opacity: 0; transition: opacity 0.35s, transform 0.35s; max-width: min(640px, 80vw);
+  background: #1a1024; color: #fff6dc; border: 4px solid #e8b830; box-shadow: 0 0 0 4px #1a1024, 0 6px 0 4px rgba(0,0,0,0.35);
+  padding: 10px 18px; text-align: center; font-size: 13px; line-height: 1.5; }
+#maul-show-caption.show { opacity: 1; transform: translate(-50%, 0); }
+#maul-show-caption .maul-show-cap { display: block; }
+#maul-show-caption .maul-show-sub { display: block; font-size: 9px; color: #e8b830; margin-top: 4px; }
+.maul-show-title { font-weight: bold; font-size: 1.15em; margin: 4px 0; }
+
+/* Practice bouts (SPEC 31, scripts/spar.js) */
+.maul-spar .window-content { display: flex; flex-direction: column; gap: 8px; overflow-y: auto; }
+.maul-spar .maul-spar-head { border: 2px solid var(--maul-edge); background: #fff; padding: 6px 8px; font-size: 10px; line-height: 1.6; }
+.maul-spar .maul-spar-purse strong { color: #2f7a2f; }
+.maul-spar .maul-spar-purse.empty strong { color: var(--maul-accent); }
+.maul-spar .maul-spar-card { display: flex; gap: 10px; border: 2px solid var(--maul-edge); background: #fff; padding: 6px 8px; }
+.maul-spar .maul-spar-card.locked { opacity: 0.55; filter: grayscale(0.8); }
+.maul-spar .maul-spar-card h3 { font-size: 11px; margin: 0 0 4px; border: none; }
+.maul-spar .maul-spar-card p { margin: 0 0 4px; font-family: var(--font-primary, sans-serif); font-size: 13px; }
+.maul-spar .maul-spar-card-art { flex: 0 0 56px; display: flex; align-items: center; justify-content: center; }
+.maul-spar .maul-spar-card-body { flex: 1; }
+.maul-spar .maul-spar-card-foot { display: flex; align-items: center; gap: 6px; }
+.maul-spar .maul-spar-card-foot .maul-btn { margin-left: auto; white-space: nowrap; }
+.maul-spar .maul-spar-tier { font-size: 8px; padding: 1px 5px; border: 2px solid var(--maul-edge); vertical-align: middle; background: #ddd; }
+.maul-spar .maul-spar-tier.rookie { background: #bfe3ff; }
+.maul-spar .maul-spar-tier.veteran { background: #ffe39a; }
+.maul-spar .maul-spar-tier.champion { background: var(--maul-accent); color: #fff; }
+.maul-spar .maul-spar-numbers { font-family: var(--font-primary, sans-serif); font-size: 13px; }
+.maul-spar .maul-spar-numbers summary { font-family: var(--maul-font); font-size: 10px; cursor: pointer; }
+.maul-spar .maul-spar-numbers ul { margin: 4px 0; padding-left: 18px; }
+.maul-spar-sprite { display: inline-block; width: var(--w); height: var(--h); background-repeat: no-repeat;
+  background-size: var(--sheet) var(--h); image-rendering: pixelated; animation: maul-spar-idle 0.9s steps(var(--frames)) infinite; }
+.maul-spar-sprite.none { width: 48px; height: 48px; border: 2px dashed var(--maul-edge); text-align: center; line-height: 44px; animation: none; }
+.maul-spar-portrait { width: 64px; height: 64px; object-fit: contain; border: none; image-rendering: pixelated; }
+@keyframes maul-spar-idle { from { background-position: 0 0; } to { background-position: calc(-1 * var(--sheet)) 0; } }
+.maul-spar .maul-spar-arena { display: grid; grid-template-rows: auto auto; gap: 6px; padding: 8px; border: 4px solid var(--maul-edge);
+  background: linear-gradient(#cfe8c0 0 60%, #b9d6a6 60% 100%); }
+.maul-spar .maul-spar-side { display: flex; align-items: center; gap: 12px; }
+.maul-spar .maul-spar-side.foe { flex-direction: row-reverse; }
+.maul-spar .maul-spar-side.pc .maul-spar-art { transform: scaleX(-1); }
+.maul-spar .maul-spar-art { min-width: 64px; display: flex; justify-content: center; }
+.maul-spar .maul-spar-info { flex: 1; max-width: 300px; background: var(--maul-paper); border: 3px solid var(--maul-edge); padding: 4px 8px; font-size: 10px; }
+.maul-spar .maul-spar-name { margin-bottom: 4px; }
+.maul-spar .maul-spar-hp { height: 8px; border: 2px solid var(--maul-edge); background: #444; }
+.maul-spar .maul-spar-hpfill { height: 100%; transition: width 0.4s steps(6); }
+.maul-spar .maul-spar-hpfill.ok { background: #3fbf4f; }
+.maul-spar .maul-spar-hpfill.mid { background: var(--maul-gold); }
+.maul-spar .maul-spar-hpfill.low { background: var(--maul-accent); }
+.maul-spar .maul-spar-hptext { text-align: right; font-size: 9px; margin-top: 2px; }
+.maul-spar .maul-spar-shake { animation: maul-spar-shake 0.35s steps(4) 1; }
+@keyframes maul-spar-shake { 0%, 100% { translate: 0 0; } 25% { translate: -4px 0; } 50% { translate: 4px 0; } 75% { translate: -2px 0; } }
+.maul-spar .maul-spar-log { flex: 1 1 160px; min-height: 140px; overflow-y: auto; border: 3px solid var(--maul-edge); background: #fff;
+  padding: 4px 8px; font-family: var(--font-primary, sans-serif); font-size: 13px; line-height: 1.45; }
+.maul-spar .maul-spar-line.foe { color: #8a2b22; }
+.maul-spar .maul-spar-line.pc { color: #1f4f9c; }
+.maul-spar .maul-spar-line.ref { color: #555; font-style: italic; }
+.maul-spar .maul-spar-line.round { font-style: normal; font-weight: bold; border-top: 1px dashed #bbb; margin-top: 3px; }
+.maul-spar .maul-spar-line.crit { font-weight: bold; }
+.maul-spar .maul-spar-line.heal { color: #2f7a2f; }
+.maul-spar .maul-spar-line.quote { color: #333; font-style: italic; }
+.maul-spar .maul-spar-line.win, .maul-spar .maul-spar-line.loss { font-weight: bold; font-style: normal; color: var(--maul-ink); }
+.maul-spar .maul-spar-moves { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 4px; }
+.maul-spar .maul-spar-move { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+.maul-spar .maul-spar-move small { font-size: 8px; opacity: 0.75; }
+.maul-spar .maul-spar-buttons { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.maul-spar .maul-spar-result { border: 4px solid var(--maul-edge); background: #fff; padding: 8px; text-align: center; }
+.maul-spar .maul-spar-result h2 { font-size: 16px; border: none; margin: 0 0 6px; }
+.maul-spar .maul-spar-result.pc h2 { color: #2f7a2f; }
+.maul-spar .maul-spar-result .maul-spar-buttons { justify-content: center; }

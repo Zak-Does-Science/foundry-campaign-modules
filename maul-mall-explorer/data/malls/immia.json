@@ -1,0 +1,2734 @@
+{
+ "id": "immia",
+ "name": "Immia Beach Mega Mall",
+ "town": "Joz, Lor'Fida",
+ "theme": "immia",
+ "start": {
+  "floor": "L1",
+  "x": 3,
+  "y": 18
+ },
+ "floors": [
+  {
+   "id": "L1",
+   "name": "The Old Palace and the Beach",
+   "grid": [
+    "################################~~~#############################",
+    "#,,,,,,,,,,#,,,,,,,,#oooooooooo#~~~#,,,,,,,,,#,,,,,,,#,,,,,,,,,#",
+    "#,S,,f,,,S,#,SSSSSS,#oooooooooo#~~~#SSSSSSSSS#SSSSSSS#,SSSSSSS,#",
+    "#,S,,,,,,S,#,,,,,,,,#oooooooooo#~~~#,,,,,,,,,#,,,,,,,#,,,,,,,,,#",
+    "#,S,====,S,#,,,,,,,,#####D######~~~#,,,,,,,,,#,,,,,,,#,,,,,,,,,#",
+    "#,S,,,,,,S,#,,,,,==,#,,==,,,,,,#~~~#,====,,,,#,,===,,#,,===,,x,#",
+    "#,S,,,,,,S,#,SS,,,,,#S,,,,,,,,S#~~~#,,,,,,,S,#,,,,,,,#,,,,,,,x,#",
+    "#,S,,,,,,S,#,SS,,,,,#S,,,,,,,,S#~~~#,,,,,,,S,#,,,,,,,#,,,,,,,x,#",
+    "#,,,,,,,,,,#,,,,,,,,#S,,,,,,,,S#~~~#,,,,,,,,,#,,,,,,,#,,,,,,,,,#",
+    "##ww#++#ww##ww#++#ww#ww#++#++#w#~~~#ww#++#ww##w#++#ww#ww#++#ww##",
+    "#p..............................~~~...........................p#",
+    "#...............f.......f..............................bb......#",
+    "#...bb..................................bb.....................#",
+    "#.............................p.~~~.p..........................#",
+    "######++#####...#wwwwwwDDDwwww##~~~#wwww#DDDwwww#........#######",
+    "#,,,,,,,,,,,#...#...............~~~.............#.c..c...=,,,,,#",
+    "#k,,,,,,,,,,#...#...............~~~.............#.tt.tt..=,,,,,#",
+    "#k,,,,,====,#...#...oofoo.......~~~.....oofoo...#..c..c..#######",
+    "#k,,,,,,,,,,#...#...ooooo.......~~~.....ooooo...#........=,,,,,#",
+    "#k,,,,,,,,,,#...#...ooooo...............ooooo...#.c..c...=,,,,,#",
+    "#k,,,,,,,,,,#...#...............................#.tt.tt..#######",
+    "#,,,,,,,,,,,#...#...............~~~.............#..c..c..=,,,,,#",
+    "#############...#......###......~~~......###....#........=,,,,,#",
+    "#S.........S#...#...............~~~.............#.c..c...#######",
+    "#...........#...#.........oofoo.~~~.oofoo.......#.tt.tt..=,,,,,#",
+    "#...........+...#.........ooooo.....ooooo.......#..c..c..=,,,,,#",
+    "#...........+...#.........ooooo.....ooooo.......#........#######",
+    "#...........#...#.........ooooo.~~~.ooooo.......#.c......=,,,,,#",
+    "########H####...#...............~~~.............#.tt.....=,,,,,#",
+    "#=,,,,,,,,,,#...#.bbbbbbbbbbbbb.~~~.bbbbbbbbbbb.#..c.....#######",
+    "#=,,,,,,,,,,#...#.bbbbbbbbbbbbb.~~~.bbbbbbbbbbb.#........#######",
+    "#############+++################~~~#################+++#########",
+    "T:::::::::::::::::::::::::::::::~~~::::::::::::::::::::::::::::T",
+    "T::::=====:::::::=====::=====:::...:::=====::=====:::::::::::::T",
+    "::::::::::::::::::::::::::::::::...:::::::::::::::::::::::::::::",
+    "::::::::::::::::::::::::::::::::~~~:::::::::::::::::::::::::::::",
+    "::::::::::::::::::::::::::::::::~~~:::::::::::::::::::::::::::::",
+    "r:::::::::::::::::::::::::::::::~~~::::::::::::::::::::::::::::r",
+    "r:::::::::::::::::::::::::::::::~~~::::::::::::::::::::::::::::r",
+    "::::::::oo::::::::::::::::::::::...:::::::::oo::::::::::::::::::",
+    "::::::::::::::::::::oo::::::::::...:::::::::::::::::::oo::::::::",
+    "T:::::::::::::::::::::::::::::::~~~::::::::::::::::::::::::::::T",
+    "::::::::::::::...:::::::::::::::~~~:::::::::::::::::::::::::::::",
+    "~~~~~~~~~~~~~~...~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~...~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+   ],
+   "labels": [
+    {
+     "x": 5,
+     "y": 5,
+     "text": "HOLLOW HALO"
+    },
+    {
+     "x": 15,
+     "y": 5,
+     "text": "SHADY BEACHES"
+    },
+    {
+     "x": 25,
+     "y": 7,
+     "text": "GRAPFRAP DRAG EMPORIUM"
+    },
+    {
+     "x": 40,
+     "y": 5,
+     "text": "GLASS HALF FOOL"
+    },
+    {
+     "x": 49,
+     "y": 5,
+     "text": "BREATH TAKING"
+    },
+    {
+     "x": 58,
+     "y": 5,
+     "text": "TWIZZLE ME THIS"
+    },
+    {
+     "x": 6,
+     "y": 18,
+     "text": "LEYLINE ARRIVALS"
+    },
+    {
+     "x": 6,
+     "y": 25,
+     "text": "HALL OF QUEENS"
+    },
+    {
+     "x": 32,
+     "y": 22,
+     "text": "CANAL THRONE HALL"
+    },
+    {
+     "x": 55,
+     "y": 22,
+     "text": "FOOD COURT"
+    },
+    {
+     "x": 19,
+     "y": 33,
+     "text": "DUNE BUNS"
+    },
+    {
+     "x": 26,
+     "y": 33,
+     "text": "JOZZY PRAYER JUICE"
+    },
+    {
+     "x": 40,
+     "y": 33,
+     "text": "OASIS IS AS OASIS DOES"
+    },
+    {
+     "x": 30,
+     "y": 40,
+     "text": "IMMIA BEACH"
+    }
+   ]
+  }
+ ],
+ "interactables": [
+  {
+   "id": "imm-L1-leyline-tube",
+   "x": 1,
+   "y": 18,
+   "kind": "leyline",
+   "name": "Leyline Tube",
+   "pages": [
+    "A gilded tube set into sandstone, warm to the touch and faintly violet. A brass plate: 'IMMIA BEACH ARRIVALS. SHAKE THE SAND OUT BEFORE BOARDING.'"
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-ley-pim",
+   "x": 3,
+   "y": 15,
+   "kind": "npc",
+   "name": "Pim Sandwhistle",
+   "sprite": "npc:gnome:5:goolax",
+   "pages": [
+    "Welcome to Joz! Pim Sandwhistle, Goolax leyline desk. Your away-day pass covers the ride: Goolax pays, because Goolax wants you SEEN here.",
+    "The ride home's free too. Same tube. Shake out your shoes first, or the tube spits sand at the next rider. It holds grudges.",
+    "Heritage Walk starts at the desk with Zahir. Seven plaques, one souvenir, and more gossip than a mall should legally hold."
+   ],
+   "idle": "look",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-guide-zahir",
+   "x": 8,
+   "y": 18,
+   "kind": "npc",
+   "name": "Zahir Moonglaze (Heritage Walk guide)",
+   "sprite": "npc:tiefling:4:goolax",
+   "pages": [
+    {
+     "text": "Marhaba, and welcome to the IMMIA BEACH MEGA MALL! Zahir Moonglaze, Goolax away-day host. Fancy the Heritage Walk? Seven brass plaques. Find them all and come back to me.",
+     "requires": {
+      "notFlags": [
+       "imm-tour-done"
+      ]
+     }
+    },
+    {
+     "text": "Plaque one is right here on my desk. The rest: the old gallery, the empty plinth, the canal bridge, the temple shop, GrapFrap's front window, and the Hall of Queens.",
+     "requires": {
+      "notFlags": [
+       "imm-tour-done"
+      ]
+     }
+    },
+    {
+     "text": "You found all seven! Ooh. Look at you. A true Jozzy now: sandy, nosy, a little sunburnt.",
+     "requires": {
+      "flags": [
+       "imm-tour-1",
+       "imm-tour-2",
+       "imm-tour-3",
+       "imm-tour-4",
+       "imm-tour-5",
+       "imm-tour-6",
+       "imm-tour-7"
+      ],
+      "notFlags": [
+       "imm-tour-done"
+      ]
+     },
+     "sets": [
+      "imm-tour-done"
+     ]
+    },
+    {
+     "text": "Here: your Heritage Walk pin. Gold-ish. Free with the walk. Wear it at the match and the locals will cheer you a little louder. A little.",
+     "requires": {
+      "flags": [
+       "imm-tour-1",
+       "imm-tour-2",
+       "imm-tour-3",
+       "imm-tour-4",
+       "imm-tour-5",
+       "imm-tour-6",
+       "imm-tour-7"
+      ]
+     }
+    },
+    {
+     "text": "Between us? Three years ago I couldn't have given this tour. Half the stops were crimes. Now they're plaques. That's Joz: give it a year or two and the crime gets a plaque.",
+     "requires": {
+      "flags": [
+       "imm-tour-done"
+      ]
+     }
+    }
+   ],
+   "store": {
+    "title": "Heritage Walk Souvenirs",
+    "stock": [
+     {
+      "name": "Heritage Walk Pin",
+      "gp": 0,
+      "desc": "A gold-ish enamel pin: a crown on a sandcastle. Free with the walk; Zahir trusts you did it.",
+      "type": "loot"
+     },
+     {
+      "name": "Dry Fest Paper Fan",
+      "gp": 0.5,
+      "desc": "Pleated, glittered, says 'DRY FEST: HYDRATE, QUEENS' on one side and 'WEIRDOS WELCOME' on the other.",
+      "type": "loot"
+     },
+     {
+      "name": "Immia Beach Postcard",
+      "gp": 0.01,
+      "desc": "The canal, the gold domes and a very small, very smug crab.",
+      "type": "loot"
+     },
+     {
+      "name": "Aura Fist Fan Sash",
+      "gp": 1,
+      "desc": "Satin, sequinned, purple-gold. 'I SAW THE FIST.' Locals wear it to everything now, even funerals.",
+      "type": "loot"
+     }
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-tour-1",
+   "x": 8,
+   "y": 17,
+   "kind": "object",
+   "name": "Heritage Walk, Plaque 1: Welcome to Joz",
+   "pages": [
+    "PLAQUE 1. Joz began as a Quonian military engineering port, was left to rot for 125 years, and became the best place in Th'Tief to not be found.",
+    "Since then: monasteries, chancellors, sandstorms, a palace, and now... this mall. Joz has always been good at becoming something else."
+   ],
+   "sets": [
+    "imm-tour-1"
+   ],
+   "sprite": "obj:lectern",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-goolax-poster",
+   "x": 4,
+   "y": 21,
+   "kind": "object",
+   "name": "Goolax Away-Day Poster",
+   "pages": [
+    "GOOLAX PRESENTS: MALL BRAWL AWAY DAY! Week 2 host: IMMIA BEACH MEGA MALL. Arena: the CANAL THRONE HALL.",
+    "Small print: 'Goolax is not responsible for sunburn, sand, flash floods, or being read to filth by a queen.'"
+   ],
+   "sprite": "obj:poster",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-tour-2",
+   "x": 9,
+   "y": 11,
+   "kind": "object",
+   "name": "Heritage Walk, Plaque 2: The Palace Gallery",
+   "pages": [
+    "PLAQUE 2. This gallery was the palace's long hall. Chancellors walked it to the throne room. Shoppers now walk it to the food court. Most say that's an upgrade.",
+    "Look up: the ceiling saints were painted over with suns during the last regime. The suns are peeling. Nobody's decided what goes back."
+   ],
+   "sets": [
+    "imm-tour-2"
+   ],
+   "sprite": "obj:lectern",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-tour-3",
+   "x": 24,
+   "y": 11,
+   "kind": "object",
+   "name": "Heritage Walk, Plaque 3: The Empty Plinth",
+   "pages": [
+    "PLAQUE 3. A marble plinth with chisel scars and two bronze feet still bolted on. Just the feet. Somebody has given them tiny painted toenails.",
+    "The plaque says only: 'Here stood the last Chancellor. He fell two years ago. The feet stay as a reminder: rulers end, Joz goes on.'"
+   ],
+   "sets": [
+    "imm-tour-3"
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-tour-4",
+   "x": 33,
+   "y": 10,
+   "kind": "object",
+   "name": "Heritage Walk, Plaque 4: The Canal",
+   "pages": [
+    "PLAQUE 4. The river runs right through the palace and the old throne hall. Most of the year it's a polite trickle you could step over.",
+    "Then the hills get rain you never see, and the riverbed fills in minutes. Locals call it 'the sudden guest'. Never sit in the riverbed. Ever."
+   ],
+   "sets": [
+    "imm-tour-4"
+   ],
+   "sprite": "obj:sign",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-throne-doors",
+   "x": 24,
+   "y": 14,
+   "kind": "object",
+   "name": "Throne Hall Doors",
+   "pages": [
+    "Gilded doors as tall as three trolls. A Goolax banner hangs across them: CANAL THRONE HALL. CLOSED FOR MATCH PREP. NO PEEKING.",
+    "You peek anyway, through the glass. Gold daises, a river cutting the hall in two, three great stone plinths. It smells of wet sand and polish."
+   ],
+   "weekPages": {
+    "2": [
+     "The banner now reads: THANK YOU, COMPETITORS! Someone has drawn a little crown on it in lipstick. Someone else has drawn a tiny flood under the crown."
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-throne-doors-e",
+   "x": 42,
+   "y": 14,
+   "kind": "object",
+   "name": "Throne Hall Doors",
+   "pages": [
+    "Locked. A notice is pinned to the gold: 'Daises re-gilded for the match. Do NOT lick. We know who you are, Dennor.'"
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-standings",
+   "x": 46,
+   "y": 12,
+   "kind": "standings",
+   "name": "MALL BRAWL Standings",
+   "sprite": "obj:notice-board",
+   "pages": [
+    "Scores, standings, and who's on top. Updated after every match day. Someone has added a sequin to the Broad Squad's line."
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fountain",
+   "x": 16,
+   "y": 11,
+   "kind": "object",
+   "name": "The Dry Fountain",
+   "pages": [
+    "An old palace fountain, dry for years. It's been planted with cactus, and someone has put a tiny wig on the biggest one.",
+    "A handwritten tag on the wig: 'Her name is Prickly Heat. Do not touch her. She's working.'"
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-noor",
+   "x": 4,
+   "y": 11,
+   "kind": "npc",
+   "name": "Auntie Noor Brightsalt",
+   "sprite": "npc:human:6:elder:beachwear",
+   "pages": [
+    "Sit, sit, habibi. I've had this bench since it was a palace bench. They charged me rent for it once. I outlived the man who charged me.",
+    "My grandson says I gossip. I say I keep Joz's records. Without paper. For free."
+   ],
+   "random": true,
+   "brushoffs": [
+    "Again? I'm resting my legs, not running a library.",
+    "You've had your news, dear. Go spend it.",
+    "Shoo, before I tell everyone what YOU said."
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-kassim",
+   "x": 21,
+   "y": 12,
+   "kind": "npc",
+   "name": "Kassim Dunebright (mall security)",
+   "sprite": "npc:dragonborn:3:security",
+   "pages": [
+    "Mall security. Ten years I guarded this hall as a palace guard. Same hall, same boots, new hat. The hat is worse.",
+    "No running on the bridge. No swimming in the canal. No death drops on the marble. ...That last rule came in with Cael, and it's still the one I enforce most."
+   ],
+   "random": true,
+   "idle": "look",
+   "wander": [
+    [
+     21,
+     12
+    ],
+    [
+     19,
+     12
+    ],
+    [
+     27,
+     12
+    ],
+    [
+     29,
+     11
+    ]
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-tilly",
+   "x": 43,
+   "y": 11,
+   "kind": "npc",
+   "name": "Tilly Sprocketwhim (tourist)",
+   "sprite": "npc:gnome:2:tourist",
+   "pages": [
+    "Tilly Sprocketwhim, Gok'Gok Harbor! Here for the match. Did you see? Those streetlamps outside are OURS. Toggleton crystec. I'm weirdly proud.",
+    "Everyone here says 'habibi' and 'darling' in the same breath. I've been called both by a monk AND a drag queen today. Best holiday ever."
+   ],
+   "random": true,
+   "idle": "fidget",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-rafi",
+   "x": 37,
+   "y": 12,
+   "kind": "npc",
+   "name": "Rafi Tamberlane (age 9)",
+   "sprite": "npc:halfling:3:child:beachwear",
+   "pages": [
+    "Fans! Paper fans! Two copper! I fold them myself! This one's got a queen on it. This one's got a crab. The crab one's for boring people.",
+    "My big sister does drag now. She used to do it in the cellar. Now she does it on the BRIDGE. Mum cried. Good crying."
+   ],
+   "random": true,
+   "idle": "fidget",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-wadiwad",
+   "x": 30,
+   "y": 12,
+   "kind": "npc",
+   "name": "Wadi Wad",
+   "sprite": "npc:crud:3",
+   "pages": [
+    "A tangle of old festival ribbon, a sandal and a bottle cap, blinking up at you from beside the canal.",
+    "'Name's Wadi Wad. Born when the riverbed got used as a bin. When the sudden guest comes, I ride it all the way out to the sea. Whee. Then I walk back.'"
+   ],
+   "random": true,
+   "idle": "bob",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-tour-5",
+   "x": 5,
+   "y": 2,
+   "kind": "object",
+   "name": "Heritage Walk, Plaque 5: Hollow Halo",
+   "pages": [
+    "PLAQUE 5. The Alt Righteous have kept a shrine here since the palace was built. Their faith is old, strict and patient: they fast, they give things up.",
+    "They pray brow-down in the sand, so the Forgotten One feels them. The shrine shop still sells prayer sand by the scoop. It is just sand. It is very blessed sand."
+   ],
+   "sets": [
+    "imm-tour-5"
+   ],
+   "sprite": "obj:stone-shrine",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-ascetus",
+   "x": 5,
+   "y": 3,
+   "kind": "npc",
+   "name": "Brother Ascetus Dunmere",
+   "sprite": "npc:human:2:elder:monk-robe",
+   "pages": [
+    "Peace, traveller. Hollow Halo. We sell what helps you need less: beads, prayer sand, plain bread. The best thing here is the empty shelf.",
+    "Magaeas was betrayed long ago and asks only to be remembered. We remember by going without. You'd be amazed what you can go without.",
+    "Some brothers left when Cael came in, two years back. I stayed. Faith that only works under one ruler isn't faith. It's a uniform."
+   ],
+   "random": true,
+   "store": {
+    "title": "Hollow Halo",
+    "stock": [
+     {
+      "name": "Prayer Beads (sandstone)",
+      "gp": 1,
+      "desc": "Thirty-three sandstone beads. Count them when you want something. Then don't get it.",
+      "type": "loot"
+     },
+     {
+      "name": "Scoop of Prayer Sand",
+      "gp": 0.1,
+      "desc": "It is sand. It is very blessed sand. Do not put it in your shoes on purpose.",
+      "type": "loot"
+     },
+     {
+      "name": "Holy Water (flask)",
+      "gp": 25,
+      "desc": "Drawn from the canal at dawn and blessed by three brothers who argued about it.",
+      "srd": "Holy Water (flask)",
+      "type": "consumable"
+     },
+     {
+      "name": "Incense (Jozzy Prayer)",
+      "gp": 0.5,
+      "desc": "Smells of warm stone and dates. Burns slow.",
+      "type": "loot"
+     },
+     {
+      "name": "Plain Bread",
+      "gp": 0.02,
+      "desc": "No salt, no butter, no joy. Somehow delicious anyway.",
+      "type": "loot"
+     },
+     {
+      "name": "Healer's Kit",
+      "gp": 5,
+      "desc": "The monks patch up a lot of sunburnt pilgrims.",
+      "srd": "Healer's Kit",
+      "type": "equipment",
+      "homologated": true
+     }
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-wrenna",
+   "x": 8,
+   "y": 6,
+   "kind": "npc",
+   "name": "Sister Wrenna Quell",
+   "sprite": "npc:elf:5:teen:monk-robe",
+   "pages": [
+    "Sister Wrenna. Novice. Please don't tell Brother Ascetus I hum show tunes while I sweep.",
+    "I've been to GrapFrap. Twice. To... pray for them. With my eyes open. In the front row."
+   ],
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-halo-mural",
+   "x": 3,
+   "y": 1,
+   "kind": "object",
+   "name": "Faded Temple Mural",
+   "pages": [
+    "An old mural: a great sleeping face drawn in the sand of the desert, and tiny pilgrims kneeling on its brow, brows to the ground.",
+    "Painted underneath: 'WE KNEEL UPON THE FORGOTTEN ONE, AND THE FORGOTTEN ONE REMEMBERS US.' The face's eye is scratched out. Recently."
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-marisol",
+   "x": 17,
+   "y": 4,
+   "kind": "npc",
+   "name": "Marisol Quaywhisper",
+   "sprite": "npc:fishfolk:3:beachwear",
+   "pages": [
+    "Shady Beaches! Sun hats, shades, swimwear with pockets in places you'd never search. Not that anyone searches. Why would they.",
+    "Every Jozzy worth their blood learns how not to get caught. I just sell the outfit for it."
+   ],
+   "random": true,
+   "store": {
+    "title": "Shady Beaches",
+    "stock": [
+     {
+      "name": "Wide-Brimmed Sun Hat",
+      "gp": 1,
+      "desc": "Shades the face, the neck and most of a small friend.",
+      "type": "equipment"
+     },
+     {
+      "name": "Very Dark Sunglasses",
+      "gp": 2,
+      "desc": "You can't see their eyes. They can't see much at all.",
+      "type": "loot"
+     },
+     {
+      "name": "Swimwear with Secret Pocket",
+      "gp": 3,
+      "desc": "One pocket. You'll never find it again either.",
+      "type": "equipment"
+     },
+     {
+      "name": "Traveler's Clothes (linen)",
+      "gp": 2,
+      "desc": "Breathes in the heat; hides sand stains.",
+      "srd": "Traveler's Clothes",
+      "type": "equipment"
+     },
+     {
+      "name": "Disguise Kit",
+      "gp": 25,
+      "desc": "Fake moustaches, tan powder and three spare noses. Jozzy classic.",
+      "srd": "Disguise Kit",
+      "type": "equipment"
+     },
+     {
+      "name": "Joz Army Knife (souvenir)",
+      "gp": 5,
+      "desc": "The tourist one: a corkscrew, a tiny saw and a toothpick. The real ones aren't sold here.",
+      "type": "loot"
+     }
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-shady-sign",
+   "x": 13,
+   "y": 7,
+   "kind": "object",
+   "name": "Hand-Painted Sign",
+   "pages": [
+    "'SHOPLIFTERS WILL BE ADMIRED, THEN PROSECUTED.' Under it, smaller: 'Mostly admired.'"
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-tour-6",
+   "x": 22,
+   "y": 9,
+   "kind": "object",
+   "name": "Heritage Walk, Plaque 6: GrapFrap's Front Window",
+   "pages": [
+    "PLAQUE 6. For years this window was painted black from the inside, and the shop sold 'theatrical supplies'. The queens came and went by the back door.",
+    "The spring Cael took power, they scraped the paint off with hairpins, in public, in full face. The scrapings are framed inside. Joz cried. Joz still cries."
+   ],
+   "sets": [
+    "imm-tour-6"
+   ],
+   "sprite": "obj:drag-mirror",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-sahara",
+   "x": 23,
+   "y": 6,
+   "kind": "npc",
+   "name": "Miss Sahara Sundae",
+   "sprite": "npc:human:7:stage-costume",
+   "pages": [
+    "Welcome to GRAPFRAP DRAG EMPORIUM, darling. Wigs, heels, lashes, fans, and attitude, sold by the yard.",
+    "The Broad Squad? Our girls, honey. They work the floor here when they're not training. Right now they're in back, rehearsing. Don't knock. Betch bites.",
+    "We used to sell out of a cellar. Now we've got a front door and a window and a sign. I touch the sign every morning. Every single morning."
+   ],
+   "random": true,
+   "store": {
+    "title": "GrapFrap Drag Emporium",
+    "stock": [
+     {
+      "name": "Lace-Front Wig",
+      "gp": 5,
+      "desc": "Glossy, gravity-defying, and secured with enough pins to build a fence.",
+      "type": "loot"
+     },
+     {
+      "name": "Steel-Shank Heels",
+      "gp": 8,
+      "desc": "Six inches. Arena-rated by nobody. Walk like you mean it.",
+      "type": "equipment"
+     },
+     {
+      "name": "Clacky Fan",
+      "gp": 2,
+      "desc": "Snaps open like a thunderclap. Fully non-magical; fully devastating.",
+      "type": "loot"
+     },
+     {
+      "name": "Feather Boa",
+      "gp": 1,
+      "desc": "Sheds. You will find feathers for a year.",
+      "type": "loot"
+     },
+     {
+      "name": "Costume Clothes",
+      "gp": 5,
+      "desc": "Sequinned, structured, quick-change ready.",
+      "srd": "Costume Clothes",
+      "type": "equipment"
+     },
+     {
+      "name": "Disguise Kit (Glam Edition)",
+      "gp": 30,
+      "desc": "Contour, lashes, glue, glitter: a whole new face in twenty minutes.",
+      "srd": "Disguise Kit",
+      "type": "equipment"
+     },
+     {
+      "name": "Perfume (Aura Fist No. 1)",
+      "gp": 5,
+      "desc": "Smells like jasmine, sweat and victory. Limited edition. Unlimited attitude.",
+      "srd": "Perfume (vial)",
+      "type": "loot"
+     }
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-pashmina",
+   "x": 27,
+   "y": 7,
+   "kind": "npc",
+   "name": "Pashmina Pell",
+   "sprite": "npc:tiefling:6:stage-costume",
+   "pages": [
+    "Pashmina Pell, honey. Lashes and gossip, aisle two. Mostly gossip.",
+    "Spin for me. ...Mm. You'll do. A little blush and you'd go to the final."
+   ],
+   "random": true,
+   "idle": "look",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-mirage",
+   "x": 29,
+   "y": 5,
+   "kind": "npc",
+   "name": "Mirage Tenderloin",
+   "sprite": "npc:elf:3:stage-costume",
+   "pages": [
+    "Mirage Tenderloin, darling, eldest queen on the floor. I've had this shoe size since before you had a shoe.",
+    "Don't mind the hairpins in the window frame. Souvenirs. Every queen in Joz pulled one."
+   ],
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-studio-door",
+   "x": 25,
+   "y": 4,
+   "kind": "object",
+   "name": "Rehearsal Studio Door",
+   "pages": [
+    "A painted door: 'REHEARSAL. QUEENS ONLY. That means you, Betch.' Under it, in different lipstick: 'I KNOW, BETCH IS ME.'"
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-studio-listen",
+   "x": 28,
+   "y": 4,
+   "kind": "secret",
+   "name": "The Studio's Back Wall",
+   "pages": [
+    "Through the wall: '5, 6, 7, 8! FORMATION! Closer, girls, CLOSER, we're stronger in a clump!'",
+    "'Hold it... hold it... and if they break the line, we start again. NOBODY breaks the line!' A stomp. A fan snaps. Applause, from themselves."
+   ],
+   "sets": [
+    "gossip-broad",
+    "imm-heard-rehearsal"
+   ],
+   "hidden": {
+    "dc": 12,
+    "radius": 2,
+    "hint": "Muffled counting comes through the wall: 5, 6, 7, 8..."
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-ottoline",
+   "x": 38,
+   "y": 4,
+   "kind": "npc",
+   "name": "Ottoline Brack",
+   "sprite": "npc:goblin:4:apron",
+   "pages": [
+    "Glass Half Fool! Potions, tonics and things in bottles that may be potions. The labels are honest. The glass is Jozzy: blown from our own desert sand.",
+    "Half full? Half empty? Half fool, sweetie. Buy it and find out."
+   ],
+   "random": true,
+   "store": {
+    "title": "Glass Half Fool",
+    "stock": [
+     {
+      "name": "Potion of Healing",
+      "gp": 50,
+      "desc": "Regain 2d4 + 2 HP. Tastes of dates.",
+      "srd": "Potion of Healing",
+      "type": "consumable",
+      "homologated": true
+     },
+     {
+      "name": "Antitoxin",
+      "gp": 50,
+      "desc": "Advantage on saves against poison for an hour. Popular before makeup-puff fights.",
+      "srd": "Antitoxin",
+      "type": "consumable",
+      "homologated": true
+     },
+     {
+      "name": "Alchemist's Fire",
+      "gp": 50,
+      "desc": "Sticky, burning, rude.",
+      "srd": "Alchemist's Fire",
+      "type": "consumable",
+      "homologated": true
+     },
+     {
+      "name": "Sunburn Salve",
+      "gp": 0.5,
+      "desc": "Aloe and cactus. Soothes, smells like a greenhouse.",
+      "type": "loot"
+     },
+     {
+      "name": "Empty Desert-Glass Bottle",
+      "gp": 0.02,
+      "desc": "Faintly gold. Sand-blown in Joz.",
+      "type": "loot"
+     }
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-idris",
+   "x": 49,
+   "y": 4,
+   "kind": "npc",
+   "name": "Idris Glintmoor",
+   "sprite": "npc:dwarf:2:beard",
+   "pages": [
+    "Breath Taking. Sapphires from the Castori Breath highlands, desert glass, adamantine trinkets. Joz sells the world its shine.",
+    "Hold it to the light. See the little flaw? That's how you know it's real. Fakes are perfect. Like people."
+   ],
+   "random": true,
+   "store": {
+    "title": "Breath Taking",
+    "stock": [
+     {
+      "name": "Small Sapphire Chip",
+      "gp": 10,
+      "desc": "A blue flake from the Castori Breath mines.",
+      "type": "loot"
+     },
+     {
+      "name": "Desert-Glass Pendant",
+      "gp": 3,
+      "desc": "Sand melted to gold-green glass, on a leather cord.",
+      "type": "loot"
+     },
+     {
+      "name": "Adamantine Thimble",
+      "gp": 15,
+      "desc": "Absolutely indestructible. Absolutely a thimble.",
+      "type": "loot"
+     },
+     {
+      "name": "Magnifying Glass",
+      "gp": 100,
+      "desc": "Jozzy lens, flawless. The one perfect thing in here.",
+      "srd": "Magnifying Glass",
+      "type": "equipment"
+     }
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-bina",
+   "x": 57,
+   "y": 4,
+   "kind": "npc",
+   "name": "Bina Twizzlewick",
+   "sprite": "npc:halfling:5:market-apron",
+   "pages": [
+    "Twizzle Me This! Twizzlewood fruit: tastes like strawberry, smells like coconut, grows like a rumour.",
+    "Don't plant the stones. Twizzlewood drinks a field dry. That's why Sizzlewood's half desert now. Lovely fruit, though."
+   ],
+   "random": true,
+   "store": {
+    "title": "Twizzle Me This",
+    "stock": [
+     {
+      "name": "Twizzlewood Fruit",
+      "gp": 0.05,
+      "desc": "Strawberry-coconut, purple-veined. Sticky.",
+      "type": "loot"
+     },
+     {
+      "name": "Dried Twizzle Strips (bag)",
+      "gp": 0.2,
+      "desc": "Chewy road snack. One day of rations, if you're brave.",
+      "type": "consumable"
+     },
+     {
+      "name": "Rations (1 day)",
+      "gp": 0.5,
+      "desc": "Dates, flatbread, twizzle jam.",
+      "srd": "Rations",
+      "type": "consumable"
+     }
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-tour-7",
+   "x": 6,
+   "y": 23,
+   "kind": "object",
+   "name": "Heritage Walk, Plaque 7: The Hall of Queens",
+   "pages": [
+    "PLAQUE 7. DRY FEST: Lor'Fida's yearly drag-and-weirdo convention. For years it ran far out in the desert, where the temple patrols didn't bother going.",
+    "It was at Dry Fest that a newcomer called AURA FIST first took a Lor'Fida stage. Joz's Chancellor. Same person. The poster's right there."
+   ],
+   "sets": [
+    "imm-tour-7",
+    "lore-dryfest"
+   ],
+   "sprite": "obj:lectern",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-dryfest-poster",
+   "x": 3,
+   "y": 23,
+   "kind": "object",
+   "name": "First-Night Poster",
+   "pages": [
+    "A sun-bleached poster: 'DRY FEST. BRING WATER. BRING WIGS. BRING YOUR WEIRD.' A list of acts, one circled in gold: 'NEW! FROM THE TEMPLE, WITH LOVE: AURA FIST.'",
+    "Someone has written 'and now she runs the country, LOL' under it. Someone else has corrected 'she' to 'he'. A third hand wrote 'both, honey, it's drag'."
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-portrait-wall",
+   "x": 9,
+   "y": 24,
+   "kind": "object",
+   "name": "Portrait Wall",
+   "pages": [
+    "Painted portraits of queens, some with their faces blurred out by the artist: the ones who still had day jobs under the old Chancellor.",
+    "Since the purge ended, one by one, people have come in and painted their own faces back in. Three blurs left."
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-queens-wall",
+   "kind": "muse",
+   "x": 11,
+   "y": 23,
+   "name": "The Queens' Wall",
+   "sprite": "obj:stained-glass",
+   "pages": [
+    "A wall of gold paint pens and signatures: every queen and weirdo who has walked this hall since the purge ended. There's one blank tile, just your size."
+   ],
+   "prompt": {
+    "ask": "Sign the Queens' Wall: your drag (or weirdo) name, and your signature move.",
+    "fields": [
+     "name",
+     "description"
+    ]
+   },
+   "after": "A gold tile, signed by {who}: '{name}. Signature move: {description}' Someone has already drawn a crown on it.",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-velour",
+   "x": 5,
+   "y": 26,
+   "kind": "npc",
+   "name": "Velour Ashby (docent)",
+   "sprite": "npc:halfling:6:stage-costume",
+   "pages": [
+    "Welcome to the Hall of Queens! Velour Ashby, volunteer docent and part-time showgirl. Mostly showgirl.",
+    "The hall used to be the palace wardrobe. Robes for chancellors. Now it's robes for queens. Same sequins, more honest."
+   ],
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-dry-draught",
+   "x": 8,
+   "y": 27,
+   "kind": "warp",
+   "name": "Behind the Queens' Portraits",
+   "pages": [
+    "Behind the oldest portrait, a seam in the wall, and a draught that smells of old perfume and spilled juice.",
+    "Press the painted queen's beauty mark. The wall swings in."
+   ],
+   "warp": {
+    "floor": "L1",
+    "x": 8,
+    "y": 29
+   },
+   "sets": [
+    "entered-imm-dry-room"
+   ],
+   "hidden": {
+    "dc": 14,
+    "radius": 2,
+    "reveal": [
+     {
+      "x": 8,
+      "y": 28,
+      "ch": "+"
+     }
+    ],
+    "hint": "The oldest portrait's frame sways a little. A draught?"
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-dry-exit",
+   "x": 8,
+   "y": 29,
+   "kind": "warp",
+   "name": "Back Through the Portrait",
+   "pages": [
+    "You slip back through the wall into the Hall of Queens."
+   ],
+   "warp": {
+    "floor": "L1",
+    "x": 8,
+    "y": 27
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-tamarind",
+   "x": 3,
+   "y": 30,
+   "kind": "npc",
+   "name": "Mother Tamarind Vex",
+   "sprite": "npc:human:3:elder:stage-costume",
+   "pages": [
+    "Oh! A guest. Sit, sit. This was the Dry Room. Under the old Chancellor, this was the only stage in Joz.",
+    {
+     "text": "He purged drag. Raids, fines, beatings. So we performed in here, by one lamp, for twelve people. Juice only. Hence: the Dry Room.",
+     "sets": [
+      "lore-drag-purge"
+     ]
+    },
+    {
+     "text": "Once a year we'd slip out to the desert for Dry Fest, where no patrol bothered. That's where I first saw a scared temple boy put on lashes and become Aura Fist.",
+     "sets": [
+      "lore-dryfest"
+     ]
+    },
+    "Now he's Chancellor and I'm a museum. I keep the lamp lit anyway. Old habits. Good habits."
+   ],
+   "weekPages": {
+    "2": [
+     "Did you see the match? Darling, when I was young the only crowd we got was twelve people and a nervous goat. Look at us now."
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-dry-lamp",
+   "x": 6,
+   "y": 29,
+   "kind": "object",
+   "name": "The One Lamp",
+   "pages": [
+    "An oil lamp with a red glass shade, still lit. Under it, scratched into the bar: twelve names, and 'WE WERE HERE WHEN IT WASN'T SAFE.'"
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fc-whet",
+   "x": 59,
+   "y": 15,
+   "kind": "npc",
+   "name": "Yasmin Coalbright (Whet)",
+   "sprite": "npc:human:4:chef",
+   "pages": [
+    "Whet! Grilled skewers, flatbread, sauce that's legally a weapon. Brawlers eat first. Brawlers eat MOST."
+   ],
+   "meal": "Whet",
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fc-whet-menu",
+   "x": 57,
+   "y": 16,
+   "kind": "sign",
+   "name": "Whet Menu",
+   "sprite": "obj:menu-board",
+   "pages": [
+    "WHET: Immia Beach branch. Brawlers eat free on the Goolax meal plan. Wait at the counter for the special."
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fc-claras",
+   "x": 59,
+   "y": 18,
+   "kind": "npc",
+   "name": "Hamid Frothwell (Clara's Brews)",
+   "sprite": "npc:dwarf:6:apron",
+   "pages": [
+    "Clara's Brews, Joz branch. Mostly Jozzy Prayer here: no alcohol. The queens bring their own. I see nothing.",
+    "Nobody's met Clara here either. Rumour is she's a sandstorm."
+   ],
+   "meal": "Clara's Brews",
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fc-claras-menu",
+   "x": 57,
+   "y": 19,
+   "kind": "sign",
+   "name": "Clara's Brews Menu",
+   "sprite": "obj:menu-board",
+   "pages": [
+    "CLARA'S BREWS: Immia Beach branch. Brawlers eat free on the Goolax meal plan. Wait at the counter for the special."
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fc-goo",
+   "x": 59,
+   "y": 21,
+   "kind": "npc",
+   "name": "Blibbet Wobblesworth (Goo to Go)",
+   "sprite": "npc:goo:2",
+   "pages": [
+    "Goo to Go! Gelatine, jelly, and things that wobble. Shaped like a crown this week. Very topical. Very wobbly."
+   ],
+   "meal": "Goo to Go",
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fc-goo-menu",
+   "x": 57,
+   "y": 22,
+   "kind": "sign",
+   "name": "Goo to Go Menu",
+   "sprite": "obj:menu-board",
+   "pages": [
+    "GOO TO GO: Immia Beach branch. Brawlers eat free on the Goolax meal plan. Wait at the counter for the special."
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fc-freja",
+   "x": 59,
+   "y": 24,
+   "kind": "npc",
+   "name": "Sanne Hotcoal (Furious Freja)",
+   "sprite": "npc:orc:3:chef",
+   "pages": [
+    "FURIOUS FREJA. Spicy. No, spicier. The desert eats fire; so do we."
+   ],
+   "meal": "Furious Freja",
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fc-freja-menu",
+   "x": 57,
+   "y": 25,
+   "kind": "sign",
+   "name": "Furious Freja Menu",
+   "sprite": "obj:menu-board",
+   "pages": [
+    "FURIOUS FREJA: Immia Beach branch. Brawlers eat free on the Goolax meal plan. Wait at the counter for the special."
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fc-bananons",
+   "x": 59,
+   "y": 27,
+   "kind": "npc",
+   "name": "Tobiah Peelwright (Oh Banañons!)",
+   "sprite": "npc:halfling:2:apron",
+   "pages": [
+    "Oh Banañons! All the way from Banañon Town, via a very confused camel. Banañon split? Banañon split."
+   ],
+   "meal": "Oh Banañons!",
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fc-bananons-menu",
+   "x": 57,
+   "y": 28,
+   "kind": "sign",
+   "name": "Oh Banañons! Menu",
+   "sprite": "obj:menu-board",
+   "pages": [
+    "OH BANAÑONS!: Immia Beach branch. Brawlers eat free on the Goolax meal plan. Wait at the counter for the special."
+   ],
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-hob",
+   "x": 51,
+   "y": 15,
+   "kind": "npc",
+   "name": "Hob Haggleworth (Market trader)",
+   "sprite": "npc:halfling:4:market-apron",
+   "pages": [
+    "Hob Haggleworth, Market man, here to cheer our Stalling. And to sell a few pans. Mostly the pans.",
+    "You eat this spicy stuff? Brave. In the Market we've a saying: 'never fight hungry, never haggle full.'"
+   ],
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-greta",
+   "x": 52,
+   "y": 17,
+   "kind": "npc",
+   "name": "Greta Coinclatter (Market trader)",
+   "sprite": "npc:dwarf:5:market-apron",
+   "pages": [
+    "Greta Coinclatter. I sell scales. Weighing scales, not lizard ones. People ask. People always ask.",
+    "Since Lor'Fida took the Market, prices are up and tempers are up. Only thing that's down is my patience."
+   ],
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-esme",
+   "x": 55,
+   "y": 24,
+   "kind": "npc",
+   "name": "Big Esmé Holloway",
+   "sprite": "npc:orc:6:beachwear",
+   "pages": [
+    "Esmé. Big Esmé, to my friends, of which you are now one. Want a chip? Take a chip.",
+    "Did you see the Aura Fist parade? The whole canal was sequins. I cried into my lemonade. Then I drank it. Salty."
+   ],
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-dunebuns",
+   "x": 19,
+   "y": 34,
+   "kind": "npc",
+   "name": "Samira Dunebake (Dune Buns)",
+   "sprite": "npc:human:5:apron",
+   "pages": [
+    "Dune Buns! Hot from a sand oven. Honey, sesame, or date. The date one's the best. I'm biased. I'm the date one.",
+    "Market folk keep asking my prices. Then sighing. Then buying. Everyone in Joz sighs, then buys."
+   ],
+   "random": true,
+   "store": {
+    "title": "Dune Buns",
+    "stock": [
+     {
+      "name": "Honey Dune Bun",
+      "gp": 0.02,
+      "desc": "Sticky. Warm. Sand-oven crust.",
+      "type": "loot"
+     },
+     {
+      "name": "Date Dune Bun",
+      "gp": 0.03,
+      "desc": "The best one. Samira says so.",
+      "type": "loot"
+     },
+     {
+      "name": "Bag of Dune Buns (6)",
+      "gp": 0.1,
+      "desc": "Feeds a team, or one Kuso.",
+      "type": "loot"
+     }
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-jozzy",
+   "x": 26,
+   "y": 34,
+   "kind": "npc",
+   "name": "Nadim Saltcup (Jozzy Prayer Juice)",
+   "sprite": "npc:tiefling:2:apron",
+   "pages": [
+    "Jozzy Prayer Juice! Non-alcoholic, as the faith wants. Lime, mint, rose, a pinch of salt. Tastes like being forgiven.",
+    "The monks used to be my best customers. Now it's the queens. They order it with a straw and an opinion."
+   ],
+   "random": true,
+   "store": {
+    "title": "Jozzy Prayer Juice",
+    "stock": [
+     {
+      "name": "Jozzy Prayer (cup)",
+      "gp": 0.04,
+      "desc": "Lime, mint, rose, salt. Cold. Holy-ish.",
+      "type": "loot"
+     },
+     {
+      "name": "Jozzy Prayer (jug)",
+      "gp": 0.2,
+      "desc": "For the whole squad.",
+      "type": "loot"
+     }
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-hadra",
+   "x": 40,
+   "y": 34,
+   "kind": "npc",
+   "name": "Old Hadra Wellspring (Oasis Is As Oasis Does)",
+   "sprite": "npc:human:1:elder:market-apron",
+   "pages": [
+    "Oasis Is As Oasis Does. Fruit from the oases, off my wagon. I drove this wagon through three chancellors. The mule's on her fourth.",
+    "In my day you didn't say the name of a queen out loud in Joz. Now my grandkids sing them. Funny old world. Better, mind."
+   ],
+   "random": true,
+   "store": {
+    "title": "Oasis Is As Oasis Does",
+    "stock": [
+     {
+      "name": "Fresh Dates (bag)",
+      "gp": 0.05,
+      "desc": "Sticky, sweet, from the oases.",
+      "type": "loot"
+     },
+     {
+      "name": "Oasis Melon Slice",
+      "gp": 0.02,
+      "desc": "Cold from the wagon's ice box. Drips.",
+      "type": "loot"
+     },
+     {
+      "name": "Waterskin",
+      "gp": 0.2,
+      "desc": "Rule one in Joz: bring water.",
+      "srd": "Waterskin",
+      "type": "equipment"
+     }
+    ]
+   },
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-brannock",
+   "x": 47,
+   "y": 34,
+   "kind": "npc",
+   "name": "Brannock Pennywhistle (Market cart)",
+   "sprite": "npc:gnome:6:market-apron",
+   "pages": [
+    "Pennywhistle's Pots, from the Market! I'm only here for the match, and the pots. And the match.",
+    "Stalling's my cousin's lot. Well, my cousin's cousin's stall's lot. In the Market, everyone's a cousin if it gets you a discount."
+   ],
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-fan-stall",
+   "x": 7,
+   "y": 34,
+   "kind": "npc",
+   "name": "Leila Tamberlane (fan stall)",
+   "sprite": "npc:halfling:6:beachwear",
+   "pages": [
+    "Rafi's mum. He's selling fans inside, and I'm selling the ones he folded wrong. They're my favourites.",
+    "My eldest is a queen now. Out loud. On the bridge. I used to tell the neighbours she was 'in theatre'. Now I tell them she's in theatre AND fabulous."
+   ],
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-marlo",
+   "x": 26,
+   "y": 38,
+   "kind": "npc",
+   "name": "Marlo Brine (lifeguard)",
+   "sprite": "npc:fishfolk:5:beachwear",
+   "pages": [
+    "Lifeguard. Swim between the flags. Don't swim in the canal. Don't swim in the canal. I say it twice because people need it twice.",
+    "The canal's a liar. Calm as a cat, then it comes down from the hills all at once. I've pulled tourists out of the throne hall."
+   ],
+   "random": true,
+   "idle": "look",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-splorp",
+   "x": 46,
+   "y": 41,
+   "kind": "npc",
+   "name": "Splorp",
+   "sprite": "npc:goo:5",
+   "pages": [
+    "A wobbly goo person on a surfboard, on the sand, not on the water. 'Practising. Sea's scary. Board's nice.'",
+    "'Saw a queen surf a death drop off the pier once. Nailed it. I'm aiming lower. I'm aiming at standing.'"
+   ],
+   "random": true,
+   "idle": "bob",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-castlekid",
+   "x": 11,
+   "y": 40,
+   "kind": "npc",
+   "name": "Tomi Saltbridge (age 7)",
+   "sprite": "npc:dragonborn:5:child:beachwear",
+   "pages": [
+    "This is my sandcastle. It's the Chancellor's palace. That's the Chancellor. He's a shell. With lipstick.",
+    "When the tide comes it all goes away. That's okay. I just build a new one. Better."
+   ],
+   "random": true,
+   "idle": "fidget",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-sunbather",
+   "x": 55,
+   "y": 39,
+   "kind": "npc",
+   "name": "Dariush Goldtan",
+   "sprite": "npc:elf:6:beachwear",
+   "pages": [
+    "Shh. I'm tanning. I'm on my third coat. Of tan. Of oil. Of sand, frankly.",
+    "Everyone's so CHEERFUL these days. Parades, sequins. I came to the beach to be miserable in peace. It's impossible. I love it here."
+   ],
+   "random": true,
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-beach-flags",
+   "x": 30,
+   "y": 37,
+   "kind": "object",
+   "name": "Lifeguard Flags",
+   "pages": [
+    "Red and yellow flags. A chalkboard: 'SEA: CALM. CANAL: DO NOT. SUN: YES. QUEENS: 3 SPOTTED, ALL FABULOUS.'"
+   ],
+   "sprite": "obj:banner",
+   "floor": "L1"
+  },
+  {
+   "id": "imm-L1-jetty-crab",
+   "x": 15,
+   "y": 44,
+   "kind": "object",
+   "name": "End of the Jetty",
+   "pages": [
+    "A very small, very smug crab sits on the last plank, looking out to sea like it owns it. Maybe it does. This is Joz. Somebody owns everything."
+   ],
+   "sprite": "obj:lobster-pot",
+   "floor": "L1"
+  }
+ ],
+ "leyline": {
+  "floor": "L1",
+  "x": 3,
+  "y": 18,
+  "destinations": [
+   "galleria",
+   "cogskill"
+  ],
+  "fare": 0,
+  "fareNote": "free: Goolax away-day pass"
+ },
+ "fastTravel": [
+  {
+   "id": "imm-ft-arrivals",
+   "name": "Leyline Arrivals",
+   "floor": "L1",
+   "x": 4,
+   "y": 18
+  },
+  {
+   "id": "imm-ft-plinth",
+   "name": "The Empty Plinth",
+   "floor": "L1",
+   "x": 24,
+   "y": 12
+  },
+  {
+   "id": "imm-ft-grapfrap",
+   "name": "GrapFrap Drag Emporium",
+   "floor": "L1",
+   "x": 26,
+   "y": 11
+  },
+  {
+   "id": "imm-ft-queens",
+   "name": "Hall of Queens",
+   "floor": "L1",
+   "x": 7,
+   "y": 25
+  },
+  {
+   "id": "imm-ft-food",
+   "name": "Food Court",
+   "floor": "L1",
+   "x": 52,
+   "y": 19
+  },
+  {
+   "id": "imm-ft-beach",
+   "name": "The Beach",
+   "floor": "L1",
+   "x": 28,
+   "y": 38
+  }
+ ],
+ "secretAreas": [
+  {
+   "id": "imm-dry-room",
+   "floor": "L1",
+   "rects": [
+    {
+     "x": 1,
+     "y": 29,
+     "w": 11,
+     "h": 2
+    }
+   ],
+   "unlock": {
+    "any": [
+     {
+      "flags": [
+       "noticed-imm-L1-dry-draught"
+      ]
+     },
+     {
+      "flags": [
+       "entered-imm-dry-room"
+      ]
+     }
+    ]
+   },
+   "look": "wall"
+  }
+ ],
+ "music": {
+  "default": "assets/audio/music/immia-main.wav",
+  "zones": [
+   {
+    "floor": "L1",
+    "x": 1,
+    "y": 29,
+    "w": 11,
+    "h": 2,
+    "src": "assets/audio/music/ducts-and-secrets.wav"
+   },
+   {
+    "floor": "L1",
+    "x": 49,
+    "y": 14,
+    "w": 14,
+    "h": 17,
+    "src": "assets/audio/music/galleria-foodcourt.wav"
+   }
+  ]
+ },
+ "props": [
+  {
+   "floor": "L1",
+   "x": 22,
+   "y": 2,
+   "sprite": "obj:drag-mirror"
+  },
+  {
+   "floor": "L1",
+   "x": 24,
+   "y": 2,
+   "sprite": "obj:drag-mirror"
+  },
+  {
+   "floor": "L1",
+   "x": 27,
+   "y": 2,
+   "sprite": "obj:drag-mirror"
+  },
+  {
+   "floor": "L1",
+   "x": 29,
+   "y": 2,
+   "sprite": "obj:spotlight"
+  },
+  {
+   "floor": "L1",
+   "x": 21,
+   "y": 1,
+   "sprite": "obj:spotlight"
+  },
+  {
+   "floor": "L1",
+   "x": 25,
+   "y": 7,
+   "sprite": "obj:sequin-rack"
+  },
+  {
+   "floor": "L1",
+   "x": 28,
+   "y": 7,
+   "sprite": "obj:feather-boa"
+  },
+  {
+   "floor": "L1",
+   "x": 22,
+   "y": 6,
+   "sprite": "obj:mannequin"
+  },
+  {
+   "floor": "L1",
+   "x": 29,
+   "y": 7,
+   "sprite": "obj:dressing-table"
+  },
+  {
+   "floor": "L1",
+   "x": 26,
+   "y": 5,
+   "sprite": "obj:costume-rack"
+  },
+  {
+   "floor": "L1",
+   "x": 3,
+   "y": 6,
+   "sprite": "obj:candle-stand"
+  },
+  {
+   "floor": "L1",
+   "x": 7,
+   "y": 6,
+   "sprite": "obj:incense-burner"
+  },
+  {
+   "floor": "L1",
+   "x": 8,
+   "y": 2,
+   "sprite": "obj:prayer-flags"
+  },
+  {
+   "floor": "L1",
+   "x": 4,
+   "y": 7,
+   "sprite": "obj:holy-water-cask"
+  },
+  {
+   "floor": "L1",
+   "x": 6,
+   "y": 7,
+   "sprite": "obj:prayer-bell"
+  },
+  {
+   "floor": "L1",
+   "x": 14,
+   "y": 4,
+   "sprite": "obj:towel-rack"
+  },
+  {
+   "floor": "L1",
+   "x": 16,
+   "y": 7,
+   "sprite": "obj:beach-umbrella"
+  },
+  {
+   "floor": "L1",
+   "x": 12,
+   "y": 4,
+   "sprite": "obj:surf-board"
+  },
+  {
+   "floor": "L1",
+   "x": 19,
+   "y": 7,
+   "sprite": "obj:mask-stand"
+  },
+  {
+   "floor": "L1",
+   "x": 37,
+   "y": 7,
+   "sprite": "obj:potion-rack"
+  },
+  {
+   "floor": "L1",
+   "x": 42,
+   "y": 4,
+   "sprite": "obj:cauldron"
+  },
+  {
+   "floor": "L1",
+   "x": 39,
+   "y": 7,
+   "sprite": "obj:potion-rack"
+  },
+  {
+   "floor": "L1",
+   "x": 47,
+   "y": 6,
+   "sprite": "obj:silver-case"
+  },
+  {
+   "floor": "L1",
+   "x": 51,
+   "y": 7,
+   "sprite": "obj:crystal-cluster"
+  },
+  {
+   "floor": "L1",
+   "x": 52,
+   "y": 4,
+   "sprite": "obj:scale"
+  },
+  {
+   "floor": "L1",
+   "x": 55,
+   "y": 7,
+   "sprite": "obj:fruit-stand"
+  },
+  {
+   "floor": "L1",
+   "x": 58,
+   "y": 7,
+   "sprite": "obj:produce-bins"
+  },
+  {
+   "floor": "L1",
+   "x": 2,
+   "y": 15,
+   "sprite": "obj:info-screen"
+  },
+  {
+   "floor": "L1",
+   "x": 11,
+   "y": 20,
+   "sprite": "obj:pot-plant-big"
+  },
+  {
+   "floor": "L1",
+   "x": 10,
+   "y": 15,
+   "sprite": "obj:banner"
+  },
+  {
+   "floor": "L1",
+   "x": 3,
+   "y": 24,
+   "sprite": "obj:spotlight"
+  },
+  {
+   "floor": "L1",
+   "x": 2,
+   "y": 27,
+   "sprite": "obj:costume-rack"
+  },
+  {
+   "floor": "L1",
+   "x": 10,
+   "y": 27,
+   "sprite": "obj:dressing-table"
+  },
+  {
+   "floor": "L1",
+   "x": 4,
+   "y": 29,
+   "sprite": "obj:jukebox"
+  },
+  {
+   "floor": "L1",
+   "x": 10,
+   "y": 30,
+   "sprite": "obj:candle-stand"
+  },
+  {
+   "floor": "L1",
+   "x": 9,
+   "y": 29,
+   "sprite": "obj:drag-mirror"
+  },
+  {
+   "floor": "L1",
+   "x": 20,
+   "y": 18,
+   "sprite": "obj:throne"
+  },
+  {
+   "floor": "L1",
+   "x": 44,
+   "y": 18,
+   "sprite": "obj:throne"
+  },
+  {
+   "floor": "L1",
+   "x": 21,
+   "y": 16,
+   "sprite": "obj:gilded-dais"
+  },
+  {
+   "floor": "L1",
+   "x": 43,
+   "y": 16,
+   "sprite": "obj:gilded-dais"
+  },
+  {
+   "floor": "L1",
+   "x": 27,
+   "y": 21,
+   "sprite": "obj:banner"
+  },
+  {
+   "floor": "L1",
+   "x": 37,
+   "y": 21,
+   "sprite": "obj:banner"
+  },
+  {
+   "floor": "L1",
+   "x": 18,
+   "y": 16,
+   "sprite": "obj:fire-brazier"
+  },
+  {
+   "floor": "L1",
+   "x": 46,
+   "y": 16,
+   "sprite": "obj:fire-brazier"
+  },
+  {
+   "floor": "L1",
+   "x": 18,
+   "y": 27,
+   "sprite": "obj:fire-brazier"
+  },
+  {
+   "floor": "L1",
+   "x": 46,
+   "y": 27,
+   "sprite": "obj:fire-brazier"
+  },
+  {
+   "floor": "L1",
+   "x": 29,
+   "y": 16,
+   "sprite": "obj:gondola"
+  },
+  {
+   "floor": "L1",
+   "x": 61,
+   "y": 15,
+   "sprite": "obj:grill"
+  },
+  {
+   "floor": "L1",
+   "x": 61,
+   "y": 18,
+   "sprite": "obj:tap"
+  },
+  {
+   "floor": "L1",
+   "x": 61,
+   "y": 21,
+   "sprite": "obj:fridge"
+  },
+  {
+   "floor": "L1",
+   "x": 61,
+   "y": 24,
+   "sprite": "obj:stove"
+  },
+  {
+   "floor": "L1",
+   "x": 61,
+   "y": 27,
+   "sprite": "obj:fridge"
+  },
+  {
+   "floor": "L1",
+   "x": 60,
+   "y": 16,
+   "sprite": "obj:menu-board"
+  },
+  {
+   "floor": "L1",
+   "x": 49,
+   "y": 22,
+   "sprite": "obj:trash-bin"
+  },
+  {
+   "floor": "L1",
+   "x": 55,
+   "y": 28,
+   "sprite": "obj:pot-plant-big"
+  },
+  {
+   "floor": "L1",
+   "x": 12,
+   "y": 11,
+   "sprite": "obj:lamp-post"
+  },
+  {
+   "floor": "L1",
+   "x": 29,
+   "y": 12,
+   "sprite": "obj:lamp-post"
+  },
+  {
+   "floor": "L1",
+   "x": 38,
+   "y": 10,
+   "sprite": "obj:lamp-post"
+  },
+  {
+   "floor": "L1",
+   "x": 60,
+   "y": 12,
+   "sprite": "obj:lamp-post"
+  },
+  {
+   "floor": "L1",
+   "x": 18,
+   "y": 32,
+   "sprite": "obj:market-stall"
+  },
+  {
+   "floor": "L1",
+   "x": 25,
+   "y": 32,
+   "sprite": "obj:market-stall"
+  },
+  {
+   "floor": "L1",
+   "x": 39,
+   "y": 32,
+   "sprite": "obj:market-stall"
+  },
+  {
+   "floor": "L1",
+   "x": 46,
+   "y": 32,
+   "sprite": "obj:market-stall"
+  },
+  {
+   "floor": "L1",
+   "x": 6,
+   "y": 32,
+   "sprite": "obj:market-stall"
+  },
+  {
+   "floor": "L1",
+   "x": 20,
+   "y": 35,
+   "sprite": "obj:bread-rack"
+  },
+  {
+   "floor": "L1",
+   "x": 27,
+   "y": 35,
+   "sprite": "obj:cocktail-cart"
+  },
+  {
+   "floor": "L1",
+   "x": 42,
+   "y": 35,
+   "sprite": "obj:fruit-stand"
+  },
+  {
+   "floor": "L1",
+   "x": 48,
+   "y": 35,
+   "sprite": "obj:barrel"
+  },
+  {
+   "floor": "L1",
+   "x": 8,
+   "y": 35,
+   "sprite": "obj:balloon"
+  },
+  {
+   "floor": "L1",
+   "x": 36,
+   "y": 36,
+   "sprite": "obj:bunting"
+  },
+  {
+   "floor": "L1",
+   "x": 12,
+   "y": 36,
+   "sprite": "obj:bunting"
+  },
+  {
+   "floor": "L1",
+   "x": 52,
+   "y": 36,
+   "sprite": "obj:bunting"
+  },
+  {
+   "floor": "L1",
+   "x": 6,
+   "y": 38,
+   "sprite": "obj:beach-umbrella"
+  },
+  {
+   "floor": "L1",
+   "x": 19,
+   "y": 39,
+   "sprite": "obj:beach-umbrella"
+  },
+  {
+   "floor": "L1",
+   "x": 43,
+   "y": 38,
+   "sprite": "obj:beach-umbrella"
+  },
+  {
+   "floor": "L1",
+   "x": 53,
+   "y": 39,
+   "sprite": "obj:beach-umbrella"
+  },
+  {
+   "floor": "L1",
+   "x": 24,
+   "y": 37,
+   "sprite": "obj:lifeguard-chair"
+  },
+  {
+   "floor": "L1",
+   "x": 10,
+   "y": 41,
+   "sprite": "obj:sandcastle"
+  },
+  {
+   "floor": "L1",
+   "x": 13,
+   "y": 39,
+   "sprite": "obj:deckchair"
+  },
+  {
+   "floor": "L1",
+   "x": 49,
+   "y": 40,
+   "sprite": "obj:deckchair"
+  },
+  {
+   "floor": "L1",
+   "x": 58,
+   "y": 38,
+   "sprite": "obj:deckchair"
+  },
+  {
+   "floor": "L1",
+   "x": 38,
+   "y": 41,
+   "sprite": "obj:beach-ball"
+  },
+  {
+   "floor": "L1",
+   "x": 47,
+   "y": 41,
+   "sprite": "obj:surf-board"
+  },
+  {
+   "floor": "L1",
+   "x": 60,
+   "y": 40,
+   "sprite": "obj:seashell-display"
+  }
+ ],
+ "trees": [
+  {
+   "floor": "L1",
+   "x": 0,
+   "y": 32,
+   "type": "palm"
+  },
+  {
+   "floor": "L1",
+   "x": 0,
+   "y": 33,
+   "type": "palm"
+  },
+  {
+   "floor": "L1",
+   "x": 63,
+   "y": 32,
+   "type": "palm"
+  },
+  {
+   "floor": "L1",
+   "x": 63,
+   "y": 33,
+   "type": "palm"
+  },
+  {
+   "floor": "L1",
+   "x": 0,
+   "y": 41,
+   "type": "palm"
+  },
+  {
+   "floor": "L1",
+   "x": 63,
+   "y": 41,
+   "type": "palm"
+  }
+ ],
+ "ambient": {
+  "barks": [
+   {
+    "npc": "imm-L1-ley-pim",
+    "lines": [
+     "Shake out your shoes!",
+     "Away-day pass: Goolax pays!",
+     "Next tube in... whenever you like."
+    ],
+    "weekLines": {
+     "2": [
+      "Back for more? Joz grows on you. Like sand."
+     ]
+    }
+   },
+   {
+    "npc": "imm-L1-guide-zahir",
+    "lines": [
+     "Heritage Walk! Seven plaques! One pin!",
+     "Ask me about the empty plinth!",
+     "Mind the sand, mind the sun, mind the queens."
+    ]
+   },
+   {
+    "npc": "imm-L1-kassim",
+    "lines": [
+     "No running on the bridge.",
+     "No death drops on the marble. Please.",
+     "Ten years in this hall."
+    ]
+   },
+   {
+    "npc": "imm-L1-rafi",
+    "lines": [
+     "Fans! Two copper!",
+     "Queen fan or crab fan?",
+     "I folded this one perfect!"
+    ]
+   },
+   {
+    "npc": "imm-L1-sahara",
+    "lines": [
+     "Lashes, darling. You need lashes.",
+     "Heels half off this week!",
+     "Strut, don't shuffle."
+    ]
+   },
+   {
+    "npc": "imm-L1-pashmina",
+    "lines": [
+     "Psst. Tea.",
+     "Spin for me, sweetie.",
+     "Mm. Not bad. Not GOOD. Not bad."
+    ]
+   },
+   {
+    "npc": "imm-L1-ascetus",
+    "lines": [
+     "Need less, have more.",
+     "Peace, traveller.",
+     "The empty shelf is our best seller."
+    ]
+   },
+   {
+    "npc": "imm-L1-wrenna",
+    "lines": [
+     "*hums a show tune, stops, sweeps harder*",
+     "Peace. And... sparkle? Peace."
+    ]
+   },
+   {
+    "npc": "imm-L1-hob",
+    "lines": [
+     "Pans! Market pans!",
+     "Never fight hungry.",
+     "GO STALLING!"
+    ]
+   },
+   {
+    "npc": "imm-L1-marlo",
+    "lines": [
+     "Swim between the flags!",
+     "NOT the canal.",
+     "Hydrate!"
+    ]
+   },
+   {
+    "npc": "imm-L1-tilly",
+    "lines": [
+     "Those lamps are OURS!",
+     "Best holiday ever!",
+     "Has anyone seen my hat?"
+    ]
+   },
+   {
+    "npc": "imm-L1-esme",
+    "lines": [
+     "Want a chip?",
+     "Sequins EVERYWHERE these days.",
+     "Big Esmé says hi."
+    ]
+   },
+   {
+    "npc": "imm-L1-velour",
+    "lines": [
+     "Fun facts! Free!",
+     "The Hall of Queens is open!",
+     "Sign the wall, darling!"
+    ]
+   },
+   {
+    "npc": "imm-L1-noor",
+    "lines": [
+     "Sit, sit.",
+     "I knew this bench when it was a palace bench.",
+     "Habibi. Come."
+    ]
+   }
+  ],
+  "chats": [
+   {
+    "id": "imm-chat-bench",
+    "floor": "L1",
+    "x": 6,
+    "y": 11,
+    "radius": 3,
+    "variants": [
+     {
+      "lines": [
+       {
+        "who": "imm-L1-noor",
+        "say": "Kassim! You were a palace guard. Did the old Chancellor ever smile?"
+       },
+       {
+        "who": "imm-L1-kassim",
+        "say": "Once. At a sandstorm. I think he liked that it ruined a parade."
+       },
+       {
+        "who": "imm-L1-noor",
+        "say": "And now we have parades every week. Look at that. The sand lost."
+       }
+      ]
+     },
+     {
+      "lines": [
+       {
+        "who": "imm-L1-noor",
+        "say": "Rafi! How many fans today?"
+       },
+       {
+        "who": "imm-L1-rafi",
+        "say": "Eleven! And one to a monk! He said it was for the heat. It had a queen on it."
+       },
+       {
+        "who": "imm-L1-noor",
+        "say": "Good boy. Faith and fashion, both keep you cool."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "imm-chat-halo",
+    "floor": "L1",
+    "x": 6,
+    "y": 5,
+    "radius": 3,
+    "variants": [
+     {
+      "lines": [
+       {
+        "who": "imm-L1-ascetus",
+        "say": "Sister Wrenna. Were you humming?"
+       },
+       {
+        "who": "imm-L1-wrenna",
+        "say": "Praying, Brother. Very... rhythmically."
+       },
+       {
+        "who": "imm-L1-ascetus",
+        "say": "Hm. Pray quieter. And less in the key of GrapFrap."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "imm-chat-grapfrap",
+    "floor": "L1",
+    "x": 26,
+    "y": 6,
+    "radius": 3,
+    "variants": [
+     {
+      "lines": [
+       {
+        "who": "imm-L1-sahara",
+        "say": "Mirage, the girls want MORE hairspray for rehearsal."
+       },
+       {
+        "who": "imm-L1-mirage",
+        "say": "More? Darling, they're holding formation with it. It's structural."
+       },
+       {
+        "who": "imm-L1-pashmina",
+        "say": "If they stand any closer they'll fuse. Then what, one big queen?"
+       },
+       {
+        "who": "imm-L1-mirage",
+        "say": "Then we'd finally win something. Hush, they'll hear."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "imm-chat-market",
+    "floor": "L1",
+    "x": 52,
+    "y": 16,
+    "radius": 3,
+    "variants": [
+     {
+      "lines": [
+       {
+        "who": "imm-L1-hob",
+        "say": "Greta, eight copper for a bun. EIGHT. At home that's a whole lunch."
+       },
+       {
+        "who": "imm-L1-greta",
+        "say": "At home it USED to be. Ever since Lor'Fida took over, everything costs a cousin."
+       },
+       {
+        "who": "imm-L1-hob",
+        "say": "Then our Stalling win here and we eat for free. That's my plan."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "imm-chat-beach",
+    "floor": "L1",
+    "x": 27,
+    "y": 39,
+    "radius": 4,
+    "variants": [
+     {
+      "lines": [
+       {
+        "who": "imm-L1-marlo",
+        "say": "Splorp. The surfboard goes IN the water."
+       },
+       {
+        "who": {
+         "x": 46,
+         "y": 40,
+         "name": "Splorp",
+         "sprite": "npc:goo:5"
+        },
+        "say": "Says you. Sand doesn't drown people."
+       },
+       {
+        "who": "imm-L1-marlo",
+        "say": "...Fair. Carry on."
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "gossip": [
+   {
+    "npc": "imm-L1-noor",
+    "lures": [
+     "Psst. Sit by Auntie. I know things.",
+     "Habibi! You look like someone who wants news."
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-broad-1",
+      "team": "team-broad",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Those GrapFrap queens never fight alone. Stand them close together and they're hard to hit, and they hit harder.",
+       "Split them up, I say. Same as my sons at dinner."
+      ],
+      "sets": [
+       "gossip-broad"
+      ]
+     },
+     {
+      "id": "imm-gossip-grapfrap-1",
+      "team": "cael",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "You know whose shop GrapFrap is? Cael's. The Chancellor's. 'Grap and Frap', his company. There's even one over in Banañon Town.",
+       "He ran it from Ban'ton when Joz wasn't safe for him. Diplomatic papers and a wig budget, my nephew says."
+      ],
+      "sets": [
+       "lore-grapfrap"
+      ]
+     }
+    ]
+   },
+   {
+    "npc": "imm-L1-kassim",
+    "lures": [
+     "Security sees everything. Security also talks, apparently.",
+     "Psst. Off the record."
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-cael-1",
+      "team": "cael",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "I guarded the old Chancellor ten years. Chard. His boy grew up in the temple wing: shaved head, prayer beads, very quiet.",
+       "That boy is Cael. Chard's own son. The man who banned drag raised the queen who runs Joz now. I still can't say it with a straight face."
+      ],
+      "sets": [
+       "lore-cael-roots"
+      ]
+     },
+     {
+      "id": "imm-gossip-false-1",
+      "team": "team-broad",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Heard Hex Deluxxx got banned from the canal for a death drop off the bridge, mid-parade. Banned for life. Or for a week. Depends who's telling it."
+      ]
+     }
+    ]
+   },
+   {
+    "npc": "imm-L1-wrenna",
+    "lures": [
+     "Can you keep a secret? It's a holy one.",
+     "Sister Wrenna has a rumour. Don't tell the brothers."
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-magaeas-1",
+      "team": "nation-lorfida",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "The Alt Righteous pray to Magaeas, who was betrayed long ago, they say by Selune herself. We go without things so Magaeas isn't forgotten.",
+       "The old texts say Magaeas isn't gone. Just sleeping. Nearer than anyone thinks. Brother Ascetus says I read too much."
+      ],
+      "sets": [
+       "lore-magaeas"
+      ]
+     },
+     {
+      "id": "imm-gossip-cael-2",
+      "team": "cael",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Cael was a novice here, like me. Brother Ascetus taught him to sweep. He still sends the shrine a crate of dates every Seluday. No note. Just dates."
+      ],
+      "sets": [
+       "lore-cael-roots"
+      ]
+     }
+    ]
+   },
+   {
+    "npc": "imm-L1-pashmina",
+    "lures": [
+     "Come here, gorgeous, Auntie Pashmina's got TEA.",
+     "Psst. You want the tea or not?"
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-broad-2",
+      "team": "team-broad",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "The girls' weapons? Cherryanne's fan cracks like a whip. Korq's nails are literally nails. Dupreemiana's powder puffs are... not just powder.",
+       "Hex kicks in steel heels, and Betch has chucks AND a breastplate that punches. You did not hear this from me. You heard it from my lashes."
+      ],
+      "sets": [
+       "gossip-broad-weapons"
+      ]
+     },
+     {
+      "id": "imm-gossip-broad-3",
+      "team": "team-broad",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "The big finish? They each take a beat getting into formation, then they hit you all at once. More of them in line, the bigger it lands.",
+       "Knock one out of line and the whole number falls apart. Rude, but effective."
+      ],
+      "sets": [
+       "gossip-broad-finale"
+      ]
+     }
+    ]
+   },
+   {
+    "npc": "imm-L1-mirage",
+    "lures": [
+     "Come closer, darling. My hearing's perfect; my whisper isn't.",
+     "Little one. A word."
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-purge-1",
+      "team": "nation-lorfida",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Under Chard, drag was a crime here. Raids, fines, worse. We sold 'theatre supplies' and painted the windows black.",
+       "There was a little room where we still performed. Someone ought to show you the Hall of Queens. Look behind the oldest portrait."
+      ],
+      "sets": [
+       "lore-drag-purge"
+      ]
+     }
+    ]
+   },
+   {
+    "npc": "imm-L1-velour",
+    "lures": [
+     "Docent tip! Free! Ask me!",
+     "Ooh, I've got a fun fact. A REAL one."
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-dryfest-1",
+      "team": "cael",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Dry Fest started as a dare: a drag night so far out in the desert the temple patrols couldn't be bothered to walk there.",
+       "Aura Fist's first night, he did the whole set in a monk's robe and then ripped it off. Gold underneath. People still talk about the rip."
+      ],
+      "sets": [
+       "lore-dryfest"
+      ]
+     },
+     {
+      "id": "imm-gossip-grapfrap-2",
+      "team": "cael",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "GrapFrap is the Joz flagship of Grap and Frap, the Chancellor's own business. His first shop was in Ban'ton. He came home when it was safe."
+      ],
+      "sets": [
+       "lore-grapfrap"
+      ]
+     }
+    ]
+   },
+   {
+    "npc": "imm-L1-hob",
+    "lures": [
+     "Market man knows things. Market man sells things. Today: things.",
+     "Psst. Free rumour with every pan. No pan needed."
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-stall-1",
+      "team": "team-stalling",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Our Stalling fight from behind their stalls. Every round more little hawkers pop out: one tap and they're down, but they keep coming.",
+       "Smash the stalls and the hawkers stop. Leave them alone and they'll nail the stalls back up. Hit the source."
+      ],
+      "sets": [
+       "gossip-stalling"
+      ]
+     },
+     {
+      "id": "imm-gossip-stall-2",
+      "team": "team-stalling",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Listen for the stall bell. Ding-ding: more hawkers on the way. Every Market kid knows that bell. Means 'customers' at home. Means trouble in a fight."
+      ],
+      "sets": [
+       "gossip-stalling-bell"
+      ]
+     }
+    ]
+   },
+   {
+    "npc": "imm-L1-marisol",
+    "lures": [
+     "Psst. Shady Beaches sells rumours too. First one's free.",
+     "Lean in. Hats are a great cover."
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-stall-3",
+      "team": "team-stalling",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Stalling WANT this one. Lor'Fida took the Market a while back and Joz prices went through the roof. Their stallholders still grumble about it.",
+       "Winning in Joz, on Lor'Fida's own floor? They'd frame that."
+      ],
+      "sets": [
+       "gossip-stalling-grudge"
+      ]
+     }
+    ]
+   },
+   {
+    "npc": "imm-L1-greta",
+    "lures": [
+     "Scales never lie. Neither do I. Mostly.",
+     "Greta's got news. Weighs about a pound."
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-false-2",
+      "team": "team-stalling",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Stalling keep a spare stall folded up in a hat. Pull it out mid-fight. I've seen the hat. Haven't seen it work."
+      ]
+     }
+    ]
+   },
+   {
+    "npc": "imm-L1-marlo",
+    "lures": [
+     "Lifeguard tip. Free. Life-saving.",
+     "Hey. Come here. Safety talk."
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-flood-1",
+      "team": "",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Match in the throne hall? Watch the riverbed. When the sudden guest comes it fills fast, and it doesn't care who's winning.",
+       "Get up high when you hear it rumble. The daises are high. That's all I'm saying."
+      ]
+     }
+    ]
+   },
+   {
+    "npc": "imm-L1-tilly",
+    "lures": [
+     "Ooh, fellow tourist! Swap rumours?",
+     "I heard something! I think it's true! I'm 60% sure!"
+    ],
+    "items": [
+     {
+      "id": "imm-gossip-trade-1",
+      "team": "nation-lorfida",
+      "requires": {
+       "minWeek": 1
+      },
+      "pages": [
+       "Did you know Lor'Fida and Toggleton are trade buddies now? Joz crystals and instructors go one way, our crystec comes the other. That's why the lamps."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

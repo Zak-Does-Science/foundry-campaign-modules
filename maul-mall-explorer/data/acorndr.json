@@ -1,0 +1,2307 @@
+{
+ "_about": "Acorndr, Th'Tief's social media, in the MAUL Mall Explorer (scripts/acorndr.js, SPEC 32). Player-facing: no GM secrets, no lines for player characters (Violet Ray Sky's account is run by her team), no unmet local names without `requires.met`. Kinds: celeb | judge | leader | brand | local. Anyone can be followed from anywhere EXCEPT accounts with `npc` (mall locals): those show in Discover once you've met them and can only be followed or friended while your token stands within 2 tiles of them. Friends see `friends: true` posts and a `friends: true` hangout. Posts show from their `week` on (the viewer's week: the mall scene's table, else their own). `followers` = number or array by week 0-6. `acorns` = starting count; a player's own acorn adds one. Post ids must stay stable (they key each player's acorns and read marks). Add new posts with new ids; results posts go on @MALLBRAWL each week after the session. Comments: a post's `comments` = [{by: <profileId>, text, week?, requires?}] (max 4 shown; write them about what the post says, in the commenter's voice). Comments on PLAYERS' posts go in the top-level `comments` map: {\"<playerPostId>\": [{by, text}]}, written between sessions after reading the posts (GM tools > Export character logs, or tools/read_world_logs.mjs).",
+ "profiles": [
+  {
+   "id": "violet-ray-sky",
+   "handle": "VioletRaySky",
+   "name": "Violet Ray Sky",
+   "kind": "celeb",
+   "verified": true,
+   "avatar": {
+    "initials": "VR",
+    "color": "#7a4fd1"
+   },
+   "home": "Tritone, Wist",
+   "runBy": "Team VRS",
+   "bio": "Bard. Tritone, Wist. This account is run by her team; posts signed —Pim are from her tour manager.",
+   "followers": [
+    2140000,
+    2310000,
+    2470000,
+    2600000,
+    2710000,
+    2790000,
+    2900000
+   ],
+   "posts": [
+    {
+     "id": "violet-ray-sky-w0a",
+     "week": 0,
+     "text": "Tritone, the night the Fiefdoms left. Four million views of a square full of people singing back. She heard every one of you. —Pim",
+     "acorns": 412000,
+     "comments": [
+      {
+       "by": "free-tritone",
+       "text": "We were in that square. Some of us are still hoarse."
+      },
+      {
+       "by": "thessaly",
+       "text": "My sister was there, friend, third row back from the fountain. She says she sang the wrong words and nobody minded."
+      },
+      {
+       "by": "poppy",
+       "text": "I've watched this FORTY times and I still get the bit at 2:10 where everyone goes quiet before the chorus??"
+      }
+     ]
+    },
+    {
+     "id": "violet-ray-sky-w0b",
+     "week": 0,
+     "text": "Lunch between soundchecks. Yes, it's a sandwich. No, we don't know why it has forty thousand acorns either. —Pim",
+     "acorns": 40112,
+     "comments": [
+      {
+       "by": "poppy",
+       "text": "Forty THOUSAND acorns. For a SANDWICH. I'm not upset. It's a very good-looking sandwich."
+      },
+      {
+       "by": "zuzu",
+       "text": "Crust-to-filling ratio: four acorns. The lettuce is doing a lot of the work here. Who made it? Asking professionally."
+      },
+      {
+       "by": "bubbaneezer-scrooj",
+       "text": "Was it free?"
+      }
+     ]
+    },
+    {
+     "id": "violet-ray-sky-w1a",
+     "week": 1,
+     "text": "Thoughtsday: a free show on the steps of the old customs house in Tritone. Bring water. Bring a neighbour. The doors are just the square. —Pim",
+     "acorns": 88300
+    },
+    {
+     "id": "violet-ray-sky-w1b",
+     "week": 1,
+     "text": "To everyone asking: no, she won't cover a mall jingle. Yes, we've heard the one about the pie. Eleven times, from one very determined teenager. —Pim",
+     "acorns": 61020,
+     "comments": [
+      {
+       "by": "oskar",
+       "text": "the teenager is me. hi. sorry. not sorry. the pie one would be SO good though"
+      },
+      {
+       "by": "seraphina",
+       "text": "Good. Whatever wrote those jingles has never once had to mean a note."
+      }
+     ]
+    },
+    {
+     "id": "violet-ray-sky-w2a",
+     "week": 2,
+     "text": "Seventy-one letters from Ban'ton this week, most of them from people who left Wist young. She's reading every one. It's going slower than she'd like. —Pim",
+     "acorns": 97400
+    },
+    {
+     "id": "violet-ray-sky-w3a",
+     "week": 3,
+     "text": "A new song tonight, the first one written since. It doesn't have a name yet. The crowd keeps giving it one. —Pim",
+     "acorns": 133800
+    },
+    {
+     "id": "violet-ray-sky-w6a",
+     "week": 6,
+     "text": "Selunemas in Tritone. The square is lit and we're closing the account for the night. Ring someone. —Pim",
+     "acorns": 151000
+    }
+   ]
+  },
+  {
+   "id": "aura-fist",
+   "handle": "AuraFist",
+   "name": "Aura Fist",
+   "kind": "celeb",
+   "verified": true,
+   "avatar": {
+    "initials": "AF",
+    "color": "#2f9e5b"
+   },
+   "home": "Lor'Fida",
+   "bio": "Pop. Drag. Salty Surprise survivor. Out of drag, Cael. Monastery auditions open: bring heels you can run in.",
+   "followers": [
+    3400000,
+    3420000,
+    3460000,
+    3500000,
+    3550000,
+    3600000,
+    3700000
+   ],
+   "posts": [
+    {
+     "id": "aura-fist-w0a",
+     "week": 0,
+     "text": "New single out Seluday. It's called 'Lip Service'. I wrote the bridge in a bathtub at sea, and you can hear the waves if you know where to listen.",
+     "acorns": 205000
+    },
+    {
+     "id": "aura-fist-w0b",
+     "week": 0,
+     "text": "Reposting a dumpling from some Cogskill food blogger. I don't know her, I don't know the chef, I just think we should all be a little more like this dumpling.",
+     "acorns": 51200,
+     "comments": [
+      {
+       "by": "zuzu",
+       "text": "THAT'S MY DUMPLING. Hi. I'm the blogger. It was a Carna pork-and-chive, four acorns, and I've framed this."
+      },
+      {
+       "by": "aura-sis",
+       "text": "Mother has never once reposted MY dumplings."
+      }
+     ]
+    },
+    {
+     "id": "aura-fist-w1a",
+     "week": 1,
+     "text": "First week of term at the monastery: eleven new daughters, nine wigs, and one cartwheel that ended in the harbour. She came up still lip-syncing, so she passes.",
+     "acorns": 77700
+    },
+    {
+     "id": "aura-fist-w1b",
+     "week": 1,
+     "text": "People keep asking if I'll judge MALL BRAWL. Darling, I've done my arena. Mine had a mermaid in it and she cheated.",
+     "acorns": 64010,
+     "comments": [
+      {
+       "by": "delilah-clocks",
+       "text": "Darling, there's a spare chair in our box and a magnificent view of people falling over. Think about it."
+      },
+      {
+       "by": "abby-storm-yimble",
+       "text": "If she turns up at a MALL BRAWL, you point and I'll do the rest."
+      }
+     ]
+    },
+    {
+     "id": "aura-fist-w2a",
+     "week": 2,
+     "text": "Coral collar update: I still don't know who sent it. If it was you, it's the best thing I own and I've worn it to two funerals.",
+     "acorns": 58800,
+     "comments": [
+      {
+       "by": "seraphina",
+       "text": "It sits better on you than it would on anyone else. That is all I will say about that collar."
+      }
+     ]
+    },
+    {
+     "id": "aura-fist-w2b",
+     "week": 2,
+     "text": "If you want me to judge, tell the organizers to FULFILL MY RIDER! They said they can't provide a selection of prison daddies?? Girl bye",
+     "acorns": 96400,
+     "_source": "a player, Discord, 17 Nov 2026 (in character as Aura Fist). Verbatim. Whether she judges is left a rumour.",
+     "comments": [
+      {
+       "by": "poppy",
+       "text": "I've started a petition!!! FULFILL THE RIDER. 31 signatures so far. Gran signed twice, once as herself and once as 'a concerned daddy'."
+      },
+      {
+       "by": "zuzu",
+       "text": "Read the whole leaked rider. Item nine, prison daddies (assorted): five acorns. Item four, room-temperature still water: one acorn. Bestie, be braver with the water."
+      },
+      {
+       "by": "goolax",
+       "text": "Goolax is not able to discuss the rider at this time. We are sourcing alternatives. You're covered! —Pippa (intern)"
+      }
+     ]
+    },
+    {
+     "id": "aura-fist-w3a",
+     "week": 3,
+     "text": "Tour stops: Lor'Fida, Bañañon Town, Gok'Gok Harbor. Tritone if they'll have me. They don't need me. I'd just like to sing in a room that's finally theirs.",
+     "acorns": 121000
+    },
+    {
+     "id": "aura-fist-w6a",
+     "week": 6,
+     "text": "Selunemas show: free for anyone who lost someone this year. Plenty of you did. The front row is yours.",
+     "acorns": 188000
+    }
+   ]
+  },
+  {
+   "id": "aura-sis",
+   "handle": "AuraSis",
+   "name": "Aura Sis",
+   "kind": "celeb",
+   "verified": true,
+   "avatar": {
+    "initials": "AS",
+    "color": "#d1478f"
+   },
+   "home": "Lor'Fida",
+   "bio": "Daughter of the House of Cael. Lor'Fida born, monastery raised, wig first. Selunights at the GrapFrap Drag Emporium, Immia Beach.",
+   "followers": [
+    188000,
+    191000,
+    214000,
+    220000,
+    226000,
+    231000,
+    240000
+   ],
+   "posts": [
+    {
+     "id": "aura-sis-w0a",
+     "week": 0,
+     "text": "Mother Cael says a monastery is just a drag house that gets up earlier. I've been up since four. My eyelashes have been up since three.",
+     "acorns": 9100
+    },
+    {
+     "id": "aura-sis-w1a",
+     "week": 1,
+     "text": "MALL BRAWL comes to Immia Beach next week, and my monastery sisters on the Broad Squad have been doing high kicks in the car park since dawn. The car park is losing.",
+     "acorns": 12400,
+     "comments": [
+      {
+       "by": "coach-lythol",
+       "text": "Kick from the hip, not the knee. The car park will last longer."
+      },
+      {
+       "by": "galleria-overlook",
+       "text": "Team Galleria Overlook can't wait to see you all at Immia Beach! (Our car park has been warned.)"
+      }
+     ]
+    },
+    {
+     "id": "aura-sis-w2a",
+     "week": 2,
+     "text": "Immia Beach was LOUD. Whoever left one shoe in the GrapFrap dressing room: it's on the shrine now. That's how it works here.",
+     "acorns": 15900
+    },
+    {
+     "id": "aura-sis-w3a",
+     "week": 3,
+     "text": "Mother asked what I want for Selunemas. I said a spotlight that follows me home. Mother said I already have one, and it's called ego.",
+     "acorns": 11300
+    }
+   ]
+  },
+  {
+   "id": "delilah-clocks",
+   "handle": "DelilahClocks",
+   "name": "Delilah Clocks",
+   "kind": "judge",
+   "verified": true,
+   "avatar": {
+    "img": "modules/maul-campaign-codex/assets/images/delilah-clocks-portrait.webp",
+    "initials": "DC",
+    "color": "#6b2fa0"
+   },
+   "home": "Toggleton",
+   "bio": "Portal researcher. MALL BRAWL judge, Cogskill Arcade. Lab coat by appointment.",
+   "followers": [
+    58000,
+    61500,
+    63000,
+    64800,
+    66000,
+    67500,
+    69000
+   ],
+   "posts": [
+    {
+     "id": "delilah-clocks-w0a",
+     "week": 0,
+     "text": "I've agreed to judge MALL BRAWL. My assistants have been told to keep the doors shut while I'm out. Not those doors. The other doors.",
+     "acorns": 3100
+    },
+    {
+     "id": "delilah-clocks-w1a",
+     "week": 1,
+     "text": "Tryouts! A unicorn ate a contestant and I have never felt more alive. She came back out, which is exactly the sort of plot twist I respect.",
+     "acorns": 5400
+    },
+    {
+     "id": "delilah-clocks-w1b",
+     "week": 1,
+     "text": "Liked Julip's clip four times. Acorndr only counts one. I've written to them about it.",
+     "acorns": 2900,
+     "comments": [
+      {
+       "by": "bubbaneezer-scrooj",
+       "text": "Four likes for the price of one and you're COMPLAINING. Madam, that's a bargain."
+      }
+     ]
+    },
+    {
+     "id": "delilah-clocks-w2a",
+     "week": 2,
+     "text": "I've started bringing a notebook to the judges' box. Bubbaneezer thinks it's for scores. It's for the pattern in which everyone falls over. There is one.",
+     "acorns": 3800,
+     "comments": [
+      {
+       "by": "bubbaneezer-scrooj",
+       "text": "It IS for scores. I've seen the notebook. There's a drawing of me in it."
+      },
+      {
+       "by": "clementine",
+       "text": "Could you share the falling-over data? I'll cite you. Footnote and everything."
+      }
+     ]
+    },
+    {
+     "id": "delilah-clocks-w3a",
+     "week": 3,
+     "text": "A student asked whether a portal can go anywhere. Darling, everything goes somewhere. The question is whether you're invited.",
+     "acorns": 4200
+    }
+   ]
+  },
+  {
+   "id": "bubbaneezer-scrooj",
+   "handle": "Scrooj",
+   "name": "Bubbaneezer Scrooj",
+   "kind": "judge",
+   "verified": true,
+   "avatar": {
+    "initials": "BS",
+    "color": "#b8860b"
+   },
+   "home": "Toggleton",
+   "bio": "Toggleton businessman. MALL BRAWL judge, Cogskill Arcade. If it's free, I'll take two.",
+   "followers": [
+    9400,
+    9900,
+    10100,
+    10200,
+    10200,
+    10300,
+    10400
+   ],
+   "posts": [
+    {
+     "id": "bubbaneezer-scrooj-w0a",
+     "week": 0,
+     "text": "Free tote bags at the Goolax launch. I took eleven. My driver rides on the roof now, and I've never felt richer.",
+     "acorns": 310
+    },
+    {
+     "id": "bubbaneezer-scrooj-w1a",
+     "week": 1,
+     "text": "Judges' Favourite: Kuso Sharpfang. Chewed through the competition and kept a hand for later. In my day we called that a bargain. In my day we called most things a bargain.",
+     "acorns": 870
+    },
+    {
+     "id": "bubbaneezer-scrooj-w1b",
+     "week": 1,
+     "text": "THREE COPPERS for a coffee at Clara's Brews! I bought the cup back off the girl for one. She'll go far, or she'll go to my competitors.",
+     "acorns": 140
+    },
+    {
+     "id": "bubbaneezer-scrooj-w2a",
+     "week": 2,
+     "text": "My accountant says judging pays nothing. I told him I get the best seat in the house for free. He said that isn't money. BAH. It's better than money.",
+     "acorns": 220
+    },
+    {
+     "id": "bubbaneezer-scrooj-w3a",
+     "week": 3,
+     "text": "Somebody asked if I'm on Acorndr for the fans. I'm on Acorndr because it doesn't charge me.",
+     "acorns": 405
+    }
+   ]
+  },
+  {
+   "id": "coach-wire",
+   "handle": "CoachWire1337",
+   "name": "Coach Wire 1337",
+   "kind": "judge",
+   "verified": true,
+   "avatar": {
+    "sprite": "npc:automaton:2",
+    "initials": "CW",
+    "color": "#5a6b7a"
+   },
+   "home": "Cogskill Arcade",
+   "npc": {
+    "mall": "cogskill",
+    "id": "cog-L1-coach-wire"
+   },
+   "bio": "COACH. Team Cogskill Arcade. Gains, grind, glory. Form checks in DMs.",
+   "followers": [
+    1337,
+    1402,
+    1460,
+    1490,
+    1530,
+    1560,
+    1600
+   ],
+   "hangout": {
+    "text": "Outside the Mayor Klerp Arena (116), Level 1, Cogskill. Mid-rep.",
+    "friends": true
+   },
+   "posts": [
+    {
+     "id": "coach-wire-w0a",
+     "week": 0,
+     "text": "TRYOUTS SOON. Bring water. Bring oil. Bring the version of you that doesn't quit at rep nine.",
+     "acorns": 61
+    },
+    {
+     "id": "coach-wire-w1a",
+     "week": 1,
+     "text": "TEAM IS SET: Julip, Undyne, Lenore, Kuso. Four brawlers. Zero excuses. Coach's Pick: none this year. I pick the whole roster. WHOOP.",
+     "acorns": 140,
+     "comments": [
+      {
+       "by": "tazzle",
+       "text": "Called it on stream before the scores went up! Chat didn't respond, but I definitely called it."
+      },
+      {
+       "by": "granny-hesk",
+       "text": "WELL DONE, DEARS. WIPE YOUR FEET BEFORE YOU COME PAST MY BENCH."
+      }
+     ]
+    },
+    {
+     "id": "coach-wire-w1b",
+     "week": 1,
+     "text": "Saw an ad for the new coach models. 'Never tires.' Bro, I don't tire either. I just reboot sometimes.",
+     "acorns": 12,
+     "friends": true
+    },
+    {
+     "id": "coach-wire-w2a",
+     "week": 2,
+     "text": "Away week. Remember: the other team also has knees. Visualise their knees.",
+     "acorns": 77
+    },
+    {
+     "id": "coach-wire-w3a",
+     "week": 3,
+     "text": "Ran a diagnostic. All systems nominal. Ran it again, just to hear it say so.",
+     "acorns": 9,
+     "friends": true
+    }
+   ]
+  },
+  {
+   "id": "abby-storm-yimble",
+   "handle": "AbbyStormYimble",
+   "name": "Abby Storm Yimble",
+   "kind": "judge",
+   "verified": true,
+   "avatar": {
+    "initials": "AY",
+    "color": "#a0522d"
+   },
+   "home": "Bañañon Town",
+   "bio": "Ban'ton. Tavern mum. Retired from saving the world, mostly. MALL BRAWL judge, Galleria Overlook. Mud masks at all good stockists.",
+   "followers": [
+    412000,
+    430000,
+    436000,
+    441000,
+    447000,
+    452000,
+    460000
+   ],
+   "posts": [
+    {
+     "id": "abby-storm-yimble-w0a",
+     "week": 0,
+     "text": "Kids are grown and gone and the tavern's quiet, so I said yes to judging. Bring me brawlers who fight like they've got somewhere to be after.",
+     "acorns": 21000
+    },
+    {
+     "id": "abby-storm-yimble-w1a",
+     "week": 1,
+     "text": "Judges' Favourite: Mirva Nox. Didn't flinch once. I've stood beside people who stopped an emperor in his tracks, and some of them flinched.",
+     "acorns": 33100
+    },
+    {
+     "id": "abby-storm-yimble-w1b",
+     "week": 1,
+     "text": "Whoever catapulted that bañañon: I need to know what was in the goo. For my face. For a new mask line, if we're being honest.",
+     "acorns": 18700,
+     "comments": [
+      {
+       "by": "zuzu",
+       "text": "Rating the goo: no acorns as food. Five as skincare. Do NOT ask how I know."
+      },
+      {
+       "by": "seraphina",
+       "text": "Banañon pulp, lightly bruised. My mother swore by it for the neck. Pat, never rub."
+      }
+     ]
+    },
+    {
+     "id": "abby-storm-yimble-w2a",
+     "week": 2,
+     "text": "My youngest wrote from Glister. Three lines, one of them about the weather. I've read it eleven times.",
+     "acorns": 26400,
+     "comments": [
+      {
+       "by": "ronin-upthail",
+       "text": "Three lines is a long letter at that age. Mine wrote one, and it was about money."
+      }
+     ]
+    },
+    {
+     "id": "abby-storm-yimble-w3a",
+     "week": 3,
+     "text": "Training tip from an old barbarian: shout before you swing. It doesn't help the swing. It helps you.",
+     "acorns": 22900
+    }
+   ]
+  },
+  {
+   "id": "ronin-upthail",
+   "handle": "MayorUpthail",
+   "name": "Ronin Upthail",
+   "kind": "judge",
+   "verified": true,
+   "avatar": {
+    "initials": "RU",
+    "color": "#8b1e2d"
+   },
+   "home": "Crate Bush, Ban'ton",
+   "bio": "Mayor of Crate Bush. Retired from the field, not from the sword. MALL BRAWL judge, Galleria Overlook.",
+   "followers": [
+    21000,
+    23800,
+    24100,
+    24500,
+    24900,
+    25200,
+    25600
+   ],
+   "posts": [
+    {
+     "id": "ronin-upthail-w0a",
+     "week": 0,
+     "text": "The Crate Bush council sat for six hours today. The gate repairs were approved in the seventh. I have accepted an invitation to judge MALL BRAWL, where a decision takes one minute.",
+     "acorns": 640
+    },
+    {
+     "id": "ronin-upthail-w1a",
+     "week": 1,
+     "text": "Judges' Favourite: Thaddeus. He held his ground without needing the crowd to see him do it. That is rarer than skill.",
+     "acorns": 1900
+    },
+    {
+     "id": "ronin-upthail-w1b",
+     "week": 1,
+     "text": "A flamethrower in a shopping centre. I thought of the war. I thought of it fondly, which surprised me.",
+     "acorns": 2400,
+     "comments": [
+      {
+       "by": "coach-lythol",
+       "text": "The crowd was warm. So was the planter."
+      },
+      {
+       "by": "abby-storm-yimble",
+       "text": "I thought of the war too. Then I thought, she's got better goggles than we ever had."
+      }
+     ]
+    },
+    {
+     "id": "ronin-upthail-w2a",
+     "week": 2,
+     "text": "Crate Bush notice: the east gate closes at dusk this week for repairs. Residents, please use the north gate, and please stop climbing the old one.",
+     "acorns": 180
+    },
+    {
+     "id": "ronin-upthail-w3a",
+     "week": 3,
+     "text": "The cherry trees in the square came in early. I sat under them for the whole of lunch. The council ate without me and decided nothing.",
+     "acorns": 1100
+    }
+   ]
+  },
+  {
+   "id": "coach-lythol",
+   "handle": "CoachLythol",
+   "name": "Coach Ly'thol",
+   "kind": "judge",
+   "verified": true,
+   "avatar": {
+    "img": "modules/maul-campaign-codex/assets/images/coach-lythol-token.webp",
+    "initials": "LY",
+    "color": "#e8b923"
+   },
+   "home": "Galleria Overlook",
+   "bio": "Spirit of competition. Coach, Team Galleria Overlook. Fewer words. More effort.",
+   "followers": [
+    6600,
+    7400,
+    7700,
+    7900,
+    8100,
+    8300,
+    8600
+   ],
+   "posts": [
+    {
+     "id": "coach-lythol-w0a",
+     "week": 0,
+     "text": "The season wakes. I can feel every hopeful in Bañañon Town lacing their boots. Some of you are lacing them wrong.",
+     "acorns": 410
+    },
+    {
+     "id": "coach-lythol-w1a",
+     "week": 1,
+     "text": "Coach's Pick: Indy. I glowed. People at the back thought I was a lamp.",
+     "acorns": 980
+    },
+    {
+     "id": "coach-lythol-w1b",
+     "week": 1,
+     "text": "Team Galleria Overlook: Hallory, Thaddeus, Mirva, Indy. Four flames. I'll be the brightest thing in the room until one of you is.",
+     "acorns": 1210
+    },
+    {
+     "id": "coach-lythol-w2a",
+     "week": 2,
+     "text": "Pixies keep asking me to light their parties. I am a spirit of competition. I lit one. It became a dance-off. I won.",
+     "acorns": 760
+    },
+    {
+     "id": "coach-lythol-w3a",
+     "week": 3,
+     "text": "Rest days are part of the contest. I hate them, which is how I know.",
+     "acorns": 530
+    }
+   ]
+  },
+  {
+   "id": "plateirla",
+   "handle": "CuisinierReagent",
+   "name": "Plateirla",
+   "kind": "leader",
+   "verified": true,
+   "avatar": {
+    "img": "modules/maul-campaign-codex/assets/images/plateirla-copy-token.webp",
+    "initials": "P",
+    "color": "#1f7a6d"
+   },
+   "home": "Bañañon Town, Ban'ton",
+   "bio": "Cuisinier Reagent of Ban'ton. Posted by the Reagent's office; signed —P. when it's personal.",
+   "followers": [
+    1900000,
+    1910000,
+    1920000,
+    1935000,
+    1940000,
+    1950000,
+    1970000
+   ],
+   "posts": [
+    {
+     "id": "plateirla-w0a",
+     "week": 0,
+     "text": "The Reagent's table this week: plantain stew from the Strait kitchens, recipe in full below. Every school in Bañañon Town serves it on Thoughtsday.",
+     "acorns": 64000
+    },
+    {
+     "id": "plateirla-w1a",
+     "week": 1,
+     "text": "Congratulations to Team Galleria Overlook on making the MALL BRAWL roster. Bañañon Town is behind you, and so is this office, quietly, with snacks.",
+     "acorns": 91000
+    },
+    {
+     "id": "plateirla-w2a",
+     "week": 2,
+     "text": "Anhedosis clinics in the Strait districts stay open through Rest. The cure is free at every clinic flying the green flag. If someone's selling a cheaper one on a corner, it isn't one.",
+     "acorns": 120500,
+     "comments": [
+      {
+       "by": "abby-storm-yimble",
+       "text": "Went to the green-flag clinic on the Strait with my neighbour on Wildsday. In and out in an hour. Just go."
+      },
+      {
+       "by": "ottilie",
+       "text": "Information, and true for once: the corner man by the ferry steps is selling chalk in little bottles. Don't."
+      }
+     ]
+    },
+    {
+     "id": "plateirla-w3a",
+     "week": 3,
+     "text": "Selunemas lanterns go up along the Strait on the 30th. Light one for someone. —P.",
+     "acorns": 143000
+    }
+   ]
+  },
+  {
+   "id": "bosco",
+   "handle": "BoscoForToggleton",
+   "name": "Bosco",
+   "kind": "leader",
+   "verified": true,
+   "avatar": {
+    "img": "modules/maul-campaign-codex/assets/images/bosco-portrait.webp",
+    "initials": "B",
+    "color": "#3c6fd8"
+   },
+   "home": "T-Ton City, Toggleton",
+   "bio": "Head of State, Toggleton. Experience You Can Count (On). Paid for by Friends of Bosco.",
+   "followers": [
+    880000,
+    884000,
+    890000,
+    893000,
+    899000,
+    905000,
+    911000
+   ],
+   "posts": [
+    {
+     "id": "bosco-w0a",
+     "week": 0,
+     "text": "Toggleton works because Toggleton counts. Experience You Can Count (On). VOTE BOSCO.",
+     "acorns": 12000,
+     "comments": [
+      {
+       "by": "granny-hesk",
+       "text": "SOMEONE HAS DRAWN A MOUSTACHE ON YOUR POSTER BY THE FOUNTAIN. IT SUITS YOU, DEAR."
+      }
+     ]
+    },
+    {
+     "id": "bosco-w1a",
+     "week": 1,
+     "text": "So proud of Cogskill's brawlers! I've been a brawling fan my whole life (32 years, every one of them brawling-adjacent).",
+     "acorns": 8100
+    },
+    {
+     "id": "bosco-w2a",
+     "week": 2,
+     "text": "The polls are just vibes, and the vibes are BOSCO. Now with 20% more Bosco. Same great Bosco.",
+     "acorns": 9900,
+     "comments": [
+      {
+       "by": "clementine",
+       "text": "Polls aren't vibes. Polls are a sample with a margin of error. I can explain this to your office if it helps."
+      }
+     ]
+    },
+    {
+     "id": "bosco-w3a",
+     "week": 3,
+     "text": "Bosco loves Selunemas (and you). Collect your free commemorative D'fain hat with Bosco's face on it at any Cryst-rail station while stocks last.",
+     "acorns": 7400
+    }
+   ]
+  },
+  {
+   "id": "heliofax",
+   "handle": "Heliofax",
+   "name": "Heliofax",
+   "kind": "leader",
+   "verified": true,
+   "avatar": {
+    "img": "modules/maul-campaign-codex/assets/images/heliofax-token.webp",
+    "initials": "H",
+    "color": "#c9a227"
+   },
+   "home": "Quone",
+   "bio": "The lawful government of Quone. Order. Continuity. The long peace.",
+   "followers": [
+    1200000,
+    1199000,
+    1197000,
+    1196000,
+    1194000,
+    1193000,
+    1190000
+   ],
+   "posts": [
+    {
+     "id": "heliofax-w0a",
+     "week": 0,
+     "text": "Quone remains open for business. Our loyal provinces report record harvests. Disturbances in the south are being managed.",
+     "acorns": 22000
+    },
+    {
+     "id": "heliofax-w1a",
+     "week": 1,
+     "text": "A reminder to our citizens abroad: Quonian gnomes built the offices of half this continent. Be proud. Be punctual.",
+     "acorns": 19500
+    },
+    {
+     "id": "heliofax-w2a",
+     "week": 2,
+     "text": "The so-called coalition claims another 'victory'. The government does not recognise victories it was not informed of.",
+     "acorns": 16800
+    },
+    {
+     "id": "heliofax-w3a",
+     "week": 3,
+     "text": "Selunemas greetings from the Imperial household. Every loyal subject will receive an official card. Disloyal subjects will also receive a card. It is a different card.",
+     "acorns": 14100
+    }
+   ]
+  },
+  {
+   "id": "gonzo-thibideaux",
+   "handle": "GonzoThibideaux",
+   "name": "Gonzo Thibideaux",
+   "kind": "leader",
+   "verified": true,
+   "avatar": {
+    "img": "modules/maul-campaign-codex/assets/images/gonzo-thibadeaux-token.webp",
+    "initials": "GT",
+    "color": "#7a9a3a"
+   },
+   "home": "Quone",
+   "bio": "Coalition of the Free Fields. Halflings, dwarves and anyone who's tired. Rebel since '24.",
+   "followers": [
+    940000,
+    952000,
+    961000,
+    975000,
+    988000,
+    996000,
+    1010000
+   ],
+   "posts": [
+    {
+     "id": "gonzo-thibideaux-w0a",
+     "week": 0,
+     "text": "Barley's in. Barricades are up. Both took the whole village. Thank you, Millbrook.",
+     "acorns": 41000
+    },
+    {
+     "id": "gonzo-thibideaux-w1a",
+     "week": 1,
+     "text": "Heliofax calls it 'the Disturbance'. We called it the Liberation for a while. Now everyone calls it the Squat Squabble, and honestly we've stopped minding.",
+     "acorns": 58000,
+     "comments": [
+      {
+       "by": "heliofax",
+       "text": "The government does not comment on agricultural accounts."
+      },
+      {
+       "by": "free-tritone",
+       "text": "Whatever you call it, the square says hello. Send barley; we'll send songs."
+      }
+     ]
+    },
+    {
+     "id": "gonzo-thibideaux-w2a",
+     "week": 2,
+     "text": "A year since Chard. Some of you lost people there. Bread's on us at every coalition kitchen this Thoughtsday.",
+     "acorns": 77000
+    },
+    {
+     "id": "gonzo-thibideaux-w3a",
+     "week": 3,
+     "text": "A Wist bard thanked us this week for 'the old songs'. Friend, you wrote better ones. We're stealing them back.",
+     "acorns": 63000
+    }
+   ]
+  },
+  {
+   "id": "consul-zara",
+   "handle": "ConsulZara",
+   "name": "Consul Zara",
+   "kind": "leader",
+   "verified": true,
+   "avatar": {
+    "initials": "Z",
+    "color": "#2e6b3f"
+   },
+   "home": "The Glorious Fiefdoms",
+   "bio": "Consul of the Glorious Fiefdoms. Serving a second turn at the council's request.",
+   "followers": [
+    1500000,
+    1490000,
+    1470000,
+    1455000,
+    1462000,
+    1458000,
+    1450000
+   ],
+   "posts": [
+    {
+     "id": "consul-zara-w0a",
+     "week": 0,
+     "text": "The council has asked me to remain in the consular seat for a second turn. I have humbly asked the council to stop asking. It continues to ask.",
+     "acorns": 30500
+    },
+    {
+     "id": "consul-zara-w1a",
+     "week": 1,
+     "text": "The unrest in our Wistian province is temporary and regrettable. Music is not a policy.",
+     "acorns": 12900,
+     "comments": [
+      {
+       "by": "free-tritone",
+       "text": "It's a policy tonight. Nine o'clock, the customs-house steps. Everyone's invited."
+      },
+      {
+       "by": "violet-ray-sky",
+       "text": "The Thoughtsday show is free, Consul. There's room at the front. —Pim"
+      }
+     ]
+    },
+    {
+     "id": "consul-zara-w2a",
+     "week": 2,
+     "text": "The Glorious Fiefdoms will compete at MALL BRAWL in Panto. We will be glorious. It is in the name.",
+     "acorns": 21400
+    },
+    {
+     "id": "consul-zara-w3a",
+     "week": 3,
+     "text": "Our team has trained for months, in every weather. They will not be posting on this platform. I post for them.",
+     "acorns": 18000
+    }
+   ]
+  },
+  {
+   "id": "pantox",
+   "handle": "DirectorPantox",
+   "name": "Pantox",
+   "kind": "leader",
+   "verified": true,
+   "avatar": {
+    "img": "modules/maul-campaign-codex/assets/images/pantox-token.webp",
+    "initials": "PX",
+    "color": "#d1702f"
+   },
+   "home": "Panto",
+   "bio": "Director of the Pantonian Assemblage. MALL BRAWL comes to Panto in week four.",
+   "followers": [
+    610000,
+    612000,
+    615000,
+    640000,
+    700000,
+    690000,
+    688000
+   ],
+   "posts": [
+    {
+     "id": "pantox-w0a",
+     "week": 0,
+     "text": "The Assemblage has approved hosting MALL BRAWL in week four, by thirty-one votes to thirty, with one abstention who fell asleep.",
+     "acorns": 8800
+    },
+    {
+     "id": "pantox-w1a",
+     "week": 1,
+     "text": "Panto's Try is Panto's gift to every food court in Th'Tief. You may thank us by trying.",
+     "acorns": 6100
+    },
+    {
+     "id": "pantox-w2a",
+     "week": 2,
+     "text": "Our team, No, But, has asked me to clarify their name. I asked them to clarify it. They said no, but.",
+     "acorns": 15300
+    },
+    {
+     "id": "pantox-w3a",
+     "week": 3,
+     "text": "Work on the venue proceeds on schedule. The schedule has been revised to match the work.",
+     "acorns": 9700
+    }
+   ]
+  },
+  {
+   "id": "free-tritone",
+   "handle": "FreeTritone",
+   "name": "Free Tritone",
+   "kind": "leader",
+   "verified": true,
+   "avatar": {
+    "initials": "FT",
+    "color": "#8a3fd1"
+   },
+   "home": "Tritone, Wist",
+   "bio": "Tritone, Wist. The capital is ours and it is singing. Run by volunteers at the old customs house.",
+   "followers": [
+    520000,
+    640000,
+    730000,
+    801000,
+    866000,
+    910000,
+    980000
+   ],
+   "posts": [
+    {
+     "id": "free-tritone-w0a",
+     "week": 0,
+     "text": "Day nineteen of a free Tritone. The bakers are open. The ferries run. The square is loud from noon until somebody's mother says stop.",
+     "acorns": 99000
+    },
+    {
+     "id": "free-tritone-w1a",
+     "week": 1,
+     "text": "To the Wisterians who left: your streets still have your names on them. We checked. Come home when you can.",
+     "acorns": 140000,
+     "comments": [
+      {
+       "by": "thessaly",
+       "text": "Forty years gone, friend, and I still know which window on Reed Lane was ours. I'll come and look at it before I'm done."
+      }
+     ]
+    },
+    {
+     "id": "free-tritone-w2a",
+     "week": 2,
+     "text": "Volunteers needed at the customs house: sorting letters, mending roofs, tuning pianos. All three pay in soup.",
+     "acorns": 87000
+    },
+    {
+     "id": "free-tritone-w3a",
+     "week": 3,
+     "text": "Music schools reopen on Meluday. Bring an instrument. If you haven't got one, bring a pot; there's a percussion class for pots.",
+     "acorns": 112000
+    }
+   ]
+  },
+  {
+   "id": "mall-brawl",
+   "handle": "MALLBRAWL",
+   "name": "MALL BRAWL",
+   "kind": "brand",
+   "verified": true,
+   "avatar": {
+    "initials": "MB",
+    "color": "#e8443a"
+   },
+   "home": "Everywhere",
+   "bio": "The official account of MALL BRAWL. Sponsored by Goolax. You're covered!",
+   "followers": [
+    2600000,
+    2700000,
+    2740000,
+    2790000,
+    2830000,
+    2880000,
+    3000000
+   ],
+   "posts": [
+    {
+     "id": "mall-brawl-w0a",
+     "week": 0,
+     "text": "Tryouts: Seluday 9 Rest at Galleria Overlook and Cogskill Arcade. Eight hopefuls per mall. Four make the team.",
+     "acorns": 31000
+    },
+    {
+     "id": "mall-brawl-w1a",
+     "week": 1,
+     "text": "COGSKILL ARCADE ROSTER: Julip (13), Undyne DeIndie (13), Lenore Evergloom (10), Kuso Sharpfang (9). Judges' Favourites: Julip and Kuso.",
+     "acorns": 44000,
+     "comments": [
+      {
+       "by": "coach-wire",
+       "text": "FOUR BRAWLERS. ZERO EXCUSES. WHOOP WHOOP."
+      },
+      {
+       "by": "cogskill-arcade",
+       "text": "Gnorman Fountain lights are on for you tonight, Team Cogskill!"
+      }
+     ]
+    },
+    {
+     "id": "mall-brawl-w1b",
+     "week": 1,
+     "text": "GALLERIA OVERLOOK ROSTER: Hallory (17), Thaddeus (10), Mirva Nox (9), Indy (8). Judges' Favourites: Mirva and Thaddeus. Coach's Pick: Indy.",
+     "acorns": 46000,
+     "comments": [
+      {
+       "by": "clementine",
+       "text": "Confirmed against my notebook: 50 points scored, Hallory 34% of them. These numbers are correct."
+      },
+      {
+       "by": "poppy",
+       "text": "SIGNS ARE ALREADY MADE. I made them BEFORE the results. I believed."
+      },
+      {
+       "by": "plateirla",
+       "text": "Ban'ton is proud of you all. —P."
+      }
+     ]
+    },
+    {
+     "id": "mall-brawl-w1c",
+     "week": 1,
+     "text": "Next: Seluday 14 Rest at Immia Beach Mega Mall, Lor'Fida. Galleria Overlook faces The Broad Squad; Cogskill Arcade faces Stalling.",
+     "acorns": 29000,
+     "comments": [
+      {
+       "by": "aura-sis",
+       "text": "Pack sunscreen and humility. My sisters on the Broad Squad are packing glitter."
+      }
+     ]
+    },
+    {
+     "id": "mall-brawl-w2a",
+     "week": 2,
+     "text": "Next: Seluday 19 Rest at The Sloopermarket, Sloppy Bottom Bay. Galleria Overlook faces Blue Tsunami; Cogskill Arcade faces Pocket Sand.",
+     "acorns": 27000
+    },
+    {
+     "id": "mall-brawl-w3a",
+     "week": 3,
+     "text": "Next: Seluday 24 Rest in Panto, three teams per match. Galleria Overlook vs No, But and The Broad Squad; Cogskill Arcade vs B'dibom Bombs and the Glorious Fiefdoms.",
+     "acorns": 33000
+    },
+    {
+     "id": "mall-brawl-w4a",
+     "week": 4,
+     "text": "Next: Seluday 29 Rest in Moffidge. Galleria Overlook vs Fairrest Federation and Blue Tsunami; Cogskill Arcade vs Moffidge and Pocket Sand.",
+     "acorns": 30000
+    },
+    {
+     "id": "mall-brawl-w5a",
+     "week": 5,
+     "text": "The finale falls on Selunemas, Seluday 34 Rest. Venue to be announced. We read every guess. We're not telling.",
+     "acorns": 52000
+    }
+   ]
+  },
+  {
+   "id": "goolax",
+   "handle": "Goolax",
+   "name": "Goolax",
+   "kind": "brand",
+   "verified": true,
+   "avatar": {
+    "initials": "G",
+    "color": "#19a974"
+   },
+   "home": "Goolax HQ",
+   "bio": "Proud sponsor of MALL BRAWL. You're covered! (Run by the Goolax intern team.)",
+   "followers": [
+    1100000,
+    1130000,
+    1140000,
+    1150000,
+    1160000,
+    1170000,
+    1190000
+   ],
+   "posts": [
+    {
+     "id": "goolax-w0a",
+     "week": 0,
+     "text": "You're covered! Every MALL BRAWL competitor gets two Goolax Healing Potions every week. Shake well. Do not shake the intern.",
+     "acorns": 15000,
+     "comments": [
+      {
+       "by": "zuzu",
+       "text": "Tasting notes: battery, regret, a hint of mint at the very end."
+      },
+      {
+       "by": "bubbaneezer-scrooj",
+       "text": "FREE potions? Where do I sign up to compete?"
+      }
+     ]
+    },
+    {
+     "id": "goolax-w1a",
+     "week": 1,
+     "text": "Congratulations to all eight new brawlers! Your stickers are in the post. Your second stickers are in a different post.",
+     "acorns": 9800,
+     "comments": [
+      {
+       "by": "clementine",
+       "text": "I've had two of your stickers and no answers. Is there a third sticker that comes with an answer?"
+      }
+     ]
+    },
+    {
+     "id": "goolax-w2a",
+     "week": 2,
+     "text": "From this week, a Goolax representative sits beside the judges at every match. Please don't feed our rep. They're on a plan.",
+     "acorns": 11200
+    },
+    {
+     "id": "goolax-w3a",
+     "week": 3,
+     "text": "Intern update: the intern who posted 'potions are basically soup' has been moved to the soup division. We did not have a soup division. We do now.",
+     "acorns": 24000
+    }
+   ]
+  },
+  {
+   "id": "galleria-overlook",
+   "handle": "GalleriaOverlook",
+   "name": "Galleria Overlook",
+   "kind": "brand",
+   "verified": true,
+   "avatar": {
+    "initials": "GO",
+    "color": "#2f8f4e"
+   },
+   "home": "Bañañon Town",
+   "bio": "Galleria Overlook, Bañañon Town. Four levels, one rainforest. An Orichalcum Ventures property.",
+   "followers": [
+    64000,
+    66500,
+    67000,
+    67400,
+    67900,
+    68300,
+    69000
+   ],
+   "posts": [
+    {
+     "id": "galleria-overlook-w0a",
+     "week": 0,
+     "text": "PikPik reminder: the birds in the Rainforest Gardens are not for riding indoors. They are for gently looking confused at.",
+     "acorns": 2300,
+     "comments": [
+      {
+       "by": "desmond",
+       "text": "Observed a PikPik on the Root Stair at 12:24. It looked at me for nine minutes. I was late back to the toll office."
+      }
+     ]
+    },
+    {
+     "id": "galleria-overlook-w0b",
+     "week": 0,
+     "text": "Our Leyline Operator now runs to Cogskill Arcade. 50 gp for a round trip, home is free. Riders report mild static and strong opinions.",
+     "acorns": 900
+    },
+    {
+     "id": "galleria-overlook-w1a",
+     "week": 1,
+     "text": "Congratulations, Team Galleria Overlook! Hallory, Thaddeus, Mirva and Indy: the whole Stem is cheering. Superfan signs welcome; glitter sweepers on standby.",
+     "acorns": 4100
+    },
+    {
+     "id": "galleria-overlook-w3a",
+     "week": 3,
+     "text": "Selunemas lanterns arrive in the Rainforest Gardens this week. Please don't hang anything on the PikPiks.",
+     "acorns": 2800
+    }
+   ]
+  },
+  {
+   "id": "cogskill-arcade",
+   "handle": "CogskillArcade",
+   "name": "Cogskill Arcade",
+   "kind": "brand",
+   "verified": true,
+   "avatar": {
+    "initials": "CA",
+    "color": "#7a5a2f"
+   },
+   "home": "Gok'Gok Harbor",
+   "bio": "Cogskill Arcade, Gok'Gok Harbor. Shop, eat, brawl. An Orichalcum Ventures property.",
+   "followers": [
+    71000,
+    73900,
+    74300,
+    74800,
+    75100,
+    75600,
+    76200
+   ],
+   "posts": [
+    {
+     "id": "cogskill-arcade-w0a",
+     "week": 0,
+     "text": "Now showing at the Xilliforth Theatre: a crystal-projection compilation of today's finest automaton musicians. Every note perfect. Matinees daily.",
+     "acorns": 1200,
+     "comments": [
+      {
+       "by": "thessaly",
+       "text": "Every note perfect. Nobody in the seats humming along, though. I went to the matinee and listened for it."
+      }
+     ]
+    },
+    {
+     "id": "cogskill-arcade-w1a",
+     "week": 1,
+     "text": "Congratulations, Team Cogskill! Julip, Undyne, Lenore and Kuso: the Gnorman Fountain is lit in your honour. Please do not fish in it.",
+     "acorns": 3900
+    },
+    {
+     "id": "cogskill-arcade-w2a",
+     "week": 2,
+     "text": "#FountainFishWatch: the fish in the Gnorman Fountain are doing well and have been named by the public. Please stop naming them after the judges.",
+     "acorns": 2500,
+     "comments": [
+      {
+       "by": "granny-hesk",
+       "text": "ONE OF THEM IS CALLED SCROOJ NOW. HE SITS AT THE BOTTOM AND WON'T SHARE."
+      },
+      {
+       "by": "glimmer",
+       "text": "the orange one with the frilly tail has better lighting than me and I'm not ok about it"
+      }
+     ]
+    },
+    {
+     "id": "cogskill-arcade-w3a",
+     "week": 3,
+     "text": "The Xilliforth Theatre returns to live stage shows this week. Tickets at the box office. The ushers are thrilled.",
+     "acorns": 1700
+    }
+   ]
+  },
+  {
+   "id": "zuzu",
+   "handle": "ZuzuEats",
+   "name": "Zuzu Snapfilter",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:gnome:6",
+    "initials": "ZS",
+    "color": "#e07a5f"
+   },
+   "home": "Gok'Gok Harbor",
+   "npc": {
+    "mall": "cogskill",
+    "id": "cog-L2-foodie"
+   },
+   "bio": "Food blogger, Gok'Gok Harbor. Everything rated in acorns. Alchemy degree (decorative).",
+   "followers": [
+    800,
+    2000,
+    2100,
+    2180,
+    2260,
+    2300,
+    2400
+   ],
+   "hangout": {
+    "text": "The food court on Level 2 at Cogskill, near Goo to Go, between photographs.",
+    "friends": true
+   },
+   "posts": [
+    {
+     "id": "zuzu-w0a",
+     "week": 0,
+     "text": "Aura Fist reposted my dumpling. ONE dumpling. Twelve hundred new followers overnight, and half of them are asking where the dumpling is now. Bestie, I ate it.",
+     "acorns": 1400
+    },
+    {
+     "id": "zuzu-w0b",
+     "week": 0,
+     "text": "Mum commented 'are you eating properly?' on a post that was literally me eating. Properly. With a fork. I've pinned it.",
+     "acorns": 22,
+     "friends": true
+    },
+    {
+     "id": "zuzu-w1a",
+     "week": 1,
+     "text": "Tryout-night snack review. Arena pretzel: two acorns. The same pretzel, eaten while a lizardfolk held up a severed hand: unrateable. Lost my appetite, found my content.",
+     "acorns": 190
+    },
+    {
+     "id": "zuzu-w2a",
+     "week": 2,
+     "text": "Goo to Go update: my spoon has been returned. Not by Goo to Go. By the goo. It found me at the bus stop.",
+     "acorns": 260,
+     "comments": [
+      {
+       "by": "glimmer",
+       "text": "the goo knows your bus stop?? bestie you need to change your route"
+      }
+     ]
+    },
+    {
+     "id": "zuzu-w3a",
+     "week": 3,
+     "text": "Sponsored: Goolax would like me to say their potions pair well with any meal. They pair with nothing. They taste of a battery. I drink three a week.",
+     "acorns": 140
+    },
+    {
+     "id": "zuzu-w5a",
+     "week": 5,
+     "text": "Ate a whole bowl at Clara's Brews without taking a photo. Felt like skipping school. Felt about eight years old. Five acorns, in my head.",
+     "acorns": 31,
+     "friends": true
+    }
+   ]
+  },
+  {
+   "id": "glimmer",
+   "handle": "GlimmerVolts",
+   "name": "Glimmer Voltaine",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:goblin:6",
+    "initials": "GV",
+    "color": "#c15bd1"
+   },
+   "home": "Gok'Gok Harbor",
+   "npc": {
+    "mall": "cogskill",
+    "id": "cog-L1-influencer"
+   },
+   "bio": "Hair, looks and lights. Gok'Gok Harbor. Six years behind a salon chair, now in front of a Pocket-Pane. Collabs: DM.",
+   "followers": [
+    2000,
+    2050,
+    2080,
+    2120,
+    2140,
+    2160,
+    2200
+   ],
+   "hangout": {
+    "text": "By the Gnorman Fountain on Level 1 at Cogskill. The light's best between eleven and two.",
+    "friends": true
+   },
+   "posts": [
+    {
+     "id": "glimmer-w0a",
+     "week": 0,
+     "text": "Today's look: 'industrial but make it brunch'. Swipe for the fringe. Do not swipe for the bit where the fountain splashed me.",
+     "acorns": 88
+    },
+    {
+     "id": "glimmer-w0b",
+     "week": 0,
+     "text": "Six years of real clients and I never once had to ask anyone to smash an acorn. They just tipped. I miss being tipped.",
+     "acorns": 41,
+     "comments": [
+      {
+       "by": "granny-hesk",
+       "text": "IN MY DAY WE TIPPED IN PIE. I WILL BRING YOU A PIE, DEAR."
+      }
+     ]
+    },
+    {
+     "id": "glimmer-w1a",
+     "week": 1,
+     "text": "Tryouts were ICONIC. Somebody's hair survived the inside of a unicorn. I need to know the product.",
+     "acorns": 120
+    },
+    {
+     "id": "glimmer-w1b",
+     "week": 1,
+     "text": "Mum left one acorn on every post this week, including the one where I cried. Especially that one.",
+     "acorns": 9,
+     "friends": true
+    },
+    {
+     "id": "glimmer-w2a",
+     "week": 2,
+     "text": "Went live at the fountain for forty minutes. Peak viewers: nine. One of them was a fish.",
+     "acorns": 64,
+     "comments": [
+      {
+       "by": "tazzle",
+       "text": "Nine viewers is huge, chat! That's three of my mums!"
+      }
+     ]
+    },
+    {
+     "id": "glimmer-w3a",
+     "week": 3,
+     "text": "Collab with @TazzleLive? He asked. I said I'd think about it. I've thought about it, bestie. His lighting is a CRIME.",
+     "acorns": 52,
+     "requires": {
+      "met": [
+       "cog-L1-influencer-2"
+      ]
+     }
+    },
+    {
+     "id": "glimmer-w6a",
+     "week": 6,
+     "text": "Didn't film the recap. Just watched it. That's the post.",
+     "acorns": 15,
+     "friends": true
+    }
+   ]
+  },
+  {
+   "id": "tazzle",
+   "handle": "TazzleLive",
+   "name": "Tazzle Brightcog",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:gnome:5",
+    "initials": "TB",
+    "color": "#4a90d9"
+   },
+   "home": "Gok'Gok Harbor",
+   "npc": {
+    "mall": "cogskill",
+    "id": "cog-L1-influencer-2"
+   },
+   "bio": "Arena walk-and-talks, live. Nine years at the Toggleton Records Office. Every viewer counts, especially Mum.",
+   "followers": [
+    12,
+    13,
+    14,
+    14,
+    15,
+    17,
+    18
+   ],
+   "hangout": {
+    "text": "The arena concourse on Level 1 at Cogskill, by Soardenbort (111). Walking and talking.",
+    "friends": true
+   },
+   "posts": [
+    {
+     "id": "tazzle-w0a",
+     "week": 0,
+     "text": "Day one of the channel! Followers: 12. Mums: 1. Mum's accounts: 3. Growth is growth.",
+     "acorns": 4,
+     "comments": [
+      {
+       "by": "glimmer",
+       "text": "babe you can't count your mum three times. ...ok you can. welcome to Acorndr"
+      }
+     ]
+    },
+    {
+     "id": "tazzle-w1a",
+     "week": 1,
+     "text": "Touched the arena wall before tryouts. Still cold. Nice to have one thing you can rely on.",
+     "acorns": 3
+    },
+    {
+     "id": "tazzle-w1b",
+     "week": 1,
+     "text": "Dad walked past the Records Office and checked my old desk. Still dusted. He said 'in case'. I asked, in case of what? He didn't say.",
+     "acorns": 2,
+     "friends": true
+    },
+    {
+     "id": "tazzle-w2a",
+     "week": 2,
+     "text": "Followers: 14! One's a Goolax bot and one asked if I'm 'the goblin with the lights'. I'm a gnome. Followed both back.",
+     "acorns": 5,
+     "comments": [
+      {
+       "by": "glimmer",
+       "text": "I'm the goblin with the lights. Tell them it's me, not you."
+      }
+     ]
+    },
+    {
+     "id": "tazzle-w3a",
+     "week": 3,
+     "text": "Collab with @GlimmerVolts is ON. She hasn't said yes. She hasn't said no. At the Records Office, that's a yes.",
+     "acorns": 6,
+     "requires": {
+      "met": [
+       "cog-L1-influencer"
+      ]
+     }
+    },
+    {
+     "id": "tazzle-w6a",
+     "week": 6,
+     "text": "ONE HUNDRED AND FOUR VIEWERS, chat! A knitting circle in Hellish found the channel. They're making me a scarf in Cogskill colours. Best stream ever. New record. Hi, Mum.",
+     "acorns": 40
+    }
+   ]
+  },
+  {
+   "id": "thessaly",
+   "handle": "ThessalyPlays",
+   "name": "Thessaly Reedmuir",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:human:4:elder",
+    "initials": "TR",
+    "color": "#8f6a3a"
+   },
+   "home": "Gok'Gok Harbor",
+   "npc": {
+    "mall": "cogskill",
+    "id": "cog-L1-busker"
+   },
+   "bio": "Hurdy-gurdy, Cogskill Arcade main entrance. Forty years on one plaza. Born in Wist. Requests go in the hat.",
+   "followers": [
+    230,
+    260,
+    300,
+    340,
+    360,
+    380,
+    410
+   ],
+   "hangout": {
+    "text": "The plaza by the Main Entrance, Level 1, Cogskill. Follow the wheeze.",
+    "friends": true
+   },
+   "posts": [
+    {
+     "id": "thessaly-w0a",
+     "week": 0,
+     "text": "My granddaughter set this up for me. She says it's for 'reach'. I've reached forty years on one plaza. The gulls found me without it.",
+     "acorns": 37,
+     "comments": [
+      {
+       "by": "ottoline",
+       "text": "Welcome! Your plaza is always loud on the hum readings. I thought it was the gulls. It's you, isn't it?"
+      }
+     ]
+    },
+    {
+     "id": "thessaly-w1a",
+     "week": 1,
+     "text": "My sister writes from Tritone that the square sings every night now. I played the harbour waltz in Wistian time today, and three gulls fell off the rail.",
+     "acorns": 58,
+     "comments": [
+      {
+       "by": "free-tritone",
+       "text": "Tell your sister the third row says hello. Come home and play for us one night."
+      }
+     ]
+    },
+    {
+     "id": "thessaly-w1b",
+     "week": 1,
+     "text": "Strings are fraying. Gut ones cost a week's hat now. I'll make these last till Selunemas, then ask D'fain like a child.",
+     "acorns": 11,
+     "friends": true
+    },
+    {
+     "id": "thessaly-w2a",
+     "week": 2,
+     "text": "I follow that Violet Ray Sky now. A year ago I'd never heard of her. Now I hear her through the theatre walls, louder than their machines.",
+     "acorns": 44
+    },
+    {
+     "id": "thessaly-w3a",
+     "week": 3,
+     "text": "A girl asked me today, friend, if I'm one of the machines in a costume. I let her turn the handle. She apologised to it.",
+     "acorns": 61
+    },
+    {
+     "id": "thessaly-w6a",
+     "week": 6,
+     "text": "Learned one of hers for Selunemas. Played it slow, the Wistian way. A man by the doors sang the second verse, and I never taught him the words.",
+     "acorns": 120
+    }
+   ]
+  },
+  {
+   "id": "ottoline",
+   "handle": "LeylineOtto",
+   "name": "Ottoline Sparkvane",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:gnome:7",
+    "initials": "OS",
+    "color": "#6fa8dc"
+   },
+   "home": "Gok'Gok Harbor",
+   "npc": {
+    "mall": "cogskill",
+    "id": "cog-L1-leyline-operator"
+   },
+   "bio": "Leyline Operator, Cogskill Arcade. Thirty years at the tube. Daily hum report.",
+   "followers": [
+    95,
+    101,
+    104,
+    110,
+    113,
+    115,
+    160
+   ],
+   "hangout": {
+    "text": "The Leyline Operator at the south end of Level 1, Cogskill. Always at the tube.",
+    "friends": false
+   },
+   "posts": [
+    {
+     "id": "ottoline-w0a",
+     "week": 0,
+     "text": "Hum report: warm, steady, a touch of B-flat. The tube had a good night.",
+     "acorns": 12,
+     "comments": [
+      {
+       "by": "thessaly",
+       "text": "B-flat suits it, friend. Same key as the harbour waltz. I'll play it that way tomorrow and you tell me if it hums along."
+      }
+     ]
+    },
+    {
+     "id": "ottoline-w1a",
+     "week": 1,
+     "text": "Hum report: tryout night. The tube sulked for an hour after the crowd left. I sang it the one about the lighthouse.",
+     "acorns": 15
+    },
+    {
+     "id": "ottoline-w1b",
+     "week": 1,
+     "text": "Goolax's automaton trial is over. It left me a goodbye note, very polite. It still couldn't hear the hum. I've kept the note.",
+     "acorns": 6,
+     "friends": true
+    },
+    {
+     "id": "ottoline-w2a",
+     "week": 2,
+     "text": "Hum report: busy. Galleria riders keep arriving smelling of moss. One brought me a fern. The fern hums too, slightly flat.",
+     "acorns": 14,
+     "comments": [
+      {
+       "by": "galleria-overlook",
+       "text": "That's our moss! Thank you for looking after our riders, Ottoline."
+      }
+     ]
+    },
+    {
+     "id": "ottoline-w6a",
+     "week": 6,
+     "text": "Hum report: I rode it. Galleria end and back. Thirty years. It feels like being sung to by someone who knows your name.",
+     "acorns": 140
+    }
+   ]
+  },
+  {
+   "id": "granny-hesk",
+   "handle": "HeskCopperbottom",
+   "name": "Granny Hesk Copperbottom",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:gnome:7:elder",
+    "initials": "HC",
+    "color": "#9a8c7a"
+   },
+   "home": "Gok'Gok Harbor",
+   "npc": {
+    "mall": "cogskill",
+    "id": "cog-L1-granny"
+   },
+   "bio": "I DID NOT ASK FOR THIS ACCOUNT. —H. COPPERBOTTOM",
+   "followers": [
+    4,
+    5,
+    9,
+    11,
+    12,
+    12,
+    19
+   ],
+   "hangout": {
+    "text": "THE BENCH BY THE GNORMAN FOUNTAIN. LEVEL 1. BRING YOUR OWN CUSHION.",
+    "friends": false
+   },
+   "posts": [
+    {
+     "id": "granny-hesk-w0a",
+     "week": 0,
+     "text": "HELLO. MY GRANDSON SAYS I TYPE THE WORDS HERE AND THEY GO TO EVERYBODY. HELLO EVERYBODY. I AM ON THE BENCH.",
+     "acorns": 3,
+     "comments": [
+      {
+       "by": "glimmer",
+       "text": "HI GRANNY HESK. it's Glimmer from the fountain. you're doing great"
+      },
+      {
+       "by": "tazzle",
+       "text": "Welcome! You're my thirteenth follower. Well. I'm following you. Same thing, chat."
+      }
+     ]
+    },
+    {
+     "id": "granny-hesk-w1a",
+     "week": 1,
+     "text": "SOMEBODY IS STILL FISHING IN THE FOUNTAIN WITH THEIR MOUTH. GNORMAN WOULD HAVE HAD WORDS.",
+     "acorns": 2
+    },
+    {
+     "id": "granny-hesk-w2a",
+     "week": 2,
+     "text": "THE NEW LOT WANT RENT FOR THE CUSHION NOW. I HAVE REPLIED IN PENCIL. IN MY DAY A CUSHION WAS A CUSHION, DEAR.",
+     "acorns": 7,
+     "comments": [
+      {
+       "by": "seraphina",
+       "text": "Pencil is the correct reply. Ink suggests they deserved effort."
+      }
+     ]
+    },
+    {
+     "id": "granny-hesk-w4a",
+     "week": 4,
+     "text": "MY GRANDSON IS D'FAIN AT THE SCHOOL FAIR. THE BEARD IS MY OLD BATH MAT. HE SAYS IT ITCHES. D'FAIN DOES NOT COMPLAIN.",
+     "acorns": 14
+    },
+    {
+     "id": "granny-hesk-w3a",
+     "week": 3,
+     "text": "FORTY SELUNEMASES ON THIS BENCH. EVERY YEAR SOMEONE NEW SITS DOWN BY ME. IF YOU ARE READING THIS, YOU ARE INVITED.",
+     "acorns": 9,
+     "friends": true
+    }
+   ]
+  },
+  {
+   "id": "poppy",
+   "handle": "GlitterPoppy",
+   "name": "Poppy Thistlewood",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:elf:6:teen",
+    "initials": "PT",
+    "color": "#ff7eb6"
+   },
+   "home": "Bañañon Town",
+   "npc": {
+    "mall": "galleria",
+    "id": "gal-L1-teen-poppy"
+   },
+   "bio": "Superfan. Fifteen seasons. Glitter by prestidigitation. Signs made to order (free).",
+   "followers": [
+    140,
+    170,
+    190,
+    210,
+    230,
+    250,
+    300
+   ],
+   "hangout": {
+    "text": "The Stem on Level 1 at the Galleria, outside PotPotPot Potions (108), holding up a sign.",
+    "friends": true
+   },
+   "posts": [
+    {
+     "id": "poppy-w0a",
+     "week": 0,
+     "text": "Forty-two acorns on my tryouts sign! Violet Ray Sky's sandwich has forty THOUSAND. The sandwich doesn't even have glitter.",
+     "acorns": 42
+    },
+    {
+     "id": "poppy-w1a",
+     "week": 1,
+     "text": "Making signs for EVERYONE on our team: HALLORY, THADDEUS, MIRVA and INDY. Indy's has a little flame because Coach glowed. Did you SEE Coach glow??",
+     "acorns": 57,
+     "comments": [
+      {
+       "by": "coach-lythol",
+       "text": "I glowed. I will glow again."
+      },
+      {
+       "by": "clementine",
+       "text": "Indy's sign is 40% flame. I measured it with a ruler while you were at Grab Grass."
+      }
+     ]
+    },
+    {
+     "id": "poppy-w1b",
+     "week": 1,
+     "text": "Gran watched one round with me and said 'that girl fights like your grandfather'. She won't say which girl. She won't say anything else about Grandad either.",
+     "acorns": 8,
+     "friends": true
+    },
+    {
+     "id": "poppy-w2a",
+     "week": 2,
+     "text": "Clementine says our superfan club has two members and a constitution. The constitution has fourteen rules. Rule one is 'Poppy holds the sign'.",
+     "acorns": 30,
+     "requires": {
+      "met": [
+       "gal-L1-teen-clementine"
+      ]
+     }
+    },
+    {
+     "id": "poppy-w3a",
+     "week": 3,
+     "text": "Watched the Tritone video again. Ninety-one times now. I still don't like that kind of music. I still like HER.",
+     "acorns": 26,
+     "comments": [
+      {
+       "by": "violet-ray-sky",
+       "text": "Ninety-one! Thank you for watching. —Pim"
+      }
+     ]
+    },
+    {
+     "id": "poppy-w6a",
+     "week": 6,
+     "text": "Homework DONE, sign DONE, glitter DONE. Gran asked if she can come to the finale. GRAN. To the FINALE.",
+     "acorns": 70
+    }
+   ]
+  },
+  {
+   "id": "clementine",
+   "handle": "ClemCounts",
+   "name": "Clementine Rushwater",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:human:1:teen",
+    "initials": "CR",
+    "color": "#f2a541"
+   },
+   "home": "Bañañon Town",
+   "npc": {
+    "mall": "galleria",
+    "id": "gal-L1-teen-clementine"
+   },
+   "bio": "Stats. Charts. Laminated. Superfan Club treasurer (and secretary).",
+   "followers": [
+    37,
+    44,
+    46,
+    49,
+    51,
+    53,
+    60
+   ],
+   "hangout": {
+    "text": "The Stem on Level 1 at the Galleria, near the Root Stair, with a laminated chart.",
+    "friends": true
+   },
+   "posts": [
+    {
+     "id": "clementine-w0a",
+     "week": 0,
+     "text": "Pre-season prediction model done. It's 60% maths and 40% vibes, which is the reverse of Poppy's.",
+     "acorns": 6,
+     "requires": {
+      "met": [
+       "gal-L1-teen-poppy"
+      ]
+     }
+    },
+    {
+     "id": "clementine-w0b",
+     "week": 0,
+     "text": "Pre-season prediction model done. It's 60% maths and 40% vibes. My co-founder's is the other way round.",
+     "acorns": 6,
+     "requires": {
+      "notFlags": [
+       "met-gal-L1-teen-poppy"
+      ]
+     }
+    },
+    {
+     "id": "clementine-w1a",
+     "week": 1,
+     "text": "Galleria tryouts: 50 points scored in total. Hallory scored 17 of them, which is 34%. I've redone this sum four times because I like it.",
+     "acorns": 11
+    },
+    {
+     "id": "clementine-w1b",
+     "week": 1,
+     "text": "Poppy cried at tryouts from 7:42 to 7:51. I didn't put it on the chart. Some data is private.",
+     "acorns": 4,
+     "friends": true,
+     "requires": {
+      "met": [
+       "gal-L1-teen-poppy"
+      ]
+     }
+    },
+    {
+     "id": "clementine-w2a",
+     "week": 2,
+     "text": "Wrote to Goolax again about the knockout rule. They sent a second sticker. I now have a matching pair and still no answer.",
+     "acorns": 9,
+     "comments": [
+      {
+       "by": "goolax",
+       "text": "Great question! Here's a sticker!"
+      }
+     ]
+    },
+    {
+     "id": "clementine-w3a",
+     "week": 3,
+     "text": "Dad's harbour tally books are in the attic. I went up to borrow a ruler and stayed two hours. He counted every ship for twenty years and nobody ever asked him how many.",
+     "acorns": 15
+    },
+    {
+     "id": "clementine-w6a",
+     "week": 6,
+     "text": "Final season tally sent: one copy to Goolax, one to Dad. Goolax sent a sticker. Dad sent back a correction (footnote 3). I've never been so happy to be wrong.",
+     "acorns": 21
+    }
+   ]
+  },
+  {
+   "id": "desmond",
+   "handle": "DesmondReviews",
+   "name": "Desmond Lumbridge",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:snail:3",
+    "initials": "DL",
+    "color": "#8fbc8f"
+   },
+   "home": "Bañañon Town",
+   "npc": {
+    "mall": "galleria",
+    "id": "gal-S2-puppet-desmond"
+   },
+   "bio": "Puppet show reviews, out of five acorns. Strait toll office by day (eleven thousand ships stamped).",
+   "followers": [
+    3,
+    3,
+    4,
+    4,
+    5,
+    5,
+    6
+   ],
+   "hangout": {
+    "text": "Sub-level 2 at the Galleria, at the puppet booth off the Dining Balcony, from 12:22 to 12:38.",
+    "friends": false
+   },
+   "posts": [
+    {
+     "id": "desmond-w0a",
+     "week": 0,
+     "text": "Review: 'The Crab Who Knew Too Much'. Four acorns. The crab's motivation was unclear, but so is mine, most days.",
+     "acorns": 1,
+     "comments": [
+      {
+       "by": "ottilie",
+       "text": "I've seen that crab show twice. The crab's motivation is that the puppeteer's ex runs the chippy next door."
+      }
+     ]
+    },
+    {
+     "id": "desmond-w1a",
+     "week": 1,
+     "text": "Review: today's matinee, three acorns. The puppeteer read my last review aloud in a voice. It was a better voice than mine. Revised to four.",
+     "acorns": 2,
+     "comments": [
+      {
+       "by": "oskar",
+       "text": "the puppeteer doing your review in the voice is honestly the best bit of the whole show"
+      }
+     ]
+    },
+    {
+     "id": "desmond-w2a",
+     "week": 2,
+     "text": "Sixteen minutes for lunch and puppets today. Eight for the sandwich, eight for the puppets. Nobody was shortchanged but me.",
+     "acorns": 2
+    },
+    {
+     "id": "desmond-w3a",
+     "week": 3,
+     "text": "Eleven thousand and forty ships stamped. Not one sailor has ever waved. I waved at one today. He waved back, at the man behind me.",
+     "acorns": 3,
+     "friends": true
+    }
+   ]
+  },
+  {
+   "id": "oskar",
+   "handle": "OskarStreams",
+   "name": "Oskar Vane",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:human:7:teen",
+    "initials": "OV",
+    "color": "#5b7bd1"
+   },
+   "home": "Bañañon Town",
+   "npc": {
+    "mall": "galleria",
+    "id": "gal-S2-audience-oskar"
+   },
+   "bio": "Twigtch streamer (eleven viewers, twelve with Gran). Chain Row. Say hi to Gran.",
+   "followers": [
+    12,
+    12,
+    15,
+    21,
+    22,
+    22,
+    25
+   ],
+   "hangout": {
+    "text": "The food court on Sub-level 2 at the Galleria, near Chain Row, on a break that's already over.",
+    "friends": true
+   },
+   "posts": [
+    {
+     "id": "oskar-w0a",
+     "week": 0,
+     "text": "Clip from today's stream: the puppet show, the pie bit. Chat wants Violet Ray Sky to cover it. I want that so badly I tagged her team eleven times.",
+     "acorns": 5
+    },
+    {
+     "id": "oskar-w1a",
+     "week": 1,
+     "text": "Stream record: TWELVE viewers. Gran logged in. Gran then asked in chat how to log out.",
+     "acorns": 7,
+     "comments": [
+      {
+       "by": "desmond",
+       "text": "Twelve is a respectable audience. I have reviewed shows with fewer, and two of those were the puppeteer's mother."
+      }
+     ]
+    },
+    {
+     "id": "oskar-w1b",
+     "week": 1,
+     "text": "The orc lady covered my shift again. I owe her four Smite Shakes. I've started keeping the tab on my hand.",
+     "acorns": 2,
+     "friends": true
+    },
+    {
+     "id": "oskar-w2a",
+     "week": 2,
+     "text": "Team VRS replied 'ha' to my tag. Two letters. I printed it out. It's my Pocket-Pane background, my wall and my personality now.",
+     "acorns": 19,
+     "comments": [
+      {
+       "by": "violet-ray-sky",
+       "text": "ha —Pim"
+      },
+      {
+       "by": "poppy",
+       "text": "OSKAR. That's basically a message from HER. Screenshot it TWICE."
+      }
+     ]
+    },
+    {
+     "id": "oskar-w3a",
+     "week": 3,
+     "text": "My manager at Chain Row watched my stream and asked what I do all day. I said 'this'. He said that's the problem.",
+     "acorns": 8
+    }
+   ]
+  },
+  {
+   "id": "seraphina",
+   "handle": "CoralCorral",
+   "name": "Seraphina Reefwhistle",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:elf:2",
+    "initials": "SR",
+    "color": "#ff7f6e"
+   },
+   "home": "Bañañon Town",
+   "npc": {
+    "mall": "galleria",
+    "id": "gal-L1-104-seraphina"
+   },
+   "bio": "Coral Corral, unit 104, Galleria Overlook. Finery from the reef, grown on frames off the point and cut by hand.",
+   "followers": [
+    3900,
+    4000,
+    4050,
+    4120,
+    4180,
+    4230,
+    4400
+   ],
+   "hangout": {
+    "text": "Coral Corral (104), Level 1 at the Galleria, threading a needle without touching it.",
+    "friends": false
+   },
+   "posts": [
+    {
+     "id": "seraphina-w0a",
+     "week": 0,
+     "text": "New in: brawl leotards in coral pink. Stretchy, luminous, and honest about the fact they will never be clean again.",
+     "acorns": 160,
+     "comments": [
+      {
+       "by": "abby-storm-yimble",
+       "text": "Put two aside for me. One for the tavern floor, one for best."
+      }
+     ]
+    },
+    {
+     "id": "seraphina-w1a",
+     "week": 1,
+     "text": "The intercom sang 'Corral your coral' eleven times today. A machine wrote that. I'd like to see it try on a hem.",
+     "acorns": 210,
+     "comments": [
+      {
+       "by": "thessaly",
+       "text": "A machine has never had to sew anything, friend, nor play it. I'm with you."
+      }
+     ]
+    },
+    {
+     "id": "seraphina-w1b",
+     "week": 1,
+     "text": "North-wall rent went up again. It costs more than the reef. I've started pricing gowns by how much floor they take up. Nobody has noticed.",
+     "acorns": 33,
+     "friends": true
+    },
+    {
+     "id": "seraphina-w2a",
+     "week": 2,
+     "text": "Aura Fist wore a coral collar on Acorndr once, and still asks who sent it. I know who cut it. I'm saying nothing.",
+     "acorns": 380
+    },
+    {
+     "id": "seraphina-w3a",
+     "week": 3,
+     "text": "Sixty years dressing a chorus that never stood still. Brawlers are worse. One tried on a gown mid-stretch and I fell in love with the line of it.",
+     "acorns": 140
+    }
+   ]
+  },
+  {
+   "id": "ottilie",
+   "handle": "OttilieKnows",
+   "name": "Ottilie Brackwater",
+   "kind": "local",
+   "avatar": {
+    "sprite": "npc:dwarf:6:nobeard",
+    "initials": "OB",
+    "color": "#b5651d"
+   },
+   "home": "Bañañon Town",
+   "npc": {
+    "mall": "galleria",
+    "id": "gal-S1-bench-gossip"
+   },
+   "bio": "Retired, Strait post office (35 years). I don't gossip. I distribute information.",
+   "followers": [
+    680,
+    720,
+    760,
+    790,
+    810,
+    830,
+    860
+   ],
+   "hangout": {
+    "text": "Sub-level 1 at the Galleria, the bench by the Root Stair. She saves you a seat if she likes you.",
+    "friends": true
+   },
+   "posts": [
+    {
+     "id": "ottilie-w0a",
+     "week": 0,
+     "text": "Information: the soap shop with the sock in it has sold out. Of socks. Not soap. Draw your own conclusions.",
+     "acorns": 44
+    },
+    {
+     "id": "ottilie-w1a",
+     "week": 1,
+     "text": "Somebody bought a sword at Point and Chute and came out in the food court holding a meat pie as well. Forty-one people told. Now forty-two.",
+     "acorns": 61
+    },
+    {
+     "id": "ottilie-w2a",
+     "week": 2,
+     "text": "Bertram has a new ear trumpet. Forty years of my best stories went into a pillow, and now he wants them all. I've started at the beginning. This is going to take a while, dear.",
+     "acorns": 23,
+     "friends": true
+    },
+    {
+     "id": "ottilie-w3a",
+     "week": 3,
+     "text": "Information: the cleaning bot keeps the dented coins from the Rock Fountain. It has a little tin. I've seen the tin.",
+     "acorns": 58
+    },
+    {
+     "id": "ottilie-w5a",
+     "week": 5,
+     "text": "I know which shop the fountain granny's grandson works in. I'm keeping this one. Thirty-five years at the post office, love: some letters you don't open.",
+     "acorns": 74,
+     "friends": true
+    }
+   ]
+  }
+ ],
+ "comments": {}
+}

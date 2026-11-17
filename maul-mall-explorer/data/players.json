@@ -1,0 +1,73 @@
+{
+  "note": "Updated 10 Nov 2026: Tuesday names are what the players go by on Discord (a player, a player, a player = Vincent, a player). Monday is still unconfirmed. 'name' becomes the Foundry user name; 'table' is monday | tuesday. The GM button 'Create player users' creates any missing users (role Player, no password). 16 Nov 2026: `character` = the PC actor name (GM tools 'Set up player characters' creates or finds it, assigns it, and gives the player Owner); `token` = their token image.",
+  "players": [
+    {
+      "name": "Player 1",
+      "table": "tuesday",
+      "confirmed": true,
+      "character": "Lenore Evergloom",
+      "token": "modules/maul-campaign-codex/tokens/Lenore Evergloom-Token.png"
+    },
+    {
+      "name": "Player 2",
+      "table": "tuesday",
+      "confirmed": true,
+      "character": "Julip",
+      "token": "modules/maul-campaign-codex/tokens/Julip-Token.png"
+    },
+    {
+      "name": "Player 3",
+      "table": "tuesday",
+      "confirmed": true,
+      "character": "Kuso Sharpfang",
+      "token": "modules/maul-campaign-codex/tokens/Kuso Sharpfang-Token.png"
+    },
+    {
+      "name": "Player 4",
+      "table": "tuesday",
+      "confirmed": true,
+      "character": "Undyne DeIndie",
+      "token": "modules/maul-campaign-codex/tokens/Undyne DeIndie-Token.png"
+    },
+    {
+      "name": "Player 5",
+      "table": "monday",
+      "confirmed": false,
+      "character": "Mirva Nox",
+      "token": "modules/maul-campaign-codex/tokens/Mirva-Token.png"
+    },
+    {
+      "name": "Player 6",
+      "table": "monday",
+      "confirmed": false,
+      "character": "T.U.R.D.",
+      "token": "modules/maul-campaign-codex/tokens/Thaddeus U R Dunwizzle-Token.png"
+    },
+    {
+      "name": "Player 7",
+      "table": "monday",
+      "confirmed": false,
+      "character": "Snide Piper",
+      "token": "modules/maul-campaign-codex/tokens/Snide Piper-Token.png"
+    },
+    {
+      "name": "Player 8",
+      "table": "monday",
+      "confirmed": false,
+      "character": "Hallory Clampton",
+      "token": "modules/maul-campaign-codex/tokens/Hallory Clampton-Token.png"
+    },
+    {
+      "name": "Player 9",
+      "table": "monday",
+      "confirmed": true,
+      "character": "Indy",
+      "token": "modules/maul-campaign-codex/tokens/Indy-Token.png"
+    }
+  ],
+  "gm": {
+    "character": "Aurelius Goldtrail III",
+    "token": "modules/maul-mall-explorer/assets/tokens/aurelius-goldtrail.png",
+    "note": "Zak's GM walker: Orichalcum Ventures' representative, a very rich snail. Assigned to the GM user."
+  }
+}

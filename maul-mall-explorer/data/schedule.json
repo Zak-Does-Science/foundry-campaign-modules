@@ -1,0 +1,63 @@
+{
+  "calendar": {
+    "year": 2026,
+    "era": "SC",
+    "daysPerYear": 320,
+    "daysPerMonth": 40,
+    "months": ["Wake", "Sew", "Learn", "Heal", "Tend", "Reap", "Feast", "Rest"],
+    "weekdays": ["Meluday", "Chooseday", "Wildsday", "Thoughtsday", "Seluday"],
+    "moons": ["Selune", "Melune"],
+    "note": "Every contest day is a Seluday. Content week N = after week N's contest (booths, weekPages, minWeek). The GM's week in GM tools = the match being prepared for = content week + 1 (17 Nov 2026)."
+  },
+  "tables": {
+    "monday": {"nation": "Ban'ton", "mall": "galleria", "mallName": "Galleria Overlook", "town": "Banañon Town"},
+    "tuesday": {"nation": "Toggleton", "mall": "cogskill", "mallName": "Cogskill Arcade", "town": "Gok'Gok Harbor"}
+  },
+  "weeks": [
+    {
+      "week": 0,
+      "label": "Pre-season",
+      "chip": "Pre-season — Tryouts on Seluday 9 Rest"
+    },
+    {
+      "week": 1,
+      "label": "Tryouts",
+      "weekday": "Seluday", "day": 9, "month": "Rest",
+      "venue": "Home malls",
+      "venues": {"monday": "Galleria Overlook", "tuesday": "Cogskill Arcade"},
+      "opponents": {"monday": ["Galleria mall NPC squad"], "tuesday": ["Cogskill mall NPC squad"]}
+    },
+    {
+      "week": 2,
+      "weekday": "Seluday", "day": 14, "month": "Rest",
+      "venue": "Immia Beach Mega Mall (Lorfida)",
+      "opponents": {"monday": ["The Broad Squad"], "tuesday": ["Stalling"]}
+    },
+    {
+      "week": 3,
+      "weekday": "Seluday", "day": 19, "month": "Rest",
+      "venue": "The Sloopermarket (Sloppy Bottom Bay)",
+      "opponents": {"monday": ["Blue Tsunami"], "tuesday": ["Pocket Sand"]}
+    },
+    {
+      "week": 4,
+      "weekday": "Seluday", "day": 24, "month": "Rest",
+      "venue": "Panto (venue to be announced)",
+      "opponents": {"monday": ["No, But", "The Broad Squad"], "tuesday": ["B'dibom Bombs", "Glorious Fiefdoms"]}
+    },
+    {
+      "week": 5,
+      "weekday": "Seluday", "day": 29, "month": "Rest",
+      "venue": "Moffidge (venue to be announced)",
+      "opponents": {"monday": ["Fairrest Federation", "Blue Tsunami"], "tuesday": ["Moffidge", "Pocket Sand"]}
+    },
+    {
+      "week": 6,
+      "label": "Finale",
+      "holiday": "Selunemas",
+      "weekday": "Seluday", "day": 34, "month": "Rest",
+      "venue": "SECRET",
+      "opponents": {"monday": ["TBD"], "tuesday": ["TBD"]}
+    }
+  ]
+}

@@ -1,0 +1,747 @@
+{
+ "note": "Pop-up booth stock per table and booth slot. Built 8 Nov 2026 from MAUL_Team_Roster_28OCT2026_1118.xlsx (sheet 'Team Roster': Premium exclusive shop item / Regular exclusive shop item / Exclusive Premium service). Slot N opens after week N's contest. 'source' keeps the spreadsheet wording for Zak. Premium items and services cost 1 Goolax Premium Voucher; gp prices are placeholders. Traveling Snailsmen items are left out on purpose (finale is secret). 15 Nov 2026: each week's booth also stocks the HOST mall's items (both tables), and roster items above +1 were recast as +1 with a perk (Zak: 'nothing past +1'). 17 Nov 2026 (Zak): EVERYTHING at the booths costs 1 Premium Voucher and has no resale value; week-1 gp items got a perk, loose rematch consumables became kits (`grants` = the items a purchase creates). 17 Nov 2026 later (Zak: a voucher sells for 1,500 gp, so nothing it buys may be worth less): booth Grade II weapons became Grade III, uncommon items became rare, and kits carry Potions of Superior Healing.",
+ "priceKinds": {
+  "premium-item": "1 Premium Voucher (no resale value)",
+  "premium-service": "1 Premium Voucher (permanent effect; the DM applies it)"
+ },
+ "tables": {
+  "monday": {
+   "mall": "galleria",
+   "booths": {
+    "1": {
+     "theme": "Ban'ton home stock (after Tryouts)",
+     "vendor": {
+      "name": "Pell Marrowmint",
+      "species": "halfling",
+      "lines": [
+       "Every pipe on this cart was tuned in a Banañon Town greenhouse. They hum back if you're nice to them.",
+       "Tryouts done? Then you've earned a little something. Ban'ton made, Ban'ton played!",
+       "Careful with the Pipes of Haunting, sweet pea. Last fella tootled them at a bake sale. Nobody bought a single scone."
+      ]
+     },
+     "items": [
+      {
+       "id": "mon1-banton-pipes",
+       "name": "Greenhouse-Tuned Pipes (Grade III focus)",
+       "team": "Ban'ton",
+       "kind": "premium-item",
+       "description": "Ban'ton-made pipes that work as a +1 spell focus (+1 to spell attack rolls and spell save DCs) with Overcharge upgraded: once per match, +2d6 to one spell's damage roll. They are also Pipes of Haunting (3 charges, regain 1d3 at dawn; Wisdom save DC 15 or frightened for 1 minute).",
+       "source": "Special instrument items, like Pipes of Haunting",
+       "price": {
+        "vouchers": 1
+       },
+       "rarity": "rare"
+      },
+      {
+       "id": "mon1-banton-fae-microbiome",
+       "name": "Fae Microbiome",
+       "team": "Ban'ton",
+       "kind": "premium-service",
+       "description": "Permanent: whenever a spell heals you, you always get the maximum healing.",
+       "source": "Fae Microbiome: Always gain the max healing from spells",
+       "price": {
+        "vouchers": 1
+       }
+      }
+     ]
+    },
+    "2": {
+     "theme": "The Broad Squad pop-up (Lorfida)",
+     "vendor": {
+      "name": "Dame Sequina Starling",
+      "species": "human",
+      "lines": [
+       "Welcome to the fiercest folding table in the mall, darling. Everything here has walked a runway. Twice.",
+       "The Broad Squad says hello! Well, they said 'tell them we'll see them again', but in a loving way.",
+       "Capes, lessons and a little bit of murder on the edges. That's fashion, honey."
+      ]
+     },
+     "items": [
+      {
+       "id": "mon2-broad-cape",
+       "name": "Billowing Friendship Cape",
+       "team": "The Broad Squad",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Cape. Requires attunement. Use a bonus action to activate; requires concentration. While active, allies within 15 feet of you raise your AC by +1.",
+       "source": "Billowing friendship: Cape. Reqs Attunement. Use bonus action to activate. Reqs. Concentration. While active, allies within 15 feet raise your AC +1",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon2-broad-vicious",
+       "name": "+1 Vicious Weapon (Brutal, Grade III)",
+       "team": "The Broad Squad",
+       "kind": "premium-item",
+       "description": "A +1 weapon with Brutal upgraded: you score a critical hit on a 19 or 20, and on a crit you roll one extra weapon die. Pick the weapon type with the DM.",
+       "source": "Vicious weapons with +2 (recast under the +1 cap, 15 Nov 2026)",
+       "price": {
+        "vouchers": 1
+       },
+       "rarity": "rare"
+      },
+      {
+       "id": "mon2-broad-runway",
+       "name": "Runway Lessons",
+       "team": "The Broad Squad",
+       "kind": "premium-service",
+       "description": "Permanent: +1 Dexterity and +1 Constitution.",
+       "source": "Runway lessons: Permanent +1 Dex, +1 Con",
+       "price": {
+        "vouchers": 1
+       }
+      }
+     ]
+    },
+    "3": {
+     "theme": "Blue Tsunami pop-up (Flot) + host-mall items (Pocket Sand)",
+     "vendor": {
+      "name": "Burble Kettlefin",
+      "species": "fishfolk",
+      "lines": [
+       "Blub! Sorry, that's hello. Everything's fresh from Flot. The wands are dry, mostly.",
+       "Don't squeeze the kelp unless you mean it. It squeezes back.",
+       "Your team gave our lot a proper splashing. No hard feelings! Well, some wet feelings."
+      ]
+     },
+     "items": [
+      {
+       "id": "mon3-flot-blowkelp",
+       "name": "Blowkelp Wrapping",
+       "team": "Blue Tsunami",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Requires attunement; wraps one weapon. It secretes a poison that adds +1d12 poison damage to your next successful strike with that weapon. You can squeeze it as a bonus action to secrete more poison; when you do, make a DC 12 Sleight of Hand check or take 1d4+1 poison damage.",
+       "source": "Blowkelp Wrapping: Reqs Attunement, attaches to one weapon. Secretes a poison that adds +1d12 poison damage to your next successful strike with the chosen weapon. Can squeeze the blowkelp with a bonus action to secrete more poison; when pressing, must pass a DC 12 sleight of hand check or take 1d4+1 poison damage.",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon3-flot-wand",
+       "name": "Wand of Polymorph (Fish Only)",
+       "team": "Blue Tsunami",
+       "kind": "premium-item",
+       "description": "A wand of polymorph that only turns its targets into fish. Burble has other wands under the counter; ask the DM.",
+       "source": "Wand of polymorph (turns them to fish), other wands",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon3-flot-aqua",
+       "name": "Aqua-Aerobics",
+       "team": "Blue Tsunami",
+       "kind": "premium-service",
+       "description": "Permanent: +1 Strength and +1 Dexterity.",
+       "source": "Aqua-aerobics: Permanent +1 STR, +1 DEX",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon3-host-sbb-glyphs",
+       "name": "Glyph Stamp Set",
+       "team": "Pocket Sand",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Requires attunement. One stamp of each glyph the Pocket Sand team uses. Placing a glyph takes a bonus action; glyphs behave like the team's own. You can lay one glyph of each type per long rest.",
+       "source": "Glyph stamp set: Req's attunement. Contains one stamp of each of the glyphs we let the SBB team use. Requires bonus action to place glyph. Behave the same as the SBB glyphs; one glyph of each type can be laid each long rest.",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true
+      },
+      {
+       "id": "mon3-host-sbb-lifesteal",
+       "name": "+1 Life-Stealing Weapon (Second Wind, Grade III)",
+       "team": "Pocket Sand",
+       "kind": "premium-item",
+       "description": "A +1 weapon with Second Wind upgraded: once per match, when you hit, heal 3d6. Smells faintly of seawater and chalk.",
+       "source": "Life Stealing weapons with +2 (recast under the +1 cap, 15 Nov 2026)",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true,
+       "rarity": "rare"
+      },
+      {
+       "id": "mon3-host-sbb-learning",
+       "name": "Continued Learning Pass",
+       "team": "Pocket Sand",
+       "kind": "premium-service",
+       "description": "Permanent: +2 Wisdom.",
+       "source": "Continued learning pass: Permanent +2 to Wis",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true
+      }
+     ]
+    },
+    "4": {
+     "theme": "No, But pop-up (Panto) + Broad Squad restock",
+     "vendor": {
+      "name": "Ondine Fallowmere",
+      "species": "elf",
+      "lines": [
+       "Can I interest you in an elemental anchor? No? But... what if it were on sale? No, but it's not.",
+       "Panto weather in a box! Lightning, fire, water, earth or air. Pick one. No, but really, pick one.",
+       "The Broad Squad left a crate of touch-up flasks with me. They insisted. Loudly. In formation."
+      ]
+     },
+     "items": [
+      {
+       "id": "mon4-panto-anchor",
+       "name": "Elemental Anchor",
+       "team": "No, But",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Requires attunement. Twice per long rest, use an action to create a 25-foot radius of elemental terrain (lightning, fire, water, earth or air). Requires concentration to maintain.",
+       "source": "Elemental Anchor: Req's attunement. Twice per long rest, can use one action to create a 25' radius of elemental terrain (lightening, fire, water, earth, air). Requires concentration to maintain.",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon4-panto-ring",
+       "name": "Ring of Spell Storing",
+       "team": "No, But",
+       "kind": "premium-item",
+       "description": "A ring of spell storing, Panto-cut.",
+       "source": "Ring of spell storing",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon4-panto-atmo",
+       "name": "Atmospheric Attunement",
+       "team": "No, But",
+       "kind": "premium-service",
+       "description": "Permanent: you gain a flying speed of 15 feet.",
+       "source": "Atmospheric attunement: Permanent flying movement (15 ft/turn)s",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon4-glam-rematch-kit",
+       "name": "Glam Squad Rematch Kit",
+       "team": "No, But / The Broad Squad",
+       "kind": "premium-item",
+       "itemType": "loot",
+       "description": "A sequinned make-up case: 3 Touch-Up Flasks (Potion of Superior Healing, 8d4 + 8 HP) and 2 Setting Sprays (Potion of Resistance: pick the damage type when you drink it). Restocked for the rematch week.",
+       "source": "Touch-Up Flask (Potion of Healing); Setting Spray (Potion of Resistance) (merged into a kit 17 Nov 2026)",
+       "grants": [
+        {
+         "srd": "Potion of Superior Healing",
+         "name": "Touch-Up Flask (Potion of Superior Healing)",
+         "quantity": 3,
+         "type": "consumable"
+        },
+        {
+         "srd": "Potion of Resistance",
+         "name": "Setting Spray (Potion of Resistance)",
+         "quantity": 2,
+         "type": "consumable"
+        }
+       ],
+       "price": {
+        "vouchers": 1
+       }
+      }
+     ]
+    },
+    "5": {
+     "theme": "Fairrest Federation pop-up + Blue Tsunami restock + host-mall items (Moffidge)",
+     "vendor": {
+      "name": "Hollis Brackenfold",
+      "species": "mole",
+      "lines": [
+       "Mind the mist, it's only a little mist. Fairrest folk breathe it for breakfast.",
+       "That collar? Any critter that wears it becomes your best friend. My last one was a badger. We still write.",
+       "Burble from Flot dropped off a few bottles for the rematch. Smelled a bit of harbour, but they work."
+      ]
+     },
+     "items": [
+      {
+       "id": "mon5-fairrest-collar",
+       "name": "Friendly Collar",
+       "team": "Fairrest Federation",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Requires attunement. Once per collar, win an opposed Animal Handling check to befriend an animal. It then wears this collar and acts like a familiar.",
+       "source": "Friendly collar: Reqs attunement. Once per collar, pass an opposed animal handling check to befriend an animal. They then wear this collar and will act like a familiar.",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon5-fairrest-staff",
+       "name": "Fairrest Special Staff (rare)",
+       "team": "Fairrest Federation",
+       "kind": "premium-item",
+       "description": "One of the Federation's rare staves: Staff of Charming, Staff of the Woodlands or Staff of Swarming Insects. Pick with the DM.",
+       "source": "Special Staves",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon5-fairrest-mist",
+       "name": "Mist Inhalation",
+       "team": "Fairrest Federation",
+       "kind": "premium-service",
+       "description": "Permanent: advantage on Constitution saving throws to keep concentration.",
+       "source": "Mist Inhalation: Permanently gain advantage on constitution saves when trying to keep concentration",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon5-flot-rematch-kit",
+       "name": "Flot Rematch Kit",
+       "team": "Blue Tsunami",
+       "kind": "premium-item",
+       "itemType": "loot",
+       "description": "A net bag from Flot: 2 Potions of Water Breathing and 3 Brine Bottles (Potion of Superior Healing, 8d4 + 8 HP). Restocked for the rematch week.",
+       "source": "Potion of Water Breathing; Brine Bottle (Potion of Healing) (merged into a kit 17 Nov 2026)",
+       "grants": [
+        {
+         "srd": "Potion of Water Breathing",
+         "name": "Potion of Water Breathing",
+         "quantity": 2,
+         "type": "consumable"
+        },
+        {
+         "srd": "Potion of Superior Healing",
+         "name": "Brine Bottle (Potion of Superior Healing)",
+         "quantity": 3,
+         "type": "consumable"
+        }
+       ],
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "mon5-host-moffidge-warhorn",
+       "name": "Ballot Warhorn",
+       "team": "Moffidge",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Requires attunement. Use an action to sound it and name a team target. This turn, hits that strike that target deal an extra 1d4 radiant damage.",
+       "source": "Req's attunement. Warhorn that dictates a team target, takes 1 action. Gives 1d4 radiant damage to hits that strike that target this turn",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true
+      },
+      {
+       "id": "mon5-host-moffidge-ranged",
+       "name": "+1 Ranged Weapon (Returning, Grade III)",
+       "team": "Moffidge",
+       "kind": "premium-item",
+       "description": "A +1 ranged or thrown weapon with Returning upgraded: thrown ones fly back to your hand, and your shots ignore half and three-quarters cover. Silver-tipped, of course.",
+       "source": "Ranged weapons +3 (recast under the +1 cap, 15 Nov 2026)",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true,
+       "rarity": "rare"
+      },
+      {
+       "id": "mon5-host-moffidge-anxiety",
+       "name": "Anxiety as Fuel",
+       "team": "Moffidge",
+       "kind": "premium-service",
+       "description": "Permanent: +5 feet of movement.",
+       "source": "Anxiety as fuel: Permanent +5 movement",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true
+      }
+     ]
+    },
+    "6": {
+     "theme": "Finale booth (placeholder)",
+     "vendor": null,
+     "emptyLine": "The booth is draped in a Goolax tarp. A sign says: BACK AFTER THE FINALE!",
+     "items": []
+    }
+   }
+  },
+  "tuesday": {
+   "mall": "cogskill",
+   "booths": {
+    "1": {
+     "theme": "Toggleton home stock (after Tryouts)",
+     "vendor": {
+      "name": "Tamsin Ratchetbloom",
+      "species": "gnome",
+      "lines": [
+       "Luckstones! Freshly tumbled in the Gok'Gok Harbor polisher. Lucky for you, lucky for me, rent's due.",
+       "The implants are Crystec certified. Little zap, big brain. Bit of a headache Thoughtsday, then nothing.",
+       "Tryouts survivors get the good stones. The others went to a pigeon. He's doing great, actually."
+      ]
+     },
+     "items": [
+      {
+       "id": "tue1-toggle-luckstone",
+       "name": "Tumbled Luckstone (rare)",
+       "team": "Toggleton",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "A Toggleton-tumbled Stone of Good Luck: while attuned, +1 to ability checks and saving throws. Tumbled perk: once per match, after you roll any d20, you can roll again and use either result.",
+       "source": "Luckstone, similar stones.",
+       "price": {
+        "vouchers": 1
+       },
+       "rarity": "uncommon"
+      },
+      {
+       "id": "tue1-toggle-crystec",
+       "name": "Crystec Implants",
+       "team": "Toggleton",
+       "kind": "premium-service",
+       "description": "Permanent: +1 Intelligence and +1 Strength.",
+       "source": "Crystec implants: Permanent +1 INT, +1 STR",
+       "price": {
+        "vouchers": 1
+       }
+      }
+     ]
+    },
+    "2": {
+     "theme": "Stalling pop-up (Market) + host-mall items (The Broad Squad)",
+     "vendor": {
+      "name": "Duggo Penbarrow",
+      "species": "hobgoblin",
+      "lines": [
+       "A stall inside a stall? It's stalls all the way down, friend. That's the Market way.",
+       "Everything's negotiable. Except the prices. And the swords. And me.",
+       "Stalling sends its regards and a small invoice for the regards."
+      ]
+     },
+     "items": [
+      {
+       "id": "tue2-market-stall",
+       "name": "Pop-up Stall",
+       "team": "Stalling",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Requires attunement. A folding stall straight from the Market. (Full rules coming soon: ask the DM.)",
+       "source": "Pop-up stall: Req's attunement. Requires ",
+       "notes": "Spreadsheet text is cut off after 'Requires'. Zak to finish this item.",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "tue2-market-melee",
+       "name": "+1 Hawker's Weapon (Crowd-Pleaser, Grade III)",
+       "team": "Stalling",
+       "kind": "premium-item",
+       "description": "A +1 melee weapon with Crowd-Pleaser upgraded: twice per match, when you hit, an ally within 30 ft gets advantage on their next attack. Market-stamped.",
+       "source": "Melee weapons +3 (recast under the +1 cap, 15 Nov 2026)",
+       "price": {
+        "vouchers": 1
+       },
+       "rarity": "rare"
+      },
+      {
+       "id": "tue2-market-negotiations",
+       "name": "Negotiations",
+       "team": "Stalling",
+       "kind": "premium-service",
+       "description": "Permanent: gain 33% more gold from victory rewards.",
+       "source": "Negotiations: Permanently gain 33% more gold reward from victories",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "tue2-host-broad-cape",
+       "name": "Billowing Friendship Cape",
+       "team": "The Broad Squad",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Cape. Requires attunement. Use a bonus action to activate; requires concentration. While active, allies within 15 feet of you raise your AC by +1.",
+       "source": "Billowing friendship: Cape. Reqs Attunement. Use bonus action to activate. Reqs. Concentration. While active, allies within 15 feet raise your AC +1",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true
+      },
+      {
+       "id": "tue2-host-broad-vicious",
+       "name": "+1 Vicious Weapon (Brutal, Grade III)",
+       "team": "The Broad Squad",
+       "kind": "premium-item",
+       "description": "A +1 weapon with Brutal upgraded: you score a critical hit on a 19 or 20, and on a crit you roll one extra weapon die. Pick the weapon type with the DM.",
+       "source": "Vicious weapons with +2 (recast under the +1 cap, 15 Nov 2026)",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true,
+       "rarity": "rare"
+      },
+      {
+       "id": "tue2-host-broad-runway",
+       "name": "Runway Lessons",
+       "team": "The Broad Squad",
+       "kind": "premium-service",
+       "description": "Permanent: +1 Dexterity and +1 Constitution.",
+       "source": "Runway lessons: Permanent +1 Dex, +1 Con",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true
+      }
+     ]
+    },
+    "3": {
+     "theme": "Pocket Sand pop-up (Sloppy Bottom Bay)",
+     "vendor": {
+      "name": "Nettie Saltgrub",
+      "species": "goblin",
+      "lines": [
+       "Stamps! Glyphs! Sand in places you didn't know you had! Sloppy Bottom Bay's finest.",
+       "Don't lick the glyph stamps. I did. I can taste the colour purple now.",
+       "The learning pass is great. I've learned three things since breakfast. One was about sand."
+      ]
+     },
+     "items": [
+      {
+       "id": "tue3-sbb-glyphs",
+       "name": "Glyph Stamp Set",
+       "team": "Pocket Sand",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Requires attunement. One stamp of each glyph the Pocket Sand team uses. Placing a glyph takes a bonus action; glyphs behave like the team's own. You can lay one glyph of each type per long rest.",
+       "source": "Glyph stamp set: Req's attunement. Contains one stamp of each of the glyphs we let the SBB team use. Requires bonus action to place glyph. Behave the same as the SBB glyphs; one glyph of each type can be laid each long rest.",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "tue3-sbb-lifesteal",
+       "name": "+1 Life-Stealing Weapon (Second Wind, Grade III)",
+       "team": "Pocket Sand",
+       "kind": "premium-item",
+       "description": "A +1 weapon with Second Wind upgraded: once per match, when you hit, heal 3d6. Smells faintly of seawater and chalk.",
+       "source": "Life Stealing weapons with +2 (recast under the +1 cap, 15 Nov 2026)",
+       "price": {
+        "vouchers": 1
+       },
+       "rarity": "rare"
+      },
+      {
+       "id": "tue3-sbb-learning",
+       "name": "Continued Learning Pass",
+       "team": "Pocket Sand",
+       "kind": "premium-service",
+       "description": "Permanent: +2 Wisdom.",
+       "source": "Continued learning pass: Permanent +2 to Wis",
+       "price": {
+        "vouchers": 1
+       }
+      }
+     ]
+    },
+    "4": {
+     "theme": "B'dibom Bombs pop-up (New Zolvina) + Glorious Fiefdoms crates + host-mall items (No, But)",
+     "vendor": {
+      "name": "Sister Brindle Oakhollow",
+      "species": "dwarf",
+      "lines": [
+       "Blessings of both moons on you. Rosaries on the left, armour on the right, Fiefdoms crates in the back.",
+       "The Glorious Fiefdoms lads asked me to mind their shields. They paid in turnips. I accepted the turnips.",
+       "Melunian or Selunian? Silver for the night owls, gold for the early risers. Both stop a sword."
+      ]
+     },
+     "items": [
+      {
+       "id": "tue4-zolvina-rosary",
+       "name": "Twin Moon Rosary",
+       "team": "B'dibom Bombs",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Requires attunement. Once per long rest, use an action to chant: every team member within 100 feet heals 1d12 at the top of their next turn.",
+       "source": "Twin Moon Rosary: Req's attunement. Once per long rest, use action to perform chant and give every team member within 100 ft 1d12 healing at the top of the next turn.",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "tue4-zolvina-armor",
+       "name": "+1 Melunian / Selunian Armour (rare)",
+       "team": "B'dibom Bombs",
+       "kind": "premium-item",
+       "description": "Moon-forged armour, Th'Tief's take on elven mithral and adamantine: +1 AC on top of the armour, and pick one: mithral (no Strength requirement, no stealth disadvantage) or adamantine (critical hits against you become normal hits). Pick the armour type with the DM.",
+       "source": "Special armors: Melunian and Selunian armors: this world's flavor of mythril, adamantine elven armor",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "tue4-zolvina-ascetism",
+       "name": "Monastic Asceticism",
+       "team": "B'dibom Bombs",
+       "kind": "premium-service",
+       "description": "Permanent: your hit point maximum increases by 1d6+2.",
+       "source": "Monastic Ascetism: Permanent 1d6+2 hp increase",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "tue4-fiefdoms-shield",
+       "name": "+1 Shield (Bulwark, Grade III)",
+       "team": "Glorious Fiefdoms",
+       "kind": "premium-item",
+       "description": "A +1 shield from the Glorious Fiefdoms with Bulwark upgraded: twice per match, as a reaction, +2 AC against one attack. Slight turnip smell.",
+       "source": "Shield +3 (recast under the +1 cap, 15 Nov 2026)",
+       "price": {
+        "vouchers": 1
+       },
+       "rarity": "rare"
+      },
+      {
+       "id": "tue4-fiefdoms-passage",
+       "name": "Odious Passage",
+       "team": "Glorious Fiefdoms",
+       "kind": "premium-service",
+       "description": "Permanent: one free casting of misty step per long rest.",
+       "source": "Odious passage: Gain 1 free cast of misty step per long rest",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "tue4-host-panto-anchor",
+       "name": "Elemental Anchor",
+       "team": "No, But",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Requires attunement. Twice per long rest, use an action to create a 25-foot radius of elemental terrain (lightning, fire, water, earth or air). Requires concentration to maintain.",
+       "source": "Elemental Anchor: Req's attunement. Twice per long rest, can use one action to create a 25' radius of elemental terrain (lightening, fire, water, earth, air). Requires concentration to maintain.",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true
+      },
+      {
+       "id": "tue4-host-panto-ring",
+       "name": "Ring of Spell Storing",
+       "team": "No, But",
+       "kind": "premium-item",
+       "description": "A ring of spell storing, Panto-cut.",
+       "source": "Ring of spell storing",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true
+      },
+      {
+       "id": "tue4-host-panto-atmo",
+       "name": "Atmospheric Attunement",
+       "team": "No, But",
+       "kind": "premium-service",
+       "description": "Permanent: you gain a flying speed of 15 feet.",
+       "source": "Atmospheric attunement: Permanent flying movement (15 ft/turn)s",
+       "price": {
+        "vouchers": 1
+       },
+       "hostItem": true
+      }
+     ]
+    },
+    "5": {
+     "theme": "Moffidge pop-up + Pocket Sand restock",
+     "vendor": {
+      "name": "Constance Ashgrove",
+      "species": "human",
+      "lines": [
+       "Good evening. It is always evening at this booth. We voted.",
+       "The warhorn picks a target and everybody hits it. Democracy, but louder.",
+       "Nettie from Sloppy Bottom Bay left these sand pouches for the rematch. She said 'aim for the eyes'. Charming girl."
+      ]
+     },
+     "items": [
+      {
+       "id": "tue5-moffidge-warhorn",
+       "name": "Ballot Warhorn",
+       "team": "Moffidge",
+       "kind": "premium-item",
+       "attunement": true,
+       "description": "Requires attunement. Use an action to sound it and name a team target. This turn, hits that strike that target deal an extra 1d4 radiant damage.",
+       "source": "Req's attunement. Warhorn that dictates a team target, takes 1 action. Gives 1d4 radiant damage to hits that strike that target this turn",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "tue5-moffidge-ranged",
+       "name": "+1 Ranged Weapon (Returning, Grade III)",
+       "team": "Moffidge",
+       "kind": "premium-item",
+       "description": "A +1 ranged or thrown weapon with Returning upgraded: thrown ones fly back to your hand, and your shots ignore half and three-quarters cover. Silver-tipped, of course.",
+       "source": "Ranged weapons +3 (recast under the +1 cap, 15 Nov 2026)",
+       "price": {
+        "vouchers": 1
+       },
+       "rarity": "rare"
+      },
+      {
+       "id": "tue5-moffidge-anxiety",
+       "name": "Anxiety as Fuel",
+       "team": "Moffidge",
+       "kind": "premium-service",
+       "description": "Permanent: +5 feet of movement.",
+       "source": "Anxiety as fuel: Permanent +5 movement",
+       "price": {
+        "vouchers": 1
+       }
+      },
+      {
+       "id": "tue5-pocketsand-rematch-kit",
+       "name": "Pocket Sand Rematch Kit",
+       "team": "Pocket Sand",
+       "kind": "premium-item",
+       "itemType": "loot",
+       "description": "A very gritty tote: 4 Pouches of Pocket Sand (action: a creature within 5 feet makes a DC 12 Constitution save or is blinded until the end of its next turn) and 3 Potions of Superior Healing (Bay Bottled, 8d4 + 8 HP). Restocked for the rematch week.",
+       "source": "Pouch of Pocket Sand; Potion of Healing (Bay Bottled) (merged into a kit 17 Nov 2026)",
+       "grants": [
+        {
+         "name": "Pouch of Pocket Sand",
+         "quantity": 4,
+         "type": "consumable",
+         "desc": "Action: throw it at a creature within 5 feet. It makes a DC 12 Constitution save or is blinded until the end of its next turn."
+        },
+        {
+         "srd": "Potion of Superior Healing",
+         "name": "Potion of Superior Healing (Bay Bottled)",
+         "quantity": 3,
+         "type": "consumable"
+        }
+       ],
+       "price": {
+        "vouchers": 1
+       }
+      }
+     ]
+    },
+    "6": {
+     "theme": "Finale booth (placeholder)",
+     "vendor": null,
+     "emptyLine": "The booth is draped in a Goolax tarp. A sign says: BACK AFTER THE FINALE!",
+     "items": []
+    }
+   }
+  }
+ }
+}

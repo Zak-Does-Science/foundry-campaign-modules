@@ -1,0 +1,82 @@
+<section class="maul-gm-body">
+  <fieldset>
+    <legend>Mall scenes</legend>
+    <div class="maul-row">
+      <button type="button" class="maul-btn" data-action="build"><i class="fas fa-hammer"></i> Build / rebuild mall scenes</button>
+      <button type="button" class="maul-btn" data-action="syncBooths"><i class="fas fa-store"></i> Sync booth tiles</button>
+      <button type="button" class="maul-btn" data-action="placeTokens"><i class="fas fa-person-walking"></i> Place missing player tokens</button>
+      <button type="button" class="maul-btn" data-action="sendToStores"><i class="fas fa-store"></i> Send everyone to their stores</button>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Week (each table has its own)</legend>
+    {{#each tableWeeks}}
+    <div class="maul-week-now"><strong>{{name}}</strong>: {{weekLabel}}</div>
+    <div class="maul-row">
+      <button type="button" class="maul-btn" data-action="weekPrev" data-table="{{table}}" {{#if atMin}}disabled{{/if}}>&#9664; Back</button>
+      <select name="week-{{table}}">
+        {{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>Week {{label}}</option>{{/each}}
+      </select>
+      <button type="button" class="maul-btn" data-action="weekSet" data-table="{{table}}">Set</button>
+      <button type="button" class="maul-btn" data-action="weekNext" data-table="{{table}}" {{#if atMax}}disabled{{/if}}>Advance week &#9654;</button>
+    </div>
+    {{/each}}
+    <p class="maul-dim">Week N = the table is preparing for match N. Advance it right after match N is played: that opens booth N
+      (the pop-up from the team they just faced), moves the mall's chatter on, and hands that table's players their next
+      healing potions.</p>
+    <div class="maul-row maul-results" title="Last match result per table: the coworker's Bastion-turn greeting. Click to change.">
+      Last match:
+      {{#each results}}
+      <button type="button" class="maul-btn small" data-action="cycleResult" data-table="{{table}}">{{label}}: {{result}}</button>
+      {{/each}}
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>PA announcement</legend>
+    <div class="maul-row">
+      <button type="button" class="maul-btn" data-action="paClosing"><i class="fas fa-bullhorn"></i> PA: closing for update</button>
+      <button type="button" class="maul-btn" data-action="paCancel"><i class="fas fa-xmark"></i> Cancel announcement</button>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Discoveries &amp; character logs</legend>
+    <div class="maul-row">
+      <button type="button" class="maul-btn" data-action="discoveries"><i class="fas fa-lightbulb"></i> Discoveries</button>
+      <button type="button" class="maul-btn" data-action="exportLogs"><i class="fas fa-file-export"></i> Export character logs</button>
+      <button type="button" class="maul-btn" data-action="applyUpdates"><i class="fas fa-file-import"></i> Apply update file</button>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Players</legend>
+    <div class="maul-row">
+      <button type="button" class="maul-btn" data-action="createUsers"><i class="fas fa-user-plus"></i> Create player users (from players.json)</button>
+      <button type="button" class="maul-btn" data-action="setupCharacters"><i class="fas fa-id-card"></i> Set up player characters</button>
+    </div>
+    <table class="maul-users">
+      <thead><tr><th>User</th><th>Table</th><th>Character</th><th>Flags</th><th>Office</th><th title="Leyline: where the player is visiting">Away</th><th></th></tr></thead>
+      <tbody>
+        {{#each users}}
+        <tr data-user-id="{{id}}" class="{{#if active}}online{{/if}}">
+          <td>{{name}}</td>
+          <td><a data-action="cycleTable" title="Click to change">{{#if table}}{{table}}{{else}}<em>none</em>{{/if}}</a></td>
+          <td>{{#if character}}{{character}}{{else}}<em>unassigned</em>{{/if}}</td>
+          <td title="{{logCount}} log entries">{{flagCount}}</td>
+          <td>{{#if office}}&#10003;{{/if}}</td>
+          <td>{{#if away}}{{away}}{{#if awayPaid}} (paid){{/if}}{{/if}}</td>
+          <td class="maul-actions">
+            <button type="button" class="maul-btn small" data-action="viewFlags">View</button>
+            {{#if hasLines}}<button type="button" class="maul-btn small" data-action="clearLines" title="Clear this week's stand-in lines">Clear lines</button>{{/if}}
+            <button type="button" class="maul-btn small danger" data-action="resetUser">Reset</button>
+          </td>
+        </tr>
+        {{else}}
+        <tr><td colspan="7"><em>No player users yet.</em></td></tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </fieldset>
+</section>

@@ -1,0 +1,103 @@
+{
+  "mall": "sample",
+  "tilePx": 16,
+  "scale": 4,
+  "gridPx": 64,
+  "widthTiles": 54,
+  "heightTiles": 16,
+  "floors": {
+    "L1": {
+      "ox": 0,
+      "oy": 0,
+      "w": 28,
+      "h": 16
+    },
+    "L2": {
+      "ox": 32,
+      "oy": 0,
+      "w": 22,
+      "h": 14
+    }
+  },
+  "labels": [
+    {
+      "floor": "L1",
+      "x": 4,
+      "y": 1,
+      "text": "107 POINT AND CHUTE",
+      "signX": 4,
+      "signY": 1,
+      "unit": "107",
+      "door": null,
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 15,
+      "y": 1,
+      "text": "OH BANAÑONS!",
+      "signX": 21,
+      "signY": 5,
+      "unit": null,
+      "door": [
+        21,
+        4
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 23,
+      "y": 1,
+      "text": "CLARA'S BREWS",
+      "signX": 21,
+      "signY": 5,
+      "unit": null,
+      "door": [
+        21,
+        4
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L2",
+      "x": 15,
+      "y": 1,
+      "text": "GOO TO GO",
+      "signX": 10,
+      "signY": 6,
+      "unit": null,
+      "door": [
+        10,
+        5
+      ],
+      "plaque": false
+    }
+  ],
+  "reveals": {},
+  "areas": {},
+  "liveSprites": {
+    "s-1": "npc:goblin:3",
+    "s-2": "npc:mushroomfolk:0",
+    "s-3": "npc:human:1",
+    "s-4": "npc:elf:2",
+    "s-5": "npc:gnome:4",
+    "s-6": "npc:dwarf:5",
+    "s-7": "npc:halfling:6",
+    "s-8": "npc:orc:7",
+    "s-9": "npc:lizardfolk:0",
+    "s-10": "npc:dragonborn:1",
+    "s-11": "npc:pixie:2",
+    "s-12": "npc:fishfolk:3",
+    "s-13": "npc:snail:4",
+    "s-14": "npc:automaton:5",
+    "s-15": "npc:tiefling:6",
+    "s-16": "npc:kobold:7",
+    "s-17": "npc:mole:0",
+    "s-18": "npc:hobgoblin:1",
+    "s-19": "npc:owlbear:1",
+    "o-12": "obj:cat"
+  },
+  "chatSprites": {},
+  "spritesPath": "assets/sprites/live/"
+}

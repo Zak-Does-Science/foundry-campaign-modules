@@ -1,0 +1,43 @@
+{
+ "frame": 16,
+ "icons": [
+  "sword",
+  "sword-shield",
+  "armour",
+  "arrows",
+  "target",
+  "potion",
+  "mug",
+  "bowl",
+  "meat",
+  "banana",
+  "pie",
+  "chili",
+  "cake",
+  "skewer",
+  "fish",
+  "leaf",
+  "shirt",
+  "boot",
+  "soap",
+  "gem",
+  "gear",
+  "horse",
+  "compass",
+  "masks",
+  "dice",
+  "scroll",
+  "anvil",
+  "candle",
+  "skull",
+  "star",
+  "mortar",
+  "gift",
+  "kettle"
+ ],
+ "themes": [
+  "cogskill",
+  "galleria",
+  "immia"
+ ]
+}

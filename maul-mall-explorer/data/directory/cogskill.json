@@ -1,0 +1,690 @@
+{
+ "mall": "cogskill",
+ "name": "Cogskill Arcade",
+ "tilePx": 16,
+ "categories": [
+  "Clothing & Style",
+  "Gear & Weapons",
+  "Magic & Curios",
+  "Food & Drink",
+  "Mounts & Travel",
+  "Home & Gifts",
+  "Fun & Games",
+  "Services",
+  "Arena",
+  "Facilities"
+ ],
+ "floors": [
+  {
+   "id": "L1",
+   "name": "Level 1 — Ground Floor",
+   "img": "assets/maps/directory/cogskill_L1.webp",
+   "w": 78,
+   "h": 42
+  },
+  {
+   "id": "L2",
+   "name": "Level 2 — Upper Floor & Food Court",
+   "img": "assets/maps/directory/cogskill_L2.webp",
+   "w": 78,
+   "h": 42
+  }
+ ],
+ "pins": [
+  {
+   "floor": "L1",
+   "x": 13,
+   "y": 7,
+   "label": "A XILLIFORTH THEATRE",
+   "unit": "A",
+   "name": "Xilliforth Theatre",
+   "category": "Fun & Games",
+   "sells": "Shows nightly, now starring crystal-projected bard automatons.",
+   "sign": {
+    "icon": "masks",
+    "x": 17,
+    "y": 15
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 23,
+   "y": 12,
+   "label": "WC",
+   "unit": "WC",
+   "name": "Restrooms",
+   "category": "Facilities",
+   "sells": "Twice-filtered restrooms. Please don't wash fish in the basins."
+  },
+  {
+   "floor": "L1",
+   "x": 30,
+   "y": 5,
+   "label": "B TOGGLETEC EMPORIUM",
+   "unit": "B",
+   "name": "Toggletec Emporium",
+   "category": "Gear & Weapons",
+   "sells": "Crystons, coils and crystec gadgets. Ask about the warranty.",
+   "sign": {
+    "icon": "gem",
+    "x": 34,
+    "y": 15
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 3,
+   "y": 21,
+   "label": "101 CLOCKPUNK&GIZMO'S",
+   "unit": "101",
+   "name": "Clockpunk & Gizmo's",
+   "category": "Fun & Games",
+   "sells": "Wind-up toys, gizmos and shin-punching Mini-Brawler figures.",
+   "sign": {
+    "icon": "gear",
+    "x": 5,
+    "y": 22
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 11,
+   "y": 23,
+   "label": "102 LODCC",
+   "unit": "102",
+   "name": "Land of Dreams Consulting Consortium",
+   "category": "Services",
+   "sells": "Got an adventurer-sized problem? They source the quest.",
+   "sign": {
+    "icon": "scroll",
+    "x": 14,
+    "y": 23
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 17,
+   "y": 22,
+   "label": "GNORMAN FOUNTAIN",
+   "unit": null,
+   "name": "Gnorman Memorial Fountain",
+   "category": "Facilities",
+   "sells": "Bronze gnome, endless jug, ornamental fish. Please, no fishing."
+  },
+  {
+   "floor": "L1",
+   "x": 27,
+   "y": 20,
+   "label": "C DULLARD'S",
+   "unit": "C",
+   "name": "Dullard's",
+   "category": "Clothing & Style",
+   "sells": "Department store: coats, kettles, crowbars, cravats, good socks.",
+   "sign": {
+    "icon": "shirt",
+    "x": 25,
+    "y": 18
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 6,
+   "y": 29,
+   "label": "103 TEXTILE STRIP",
+   "unit": "103",
+   "name": "Textile Strip",
+   "category": "Clothing & Style",
+   "sells": "Everyday clothes row, home of Chasm."
+  },
+  {
+   "floor": "L1",
+   "x": 6,
+   "y": 32,
+   "label": "CHASM",
+   "unit": null,
+   "name": "Chasm",
+   "category": "Clothing & Style",
+   "sells": "Basics in forty shades of grey-brown. Rusty Soot is in.",
+   "sign": {
+    "icon": "shirt",
+    "x": 7,
+    "y": 28
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 21,
+   "y": 29,
+   "label": "104 AMMO",
+   "unit": "104",
+   "name": "Ammo",
+   "category": "Gear & Weapons",
+   "sells": "Bolts, bullets, sling-stones, cannon charges. Brawl-legal only.",
+   "sign": {
+    "icon": "arrows",
+    "x": 20,
+    "y": 28
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 28,
+   "y": 29,
+   "label": "105 PRACTICE RANGE",
+   "unit": "105",
+   "name": "Practice Range",
+   "category": "Fun & Games",
+   "sells": "Target lanes, ten coppers each. Point it downrange.",
+   "sign": {
+    "icon": "target",
+    "x": 27,
+    "y": 28
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 16,
+   "y": 29,
+   "label": "INFO KIOSK",
+   "unit": null,
+   "name": "Info Kiosk",
+   "category": "Services",
+   "sells": "Directions, lost property (third drawer), and a rented stool."
+  },
+  {
+   "floor": "L1",
+   "x": 16,
+   "y": 36,
+   "label": "MAIN ENTRANCE",
+   "unit": null,
+   "name": "Main Entrance",
+   "category": "Facilities",
+   "sells": "Brass piston doors, plaza, and the Cryst-rail stop."
+  },
+  {
+   "floor": "L1",
+   "x": 43,
+   "y": 11,
+   "label": "106 SHIMOTO MOTORS",
+   "unit": "106",
+   "name": "Shimoto Motors",
+   "category": "Mounts & Travel",
+   "sells": "Clockwork striders, steam-mules and the six-legged Scuttle.",
+   "sign": {
+    "icon": "gear",
+    "x": 40,
+    "y": 13
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 43,
+   "y": 22,
+   "label": "107 RIDE OR DIE",
+   "unit": "107",
+   "name": "Ride or Die",
+   "category": "Mounts & Travel",
+   "sells": "Living mounts: beetles, lizards, a goat with opinions.",
+   "sign": {
+    "icon": "horse",
+    "x": 41,
+    "y": 20
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 62,
+   "y": 13,
+   "label": "116 MAYOR KLERP ARENA",
+   "unit": "116",
+   "name": "Mayor Klerp Memorial Arena",
+   "category": "Arena",
+   "sells": "Cogskill's MALL BRAWL arena, home of the local team."
+  },
+  {
+   "floor": "L1",
+   "x": 50,
+   "y": 11,
+   "label": "WC",
+   "unit": "WC",
+   "name": "Restrooms",
+   "category": "Facilities",
+   "sells": "Twice-filtered restrooms. Please don't wash fish in the basins."
+  },
+  {
+   "floor": "L1",
+   "x": 50,
+   "y": 22,
+   "label": "STAIRS",
+   "unit": null,
+   "name": "Arena Stairs",
+   "category": "Facilities",
+   "sells": "Arena-ring stairs between the concourse and the food court."
+  },
+  {
+   "floor": "L1",
+   "x": 59,
+   "y": 5,
+   "label": "108 BELIEVE U-ME",
+   "unit": "108",
+   "name": "Believe U-ME",
+   "category": "Magic & Curios",
+   "sells": "Faith supplies for every faith: candles, icons, prayer-gears.",
+   "sign": {
+    "icon": "candle",
+    "x": 61,
+    "y": 8
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 66,
+   "y": 5,
+   "label": "109 'GENTS",
+   "unit": "109",
+   "name": "'Gents",
+   "category": "Magic & Curios",
+   "sells": "Spell reagents: guano, powdered cryston, ethically sourced newt.",
+   "sign": {
+    "icon": "mortar",
+    "x": 64,
+    "y": 8
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 73,
+   "y": 11,
+   "label": "110 MORT N' MORE",
+   "unit": "110",
+   "name": "Mort n' More",
+   "category": "Magic & Curios",
+   "sells": "Cosy dark arts, resin skulls and mildly cursed teaspoons.",
+   "sign": {
+    "icon": "skull",
+    "x": 71,
+    "y": 14
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 73,
+   "y": 22,
+   "label": "111 SOARDENBORT",
+   "unit": "111",
+   "name": "Soardenbort",
+   "category": "Gear & Weapons",
+   "sells": "Melee supplies: swords, axes, hammers. Brawl-stamped.",
+   "sign": {
+    "icon": "sword",
+    "x": 71,
+    "y": 19
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 66,
+   "y": 28,
+   "label": "112 DARANIRN'S",
+   "unit": "112",
+   "name": "Daranirn's Exotic Wonders",
+   "category": "Magic & Curios",
+   "sells": "Far-flung curios, Draconic price tags. Lick nothing.",
+   "sign": {
+    "icon": "gem",
+    "x": 64,
+    "y": 25
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 59,
+   "y": 28,
+   "label": "113 HEX TOPIC",
+   "unit": "113",
+   "name": "Hex Topic",
+   "category": "Clothing & Style",
+   "sells": "Band tees, piercings and cursed jewellery. Some amulets bite.",
+   "sign": {
+    "icon": "shirt",
+    "x": 61,
+    "y": 25
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 54,
+   "y": 24,
+   "label": "114 FAESTROLOGIC",
+   "unit": "114",
+   "name": "Faestrologic",
+   "category": "Magic & Curios",
+   "sells": "Fae goods, glitter and star readings on commission.",
+   "sign": {
+    "icon": "star",
+    "x": 55,
+    "y": 22
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 54,
+   "y": 9,
+   "label": "115 ALL KIMY",
+   "unit": "115",
+   "name": "All Kimy",
+   "category": "Magic & Curios",
+   "sells": "Potions and poisons, on different shelves. Usually.",
+   "sign": {
+    "icon": "potion",
+    "x": 55,
+    "y": 11
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 36,
+   "y": 34,
+   "label": "LEYLINE OPERATOR",
+   "unit": null,
+   "name": "Leyline Operator",
+   "category": "Mounts & Travel",
+   "sells": "One-rider leyline trips to Galleria Overlook. 50 gp round trip."
+  },
+  {
+   "floor": "L2",
+   "x": 16,
+   "y": 15,
+   "label": "A XILLIFORTH THEATRE",
+   "unit": "A",
+   "name": "Xilliforth Theatre",
+   "category": "Fun & Games",
+   "sells": "Shows nightly, now starring crystal-projected bard automatons.",
+   "sign": {
+    "icon": "masks",
+    "x": 17,
+    "y": 15
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 30,
+   "y": 15,
+   "label": "B TOGGLETEC EMPORIUM",
+   "unit": "B",
+   "name": "Toggletec Emporium",
+   "category": "Gear & Weapons",
+   "sells": "Crystons, coils and crystec gadgets. Ask about the warranty.",
+   "sign": {
+    "icon": "gem",
+    "x": 31,
+    "y": 15
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 3,
+   "y": 26,
+   "label": "201 SMITHY SECTION",
+   "unit": "201",
+   "name": "Smithy Section",
+   "category": "Services",
+   "sells": "Repairs, sharpening, dent removal and brawl homologation stamps.",
+   "sign": {
+    "icon": "anvil",
+    "x": 4,
+    "y": 18
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 11,
+   "y": 24,
+   "label": "202 POP-UP BOOTHS",
+   "unit": "202",
+   "name": "Goolax Pop-Up Booths",
+   "category": "Services",
+   "sells": "Visiting vendors weekly. Open to every competitor."
+  },
+  {
+   "floor": "L2",
+   "x": 27,
+   "y": 29,
+   "label": "203 LET HER! LEATHER",
+   "unit": "203",
+   "name": "Let Her! Leather",
+   "category": "Clothing & Style",
+   "sells": "Jackets, boots and armour that creaks attractively. All studded.",
+   "sign": {
+    "icon": "armour",
+    "x": 20,
+    "y": 30
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 26,
+   "y": 18,
+   "label": "C DULLARD'S",
+   "unit": "C",
+   "name": "Dullard's",
+   "category": "Clothing & Style",
+   "sells": "Department store: coats, kettles, crowbars, cravats, good socks.",
+   "sign": {
+    "icon": "shirt",
+    "x": 25,
+    "y": 18
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 42,
+   "y": 11,
+   "label": "204 CRYST-O-GAMES",
+   "unit": "204",
+   "name": "Cryst-o-Games",
+   "category": "Fun & Games",
+   "sells": "Arcade cabinets, tokens and a prize counter. Be nice to GEARFALL.",
+   "sign": {
+    "icon": "dice",
+    "x": 43,
+    "y": 13
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 44,
+   "y": 23,
+   "label": "205 GAGA GARDENIA",
+   "unit": "205",
+   "name": "GaGa Gardenia",
+   "category": "Clothing & Style",
+   "sells": "High-end exercise wear, plus heated Dolphin Stretch classes.",
+   "sign": {
+    "icon": "shirt",
+    "x": 41,
+    "y": 20
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 16,
+   "y": 35,
+   "label": "ENTRANCE BALCONY",
+   "unit": null,
+   "name": "Entrance Balcony",
+   "category": "Facilities",
+   "sells": "Upper balcony looking down on the entrance rotunda."
+  },
+  {
+   "floor": "L2",
+   "x": 62,
+   "y": 16,
+   "label": "215 ARENA OVERLOOK",
+   "unit": "215",
+   "name": "Arena Overlook",
+   "category": "Arena",
+   "sells": "Railing view straight down into the arena. Don't drop food."
+  },
+  {
+   "floor": "L2",
+   "x": 62,
+   "y": 8,
+   "label": "FOOD COURT",
+   "unit": null,
+   "name": "Food Court",
+   "category": "Food & Drink",
+   "sells": "Upstairs food court round the arena overlook, units 206-213."
+  },
+  {
+   "floor": "L2",
+   "x": 51,
+   "y": 13,
+   "label": "WC",
+   "unit": "WC",
+   "name": "Restrooms",
+   "category": "Facilities",
+   "sells": "Twice-filtered restrooms. Please don't wash fish in the basins."
+  },
+  {
+   "floor": "L2",
+   "x": 51,
+   "y": 20,
+   "label": "STAIRS",
+   "unit": null,
+   "name": "Arena Stairs",
+   "category": "Facilities",
+   "sells": "Arena-ring stairs between the concourse and the food court."
+  },
+  {
+   "floor": "L2",
+   "x": 56,
+   "y": 12,
+   "label": "214 OBSERVATION DECK",
+   "unit": "214",
+   "name": "Observation Deck",
+   "category": "Arena",
+   "sells": "Viewing deck with a coin-op Klerp-O-Scope."
+  },
+  {
+   "floor": "L2",
+   "x": 58,
+   "y": 7,
+   "label": "206 CLARA'S BREWS",
+   "unit": "206",
+   "name": "Clara's Brews",
+   "category": "Food & Drink",
+   "sells": "Ales, stouts and the famous Foundry Fizz.",
+   "sign": {
+    "icon": "mug",
+    "x": 61,
+    "y": 6
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 67,
+   "y": 7,
+   "label": "207 GOO TO GO",
+   "unit": "207",
+   "name": "Goo to Go",
+   "category": "Food & Drink",
+   "sells": "Slurpy food for busy folk. The surprise is texture.",
+   "sign": {
+    "icon": "bowl",
+    "x": 64,
+    "y": 6
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 69,
+   "y": 8,
+   "label": "208 OH BANAÑONS!",
+   "unit": "208",
+   "name": "Oh Banañons!",
+   "category": "Food & Drink",
+   "sells": "Ban'ton-style banañon dishes, fried, baked and sauced.",
+   "sign": {
+    "icon": "banana",
+    "x": 70,
+    "y": 9
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 69,
+   "y": 25,
+   "label": "209 CARNA",
+   "unit": "209",
+   "name": "Carna",
+   "category": "Food & Drink",
+   "sells": "Meat on a stick, off a stick, in a bun.",
+   "sign": {
+    "icon": "skewer",
+    "x": 70,
+    "y": 24
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 67,
+   "y": 26,
+   "label": "210 WHET",
+   "unit": "210",
+   "name": "Whet",
+   "category": "Food & Drink",
+   "sells": "Flotian sea cuisine: raw, cured, or just looked at.",
+   "sign": {
+    "icon": "fish",
+    "x": 64,
+    "y": 27
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 58,
+   "y": 26,
+   "label": "211 GRAB GRASS",
+   "unit": "211",
+   "name": "Grab Grass",
+   "category": "Food & Drink",
+   "sells": "Herbivorous salads, root bowls and the Lawn Wrap.",
+   "sign": {
+    "icon": "leaf",
+    "x": 61,
+    "y": 27
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 53,
+   "y": 25,
+   "label": "212 PANTO'S TRY",
+   "unit": "212",
+   "name": "Panto's Try",
+   "category": "Food & Drink",
+   "sells": "Enchanted foods: singing soup, bowing bread, joke-telling pie.",
+   "sign": {
+    "icon": "pie",
+    "x": 54,
+    "y": 23
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 53,
+   "y": 8,
+   "label": "213 FURIOUS FREJA",
+   "unit": "213",
+   "name": "Furious Freja",
+   "category": "Food & Drink",
+   "sells": "Hearty Glorious Fiefdoms fare, served with a free scowl.",
+   "sign": {
+    "icon": "meat",
+    "x": 54,
+    "y": 10
+   }
+  }
+ ]
+}

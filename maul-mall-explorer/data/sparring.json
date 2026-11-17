@@ -1,0 +1,554 @@
+{
+  "_doc": "Practice bouts (SPEC 31). One host per mall (added to the mall by scripts/data.js, so the mall JSON is untouched) and four partners per mall. Stats are formulas: @lvl = the character's level, @prof = their proficiency bonus; floor/ceil/min/max allowed. Partner `after` = beat that partner once to unlock this one. Rewards: tier gp per win, at most weeklyCapGp per character per week. Voices: dm-notes/VOICE-GUIDE.md section 11.",
+  "weeklyCapGp": 250,
+  "tiers": {
+    "warmup": {
+      "label": "Warm-up",
+      "gp": 10
+    },
+    "rookie": {
+      "label": "Rookie",
+      "gp": 25
+    },
+    "veteran": {
+      "label": "Veteran",
+      "gp": 50
+    },
+    "champion": {
+      "label": "Champion",
+      "gp": 80
+    }
+  },
+  "hosts": {
+    "galleria": {
+      "id": "gal-L1-spar-fenna",
+      "kind": "spar",
+      "name": "Fenna Brackenbell (practice bouts)",
+      "sprite": "npc:plantling:3",
+      "floor": "L1",
+      "x": 49,
+      "y": 19,
+      "pages": [
+        "Fenna Brackenbell. Dunstan referees the real matches; I run the practice bouts. Padded gear, practice potions, and nobody goes home in a sling. Goolax pays me per bout.",
+        "Pick a partner. Beat one and the next will take you seriously. Wins pay a little from the Goolax practice purse, up to 250 gp a week."
+      ],
+      "ready": [
+        "Whistle's ready. Who are we fighting today?",
+        "I taught tumbling to toddlers in the Rainforest Gardens until the rent went up. You're bigger. Same rules: tuck your chin.",
+        "Bouts stop at twenty rounds or the first fighter down. Then you shake hands. Then you drink water.",
+        "Your real sheet stays clean in here. Bruises are practice bruises. They don't come home with you."
+      ],
+      "capped": "The practice purse is empty for you this week. Fight all you like; it pays again after your next match."
+    },
+    "cogskill": {
+      "id": "cog-L1-spar-brassy",
+      "kind": "spar",
+      "name": "Brassy Fenwhistle (bout timer)",
+      "sprite": "npc:gnome:2",
+      "floor": "L1",
+      "x": 60,
+      "y": 15,
+      "pages": [
+        "Brassy Fenwhistle, bout timer. Nineteen years timing ferries at Gok'Gok Harbor, so I know when something's running late. Practice bouts: padded, twenty rounds at most.",
+        "Choose a partner. Beat them and the next one agrees to see you. Wins pay from the Goolax practice purse, up to 250 gp a week per fighter."
+      ],
+      "ready": [
+        "Stopwatches one, two and three are wound. Pick your partner.",
+        "Average bout today: six rounds, forty seconds. Beat it, or don't. I write it down either way.",
+        "My sister says timing bouts isn't a real job. She has never once been on time for anything.",
+        "Practice HP, practice potions, practice spell slots. Your real ones stay in your pocket."
+      ],
+      "capped": "That's this week's purse paid out to you. You can still fight; I'll still time it. It pays again after your next match."
+    }
+  },
+  "partners": {
+    "galleria": [
+      {
+        "id": "gal-spar-soggins",
+        "name": "Soggins",
+        "short": "Soggins",
+        "tier": "warmup",
+        "sprite": "npc:crud:4",
+        "blurb": "A soggy cardboard-lump Crud, born when a shipping depot flooded. Volunteers as a practice dummy. Says it's the most attention he's had since the boxes got wet.",
+        "stats": {
+          "ac": "9",
+          "hp": "5 + 4*@lvl",
+          "init": "-1",
+          "save": "0"
+        },
+        "moves": [
+          {
+            "name": "Damp Flop",
+            "type": "attack",
+            "bonus": "1 + floor(@lvl/3)",
+            "dmg": "1d4",
+            "weight": 3,
+            "text": "{foe} flops wetly at {pc}."
+          },
+          {
+            "name": "Sag",
+            "type": "idle",
+            "weight": 1,
+            "text": "{foe} sags in the middle and has a little sit-down."
+          }
+        ],
+        "lines": {
+          "start": [
+            "Hit Soggins! Soggins is ready!",
+            "Soggins has been practising standing still. Soggins is very good at it."
+          ],
+          "hurt": [
+            "Soggins is coming unglued. Soggins was always a bit unglued."
+          ],
+          "lose": [
+            "Good hit! Soggins will dry out by Thoughtsday.",
+            "Soggins is flat now. Soggins likes being flat. It's like the depot."
+          ],
+          "win": [
+            "Soggins won? Soggins has never won. Soggins must tell the other boxes."
+          ]
+        }
+      },
+      {
+        "id": "gal-spar-quinby",
+        "name": "Quinby Vamberkin",
+        "short": "Quinby",
+        "tier": "rookie",
+        "after": "gal-spar-soggins",
+        "sprite": "npc:halfling:1",
+        "blurb": "A Goolax intern who spends every lunch break fighting with a foam pool noodle. Has watched every one of your matches. Twice.",
+        "stats": {
+          "ac": "12 + floor(@lvl/4)",
+          "hp": "8 + 7*@lvl",
+          "init": "2",
+          "saves": {
+            "str": "0",
+            "dex": "2 + floor(@prof/2)",
+            "con": "1",
+            "int": "0",
+            "wis": "1",
+            "cha": "1"
+          }
+        },
+        "moves": [
+          {
+            "name": "Noodle Swat",
+            "type": "attack",
+            "bonus": "3 + @prof",
+            "dmg": "1d6 + 1 + floor(@lvl/2)",
+            "weight": 3,
+            "text": "{foe} whips the pool noodle round."
+          },
+          {
+            "name": "Sticker Slap",
+            "type": "attack",
+            "bonus": "2 + @prof",
+            "dmg": "1d4 + floor(@lvl/3)",
+            "count": 2,
+            "weight": 2,
+            "text": "{foe} darts in, slapping Goolax stickers on {pc}."
+          },
+          {
+            "name": "Hide Behind the Noodle",
+            "type": "guard",
+            "ac": 2,
+            "whenHurt": true,
+            "weight": 1,
+            "text": "{foe} holds the noodle up like a shield and hopes."
+          }
+        ],
+        "lines": {
+          "start": [
+            "I've watched every one of your matches. Twice. This is so much pressure.",
+            "My supervisor thinks I'm restocking lanyards. Let's be quick."
+          ],
+          "hurt": [
+            "Ow! Okay! Okay. Pain is information. Somebody said that to me once and I've never forgiven them."
+          ],
+          "lose": [
+            "Can you sign my noodle? I'm keeping it.",
+            "I went down in under a minute to a real brawler. Best lunch break of my life."
+          ],
+          "win": [
+            "I won? Don't tell my supervisor. She'll make me do it at the next match."
+          ]
+        }
+      },
+      {
+        "id": "gal-spar-gorse",
+        "name": "Gorse Mudlark",
+        "short": "Gorse",
+        "tier": "veteran",
+        "after": "gal-spar-quinby",
+        "sprite": "npc:mushroomfolk:2",
+        "blurb": "A mushroomfolk wrestler, twenty-two years in the caves under Glister, retired to the Galleria for the light. Slow to speak, fast to grapple, kind about it.",
+        "stats": {
+          "ac": "13 + floor(@lvl/3)",
+          "hp": "10 + 10*@lvl",
+          "init": "0",
+          "saves": {
+            "str": "3 + floor(@prof/2)",
+            "dex": "0",
+            "con": "2 + @prof",
+            "int": "0",
+            "wis": "2",
+            "cha": "0"
+          }
+        },
+        "moves": [
+          {
+            "name": "Cap Slam",
+            "type": "attack",
+            "bonus": "3 + @prof",
+            "dmg": "1d8 + 2 + floor(@lvl/3)",
+            "weight": 3,
+            "text": "{foe} lowers his cap and charges.",
+            "count": "1 + floor(@lvl/5)"
+          },
+          {
+            "name": "Spore Puff",
+            "type": "save",
+            "ability": "con",
+            "dc": "10 + @prof",
+            "dmg": "2d6 + floor(@lvl/2)",
+            "onSave": "half",
+            "recharge": 5,
+            "weight": 2,
+            "text": "{foe} gives his cap a shake. A cloud of sneezy spores rolls over {pc}."
+          },
+          {
+            "name": "Root Down",
+            "type": "guard",
+            "ac": 2,
+            "whenHurt": true,
+            "weight": 1,
+            "text": "{foe} roots his feet into the arena floor."
+          }
+        ],
+        "lines": {
+          "start": [
+            "The lamps were worse in the Glister caves. You could only hear the other fellow coming. Begin when you like.",
+            "Hands where I can see them. That's not a rule. I just like to see hands."
+          ],
+          "hurt": [
+            "Good. You're listening with your feet now."
+          ],
+          "lose": [
+            "That was a clean one. I'll feel it in my gills tomorrow, and I'll be glad of it."
+          ],
+          "win": [
+            "Rest. Drink water. Come back when your shoulders stop talking to you."
+          ]
+        }
+      },
+      {
+        "id": "gal-spar-corvina",
+        "name": "Dame Corvina Spindrift",
+        "short": "Corvina",
+        "tier": "champion",
+        "after": "gal-spar-gorse",
+        "sprite": "npc:elf:2",
+        "blurb": "A retired duellist with forty-one titles and one regret she won't name. Now teaches ballroom to anyone who'll stand still long enough. The Galleria's unofficial sparring champion.",
+        "stats": {
+          "ac": "14 + floor(@lvl/3)",
+          "hp": "10 + 10*@lvl",
+          "init": "4",
+          "saves": {
+            "str": "1",
+            "dex": "3 + @prof",
+            "con": "1",
+            "int": "1",
+            "wis": "1 + @prof",
+            "cha": "2"
+          }
+        },
+        "moves": [
+          {
+            "name": "Riposte Flurry",
+            "type": "attack",
+            "bonus": "4 + @prof",
+            "dmg": "1d8 + 2 + floor(@lvl/3)",
+            "count": "min(3, 1 + floor(@lvl/5))",
+            "weight": 3,
+            "text": "{foe} steps in, blade flickering."
+          },
+          {
+            "name": "Whirling Hem",
+            "type": "save",
+            "ability": "dex",
+            "dc": "11 + @prof",
+            "dmg": "2d8 + floor(@lvl/2)",
+            "onSave": "half",
+            "recharge": 5,
+            "weight": 2,
+            "text": "{foe} spins, and her heavy hem sweeps at {pc}'s ankles."
+          },
+          {
+            "name": "Second Breath",
+            "type": "heal",
+            "dmg": "2d6 + @lvl",
+            "uses": 1,
+            "whenHurt": true,
+            "weight": 2,
+            "text": "{foe} steps back, straightens her collar and breathes."
+          }
+        ],
+        "lines": {
+          "start": [
+            "Shoulders down. Chin up. You fight like you're carrying shopping.",
+            "I used to fight for titles. Now I fight for the company. Don't make it dull."
+          ],
+          "hurt": [
+            "Oh, that was rather good. Again, and faster."
+          ],
+          "lose": [
+            "Well. I shall have to tell my students I met someone today."
+          ],
+          "win": [
+            "You were thinking about your feet. Stop thinking about your feet."
+          ]
+        }
+      }
+    ],
+    "cogskill": [
+      {
+        "id": "cog-spar-dent",
+        "name": "Dent",
+        "short": "Dent",
+        "tier": "warmup",
+        "sprite": "npc:automaton:4",
+        "blurb": "An old strength-tester cabinet that walked off its stand when the arcade upgraded. Still talks in score readouts. Likes being punched; it's what it's for.",
+        "stats": {
+          "ac": "10",
+          "hp": "5 + 4*@lvl",
+          "init": "-2",
+          "save": "0"
+        },
+        "moves": [
+          {
+            "name": "Recoil Arm",
+            "type": "attack",
+            "bonus": "1 + floor(@lvl/3)",
+            "dmg": "1d4",
+            "weight": 3,
+            "text": "{foe}'s spring-loaded arm swings back at {pc}."
+          },
+          {
+            "name": "Recalibrate",
+            "type": "idle",
+            "weight": 1,
+            "text": "{foe} whirs. RECALIBRATING. PLEASE HOLD."
+          }
+        ],
+        "lines": {
+          "start": [
+            "INSERT CHALLENGER. PUNCH THE PAD. BEAT THE HIGH SCORE.",
+            "DENT IS READY. DENT HAS BEEN READY SINCE OPENING TIME."
+          ],
+          "hurt": [
+            "SCORE: IMPRESSIVE. CASING: LESS IMPRESSIVE."
+          ],
+          "lose": [
+            "NEW HIGH SCORE. ENTER THREE LETTERS. ...NOBODY HAS ASKED FOR LETTERS IN YEARS. DENT WILL KEEP THEM."
+          ],
+          "win": [
+            "CHALLENGER RATED: NOODLE ARMS. THIS IS THE DEFAULT RATING. DENT DOES NOT MEAN IT."
+          ]
+        }
+      },
+      {
+        "id": "cog-spar-brogan",
+        "name": "Brogan Galloway",
+        "short": "Brogan",
+        "tier": "rookie",
+        "after": "cog-spar-dent",
+        "sprite": "npc:goblin:2",
+        "blurb": "A goblin dockhand from the harbour who spars before the six bell. Fights with a boathook padded in an old life jacket.",
+        "stats": {
+          "ac": "12 + floor(@lvl/4)",
+          "hp": "8 + 7*@lvl",
+          "init": "2",
+          "saves": {
+            "str": "1",
+            "dex": "2 + floor(@prof/2)",
+            "con": "1",
+            "int": "0",
+            "wis": "0",
+            "cha": "0"
+          }
+        },
+        "moves": [
+          {
+            "name": "Padded Boathook",
+            "type": "attack",
+            "bonus": "3 + @prof",
+            "dmg": "1d6 + 1 + floor(@lvl/2)",
+            "weight": 3,
+            "text": "{foe} jabs with the padded boathook."
+          },
+          {
+            "name": "Rope Trip",
+            "type": "save",
+            "ability": "dex",
+            "dc": "9 + @prof",
+            "dmg": "1d8 + floor(@lvl/2)",
+            "onSave": "none",
+            "recharge": 5,
+            "weight": 2,
+            "text": "{foe} flicks a mooring line round {pc}'s ankles and pulls."
+          }
+        ],
+        "lines": {
+          "start": [
+            "Shift starts at the six bell. We've got till then. Swing nice.",
+            "Mind the hook. The padding's a life jacket. It's saved two lives and it can save yours."
+          ],
+          "hurt": [
+            "Oi! That'll bruise the colour of the harbour."
+          ],
+          "lose": [
+            "Fair. Tell people you beat a dockhand. They'll ask which one. Say the handsome one."
+          ],
+          "win": [
+            "Don't feel bad. I lift crates heavier than you before breakfast."
+          ]
+        }
+      },
+      {
+        "id": "cog-spar-ondine",
+        "name": "Ondine Kettleby",
+        "short": "Ondine",
+        "tier": "veteran",
+        "after": "cog-spar-brogan",
+        "sprite": "npc:fishfolk:3",
+        "blurb": "Eleven years on the Gok'Gok harbour patrol, now retired with a padded trident and a weighted net she won't stop mending.",
+        "stats": {
+          "ac": "13 + floor(@lvl/3)",
+          "hp": "10 + 10*@lvl",
+          "init": "1",
+          "saves": {
+            "str": "2",
+            "dex": "2 + floor(@prof/2)",
+            "con": "2 + @prof",
+            "int": "0",
+            "wis": "2",
+            "cha": "0"
+          }
+        },
+        "moves": [
+          {
+            "name": "Padded Trident",
+            "type": "attack",
+            "bonus": "3 + @prof",
+            "dmg": "1d8 + 2 + floor(@lvl/3)",
+            "weight": 3,
+            "text": "{foe} drives the padded trident forward.",
+            "count": "1 + floor(@lvl/5)"
+          },
+          {
+            "name": "Net Toss",
+            "type": "save",
+            "ability": "dex",
+            "dc": "10 + @prof",
+            "dmg": "2d6 + floor(@lvl/2)",
+            "onSave": "half",
+            "recharge": 5,
+            "weight": 2,
+            "text": "{foe} spins the weighted net over her head and lets it fly at {pc}."
+          },
+          {
+            "name": "Brace",
+            "type": "guard",
+            "ac": 2,
+            "whenHurt": true,
+            "weight": 1,
+            "text": "{foe} sets her feet and holds the trident crosswise."
+          }
+        ],
+        "lines": {
+          "start": [
+            "Eleven years of patrol. I've netted smugglers, seals and one very confused bishop. Ready?",
+            "My net's been mended forty times. Every knot's a story. Don't add one."
+          ],
+          "hurt": [
+            "Good. Keep that up and I'll stop going easy."
+          ],
+          "lose": [
+            "Nicely done. You'd have made patrol. The pay's worse than brawling, mind."
+          ],
+          "win": [
+            "Breathe out when you swing. Everyone forgets the breathing."
+          ]
+        }
+      },
+      {
+        "id": "cog-spar-wobbleton",
+        "name": "Wobbleton Fizz",
+        "short": "Wobbleton",
+        "tier": "champion",
+        "after": "cog-spar-ondine",
+        "sprite": "npc:goo:2",
+        "blurb": "A carbonated goo-folk brawler, undefeated on the Cogskill concourse since spring. Unofficial champion, official fizz.",
+        "stats": {
+          "ac": "14 + floor(@lvl/3)",
+          "hp": "10 + 10*@lvl",
+          "init": "3",
+          "saves": {
+            "str": "2",
+            "dex": "1",
+            "con": "3 + @prof",
+            "int": "0",
+            "wis": "1 + @prof",
+            "cha": "2"
+          }
+        },
+        "moves": [
+          {
+            "name": "Fizz Fists",
+            "type": "attack",
+            "bonus": "4 + @prof",
+            "dmg": "1d8 + 2 + floor(@lvl/3)",
+            "count": "min(3, 1 + floor(@lvl/5))",
+            "weight": 3,
+            "text": "{foe} pops out two wobbly fists and swings."
+          },
+          {
+            "name": "Splatter",
+            "type": "save",
+            "ability": "con",
+            "dc": "11 + @prof",
+            "dmg": "2d8 + floor(@lvl/2)",
+            "onSave": "half",
+            "recharge": 5,
+            "weight": 2,
+            "text": "{foe} bursts like a shaken bottle all over {pc}."
+          },
+          {
+            "name": "Reform",
+            "type": "heal",
+            "dmg": "2d6 + @lvl",
+            "uses": 1,
+            "whenHurt": true,
+            "weight": 2,
+            "text": "{foe} pulls the splattered bits back together."
+          }
+        ],
+        "lines": {
+          "start": [
+            "Undefeated since spring. I'm also carbonated, so in the spirit of honesty: I might burp.",
+            "You've beaten everyone else? Lovely. They all told me. Goo hears everything."
+          ],
+          "hurt": [
+            "Ooh, you knocked a bit of me off. Hold on, that was my good bit."
+          ],
+          "lose": [
+            "You beat me! I have to go sit in the fountain and think about my life now."
+          ],
+          "win": [
+            "Nobody beats Wobbleton the first time. Or the second. You've got lots of tries left."
+          ]
+        }
+      }
+    ]
+  }
+}

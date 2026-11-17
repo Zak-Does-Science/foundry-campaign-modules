@@ -1,0 +1,14 @@
+/* MAUL Campaign Codex: small touches for the generated journal pages. */
+.journal-entry-page .maul-sub { margin-top: -0.4em; opacity: 0.8; }
+.journal-entry-page table.maul-facts { width: auto; min-width: 50%; }
+.journal-entry-page table.maul-facts th { text-align: left; padding-right: 1em; white-space: nowrap; }
+.journal-entry-page figure { margin: 0.5em 0 1em; text-align: center; }
+.journal-entry-page figure img { max-width: 100%; max-height: 520px; border: none; border-radius: 6px; }
+.journal-entry-page figcaption { font-size: 0.9em; opacity: 0.8; }
+.journal-entry-page img { max-width: 100%; border: none; }
+
+/* GM panel */
+.maul-codex-panel table { font-size: 0.9em; }
+.maul-codex-panel td, .maul-codex-panel th { padding: 2px 4px; vertical-align: top; }
+.maul-codex-panel input[type=checkbox] { margin: 0; }
+.directory-header .maul-codex-open { flex: 1 1 100%; }

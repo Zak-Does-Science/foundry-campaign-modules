@@ -1,0 +1,1926 @@
+{
+  "npc:automaton:1": {
+    "file": "npc_automaton_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:12": {
+    "file": "npc_automaton_12.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:15": {
+    "file": "npc_automaton_15.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:18": {
+    "file": "npc_automaton_18.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:2": {
+    "file": "npc_automaton_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:20": {
+    "file": "npc_automaton_20.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:3": {
+    "file": "npc_automaton_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:3|sit": {
+    "file": "npc_automaton_3_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:automaton:4": {
+    "file": "npc_automaton_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:5": {
+    "file": "npc_automaton_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:6": {
+    "file": "npc_automaton_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:7": {
+    "file": "npc_automaton_7.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:automaton:9": {
+    "file": "npc_automaton_9.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:crud:0": {
+    "file": "npc_crud_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:crud:1": {
+    "file": "npc_crud_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:crud:2": {
+    "file": "npc_crud_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:crud:3": {
+    "file": "npc_crud_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:crud:4": {
+    "file": "npc_crud_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dragonborn:2": {
+    "file": "npc_dragonborn_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dragonborn:3": {
+    "file": "npc_dragonborn_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dragonborn:3:security": {
+    "file": "npc_dragonborn_3_security.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dragonborn:5": {
+    "file": "npc_dragonborn_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dragonborn:5:child:beachwear": {
+    "file": "npc_dragonborn_5_child_beachwear.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:0": {
+    "file": "npc_dwarf_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:1:nobeard": {
+    "file": "npc_dwarf_1_nobeard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:2": {
+    "file": "npc_dwarf_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:2:beard": {
+    "file": "npc_dwarf_2_beard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:2:nobeard": {
+    "file": "npc_dwarf_2_nobeard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:3:beard": {
+    "file": "npc_dwarf_3_beard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:3:beard:stage-costume": {
+    "file": "npc_dwarf_3_beard_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:3:nobeard": {
+    "file": "npc_dwarf_3_nobeard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:4": {
+    "file": "npc_dwarf_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:4|sit": {
+    "file": "npc_dwarf_4_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:dwarf:5": {
+    "file": "npc_dwarf_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:5:beard": {
+    "file": "npc_dwarf_5_beard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:5:beard|sit": {
+    "file": "npc_dwarf_5_beard_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:dwarf:5:market-apron": {
+    "file": "npc_dwarf_5_market-apron.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:5:nobeard": {
+    "file": "npc_dwarf_5_nobeard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:6:apron": {
+    "file": "npc_dwarf_6_apron.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:6:beard": {
+    "file": "npc_dwarf_6_beard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:6:elder:beard": {
+    "file": "npc_dwarf_6_elder_beard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:6:elder:beard|sit": {
+    "file": "npc_dwarf_6_elder_beard_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:dwarf:6:nobeard": {
+    "file": "npc_dwarf_6_nobeard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:6:nobeard|sit": {
+    "file": "npc_dwarf_6_nobeard_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:dwarf:7": {
+    "file": "npc_dwarf_7.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:7:elder:nobeard": {
+    "file": "npc_dwarf_7_elder_nobeard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:dwarf:7:elder:nobeard|sit": {
+    "file": "npc_dwarf_7_elder_nobeard_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:elf:0": {
+    "file": "npc_elf_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:0:beard": {
+    "file": "npc_elf_0_beard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:1": {
+    "file": "npc_elf_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:14:elder": {
+    "file": "npc_elf_14_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:1|sit": {
+    "file": "npc_elf_1_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:elf:2": {
+    "file": "npc_elf_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:3": {
+    "file": "npc_elf_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:3:stage-costume": {
+    "file": "npc_elf_3_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:4": {
+    "file": "npc_elf_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:4:stage-costume": {
+    "file": "npc_elf_4_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:4|sit": {
+    "file": "npc_elf_4_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:elf:5": {
+    "file": "npc_elf_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:5:teen:monk-robe": {
+    "file": "npc_elf_5_teen_monk-robe.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:6": {
+    "file": "npc_elf_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:6:beachwear": {
+    "file": "npc_elf_6_beachwear.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:6:teen": {
+    "file": "npc_elf_6_teen.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:elf:7": {
+    "file": "npc_elf_7.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:1": {
+    "file": "npc_fishfolk_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:2": {
+    "file": "npc_fishfolk_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:2:child": {
+    "file": "npc_fishfolk_2_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:3": {
+    "file": "npc_fishfolk_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:3:beachwear": {
+    "file": "npc_fishfolk_3_beachwear.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:4:elder": {
+    "file": "npc_fishfolk_4_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:5": {
+    "file": "npc_fishfolk_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:5:beachwear": {
+    "file": "npc_fishfolk_5_beachwear.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:5:child": {
+    "file": "npc_fishfolk_5_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:6": {
+    "file": "npc_fishfolk_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:6:child": {
+    "file": "npc_fishfolk_6_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:fishfolk:7": {
+    "file": "npc_fishfolk_7.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:0": {
+    "file": "npc_gnome_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:0:child": {
+    "file": "npc_gnome_0_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:0:child|sit": {
+    "file": "npc_gnome_0_child_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:gnome:1": {
+    "file": "npc_gnome_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:1:child": {
+    "file": "npc_gnome_1_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:2": {
+    "file": "npc_gnome_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:2:child": {
+    "file": "npc_gnome_2_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:2:tourist": {
+    "file": "npc_gnome_2_tourist.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:2|sit": {
+    "file": "npc_gnome_2_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:gnome:3": {
+    "file": "npc_gnome_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:3:nobeard": {
+    "file": "npc_gnome_3_nobeard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:4": {
+    "file": "npc_gnome_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:4|sit": {
+    "file": "npc_gnome_4_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:gnome:5": {
+    "file": "npc_gnome_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:5:child": {
+    "file": "npc_gnome_5_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:5:child|sit": {
+    "file": "npc_gnome_5_child_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:gnome:5:elder": {
+    "file": "npc_gnome_5_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:5:goolax": {
+    "file": "npc_gnome_5_goolax.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:6": {
+    "file": "npc_gnome_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:6:child": {
+    "file": "npc_gnome_6_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:6:elder": {
+    "file": "npc_gnome_6_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:6:elder|sit": {
+    "file": "npc_gnome_6_elder_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:gnome:6:market-apron": {
+    "file": "npc_gnome_6_market-apron.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:7": {
+    "file": "npc_gnome_7.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:7:elder": {
+    "file": "npc_gnome_7_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:7:elder|sit": {
+    "file": "npc_gnome_7_elder_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:gnome:7:teen": {
+    "file": "npc_gnome_7_teen.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:gnome:9:elder:beard:stage-costume": {
+    "file": "npc_gnome_9_elder_beard_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:0": {
+    "file": "npc_goblin_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:0:child": {
+    "file": "npc_goblin_0_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:1": {
+    "file": "npc_goblin_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:11:stage-costume": {
+    "file": "npc_goblin_11_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:14:stage-costume": {
+    "file": "npc_goblin_14_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:2": {
+    "file": "npc_goblin_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:2:child": {
+    "file": "npc_goblin_2_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:3": {
+    "file": "npc_goblin_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:4": {
+    "file": "npc_goblin_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:4:apron": {
+    "file": "npc_goblin_4_apron.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:5": {
+    "file": "npc_goblin_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:5:child": {
+    "file": "npc_goblin_5_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:5:stage-costume": {
+    "file": "npc_goblin_5_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:6": {
+    "file": "npc_goblin_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:6:elder": {
+    "file": "npc_goblin_6_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:7": {
+    "file": "npc_goblin_7.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:7:beard": {
+    "file": "npc_goblin_7_beard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:9": {
+    "file": "npc_goblin_9.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goblin:9:elder": {
+    "file": "npc_goblin_9_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goo:1": {
+    "file": "npc_goo_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goo:2": {
+    "file": "npc_goo_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goo:3": {
+    "file": "npc_goo_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goo:4": {
+    "file": "npc_goo_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:goo:5": {
+    "file": "npc_goo_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:0": {
+    "file": "npc_halfling_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:1": {
+    "file": "npc_halfling_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:1:elder": {
+    "file": "npc_halfling_1_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:2": {
+    "file": "npc_halfling_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:2:apron": {
+    "file": "npc_halfling_2_apron.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:2:child": {
+    "file": "npc_halfling_2_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:2:child:stage-costume": {
+    "file": "npc_halfling_2_child_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:2:teen": {
+    "file": "npc_halfling_2_teen.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:3": {
+    "file": "npc_halfling_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:3:child:beachwear": {
+    "file": "npc_halfling_3_child_beachwear.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:3:teen": {
+    "file": "npc_halfling_3_teen.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:3:teen|sit": {
+    "file": "npc_halfling_3_teen_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:halfling:4": {
+    "file": "npc_halfling_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:4:market-apron": {
+    "file": "npc_halfling_4_market-apron.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:5": {
+    "file": "npc_halfling_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:5:market-apron": {
+    "file": "npc_halfling_5_market-apron.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:5:teen": {
+    "file": "npc_halfling_5_teen.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:6": {
+    "file": "npc_halfling_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:6:beachwear": {
+    "file": "npc_halfling_6_beachwear.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:6:child": {
+    "file": "npc_halfling_6_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:6:stage-costume": {
+    "file": "npc_halfling_6_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:7": {
+    "file": "npc_halfling_7.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:halfling:7|sit": {
+    "file": "npc_halfling_7_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:hobgoblin:0": {
+    "file": "npc_hobgoblin_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:hobgoblin:1": {
+    "file": "npc_hobgoblin_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:hobgoblin:2": {
+    "file": "npc_hobgoblin_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:hobgoblin:3": {
+    "file": "npc_hobgoblin_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:hobgoblin:4": {
+    "file": "npc_hobgoblin_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:hobgoblin:5": {
+    "file": "npc_hobgoblin_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:hobgoblin:6": {
+    "file": "npc_hobgoblin_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:0": {
+    "file": "npc_human_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:1": {
+    "file": "npc_human_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:11:stage-costume": {
+    "file": "npc_human_11_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:1:elder:market-apron": {
+    "file": "npc_human_1_elder_market-apron.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:1:teen": {
+    "file": "npc_human_1_teen.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:2": {
+    "file": "npc_human_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:2:elder:beard": {
+    "file": "npc_human_2_elder_beard.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:2:elder:monk-robe": {
+    "file": "npc_human_2_elder_monk-robe.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:3": {
+    "file": "npc_human_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:3:child": {
+    "file": "npc_human_3_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:3:elder:stage-costume": {
+    "file": "npc_human_3_elder_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:4": {
+    "file": "npc_human_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:4:chef": {
+    "file": "npc_human_4_chef.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:4:child": {
+    "file": "npc_human_4_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:4:elder": {
+    "file": "npc_human_4_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:5": {
+    "file": "npc_human_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:5:apron": {
+    "file": "npc_human_5_apron.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:5:elder": {
+    "file": "npc_human_5_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:6": {
+    "file": "npc_human_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:6:child": {
+    "file": "npc_human_6_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:6:elder:beachwear": {
+    "file": "npc_human_6_elder_beachwear.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:6|sit": {
+    "file": "npc_human_6_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:human:7": {
+    "file": "npc_human_7.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:7:elder": {
+    "file": "npc_human_7_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:7:elder|sit": {
+    "file": "npc_human_7_elder_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:human:7:stage-costume": {
+    "file": "npc_human_7_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:7:teen": {
+    "file": "npc_human_7_teen.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:human:7:teen|sit": {
+    "file": "npc_human_7_teen_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:human:8:stage-costume": {
+    "file": "npc_human_8_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:lizardfolk:4": {
+    "file": "npc_lizardfolk_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:mole:1": {
+    "file": "npc_mole_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:mole:2": {
+    "file": "npc_mole_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:mole:3:elder": {
+    "file": "npc_mole_3_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:mushroomfolk:0": {
+    "file": "npc_mushroomfolk_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:mushroomfolk:2": {
+    "file": "npc_mushroomfolk_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:mushroomfolk:4": {
+    "file": "npc_mushroomfolk_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:mushroomfolk:4:elder": {
+    "file": "npc_mushroomfolk_4_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:mushroomfolk:4:elder|sit": {
+    "file": "npc_mushroomfolk_4_elder_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:mushroomfolk:4|sit": {
+    "file": "npc_mushroomfolk_4_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:mushroomfolk:5": {
+    "file": "npc_mushroomfolk_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:orc:2": {
+    "file": "npc_orc_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:orc:3": {
+    "file": "npc_orc_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:orc:3:chef": {
+    "file": "npc_orc_3_chef.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:orc:3|sit": {
+    "file": "npc_orc_3_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:orc:6:beachwear": {
+    "file": "npc_orc_6_beachwear.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pikpik:0": {
+    "file": "npc_pikpik_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pikpik:1": {
+    "file": "npc_pikpik_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pikpik:10": {
+    "file": "npc_pikpik_10.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pikpik:2": {
+    "file": "npc_pikpik_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pikpik:3": {
+    "file": "npc_pikpik_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pikpik:3:child": {
+    "file": "npc_pikpik_3_child.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pikpik:4": {
+    "file": "npc_pikpik_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pikpik:5:elder": {
+    "file": "npc_pikpik_5_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pikpik:6": {
+    "file": "npc_pikpik_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pixie:2": {
+    "file": "npc_pixie_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pixie:3": {
+    "file": "npc_pixie_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pixie:4": {
+    "file": "npc_pixie_4.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pixie:4:elder": {
+    "file": "npc_pixie_4_elder.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pixie:5": {
+    "file": "npc_pixie_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:pixie:7": {
+    "file": "npc_pixie_7.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:plantling:0": {
+    "file": "npc_plantling_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:plantling:1": {
+    "file": "npc_plantling_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:plantling:12:teen": {
+    "file": "npc_plantling_12_teen.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:plantling:19": {
+    "file": "npc_plantling_19.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:plantling:2": {
+    "file": "npc_plantling_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:plantling:3": {
+    "file": "npc_plantling_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:plantling:5": {
+    "file": "npc_plantling_5.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:plantling:6": {
+    "file": "npc_plantling_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:plantling:7": {
+    "file": "npc_plantling_7.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:snail:0": {
+    "file": "npc_snail_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:snail:1": {
+    "file": "npc_snail_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:snail:3": {
+    "file": "npc_snail_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:spirit:0": {
+    "file": "npc_spirit_0.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:spirit:1": {
+    "file": "npc_spirit_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:spirit:2": {
+    "file": "npc_spirit_2.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:tiefling:1": {
+    "file": "npc_tiefling_1.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:tiefling:2:apron": {
+    "file": "npc_tiefling_2_apron.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:tiefling:2:teen": {
+    "file": "npc_tiefling_2_teen.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:tiefling:2:teen|sit": {
+    "file": "npc_tiefling_2_teen_sit.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15,
+    "pose": "sit"
+  },
+  "npc:tiefling:3": {
+    "file": "npc_tiefling_3.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:tiefling:4:goolax": {
+    "file": "npc_tiefling_4_goolax.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:tiefling:6": {
+    "file": "npc_tiefling_6.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "npc:tiefling:6:stage-costume": {
+    "file": "npc_tiefling_6_stage-costume.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "obj:cat": {
+    "file": "obj_cat.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "obj:chest": {
+    "file": "obj_chest.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 1,
+    "footY": 15
+  },
+  "obj:crystal-string": {
+    "file": "obj_crystal-string.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 1,
+    "footY": 15
+  },
+  "obj:fern": {
+    "file": "obj_fern.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 1,
+    "footY": 15
+  },
+  "obj:lamp": {
+    "file": "obj_lamp.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 1,
+    "footY": 15
+  },
+  "obj:net-buoys": {
+    "file": "obj_net-buoys.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 1,
+    "footY": 15
+  },
+  "obj:poster": {
+    "file": "obj_poster.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 1,
+    "footY": 15
+  },
+  "obj:pot-plant-big": {
+    "file": "obj_pot-plant-big.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 1,
+    "footY": 15
+  },
+  "obj:water-orb": {
+    "file": "obj_water-orb.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 1,
+    "footY": 15
+  },
+  "pc:aurelius-goldtrail": {
+    "file": "pc_aurelius-goldtrail.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:hallory-clampton": {
+    "file": "pc_hallory-clampton.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:indy": {
+    "file": "pc_indy.png",
+    "fw": 16,
+    "fh": 20,
+    "frames": 2,
+    "footY": 19,
+    "smoke": [
+      14,
+      4
+    ]
+  },
+  "pc:julip": {
+    "file": "pc_julip.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:kuso-sharpfang": {
+    "file": "pc_kuso-sharpfang.png",
+    "fw": 16,
+    "fh": 24,
+    "frames": 2,
+    "footY": 23
+  },
+  "pc:lenore-evergloom": {
+    "file": "pc_lenore-evergloom.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:mirva-nox": {
+    "file": "pc_mirva-nox.png",
+    "fw": 16,
+    "fh": 20,
+    "frames": 2,
+    "footY": 19
+  },
+  "pc:snide-piper": {
+    "file": "pc_snide-piper.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:turd": {
+    "file": "pc_turd.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie": {
+    "file": "pc_undyne-deindie.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie:dragonborn": {
+    "file": "pc_undyne-deindie_dragonborn.png",
+    "fw": 16,
+    "fh": 24,
+    "frames": 2,
+    "footY": 23
+  },
+  "pc:undyne-deindie:dwarf": {
+    "file": "pc_undyne-deindie_dwarf.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie:elf": {
+    "file": "pc_undyne-deindie_elf.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie:fire-genasi": {
+    "file": "pc_undyne-deindie_fire-genasi.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie:gnome": {
+    "file": "pc_undyne-deindie_gnome.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie:goblin": {
+    "file": "pc_undyne-deindie_goblin.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie:halfling": {
+    "file": "pc_undyne-deindie_halfling.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie:human": {
+    "file": "pc_undyne-deindie_human.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie:lizardfolk": {
+    "file": "pc_undyne-deindie_lizardfolk.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie:tiefling": {
+    "file": "pc_undyne-deindie_tiefling.png",
+    "fw": 16,
+    "fh": 16,
+    "frames": 2,
+    "footY": 15
+  },
+  "pc:undyne-deindie:warforged": {
+    "file": "pc_undyne-deindie_warforged.png",
+    "fw": 16,
+    "fh": 24,
+    "frames": 2,
+    "footY": 23
+  }
+}

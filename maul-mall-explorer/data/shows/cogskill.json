@@ -1,0 +1,843 @@
+{
+  "venue": {
+    "id": "cog-xilliforth",
+    "name": "Xilliforth Theatre",
+    "floor": "L1",
+    "stage": {"x": 3, "y": 2, "w": 15, "h": 2},
+    "wings": {"left": [-1, 0], "right": [15, 0]},
+    "curtain": {"x": 3, "y": 1, "w": 15, "h": 3},
+    "seats": [
+      {"floor": "L1", "x": 3, "y": 6, "w": 15, "h": 5},
+      {"floor": "L2", "x": 3, "y": 7, "w": 15, "h": 5}
+    ],
+    "audience": [
+      {"floor": "L1", "x": 1, "y": 4, "w": 20, "h": 8},
+      {"floor": "L2", "x": 1, "y": 5, "w": 20, "h": 9}
+    ],
+    "puppets": false
+  },
+  "shows": [
+    {
+      "id": "cog-show-brass-a",
+      "weeks": [0, 1],
+      "title": "BRASS & BEYOND",
+      "byline": "The Bard Automatons in Concert · crystal projection",
+      "blurb": "Bard automatons on crystal projection: brass that never tires, a harp that never misses, and a little clank on every note.",
+      "cast": {
+        "mc": {"name": "Compère Unit 'Velvet'", "sprite": "npc:automaton:6", "ghost": true},
+        "horn": {"name": "Brass Unit 'Goldthroat'", "sprite": "npc:automaton:4", "ghost": true},
+        "drum": {"name": "Percussion Unit 'Tock'", "sprite": "npc:automaton:12", "ghost": true},
+        "harp": {"name": "Lyre Unit 'Silverstring'", "sprite": "npc:automaton:9", "ghost": true},
+        "quartet": {"name": "The Clockwork Quartet", "sprite": "npc:automaton:15", "ghost": true}
+      },
+      "scenes": [
+        {
+          "title": "Set One: Overture for a Harbour",
+          "beats": [
+            {"sfx": "chime"},
+            {"enter": "mc", "at": [7, 0], "from": "left"},
+            {
+              "say": "mc",
+              "text": "Good evening, Toggleton. We have tuned ourselves to your room. You may notice the difference. You may not."
+            },
+            {
+              "say": "mc",
+              "text": "Our opening piece was composed at dawn today, in four seconds. It has since been improved twice."
+            },
+            {
+              "together": [
+                {"move": "mc", "to": [12, 1]},
+                {"enter": "horn", "at": [3, 0], "from": "left"},
+                {"enter": "drum", "at": [7, 1], "from": "left"}
+              ]
+            },
+            {
+              "together": [
+                {"sfx": "horn"},
+                {
+                  "say": "horn",
+                  "text": "Ta-ra, ta-ra, the harbour wakes. Ta-ra, ta-ra, the harbour sleeps. Ta-ra, the harbour wakes again.",
+                  "sing": true
+                }
+              ]
+            },
+            {"say": "drum", "text": "Tock. Tock. Tock. Tock. Tock. Tock. Tock. Tock. Tock. Tock. Tock."},
+            {"audience": "ooh", "who": "cog-L1-theatre-fan", "say": "Wait for it. Eleven seconds. Ten. ...NOW."},
+            {"together": [{"do": "drum", "act": "spin"}, {"sfx": "drum"}]},
+            {"say": "horn", "text": "Ta-raaaaaaaaaaaaa.", "sing": true},
+            {"audience": "hush", "who": "cog-L1-theatre-oldfan", "say": "Not one breath in that whole run. Not one."},
+            {"do": "horn", "act": "bow"},
+            {"say": "mc", "text": "Thank you. Next, something slower, for those of you who came in pairs."}
+          ]
+        },
+        {
+          "title": "Set Two: Ballads for the Broken-Hearted",
+          "beats": [
+            {
+              "together": [{"enter": "harp", "at": [4, 1], "from": "left"}, {"enter": "quartet", "at": [11, 0], "from": "right"}]
+            },
+            {
+              "say": "quartet",
+              "text": "We are four voices from one crystal. We have never once disagreed. Please enjoy the harmony."
+            },
+            {
+              "say": "harp",
+              "text": "Oh my love, you left me on a Thoughtsday. I have since worked out which one.",
+              "sing": true
+            },
+            {"say": "quartet", "text": "Ooh-ooh, ooh-ooh. In thirds. In fifths. In tune.", "sing": true},
+            {
+              "say": "harp",
+              "text": "I studied every sad song ever sung. This one is sadder. Not by much. By eight per cent.",
+              "sing": true
+            },
+            {"audience": "hush", "who": "cog-L1-aud-junie", "say": "For the school paper: 'sad. Very correct.'"},
+            {
+              "say": "harp",
+              "text": "This verse is for anyone who has waited by a door. We have read that many of you have."
+            },
+            {"audience": "hush", "who": "cog-L1-aud-tilly", "say": "Dad, is the harp sad or is it pretending?"},
+            {"audience": "hush", "who": "cog-L1-aud-dad", "say": "...Ask me at the interval, love."},
+            {
+              "say": "quartet",
+              "text": "Goodbye, goodbye, the lamp is low, goodbye, goodbye, in perfect time we go.",
+              "sing": true
+            },
+            {"sfx": "harp"},
+            {"say": "harp", "text": "That ballad has been retired. A better one will be written during the interval."}
+          ]
+        },
+        {
+          "title": "Set Three: The Jig With No Rests",
+          "beats": [
+            {
+              "caption": "The jig. Tempo: faster than any hand. Rests: none. Wrong notes: none. Please clap along if you can keep up."
+            },
+            {
+              "together": [
+                {"enter": "horn", "at": [2, 0], "from": "left"},
+                {"enter": "drum", "at": [7, 1], "from": "left"},
+                {"enter": "harp", "at": [12, 0], "from": "right"}
+              ]
+            },
+            {"sfx": "drum"},
+            {"say": "drum", "text": "One, two, one-two-three-four, fourteen, ninety, nine hundred and twelve."},
+            {
+              "say": "horn",
+              "text": "Diddle-dee-dee, the jig never stops, diddle-dee-dee, till the crystal drops!",
+              "sing": true
+            },
+            {"together": [{"do": "drum", "act": "hop"}, {"do": "harp", "act": "spin"}]},
+            {"audience": "laugh", "who": "cog-L1-aud-heckler", "say": "GO ON, TRIP! ONE LITTLE TRIP! FOR ME!"},
+            {"audience": "cheer", "who": "cog-L1-aud-axle", "say": "CLAPPING AT TWELVE CLAPS A SECOND. KEEPING UP."},
+            {"together": [{"sfx": "cymbal"}, {"enter": "mc", "at": [7, 0], "from": "right"}]},
+            {
+              "audience": "ooh",
+              "who": "cog-L2-aud-verbena",
+              "say": "Precise. One could set a clock by it. One would rather not."
+            },
+            {
+              "say": "mc",
+              "text": "That concludes the concert. Please applaud in any rhythm. We will not be able to tell."
+            },
+            {
+              "audience": "hush",
+              "who": "cog-L1-theatre-oldfan",
+              "say": "Our Bryony played that jig at graduation. Slower. Better."
+            },
+            {"audience": "laugh", "who": "cog-L1-aud-sleeper", "say": "*snrk* ...is it the interval? ...bravo..."}
+          ]
+        }
+      ],
+      "bow": ["quartet", "drum", "harp", "horn", "mc"]
+    },
+    {
+      "id": "cog-show-brass-b",
+      "weeks": [2],
+      "title": "BRASS & BEYOND: FINAL WEEK",
+      "byline": "The Bard Automatons in Concert · the last set list",
+      "blurb": "The automatons' last week on crystal: a fiddle faster than fingers, a song about rain, and a bow nobody can stop.",
+      "cast": {
+        "mc": {"name": "Compère Unit 'Velvet'", "sprite": "npc:automaton:6", "ghost": true},
+        "fiddle": {"name": "Fiddle Unit 'Rosin'", "sprite": "npc:automaton:20", "ghost": true},
+        "harp": {"name": "Lyre Unit 'Silverstring'", "sprite": "npc:automaton:9", "ghost": true},
+        "singer": {"name": "Chanteuse Unit 'Marigold'", "sprite": "npc:automaton:18", "ghost": true},
+        "tuba": {"name": "Low Brass Unit 'Lowtide'", "sprite": "npc:automaton:7", "ghost": true}
+      },
+      "scenes": [
+        {
+          "title": "Set One: The Fiddle Is Faster Than You",
+          "beats": [
+            {"enter": "mc", "at": [7, 0], "from": "left"},
+            {
+              "say": "mc",
+              "text": "Good evening, Toggleton. Tonight's set list was chosen by measuring which songs you hum on the way out."
+            },
+            {"together": [{"move": "mc", "to": [12, 1]}, {"enter": "fiddle", "at": [3, 0], "from": "left"}]},
+            {"sfx": "squeak"},
+            {
+              "say": "fiddle",
+              "text": "Reel in G. Then in A. Then in every key there is, one after another, without stopping. Begin."
+            },
+            {"do": "fiddle", "act": "spin"},
+            {
+              "audience": "ooh",
+              "who": "cog-L1-theatre-fan",
+              "say": "Two hundred notes in one bar. I counted! ...I think."
+            },
+            {"say": "fiddle", "text": "Fiddle-dee, fiddle-dum, all the strings and none undone!", "sing": true},
+            {
+              "audience": "laugh",
+              "who": "cog-L1-aud-heckler",
+              "say": "MY UNCLE PLAYED FASTER! ...No he didn't. He was awful."
+            },
+            {"do": "fiddle", "act": "bow"},
+            {"say": "fiddle", "text": "Key of B flat. Key of B. Key of C. Key of a cart going down a hill."},
+            {"audience": "hush", "who": "cog-L1-aud-junie", "say": "Review: 'fast'. Second draft: 'too fast?'"},
+            {
+              "audience": "ooh",
+              "who": "cog-L2-aud-tobble",
+              "say": "Our fiddler back home plays slower. He also waves."
+            },
+            {
+              "say": "mc",
+              "text": "Rosin was the first of us to play this theatre. Rosin does not remember it. We have the recording."
+            }
+          ]
+        },
+        {
+          "title": "Set Two: A Song About Rain",
+          "beats": [
+            {
+              "together": [
+                {"enter": "harp", "at": [3, 1], "from": "left"},
+                {"enter": "singer", "at": [10, 0], "from": "right"},
+                {"sfx": "harp"}
+              ]
+            },
+            {"say": "harp", "text": "Rain, rain, on the slipway, rain.", "sing": true},
+            {
+              "say": "singer",
+              "text": "Rain on the harbour, rain on the cranes. I have read about rain. I have read it twice.",
+              "sing": true
+            },
+            {"sfx": "harp"},
+            {
+              "say": "singer",
+              "text": "Rain on the rooftops of Gok'Gok, and somebody's coat is wet through...",
+              "sing": true
+            },
+            {
+              "say": "singer",
+              "text": "Rain on a lamp that somebody left lit. Rain on the somebody who left it.",
+              "sing": true
+            },
+            {"together": [{"do": "harp", "act": "shake"}, {"sfx": "clank"}]},
+            {
+              "caption": "The crystal flickers. The harpist stops, one hand in the air, mid-pluck. The song carries on without her."
+            },
+            {"wait": 2200},
+            {
+              "audience": "gasp",
+              "who": "cog-L1-aud-tilly",
+              "say": "Is she broken? Dad. DAD. Is the harp lady broken?"
+            },
+            {"audience": "hush", "who": "cog-L1-aud-axle", "say": "I ALSO SOMETIMES MISS A FRAME. NOBODY CLAPS."},
+            {"say": "harp", "text": "...and somebody's coat is wet through.", "sing": true},
+            {
+              "audience": "hush",
+              "who": "cog-L2-theatre-usher",
+              "say": "She'll pick it up. She always picks it up on that note."
+            },
+            {"say": "singer", "text": "Thank you. That was a song about rain."}
+          ]
+        },
+        {
+          "title": "Set Three: Farewell Medley",
+          "beats": [
+            {
+              "together": [
+                {"enter": "fiddle", "at": [2, 0], "from": "left"},
+                {"enter": "tuba", "at": [7, 1], "from": "left"},
+                {"enter": "singer", "at": [12, 0], "from": "right"}
+              ]
+            },
+            {
+              "say": "fiddle",
+              "text": "Last tune. We will play it again tomorrow, in another room, for another room.",
+              "sing": true
+            },
+            {
+              "together": [
+                {"sfx": "horn"},
+                {
+                  "say": "tuba",
+                  "text": "Bwomp, bwomp, goodnight, goodnight, the crystal's dimming, hold on tight.",
+                  "sing": true
+                }
+              ]
+            },
+            {
+              "say": "singer",
+              "text": "Farewell, Toggleton. We were glad to be your music. We were glad. We are told the word is glad.",
+              "sing": true
+            },
+            {"together": [{"sfx": "cymbal"}, {"audience": "cheer"}]},
+            {"audience": "cheer", "who": "cog-L2-aud-verbena", "say": "Encore, I suppose. One feels one ought."},
+            {"do": "tuba", "act": "bow"},
+            {"do": "tuba", "act": "bow"},
+            {
+              "audience": "laugh",
+              "who": "cog-L1-aud-oskar",
+              "say": "Why's the big one still bowing? Mum. It's STILL bowing."
+            },
+            {"do": "tuba", "act": "bow"},
+            {"audience": "hush", "who": "cog-L1-theatre-fan", "say": "...It can't hear us clapping, can it."},
+            {"do": "tuba", "act": "bow"},
+            {
+              "audience": "hush",
+              "who": "cog-L1-theatre-oldfan",
+              "say": "Let it rest, somebody. Switch it off. Gently."
+            }
+          ]
+        }
+      ],
+      "bow": ["tuba", "fiddle", "harp", "singer", "mc"]
+    },
+    {
+      "id": "cog-show-opera",
+      "weeks": [3],
+      "title": "OPERA FOR BRAWLERS",
+      "byline": "The Lamplight Players of Panto · live on stage",
+      "blurb": "A visiting troupe from Panto sings the tragic, tremendous tale of a brawler, her rival and a very strict referee. Bring a helmet.",
+      "cast": {
+        "brawler": {"name": "Ysolde Marrowlight (soprano)", "sprite": "npc:elf:4:stage-costume"},
+        "rival": {"name": "Benedek Harrowgate (tenor)", "sprite": "npc:human:11:stage-costume"},
+        "ref": {"name": "Grumwald Thrane (bass)", "sprite": "npc:dwarf:3:beard:stage-costume"},
+        "coach": {"name": "Dulcie Pocklington (mezzo)", "sprite": "npc:halfling:6:stage-costume"}
+      },
+      "scenes": [
+        {
+          "title": "Act One: The Challenge",
+          "beats": [
+            {"sfx": "fanfare"},
+            {"enter": "ref", "at": [7, 0], "from": "left"},
+            {
+              "say": "ref",
+              "text": "Hear ye! Two brawlers enter! Only one may leave! The other may also leave, but later, and limping!",
+              "sing": true
+            },
+            {
+              "together": [{"enter": "brawler", "at": [2, 1], "from": "left"}, {"enter": "rival", "at": [12, 1], "from": "right"}]
+            },
+            {
+              "say": "brawler",
+              "text": "I am Bettine of the Iron Elbow! I have thrown eleven men into a fountain, and the fountain into a twelfth!",
+              "sing": true
+            },
+            {
+              "say": "rival",
+              "text": "And I am Corso the Unbent! I have never lost a fight. I have never been in one. Tonight is my first!",
+              "sing": true
+            },
+            {"say": "brawler", "text": "Corso, you sing like a gull with a grievance! Have at you!", "sing": true},
+            {"say": "rival", "text": "Have at me? Gently, please. I bruise like a pear.", "sing": true},
+            {
+              "audience": "laugh",
+              "who": "cog-L1-aud-heckler",
+              "say": "Finally! Real people! OI, TENOR, YOUR KNEES ARE KNOCKING!"
+            },
+            {"face": "rival", "dir": "left"},
+            {"say": "rival", "text": "Your knees are knocking too, sir. I can hear them from here.", "sing": true},
+            {"audience": "laugh"},
+            {"sfx": "bell"},
+            {
+              "say": "ref",
+              "text": "No biting! No hair-pulling! No elbows below the belt! Bettine, I am looking at your elbow!",
+              "sing": true
+            }
+          ]
+        },
+        {
+          "title": "Act Two: The Coach's Lament",
+          "beats": [
+            {"enter": "coach", "at": [4, 0], "from": "left"},
+            {
+              "say": "coach",
+              "text": "Oh, Bettine, my girl, my fist, my thunder! Eat your oats and keep your guard up under!",
+              "sing": true
+            },
+            {"enter": "brawler", "at": [10, 1], "from": "right"},
+            {
+              "say": "brawler",
+              "text": "Coach, I cannot fight him. When he sings, I forget which hand is the punching one.",
+              "sing": true
+            },
+            {
+              "say": "coach",
+              "text": "At your age I fought a bear at the Wildsday market. The bear apologised. Be the bear.",
+              "sing": true
+            },
+            {
+              "say": "coach",
+              "text": "The left, my love. It's always been the left. I wrote it on your glove in ink.",
+              "sing": true
+            },
+            {"do": "brawler", "act": "faint"},
+            {"audience": "gasp", "who": "cog-L1-aud-tilly", "say": "SHE FELL DOWN! Is she dead? Is it the dead bit?"},
+            {"say": "coach", "text": "She's not dead, darling, it's the second act. Nobody dies in the second act."},
+            {"say": "brawler", "text": "Oh. Then I shall lie here a moment longer, and rise magnificently."},
+            {"do": "brawler", "act": "rise"},
+            {"say": "brawler", "text": "I rise! For Bettine! For my coach! For the oats!", "sing": true}
+          ]
+        },
+        {
+          "title": "Act Three: The Final Bell",
+          "beats": [
+            {
+              "together": [
+                {"enter": "brawler", "at": [3, 0], "from": "left"},
+                {"enter": "rival", "at": [11, 0], "from": "right"},
+                {"enter": "ref", "at": [7, 1], "from": "left"}
+              ]
+            },
+            {"sfx": "drum"},
+            {
+              "say": "ref",
+              "text": "The final round! The final bell! The final note! It is very high! Good luck to her!",
+              "sing": true
+            },
+            {
+              "say": "rival",
+              "text": "Bettine! Before we fight, I must tell you... I love you! Also I am frightened of you!",
+              "sing": true
+            },
+            {"say": "brawler", "text": "Corso! I love you toooo-oo-oo-ooOO-OO-*KRRK*", "sing": true},
+            {"sfx": "squeak"},
+            {"wait": 900},
+            {"say": "brawler", "text": "Ha! Oh, that one got away from me. Hold on. Let me take it from the oats."},
+            {
+              "audience": "cheer",
+              "who": "cog-L1-theatre-oldfan",
+              "say": "THAT'S a voice! Somebody fetch me a rose! Two roses!"
+            },
+            {"say": "brawler", "text": "I love you toooo! ...There. That one was for Toggleton.", "sing": true},
+            {
+              "audience": "hush",
+              "who": "cog-L1-theatre-fan",
+              "say": "She breathed. In the middle. And it was... actually good?"
+            },
+            {"audience": "laugh", "who": "cog-L1-aud-sleeper", "say": "*snrk* ...was that the high note? ...bravo..."},
+            {"together": [{"do": "brawler", "act": "spin"}, {"do": "rival", "act": "spin"}]},
+            {
+              "say": "ref",
+              "text": "A draw! A draw! Everybody wins, and the fountain is closed for repairs!",
+              "sing": true
+            }
+          ]
+        }
+      ],
+      "bow": ["coach", "ref", "rival", "brawler"]
+    },
+    {
+      "id": "cog-show-deep-strait",
+      "weeks": [4],
+      "title": "DEEP STRAIT",
+      "byline": "The harbour floor, on crystal projection",
+      "blurb": "Sink below Gok'Gok Harbor on crystal light: eels, wrecks, drifting jellies, and one very old crab who gets applause every night.",
+      "cast": {
+        "diver": {"name": "Marisol Kelpwright, harbour diver", "sprite": "npc:fishfolk:5", "ghost": true},
+        "eel": {"name": "Two-Ton Tansy (an eel)", "sprite": "npc:crud:1", "ghost": true},
+        "eel2": {"name": "Fennick (a smaller eel)", "sprite": "npc:crud:1", "ghost": true},
+        "jelly": {"name": "Drifting jellies", "sprite": "obj:water-orb", "ghost": true},
+        "wreck": {"name": "The wreck of the 'Margery Pell'", "sprite": "obj:chest", "ghost": true},
+        "buoys": {"name": "Lost net buoys", "sprite": "obj:net-buoys", "ghost": true},
+        "crab": {"name": "Old Gristlecomb (a very old crab)", "sprite": "npc:snail:0", "ghost": true}
+      },
+      "scenes": [
+        {
+          "title": "Part One: Below the Cranes",
+          "beats": [
+            {
+              "together": [
+                {"sfx": "splash"},
+                {
+                  "caption": "Green light fills the stage. Recorded under Gok'Gok Harbor, forty fathoms down, on an ordinary Wildsday."
+                }
+              ]
+            },
+            {"enter": "diver", "at": [2, 0], "from": "left"},
+            {
+              "say": "diver",
+              "text": "Welcome down. Keep your voice low. Down here, everything that matters has been listening a long time."
+            },
+            {"enter": "jelly", "at": [8, 0], "from": "right"},
+            {
+              "say": "diver",
+              "text": "Harbour jellies. They go where the tide goes. Since the moon moved, they've been late for everything."
+            },
+            {
+              "say": "diver",
+              "text": "I've lived in this harbour since I was a fry. I still find something new down here every week."
+            },
+            {"together": [{"enter": "eel", "at": [12, 1], "from": "right"}, {"sfx": "whoosh"}]},
+            {"say": "diver", "text": "And that's Two-Ton Tansy. Nobody has weighed her. Nobody has volunteered."},
+            {
+              "audience": "ooh",
+              "who": "cog-L1-aud-oskar",
+              "say": "Does she fight? Can she fight the crab? Is there a crab?"
+            },
+            {"move": "eel", "to": [5, 1]},
+            {
+              "say": "diver",
+              "text": "Watch her tail. She steers by it, sleeps by it, and once, I'm told, she slapped a pier with it."
+            },
+            {"audience": "ooh", "who": "cog-L1-aud-junie", "say": "Review: 'damp'. In a good way."},
+            {
+              "say": "diver",
+              "text": "She's seen every ferry in this harbour come and go. Ferries come and go. Tansy stays."
+            }
+          ]
+        },
+        {
+          "title": "Part Two: The Wreck of the Margery Pell",
+          "beats": [
+            {
+              "together": [
+                {"enter": "wreck", "at": [9, 1], "from": "right"},
+                {"enter": "buoys", "at": [12, 0], "from": "right"},
+                {"enter": "diver", "at": [3, 0], "from": "left"}
+              ]
+            },
+            {
+              "say": "diver",
+              "text": "The Margery Pell. A cargo barge. Sank in a squall sixty years back, carrying nine hundred teacups."
+            },
+            {
+              "say": "diver",
+              "text": "Eight hundred and ninety-one are still unbroken. Somebody packed them very, very well."
+            },
+            {
+              "say": "diver",
+              "text": "I took one cup up once. It looked wrong in the air. I brought it back down the next morning."
+            },
+            {"enter": "eel2", "at": [6, 1], "from": "left"},
+            {
+              "say": "diver",
+              "text": "Fennick lives in the captain's cabin. He has never paid rent. Nobody has asked him to."
+            },
+            {"audience": "laugh", "who": "cog-L1-aud-mum", "say": "Lucky eel."},
+            {"do": "eel2", "act": "spin"},
+            {"audience": "ooh", "who": "cog-L1-aud-oskar", "say": "Can we go down there? Mum. Can we go down there?"},
+            {
+              "say": "diver",
+              "text": "The barge's crates are still sealed. The harbour office says it's still waiting on the paperwork."
+            },
+            {
+              "say": "diver",
+              "text": "The barge's bell is still down here. In a strong current it rings. Fishers above still stop to listen."
+            },
+            {"together": [{"sfx": "bell"}, {"audience": "hush"}]},
+            {
+              "audience": "hush",
+              "who": "cog-L2-aud-tobble",
+              "say": "We've a pond at home. One frog. He's called Dennis."
+            }
+          ]
+        },
+        {
+          "title": "Part Three: Old Gristlecomb",
+          "beats": [
+            {"enter": "diver", "at": [2, 0], "from": "left"},
+            {"say": "diver", "text": "And now. If you've come for him, you'll know. If you haven't, you're about to."},
+            {"wait": 1200},
+            {"enter": "crab", "at": [7, 1], "from": "right"},
+            {"audience": "cheer"},
+            {
+              "say": "diver",
+              "text": "Old Gristlecomb. Eighty-odd years on the same rock. He's outlived three harbourmasters and a pier."
+            },
+            {"do": "crab", "act": "flip"},
+            {
+              "say": "diver",
+              "text": "He turns round twice a day. Divers set their watches by it. Nobody knows what he's looking for."
+            },
+            {"audience": "aww", "who": "cog-L1-aud-tilly", "say": "HI, BARNABY! ...Dad, he can't hear me, can he."},
+            {"audience": "hush", "who": "cog-L1-aud-dad", "say": "Wave anyway, love. Everyone does."},
+            {"do": "crab", "act": "bow"},
+            {"audience": "cheer", "who": "cog-L1-aud-heckler", "say": "BAR-NA-BY! BAR-NA-BY!"},
+            {
+              "audience": "cheer",
+              "who": "cog-L1-theatre-fan",
+              "say": "The crab has no music at all. I'm clapping anyway."
+            },
+            {
+              "say": "diver",
+              "text": "Goodnight from the harbour floor. Mind the tide on your way home. It's been coming in early."
+            }
+          ]
+        }
+      ],
+      "bow": ["jelly", "eel2", "eel", "diver", "crab"]
+    },
+    {
+      "id": "cog-show-pageant",
+      "weeks": [5],
+      "title": "D'FAIN AND THE SILVER SACK",
+      "byline": "The Xilliforth Selunemas Pageant · live",
+      "blurb": "The Selunemas Pageant, live: D'fain, the silver sack, a moon on a stick, and a reindeer-gear whose back half is doing its best.",
+      "cast": {
+        "teller": {"name": "Mags Ellery (the Storyteller)", "sprite": "npc:human:8:stage-costume"},
+        "dfain": {"name": "Augustin Ferrowby (D'fain)", "sprite": "npc:gnome:9:elder:beard:stage-costume"},
+        "front": {"name": "Hettie Clamwhistle (reindeer-gear, front)", "sprite": "npc:goblin:5:stage-costume"},
+        "back": {"name": "Wendel Pottsby (reindeer-gear, back)", "sprite": "npc:goblin:11:stage-costume"},
+        "moon": {"name": "Selune (puppet; Corvin Ropeswell on the stick)", "sprite": "npc:spirit:0"},
+        "star": {"name": "Pip Quillon, age 9 (a Star)", "sprite": "npc:halfling:2:child:stage-costume"}
+      },
+      "scenes": [
+        {
+          "title": "Scene One: Selunemas Eve",
+          "beats": [
+            {"together": [{"sfx": "bell"}, {"enter": "teller", "at": [1, 1], "from": "left"}]},
+            {
+              "say": "teller",
+              "text": "Selunemas Eve. The lamps are lit, the jumpers are itchy, and somewhere a silver sack is being packed."
+            },
+            {"enter": "dfain", "at": [7, 0], "from": "right"},
+            {"audience": "ooh", "who": "cog-L1-aud-tilly", "say": "IT'S D'FAIN! Dad, it's actually D'fain!"},
+            {
+              "say": "dfain",
+              "text": "One gift for every door in Toggleton! A spinning top, a warm scarf, a letter from somebody's gran..."
+            },
+            {
+              "say": "dfain",
+              "text": "...and a kettle. For a goo. Eleven letters asking, every one written in the third person."
+            },
+            {"say": "dfain", "text": "Every door gets a gift. Even the doors that don't want one. Especially those."},
+            {"say": "teller", "text": "But D'fain could not go alone. D'fain needed the reindeer-gear!"},
+            {"sfx": "clank"},
+            {"enter": "front", "at": [11, 0], "from": "right"},
+            {
+              "say": "front",
+              "text": "Ready, D'fain! Wheels oiled, antlers polished, and my back half is... somewhere."
+            },
+            {
+              "audience": "laugh",
+              "who": "cog-L1-theatre-oldfan",
+              "say": "Sixty-one years. Never once a back half on time."
+            }
+          ]
+        },
+        {
+          "title": "Scene Two: The Reindeer-Gear Will Not Go",
+          "beats": [
+            {"enter": "teller", "at": [0, 1], "from": "left"},
+            {
+              "together": [{"enter": "front", "at": [6, 0], "from": "left"}, {"enter": "back", "at": [3, 0], "from": "left"}]
+            },
+            {"say": "back", "text": "Sorry! Sorry. I joined on Thoughtsday. Which way is forward?"},
+            {"say": "front", "text": "Towards the audience, Wendel. It's always towards the audience."},
+            {"do": "back", "act": "flip"},
+            {
+              "audience": "laugh",
+              "who": "cog-L1-aud-oskar",
+              "say": "The bum's facing the wrong way! THE BUM'S BACKWARDS!"
+            },
+            {"enter": "dfain", "at": [11, 1], "from": "right"},
+            {"say": "dfain", "text": "Fly, reindeer-gear! Fly over Gok'Gok Harbor!"},
+            {"together": [{"do": "front", "act": "hop"}, {"do": "back", "act": "faint"}]},
+            {"audience": "gasp", "who": "cog-L1-aud-mum", "say": "Oh, the poor lad. He only joined on Thoughtsday."},
+            {"say": "back", "text": "I'm all right! I'm down, but I'm all right! The tail fell off!"},
+            {"do": "back", "act": "rise"},
+            {
+              "say": "teller",
+              "text": "And the night grew dark, and the sack grew heavy, and the reindeer-gear's back half found its tail."
+            }
+          ]
+        },
+        {
+          "title": "Scene Three: Selune Lights the Way",
+          "beats": [
+            {
+              "together": [
+                {"enter": "teller", "at": [0, 0], "from": "left"},
+                {"enter": "dfain", "at": [4, 1], "from": "left"},
+                {"enter": "star", "at": [10, 1], "from": "right"}
+              ]
+            },
+            {
+              "say": "star",
+              "text": "I'm a Star! I'm the Star! D'fain, look up! ...Not at me, at the moon. Mister Corvin, the moon!"
+            },
+            {"enter": "moon", "at": [7, 0], "from": "right"},
+            {"say": "moon", "text": "Sorry. Sorry! Selune is rising. Selune is rising now."},
+            {"audience": "laugh", "who": "cog-L1-aud-junie", "say": "Review: the moon's arm is showing. Five acorns."},
+            {
+              "audience": "cheer",
+              "who": "cog-L1-aud-axle",
+              "say": "THE MOON IS ON A STICK. I SEE THE STICK. I LOVE IT."
+            },
+            {
+              "say": "teller",
+              "text": "And Selune rose high over Toggleton, and her light fell on every door that was waiting."
+            },
+            {
+              "say": "dfain",
+              "text": "Thank you, Selune. Now I can see the doors. And the steps. And the cat on the steps."
+            },
+            {
+              "together": [
+                {"sfx": "chime"},
+                {
+                  "say": "star",
+                  "text": "Happy Selunemas, everybody! Even the people at the back! Even the back half!",
+                  "sing": true
+                }
+              ]
+            },
+            {
+              "together": [{"enter": "front", "at": [13, 0], "from": "right"}, {"enter": "back", "at": [14, 1], "from": "right"}]
+            },
+            {"say": "back", "text": "Hettie, I can't see a thing back here, but I'm told it's lovely!"},
+            {"audience": "cheer", "who": "cog-L2-aud-tobble", "say": "No pageants in Banañon Town. We have moss."},
+            {"do": "moon", "act": "spin"},
+            {
+              "say": "teller",
+              "text": "And that, my friends, is how D'fain carried the silver sack. Go home. Hug somebody. Mind the step."
+            }
+          ]
+        }
+      ],
+      "bow": ["star", "back", "front", "moon", "teller", "dfain"]
+    },
+    {
+      "id": "cog-show-moons",
+      "weeks": [6],
+      "title": "MOONS OVER TOGGLETON",
+      "byline": "The Selunemas sky, on crystal projection",
+      "blurb": "Lie on the floor and look up: the Selunemas sky over Toggleton, Selune and Melune, and more stars than the harbour lamps allow.",
+      "cast": {
+        "guide": {"name": "Ismay Thornquill, sky-reader (recorded)", "sprite": "npc:elf:14:elder", "ghost": true},
+        "selune": {"name": "Selune", "sprite": "npc:spirit:1", "ghost": true},
+        "melune": {"name": "Melune", "sprite": "npc:spirit:0", "ghost": true},
+        "star1": {"name": "The Lamplighter (a star)", "sprite": "npc:spirit:2", "ghost": true},
+        "star2": {"name": "The Kettle (a star)", "sprite": "obj:crystal-string", "ghost": true},
+        "star3": {"name": "The Ferryman's Lantern (a star)", "sprite": "npc:spirit:2", "ghost": true}
+      },
+      "scenes": [
+        {
+          "title": "Part One: Lights Down Over the Harbour",
+          "beats": [
+            {
+              "caption": "The house lights go out. Please lie down if you'd like to. Cushions are by the door. Snoring is permitted, quietly."
+            },
+            {"enter": "guide", "at": [1, 1], "from": "left"},
+            {
+              "say": "guide",
+              "text": "Good evening. Get comfortable. I recorded this on a roof in Toggleton, with the harbour lamps switched off."
+            },
+            {
+              "say": "guide",
+              "text": "It took the lamplighters an hour to agree. Then they came up on the roof and watched with me."
+            },
+            {"audience": "hush", "who": "cog-L1-aud-junie", "say": "Review: no words. That's the review."},
+            {
+              "say": "guide",
+              "text": "Some of you are lying on the floor, I expect. Good. The floor is the right way up for this."
+            },
+            {"enter": "star1", "at": [4, 0], "from": "left"},
+            {
+              "say": "guide",
+              "text": "That bright one is the Lamplighter. Sailors steer by her. Children wish on her, and nobody minds."
+            },
+            {"enter": "star3", "at": [12, 0], "from": "right"},
+            {
+              "say": "guide",
+              "text": "And there, low, the Ferryman's Lantern. It sets just before the first ferry leaves. Every day."
+            },
+            {
+              "audience": "hush",
+              "who": "cog-L2-aud-tobble",
+              "say": "First Selunemas away from home. Same sky, nearly."
+            },
+            {
+              "audience": "aww",
+              "who": "cog-L1-aud-tilly",
+              "say": "I can see the Lantern! ...Dad. Dad, are you asleep?"
+            },
+            {"audience": "laugh", "who": "cog-L1-aud-dad", "say": "Resting my eyes, love. Like Grandpa Ozwick."}
+          ]
+        },
+        {
+          "title": "Part Two: Two Moons",
+          "beats": [
+            {"together": [{"enter": "guide", "at": [1, 1], "from": "left"}, {"sfx": "chime"}]},
+            {"enter": "selune", "at": [7, 0], "from": "right"},
+            {
+              "say": "guide",
+              "text": "Selune. High and bright, as she should be on Selunemas. Whatever you believe, she's very good at rising."
+            },
+            {"enter": "melune", "at": [10, 1], "from": "right"},
+            {"audience": "ooh", "who": "cog-L1-aud-oskar", "say": "Is the little moon going to fight the big moon?"},
+            {"audience": "hush", "who": "cog-L1-aud-mum", "say": "No, love. They share."},
+            {
+              "say": "guide",
+              "text": "And Melune. A little lower this year than last. The tide noticed before any of us did."
+            },
+            {
+              "say": "guide",
+              "text": "My father kept a tide table for fifty years. This spring, for the first time, it was wrong. He laughed."
+            },
+            {
+              "audience": "hush",
+              "who": "cog-L2-aud-verbena",
+              "say": "Fifty years I've watched that sky. I'd notice if it moved."
+            },
+            {
+              "say": "guide",
+              "text": "The sky changes. Not often. Mostly when nobody is looking. It's nice that you're looking."
+            },
+            {"audience": "laugh", "who": "cog-L1-aud-sleeper", "say": "*snrk* ...bravo... *snoooore*"}
+          ]
+        },
+        {
+          "title": "Part Three: A Star for Someone",
+          "beats": [
+            {"enter": "guide", "at": [1, 1], "from": "left"},
+            {"enter": "star2", "at": [5, 0], "from": "left"},
+            {
+              "say": "guide",
+              "text": "That little cluster is the Kettle. Ask an old Toggletonian why. They'll tell you it's obvious. It isn't."
+            },
+            {"audience": "laugh"},
+            {
+              "say": "guide",
+              "text": "There's an old harbour custom on Selunemas night. Pick a star for someone who isn't at the table this year."
+            },
+            {"say": "guide", "text": "You don't have to say who. You don't have to say anything. Just pick one."},
+            {"wait": 3000},
+            {
+              "audience": "hush",
+              "who": "cog-L1-aud-axle",
+              "say": "I HAVE PICKED ONE. I AM NOT SURE I AM ALLOWED. I DID."
+            },
+            {"audience": "hush", "who": "cog-L1-theatre-oldfan", "say": "That one's for Bryony's class. All of them."},
+            {"audience": "hush", "who": "cog-L1-theatre-fan", "say": "...Can I pick one too? I've got someone."},
+            {"say": "guide", "text": "There's no wrong star. If two of you pick the same one, it's big enough."},
+            {
+              "together": [
+                {"sfx": "bell"},
+                {
+                  "say": "guide",
+                  "text": "Thank you for lying on the floor with me. Happy Selunemas, Toggleton. Look up on the way home."
+                }
+              ]
+            },
+            {"audience": "aww"}
+          ]
+        }
+      ],
+      "bow": ["star1", "star2", "star3", "melune", "selune", "guide"]
+    }
+  ]
+}

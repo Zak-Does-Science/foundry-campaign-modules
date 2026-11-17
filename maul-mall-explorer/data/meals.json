@@ -1,0 +1,69 @@
+{
+  "_about": "Food-court weekly meal (SPEC 12). One meal per character per week, from any stall. A chain serves dishes[week % dishes.length]. Effects last until the week advances. Effect types: tempHp {formula}, saveBonus {ability, bonus}, skillBonus {skill, bonus}, initiative {bonus}, speed {feet}, resist {damage}, inspiration {}, text {} (the GM adjudicates). Every dish has `text`, the player-facing rule in plain words.",
+  "chains": {
+    "Whet": {
+      "blurb": "Seafolk cooking. Everything was swimming this morning.",
+      "dishes": [
+        { "name": "Kelp-Wrapped Strait Eel", "text": "Until your next match: you can hold your breath twice as long, and you gain 1d4 + 2 temporary hit points when you eat.", "effects": [ { "type": "tempHp", "formula": "1d4 + 2" }, { "type": "text" } ] },
+        { "name": "Brinefire Chowder Cup", "text": "Until your next match: resistance to cold damage.", "effects": [ { "type": "resist", "damage": "cold" } ] },
+        { "name": "Salted Lantern-Fish Skewer", "text": "Until your next match: +1 to Wisdom (Perception) checks. You can see the glint of things.", "effects": [ { "type": "skillBonus", "skill": "prc", "bonus": "1" } ] }
+      ]
+    },
+    "Oh Banañons!": {
+      "blurb": "Bananas, done every way a banana can be done.",
+      "dishes": [
+        { "name": "The Banañon Split", "text": "Until your next match: you gain 2d4 temporary hit points when you eat. Sugar rush!", "effects": [ { "type": "tempHp", "formula": "2d4" } ] },
+        { "name": "Plantain Power Fritters", "text": "Until your next match: +1 to initiative.", "effects": [ { "type": "initiative", "bonus": "1" } ] },
+        { "name": "Banañon Bread, Warm", "text": "Until your next match: once, when you fail a Constitution saving throw, you can reroll it (tell the GM).", "effects": [ { "type": "text" } ] }
+      ]
+    },
+    "Carna": {
+      "blurb": "Meat. Lots of it. Ask about the mystery skewer at your own risk.",
+      "dishes": [
+        { "name": "Double-Stack Gristle Melt", "text": "Until your next match: +1 to Strength (Athletics) checks.", "effects": [ { "type": "skillBonus", "skill": "ath", "bonus": "1" } ] },
+        { "name": "Slow-Roast Owlbear Ribs (probably)", "text": "Until your next match: you gain 1d6 + 2 temporary hit points when you eat.", "effects": [ { "type": "tempHp", "formula": "1d6 + 2" } ] },
+        { "name": "The Mystery Skewer", "text": "Until your next match: +1d4 to Constitution saving throws. You've survived worse.", "effects": [ { "type": "saveBonus", "ability": "con", "bonus": "1d4" } ] }
+      ]
+    },
+    "Clara's Brews": {
+      "blurb": "Ales, ciders, and something blue that glows. Adults only.",
+      "dishes": [
+        { "name": "Clara's Liquid Courage", "text": "Until your next match: +1d4 to saving throws against being frightened (tell the GM).", "effects": [ { "type": "text" } ] },
+        { "name": "Hot Spiced Cider", "text": "Until your next match: resistance to fire damage. It burns going down, so nothing else can.", "effects": [ { "type": "resist", "damage": "fire" } ] },
+        { "name": "The Glowing Blue One", "text": "You gain Heroic Inspiration. Nobody knows what's in it.", "effects": [ { "type": "inspiration" } ] }
+      ]
+    },
+    "Goo to Go": {
+      "blurb": "Slurpy, wobbly, wildly coloured. Comes with a very wide straw.",
+      "dishes": [
+        { "name": "Electric Lime Slurp", "text": "Until your next match: your walking speed increases by 5 feet.", "effects": [ { "type": "speed", "feet": 5 } ] },
+        { "name": "Wobblegoo Parfait", "text": "Until your next match: +1 to Dexterity (Acrobatics) checks.", "effects": [ { "type": "skillBonus", "skill": "acr", "bonus": "1" } ] },
+        { "name": "Brain-Freeze Blaster", "text": "Until your next match: resistance to psychic damage. Your head is too cold to think with.", "effects": [ { "type": "resist", "damage": "psychic" } ] }
+      ]
+    },
+    "Panto's Try": {
+      "blurb": "Panto street food: sweet, buttery, served with a little bow.",
+      "dishes": [
+        { "name": "Curtain-Call Croissant", "text": "Until your next match: +1 to Charisma (Performance) checks. The crowd loves you.", "effects": [ { "type": "skillBonus", "skill": "prf", "bonus": "1" } ] },
+        { "name": "Encore Éclair", "text": "Until your next match: once, after you roll a d20, you can add 1d4 to it (tell the GM).", "effects": [ { "type": "text" } ] },
+        { "name": "Masquerade Macarons", "text": "Until your next match: +1 to Charisma (Deception) checks.", "effects": [ { "type": "skillBonus", "skill": "dec", "bonus": "1" } ] }
+      ]
+    },
+    "Grab Grass": {
+      "blurb": "Salads, sprouts, and fresh juice. It's good for you. It knows.",
+      "dishes": [
+        { "name": "The Whole Garden Bowl", "text": "Until your next match: resistance to poison damage.", "effects": [ { "type": "resist", "damage": "poison" } ] },
+        { "name": "Green Machine Juice", "text": "Until your next match: +1d4 to Wisdom saving throws. You feel extremely centred.", "effects": [ { "type": "saveBonus", "ability": "wis", "bonus": "1d4" } ] },
+        { "name": "Crunchy Sprout Wrap", "text": "Until your next match: once, regain 1d8 extra hit points when you spend Hit Dice on a short rest (tell the GM).", "effects": [ { "type": "text" } ] }
+      ]
+    },
+    "Furious Freja": {
+      "blurb": "Fiefdom cooking, served angry. The spice levels have names, not numbers.",
+      "dishes": [
+        { "name": "Freja's Furious Noodles", "text": "Until your next match: +1 to damage rolls with melee weapon attacks once per turn (tell the GM).", "effects": [ { "type": "text" } ] },
+        { "name": "Ember Dumplings", "text": "Until your next match: resistance to fire damage.", "effects": [ { "type": "resist", "damage": "fire" } ] },
+        { "name": "Wrath Platter for One", "text": "Until your next match: +1d4 to Strength saving throws.", "effects": [ { "type": "saveBonus", "ability": "str", "bonus": "1d4" } ] }
+      ]
+    }
+  }
+}

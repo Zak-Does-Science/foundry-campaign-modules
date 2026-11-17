@@ -1,0 +1,1683 @@
+{
+  "venue": {
+    "id": "gal-puppet-booth",
+    "name": "Balcony Puppet Booth",
+    "floor": "S2",
+    "stage": {"x": 50, "y": 3, "w": 5, "h": 1},
+    "wings": {"left": [-1, 0], "right": [5, 0]},
+    "curtain": {"x": 50, "y": 2, "w": 5, "h": 1.25},
+    "curtainColors": ["#2a8a9a", "#1c5f6c", "#5ac0c8"],
+    "seats": [
+      {"floor": "S2", "x": 49, "y": 5, "w": 7, "h": 3}
+    ],
+    "audience": [
+      {"floor": "S2", "x": 47, "y": 4, "w": 12, "h": 7}
+    ],
+    "puppets": true
+  },
+  "shows": [
+    {
+      "id": "gal-show-pootle",
+      "weeks": [
+        0,
+        1
+      ],
+      "title": "Pootle Forgets the Way",
+      "byline": "Maudie Gourdwhistle's Knucklebox Puppets",
+      "blurb": "Pootle the PikPik has one letter to carry up Peel Lane, and no idea at all which way up is.",
+      "cast": {
+        "gilly": {
+          "name": "Postmistress Gilly Fernsby",
+          "sprite": "npc:gnome:6"
+        },
+        "pootle": {
+          "name": "Pootle the PikPik",
+          "sprite": "npc:pikpik:3"
+        },
+        "ruddle": {
+          "name": "Captain Ruddle Brack",
+          "sprite": "npc:fishfolk:7"
+        },
+        "granny": {
+          "name": "Granny Plume",
+          "sprite": "npc:pikpik:5:elder"
+        }
+      },
+      "scenes": [
+        {
+          "title": "Scene One: The Post Office on Peel Lane",
+          "beats": [
+            {
+              "enter": "gilly",
+              "at": [
+                0,
+                0
+              ]
+            },
+            {
+              "say": "gilly",
+              "text": "One letter, one PikPik, one address. How hard can it be? Pootle! Where's that bird got to?"
+            },
+            {
+              "together": [
+                {
+                  "enter": "pootle",
+                  "at": [
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "sfx": "pop"
+                }
+              ]
+            },
+            {
+              "say": "pootle",
+              "text": "Here! I've been here since... since... what day is it?"
+            },
+            {
+              "audience": "laugh"
+            },
+            {
+              "say": "gilly",
+              "text": "Meluday. This goes to Granny Plume, top of Peel Lane. Blue door, big fern by the step."
+            },
+            {
+              "say": "pootle",
+              "text": "Blue door. Big fern. Granny... Plume? Do I know a Plume?"
+            },
+            {
+              "do": "gilly",
+              "act": "shake"
+            },
+            {
+              "say": "gilly",
+              "text": "She's YOUR granny, Pootle. You've been to her house every Seluday since you hatched."
+            },
+            {
+              "say": "pootle",
+              "text": "And I've never once known the way. I just sort of turn up."
+            },
+            {
+              "say": "gilly",
+              "text": "Thirty years I've sent the post by PikPik. Every letter arrives. A few of them go through Wist first."
+            },
+            {
+              "together": [
+                {
+                  "exit": "pootle"
+                },
+                {
+                  "sfx": "whoosh"
+                }
+              ]
+            },
+            {
+              "audience": "laugh",
+              "who": "gal-S2-puppet-tobin",
+              "say": "He goes the wrong way first! He always goes the wrong way!"
+            }
+          ]
+        },
+        {
+          "title": "Scene Two: The Bottom of the Hill",
+          "beats": [
+            {
+              "caption": "Pootle has walked downhill all morning, which is the exact opposite of up."
+            },
+            {
+              "together": [
+                {
+                  "enter": "ruddle",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "pootle",
+                  "at": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "say": "ruddle",
+              "text": "Last ferry to Gok'Gok Harbor! You there, the bird. Ticket?"
+            },
+            {
+              "say": "pootle",
+              "text": "No ticket. I have a letter. It's for... it's very important. There's a fern on it."
+            },
+            {
+              "say": "ruddle",
+              "text": "Blue door, top of Peel Lane? That's up the hill, chick. Down here is the sea."
+            },
+            {
+              "do": "pootle",
+              "act": "flip"
+            },
+            {
+              "say": "pootle",
+              "text": "Oh. It's very big. And it's very wet."
+            },
+            {
+              "audience": "gasp",
+              "who": "gal-S2-puppet-minnow",
+              "say": "Pootle, go UP!"
+            },
+            {
+              "say": "ruddle",
+              "text": "My mum sailed with a PikPik for luck. It steered us onto the same sandbar every spring. We named the sandbar after her."
+            },
+            {
+              "say": "pootle",
+              "text": "Which way is up, please?"
+            },
+            {
+              "say": "ruddle",
+              "text": "Follow the smell of banañon bread. The bakers are all at the top, and warm bread always goes uphill."
+            },
+            {
+              "together": [
+                {
+                  "do": "pootle",
+                  "act": "hop"
+                },
+                {
+                  "sfx": "honk"
+                }
+              ]
+            },
+            {
+              "exit": "pootle"
+            }
+          ]
+        },
+        {
+          "title": "Scene Three: The Blue Door",
+          "beats": [
+            {
+              "enter": "granny",
+              "at": [
+                4,
+                0
+              ]
+            },
+            {
+              "say": "granny",
+              "text": "Kettle on at nine. It's gone four. He'll be along."
+            },
+            {
+              "together": [
+                {
+                  "enter": "pootle",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "sfx": "pop"
+                }
+              ]
+            },
+            {
+              "say": "pootle",
+              "text": "Excuse me. I'm looking for a blue door. And a big fern. And a granny, I think?"
+            },
+            {
+              "say": "granny",
+              "text": "Pootle, love. You're standing on the fern."
+            },
+            {
+              "together": [
+                {
+                  "do": "pootle",
+                  "act": "spin"
+                },
+                {
+                  "sfx": "squeak"
+                }
+              ]
+            },
+            {
+              "say": "pootle",
+              "text": "GRANNY! I found you! And I wasn't even looking!"
+            },
+            {
+              "say": "granny",
+              "text": "What's that in your beak, chick?"
+            },
+            {
+              "say": "pootle",
+              "text": "A letter for you! It's from... I don't know. I can't read. I'm a bird."
+            },
+            {
+              "say": "granny",
+              "text": "It's from you. You wrote it with Gilly last week. It says: this year I'll find you all on my own."
+            },
+            {
+              "wait": 1200
+            },
+            {
+              "say": "pootle",
+              "text": "...I did, didn't I? I did find you."
+            },
+            {
+              "audience": "aww",
+              "who": "gal-S2-puppet-abner",
+              "say": "Every PikPik gets home. My mother always said so."
+            },
+            {
+              "say": "granny",
+              "text": "Come in. The kettle's boiled four times waiting for you."
+            }
+          ]
+        }
+      ],
+      "bow": [
+        "pootle",
+        "granny",
+        "gilly",
+        "ruddle"
+      ]
+    },
+    {
+      "id": "gal-show-gardeners",
+      "weeks": [
+        2
+      ],
+      "title": "The Gardeners Who Stayed",
+      "byline": "A Banañon Town folk tale, told with puppets",
+      "blurb": "Sent away from the Fae Courts for planting radishes in a ballroom, two goblins land on a bare rock with one seed.",
+      "cast": {
+        "duchess": {
+          "name": "Duchess Thessaly of the Thorn Court",
+          "sprite": "npc:pixie:4"
+        },
+        "gubbins": {
+          "name": "Gubbins Mudthumb",
+          "sprite": "npc:goblin:3"
+        },
+        "mossa": {
+          "name": "Mossa Rakeby",
+          "sprite": "npc:goblin:9"
+        },
+        "fern": {
+          "name": "The First Fern",
+          "sprite": "obj:fern"
+        },
+        "tree": {
+          "name": "The Rainforest",
+          "sprite": "obj:pot-plant-big"
+        },
+        "duchess_old": {
+          "name": "Duchess Thessaly, many years later",
+          "sprite": "npc:pixie:4:elder"
+        },
+        "mossa_old": {
+          "name": "Mossa Rakeby, many years later",
+          "sprite": "npc:goblin:9:elder"
+        }
+      },
+      "scenes": [
+        {
+          "title": "Scene One: Radishes in the Ballroom",
+          "beats": [
+            {
+              "caption": "Long ago, before the mushroom and before the mall, the goblins kept the gardens of the Fae Courts."
+            },
+            {
+              "enter": "duchess",
+              "at": [
+                2,
+                0
+              ]
+            },
+            {
+              "say": "duchess",
+              "text": "Who has planted RADISHES in my ballroom?"
+            },
+            {
+              "together": [
+                {
+                  "enter": "gubbins",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "mossa",
+                  "at": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "say": "gubbins",
+              "text": "They've come up lovely, Your Grace. Look at the colour on that one."
+            },
+            {
+              "say": "duchess",
+              "text": "There are turnips in the throne. A pumpkin has eaten my second-best crown."
+            },
+            {
+              "say": "mossa",
+              "text": "It didn't eat it. It grew round it. That's a completely different thing."
+            },
+            {
+              "audience": "laugh"
+            },
+            {
+              "say": "duchess",
+              "text": "Out! Every goblin, every hobgoblin, every trowel. Out of the Court by moonrise!"
+            },
+            {
+              "say": "gubbins",
+              "text": "Can we take the radishes?"
+            },
+            {
+              "say": "mossa",
+              "text": "We only ever wanted somewhere to put our hands in the dirt."
+            },
+            {
+              "together": [
+                {
+                  "exit": "gubbins"
+                },
+                {
+                  "exit": "mossa"
+                },
+                {
+                  "sfx": "whoosh"
+                }
+              ]
+            },
+            {
+              "audience": "boo",
+              "who": "gal-S2-puppet-tobin",
+              "say": "Boo the fairy! ...She says sorry at the end, though."
+            }
+          ]
+        },
+        {
+          "title": "Scene Two: A Bare Rock in the Strait",
+          "beats": [
+            {
+              "caption": "They sailed until the boat sprang a leak, and they stopped where they stopped: a bare grey rock."
+            },
+            {
+              "together": [
+                {
+                  "enter": "gubbins",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "mossa",
+                  "at": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "say": "gubbins",
+              "text": "No soil. No shade. Forty-two gulls. I counted them on the way in."
+            },
+            {
+              "say": "mossa",
+              "text": "Forty-three. One's sitting on your hat."
+            },
+            {
+              "together": [
+                {
+                  "sfx": "squeak"
+                },
+                {
+                  "audience": "laugh"
+                }
+              ]
+            },
+            {
+              "say": "mossa",
+              "text": "Home was all moonlight and music. Here it's rock and wind. I don't know how to garden wind."
+            },
+            {
+              "say": "gubbins",
+              "text": "Then we start with one seed. I kept it in my sock the whole voyage."
+            },
+            {
+              "say": "mossa",
+              "text": "One seed. On a rock. In a gale. Out of a sock."
+            },
+            {
+              "together": [
+                {
+                  "enter": "fern",
+                  "at": [
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "sfx": "chime"
+                }
+              ]
+            },
+            {
+              "say": "gubbins",
+              "text": "Grow, little fern, and don't mind the rain. We'll water you twice and then sing it again.",
+              "sing": true
+            },
+            {
+              "say": "mossa",
+              "text": "Gubbins. It's growing. It is actually growing."
+            },
+            {
+              "say": "gubbins",
+              "text": "Don't look straight at it. Ferns get shy."
+            },
+            {
+              "audience": "ooh",
+              "who": "gal-S2-puppet-minnow",
+              "say": "It's a baby rainforest!"
+            },
+            {
+              "say": "gubbins",
+              "text": "Course it is. Nobody told it about the rock."
+            }
+          ]
+        },
+        {
+          "title": "Scene Three: Many, Many Years Later",
+          "beats": [
+            {
+              "caption": "Many years later, a boat from the Fae Courts crossed the strait, looking for some shade."
+            },
+            {
+              "together": [
+                {
+                  "enter": "tree",
+                  "at": [
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "sfx": "chime"
+                }
+              ]
+            },
+            {
+              "enter": "duchess_old",
+              "at": [
+                0,
+                0
+              ]
+            },
+            {
+              "say": "duchess_old",
+              "text": "Ferns taller than towers. Birds I don't know the names of. Whose garden is this?"
+            },
+            {
+              "enter": "mossa_old",
+              "at": [
+                4,
+                0
+              ]
+            },
+            {
+              "say": "mossa_old",
+              "text": "Ours, Your Grace. Mind the bromeliads."
+            },
+            {
+              "say": "duchess_old",
+              "text": "I came to buy a cutting. I don't think I have enough money for a cutting of this."
+            },
+            {
+              "say": "mossa_old",
+              "text": "You can have one for nothing. We know what it's like to stand somewhere with nothing growing."
+            },
+            {
+              "audience": "aww"
+            },
+            {
+              "say": "duchess_old",
+              "text": "We were wrong to send you away. I have been wrong for a very long time."
+            },
+            {
+              "say": "mossa_old",
+              "text": "Then stay for tea. Gubbins is making it. It'll be radish."
+            },
+            {
+              "say": "duchess_old",
+              "text": "I hate radishes. ...I'd love some."
+            },
+            {
+              "audience": "laugh"
+            },
+            {
+              "caption": "That's why a mossy goblin with a trowel stands downstairs in the gardens. Go and say hello."
+            }
+          ]
+        }
+      ],
+      "bow": [
+        "gubbins",
+        "mossa",
+        "duchess"
+      ]
+    },
+    {
+      "id": "gal-show-brawl",
+      "weeks": [
+        3
+      ],
+      "title": "THE BIG BANAÑON BRAWL",
+      "byline": "Sponsored by nobody. Goolax didn't call back.",
+      "blurb": "Ripe old Peely Dan and young Greenie Bunch go three rounds for the Golden Peel. Somebody is going to slip.",
+      "cast": {
+        "ref": {
+          "name": "Referee Tamsin Whistlecrop",
+          "sprite": "npc:halfling:4"
+        },
+        "peely": {
+          "name": "Peely Dan",
+          "sprite": "npc:plantling:7"
+        },
+        "greenie": {
+          "name": "Greenie Bunch",
+          "sprite": "npc:plantling:12:teen"
+        }
+      },
+      "scenes": [
+        {
+          "title": "Round One: The Weigh-In",
+          "beats": [
+            {
+              "together": [
+                {
+                  "enter": "ref",
+                  "at": [
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "sfx": "fanfare"
+                }
+              ]
+            },
+            {
+              "say": "ref",
+              "text": "Welcome to the Balcony Fruit Bowl! Tonight: three rounds for the Golden Peel!"
+            },
+            {
+              "enter": "peely",
+              "at": [
+                0,
+                0
+              ]
+            },
+            {
+              "say": "ref",
+              "text": "In the yellow corner! Eleven days old, a little bit spotty, champion of the bowl: PEELY DAN!"
+            },
+            {
+              "audience": "cheer"
+            },
+            {
+              "say": "peely",
+              "text": "Eleven days. Nine wins. Two draws with an apple who wouldn't come out of the bowl."
+            },
+            {
+              "enter": "greenie",
+              "at": [
+                4,
+                0
+              ]
+            },
+            {
+              "say": "ref",
+              "text": "And in the green corner! Three days old, still hard in the middle: GREENIE BUNCH!"
+            },
+            {
+              "say": "greenie",
+              "text": "Hello. Sorry. Is it this way? My mum says I'm not ready to be eaten, never mind brawl."
+            },
+            {
+              "audience": "aww",
+              "who": "gal-S2-puppet-minnow",
+              "say": "Go Greenie! Green's the best colour!"
+            },
+            {
+              "say": "peely",
+              "text": "Kid, you're so green you don't even bruise yet."
+            },
+            {
+              "say": "greenie",
+              "text": "Thank you!"
+            },
+            {
+              "audience": "laugh"
+            },
+            {
+              "say": "ref",
+              "text": "Fruit, touch stalks. Keep it clean. Nobody gets made into bread on my balcony."
+            }
+          ]
+        },
+        {
+          "title": "Round Two: Slippery When Ripe",
+          "beats": [
+            {
+              "sfx": "bell"
+            },
+            {
+              "together": [
+                {
+                  "enter": "peely",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "greenie",
+                  "at": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "say": "peely",
+              "text": "Fruit-fighting is all footwork. Watch the master and learn something."
+            },
+            {
+              "say": "greenie",
+              "text": "I'm watching! I've never watched anything this hard!"
+            },
+            {
+              "move": "peely",
+              "to": [
+                2,
+                0
+              ]
+            },
+            {
+              "say": "greenie",
+              "text": "Mister Dan, you've dropped your—"
+            },
+            {
+              "together": [
+                {
+                  "do": "peely",
+                  "act": "faint"
+                },
+                {
+                  "sfx": "squeak"
+                }
+              ]
+            },
+            {
+              "audience": "laugh"
+            },
+            {
+              "say": "peely",
+              "text": "My own peel. Eleven days in this business and I never once saw it coming."
+            },
+            {
+              "say": "greenie",
+              "text": "Do you need a hand up? I haven't got hands. I've got a stalk. You can have the stalk."
+            },
+            {
+              "do": "peely",
+              "act": "rise"
+            },
+            {
+              "say": "peely",
+              "text": "A banañon always gets back up. Usually because somebody's trying to eat it."
+            },
+            {
+              "say": "greenie",
+              "text": "That's the bravest thing I've ever seen. Also the slipperiest."
+            },
+            {
+              "audience": "laugh",
+              "who": "gal-S2-puppet-desmond",
+              "say": "Telegraphed in round one. Still funny. Noted."
+            }
+          ]
+        },
+        {
+          "title": "Round Three: The Golden Peel",
+          "beats": [
+            {
+              "sfx": "bell"
+            },
+            {
+              "together": [
+                {
+                  "enter": "peely",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "greenie",
+                  "at": [
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "enter": "ref",
+                  "at": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "say": "ref",
+              "text": "Final round! The Goolax Golden Peel! They asked me to say Goolax louder. GOOLAX!"
+            },
+            {
+              "say": "greenie",
+              "text": "Mister Dan? I don't want to fight you. I want to be yellow like you one day."
+            },
+            {
+              "say": "peely",
+              "text": "...You will be, kid. Everybody's green once. I was so green a gull spat me out."
+            },
+            {
+              "audience": "aww"
+            },
+            {
+              "together": [
+                {
+                  "do": "peely",
+                  "act": "hop"
+                },
+                {
+                  "do": "greenie",
+                  "act": "hop"
+                },
+                {
+                  "sfx": "drum"
+                }
+              ]
+            },
+            {
+              "together": [
+                {
+                  "do": "peely",
+                  "act": "faint"
+                },
+                {
+                  "do": "greenie",
+                  "act": "faint"
+                },
+                {
+                  "sfx": "crash"
+                }
+              ]
+            },
+            {
+              "say": "ref",
+              "text": "Both fruit down! Both on their own peel! The result is... a BUNCH!"
+            },
+            {
+              "audience": "cheer",
+              "who": "gal-S2-puppet-tobin",
+              "say": "A draw! I TOLD you it was a draw!"
+            },
+            {
+              "say": "greenie",
+              "text": "Did we win?"
+            },
+            {
+              "say": "ref",
+              "text": "Nobody's ever drawn the Golden Peel before. I'll have to cut it in half. It's a peel. That's easy."
+            },
+            {
+              "say": "peely",
+              "text": "We're a bunch now, kid. Nobody wins a bunch. You just hang on."
+            }
+          ]
+        }
+      ],
+      "bow": [
+        "greenie",
+        "peely",
+        "ref"
+      ]
+    },
+    {
+      "id": "gal-show-grumbald",
+      "weeks": [
+        4
+      ],
+      "title": "Grumbald and the First Banañon",
+      "byline": "A true story, give or take a banañon",
+      "blurb": "A Seathern dwarf lands on the goblins' rock with one strange green fruit, and nobody on the rock will buy it.",
+      "cast": {
+        "grumbald": {
+          "name": "Grumbald Ironpeel",
+          "sprite": "npc:dwarf:2:beard"
+        },
+        "nana": {
+          "name": "The First Banañon",
+          "sprite": "npc:plantling:19"
+        },
+        "hobble": {
+          "name": "Missus Hobbleberry",
+          "sprite": "npc:goblin:6:elder"
+        }
+      },
+      "scenes": [
+        {
+          "title": "Scene One: A Dwarf With One Strange Fruit",
+          "beats": [
+            {
+              "caption": "Long ago, a Seathern dwarf rowed ashore on the goblins' rock with an empty crate and one strange fruit."
+            },
+            {
+              "enter": "grumbald",
+              "at": [
+                0,
+                0
+              ]
+            },
+            {
+              "say": "grumbald",
+              "text": "Fresh fruit! From over the sea! Only one of it! Form an orderly queue!"
+            },
+            {
+              "audience": "laugh",
+              "who": "gal-S2-puppet-yarrow",
+              "say": "Did somebody say queue?"
+            },
+            {
+              "enter": "nana",
+              "at": [
+                3,
+                0
+              ]
+            },
+            {
+              "say": "nana",
+              "text": "Nobody's queueing, Mister Ironpeel."
+            },
+            {
+              "say": "grumbald",
+              "text": "They will be, lad. Give it time."
+            },
+            {
+              "say": "nana",
+              "text": "I'm green. People look at me like I'm a cucumber that's gone wrong."
+            },
+            {
+              "say": "grumbald",
+              "text": "Give it a week. You'll go yellow and soft and everyone will love you. Like my uncle Thrain."
+            },
+            {
+              "say": "nana",
+              "text": "What happened to your uncle Thrain?"
+            },
+            {
+              "say": "grumbald",
+              "text": "He opened a bakery. Ate most of it."
+            },
+            {
+              "audience": "laugh"
+            }
+          ]
+        },
+        {
+          "title": "Scene Two: Six Days of Selling Nothing",
+          "beats": [
+            {
+              "caption": "Day two. Day three. Day four. One dwarf, one fruit, and a great many gulls."
+            },
+            {
+              "together": [
+                {
+                  "enter": "grumbald",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "nana",
+                  "at": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "enter": "hobble",
+              "at": [
+                4,
+                0
+              ]
+            },
+            {
+              "say": "hobble",
+              "text": "What's that, then?"
+            },
+            {
+              "say": "grumbald",
+              "text": "Madam, that is a banañon."
+            },
+            {
+              "say": "hobble",
+              "text": "What's it do?"
+            },
+            {
+              "say": "grumbald",
+              "text": "...You eat it."
+            },
+            {
+              "say": "hobble",
+              "text": "It's a sausage. You're selling a green sausage."
+            },
+            {
+              "say": "nana",
+              "text": "I'm not a sausage! I'm a FRUIT! ...Am I a fruit?"
+            },
+            {
+              "audience": "laugh",
+              "who": "gal-S2-puppet-desmond",
+              "say": "Botanically, a berry. I looked it up on my lunch."
+            },
+            {
+              "say": "hobble",
+              "text": "I'll think about it. I've been thinking about one thing since the Fae Courts. I can fit another in."
+            },
+            {
+              "exit": "hobble"
+            },
+            {
+              "say": "grumbald",
+              "text": "Twelve years at sea I had nobody to talk to but a barrel. You're better company than the barrel."
+            }
+          ]
+        },
+        {
+          "title": "Scene Three: Day Seven",
+          "beats": [
+            {
+              "together": [
+                {
+                  "enter": "nana",
+                  "at": [
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "sfx": "chime"
+                }
+              ]
+            },
+            {
+              "caption": "On the seventh day, the banañon went yellow."
+            },
+            {
+              "say": "nana",
+              "text": "Mister Ironpeel! I've gone all funny! I've gone YELLOW!"
+            },
+            {
+              "enter": "grumbald",
+              "at": [
+                0,
+                0
+              ]
+            },
+            {
+              "say": "grumbald",
+              "text": "Look at you. You're the most beautiful fruit on the whole strait."
+            },
+            {
+              "enter": "hobble",
+              "at": [
+                4,
+                0
+              ]
+            },
+            {
+              "say": "hobble",
+              "text": "I'll take him. One copper."
+            },
+            {
+              "wait": 1000
+            },
+            {
+              "say": "grumbald",
+              "text": "He's not for... I mean. Yes. One copper. Of course. That's the job."
+            },
+            {
+              "say": "nana",
+              "text": "Will you visit me?"
+            },
+            {
+              "say": "hobble",
+              "text": "Visit? Dear, I'm not going to EAT you. I'm a gardener. I'm going to plant you."
+            },
+            {
+              "audience": "ooh",
+              "who": "gal-S2-puppet-minnow",
+              "say": "And then he grows into ALL the banañons!"
+            },
+            {
+              "say": "grumbald",
+              "text": "Then I'll visit every day."
+            },
+            {
+              "caption": "He did. Now Banañon Town has banañons on every corner, and Grumbald stands downstairs in bronze."
+            }
+          ]
+        }
+      ],
+      "bow": [
+        "nana",
+        "grumbald",
+        "hobble"
+      ]
+    },
+    {
+      "id": "gal-show-storm",
+      "weeks": [
+        5
+      ],
+      "title": "Storm on the Strait",
+      "byline": "Thunder by Brannie Gourdwhistle and a saucepan",
+      "blurb": "Skipper Della and her boy row out for one last catch before the weather turns. The weather turns first.",
+      "cast": {
+        "della": {
+          "name": "Skipper Della Brine",
+          "sprite": "npc:fishfolk:3"
+        },
+        "corran": {
+          "name": "Corran Brine",
+          "sprite": "npc:fishfolk:5:child"
+        },
+        "keeper": {
+          "name": "Hesper Oakum (lighthouse keeper)",
+          "sprite": "npc:dwarf:5:nobeard"
+        },
+        "lamp": {
+          "name": "The Lighthouse Lamp",
+          "sprite": "obj:lamp"
+        }
+      },
+      "scenes": [
+        {
+          "title": "Scene One: One Last Catch",
+          "beats": [
+            {
+              "caption": "The Brines' little boat, the Second Try, rows out past the mushroom on the evening tide."
+            },
+            {
+              "together": [
+                {
+                  "enter": "della",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "corran",
+                  "at": [
+                    3,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "say": "corran",
+              "text": "Mum, the moon's in the wrong place again."
+            },
+            {
+              "say": "della",
+              "text": "Moon's been wandering all year, love. The tides don't know if they're coming or going."
+            },
+            {
+              "say": "corran",
+              "text": "Can I steer?"
+            },
+            {
+              "say": "della",
+              "text": "When you can see over the oars."
+            },
+            {
+              "do": "corran",
+              "act": "shake"
+            },
+            {
+              "say": "corran",
+              "text": "Net's heavy! It's a boot! It's a boot with a crab in it! The crab looks furious!"
+            },
+            {
+              "audience": "laugh"
+            },
+            {
+              "say": "della",
+              "text": "Put him back. He was there first."
+            },
+            {
+              "say": "corran",
+              "text": "Bye, crab. Sorry about your boot."
+            },
+            {
+              "sfx": "thunder"
+            },
+            {
+              "say": "della",
+              "text": "...That's not a crab noise. Oars in, Corran. We're going home."
+            }
+          ]
+        },
+        {
+          "title": "Scene Two: The Storm",
+          "beats": [
+            {
+              "together": [
+                {
+                  "sfx": "thunder"
+                },
+                {
+                  "caption": "The sky over the strait goes the colour of an old bruise."
+                }
+              ]
+            },
+            {
+              "together": [
+                {
+                  "enter": "della",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "corran",
+                  "at": [
+                    3,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "together": [
+                {
+                  "do": "della",
+                  "act": "shake"
+                },
+                {
+                  "do": "corran",
+                  "act": "shake"
+                },
+                {
+                  "sfx": "splash"
+                }
+              ]
+            },
+            {
+              "say": "corran",
+              "text": "Mum! Which way is home?"
+            },
+            {
+              "say": "della",
+              "text": "I don't know. I can't see the mushroom. I can't see my own hands."
+            },
+            {
+              "audience": "gasp"
+            },
+            {
+              "say": "corran",
+              "text": "The water's coming in over my feet!"
+            },
+            {
+              "say": "della",
+              "text": "Then bail with your hat, love. That's what a hat's for out here."
+            },
+            {
+              "say": "corran",
+              "text": "I'm scared."
+            },
+            {
+              "say": "della",
+              "text": "Me too. Come here. We'll sing the old one, the one your grandad sang."
+            },
+            {
+              "say": "della",
+              "text": "Row, little boat, by the light on the hill. The sea can be wild, but the lamp's burning still.",
+              "sing": true
+            },
+            {
+              "say": "corran",
+              "text": "Row, little boat, there's a kettle at home, and a dry pair of socks, and you won't be alone.",
+              "sing": true
+            },
+            {
+              "audience": "hush",
+              "who": "gal-S2-puppet-abner",
+              "say": "I know that one. We all sang that one."
+            },
+            {
+              "sfx": "thunder"
+            }
+          ]
+        },
+        {
+          "title": "Scene Three: The Light on the Point",
+          "beats": [
+            {
+              "enter": "keeper",
+              "at": [
+                4,
+                0
+              ]
+            },
+            {
+              "say": "keeper",
+              "text": "Weather like this, there's always somebody out in it. Lamp on, Hesper. Be tired tomorrow."
+            },
+            {
+              "together": [
+                {
+                  "enter": "lamp",
+                  "at": [
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "sfx": "chime"
+                }
+              ]
+            },
+            {
+              "say": "keeper",
+              "text": "My mum kept this lamp lit for thirty years. Never once asked who it was for."
+            },
+            {
+              "exit": "keeper"
+            },
+            {
+              "enter": "corran",
+              "at": [
+                0,
+                0
+              ]
+            },
+            {
+              "say": "corran",
+              "text": "Mum! MUM! A light! Up on the point!"
+            },
+            {
+              "together": [
+                {
+                  "exit": "lamp"
+                },
+                {
+                  "enter": "della",
+                  "at": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "say": "della",
+              "text": "That's the lighthouse. Somebody's lit it for us. Row, Corran. Row for the light."
+            },
+            {
+              "together": [
+                {
+                  "sfx": "splash"
+                },
+                {
+                  "audience": "cheer"
+                }
+              ]
+            },
+            {
+              "enter": "keeper",
+              "at": [
+                4,
+                0
+              ]
+            },
+            {
+              "say": "keeper",
+              "text": "Thought there was somebody out there. Kettle's on. Your socks are going on the stove."
+            },
+            {
+              "say": "della",
+              "text": "We'd have been lost without you. I don't even know your name."
+            },
+            {
+              "say": "keeper",
+              "text": "Hesper. And nobody's lost while somebody's still looking. In you come, the pair of you."
+            }
+          ]
+        }
+      ],
+      "bow": [
+        "corran",
+        "della",
+        "keeper"
+      ]
+    },
+    {
+      "id": "gal-show-selunemas",
+      "weeks": [
+        6
+      ],
+      "title": "Selunemas Eve on Peel Lane",
+      "byline": "The last show of the season. Every puppet's in it.",
+      "blurb": "D'fain's silver sack springs a hole over Banañon Town, and the only one who can help is a PikPik who's lost.",
+      "cast": {
+        "dfain": {
+          "name": "D'fain",
+          "sprite": "npc:elf:0:beard"
+        },
+        "pootle": {
+          "name": "Pootle the PikPik",
+          "sprite": "npc:pikpik:3"
+        },
+        "granny": {
+          "name": "Granny Plume",
+          "sprite": "npc:pikpik:5:elder"
+        },
+        "grumbald": {
+          "name": "Grumbald Ironpeel",
+          "sprite": "npc:dwarf:2:beard"
+        },
+        "gubbins": {
+          "name": "Gubbins Mudthumb",
+          "sprite": "npc:goblin:3"
+        }
+      },
+      "scenes": [
+        {
+          "title": "Scene One: A Hole in the Silver Sack",
+          "beats": [
+            {
+              "caption": "Selunemas Eve. Lamps on every corner of Banañon Town, and D'fain and his llamas overhead."
+            },
+            {
+              "together": [
+                {
+                  "enter": "dfain",
+                  "at": [
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "sfx": "bell"
+                }
+              ]
+            },
+            {
+              "say": "dfain",
+              "text": "Every house in one night! Every one! And the llamas want a biscuit break over Gok'Gok Harbor."
+            },
+            {
+              "say": "dfain",
+              "text": "Hold on. A hole in my silver sack? Who's been chewing my... LLAMAS."
+            },
+            {
+              "audience": "laugh"
+            },
+            {
+              "say": "dfain",
+              "text": "One gift gone. Somewhere down there, among ten thousand chimneys and one very large mushroom."
+            },
+            {
+              "together": [
+                {
+                  "enter": "pootle",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "sfx": "pop"
+                }
+              ]
+            },
+            {
+              "say": "pootle",
+              "text": "Excuse me. You dropped a box. It hit me on the head. Now I've forgotten what I was doing."
+            },
+            {
+              "say": "dfain",
+              "text": "My gift! Clever bird! Who's it for? What does the tag say?"
+            },
+            {
+              "say": "pootle",
+              "text": "I can't read. I'm a bird. We've done this one."
+            },
+            {
+              "audience": "laugh",
+              "who": "gal-S2-puppet-tobin",
+              "say": "He couldn't read last time either!"
+            },
+            {
+              "say": "dfain",
+              "text": "Then you'll have to fly with me, little PikPik. Have you ever ridden with llamas?"
+            },
+            {
+              "say": "pootle",
+              "text": "I've never ridden anything. I just sort of turn up."
+            }
+          ]
+        },
+        {
+          "title": "Scene Two: Whoever Has Waited Longest",
+          "beats": [
+            {
+              "together": [
+                {
+                  "enter": "dfain",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "granny",
+                  "at": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "say": "granny",
+              "text": "Oh my stars. Pootle's turned up on Selunemas Eve, and he's brought D'fain."
+            },
+            {
+              "say": "dfain",
+              "text": "Good evening, madam. Can you read a tag? Your grandson and I are a little stuck."
+            },
+            {
+              "enter": "pootle",
+              "at": [
+                2,
+                0
+              ]
+            },
+            {
+              "say": "granny",
+              "text": "It says: For whoever has waited the longest."
+            },
+            {
+              "say": "pootle",
+              "text": "That's me. I've been waiting since lunch. Lunch was a very long time ago."
+            },
+            {
+              "say": "granny",
+              "text": "Not you, chick. Somebody who's waited and waited and never once complained."
+            },
+            {
+              "do": "pootle",
+              "act": "flip"
+            },
+            {
+              "say": "pootle",
+              "text": "Him! At the front of the queue! Except he IS the queue!"
+            },
+            {
+              "audience": "gasp",
+              "who": "gal-S2-puppet-yarrow",
+              "say": "Me? Seven weeks in this queue and it's ME?"
+            },
+            {
+              "say": "dfain",
+              "text": "Merry Selunemas, sir. It's a folding chair. Now you can keep your place AND sit down."
+            },
+            {
+              "audience": "cheer"
+            },
+            {
+              "say": "granny",
+              "text": "Now that's a proper Selunemas."
+            }
+          ]
+        },
+        {
+          "title": "Scene Three: Everyone Comes Home",
+          "beats": [
+            {
+              "caption": "And because it was Selunemas, everybody from every story came home for the night."
+            },
+            {
+              "together": [
+                {
+                  "enter": "grumbald",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "gubbins",
+                  "at": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "say": "grumbald",
+              "text": "Seven days I waited for a banañon to go yellow. I'd wait seven more for a night like this."
+            },
+            {
+              "say": "gubbins",
+              "text": "I brought radishes. Nobody asked me to. I brought them anyway."
+            },
+            {
+              "enter": "dfain",
+              "at": [
+                2,
+                0
+              ]
+            },
+            {
+              "say": "dfain",
+              "text": "Some houses have an empty chair this year. I leave a little extra by those. Not a toy. Something warm."
+            },
+            {
+              "audience": "hush"
+            },
+            {
+              "say": "dfain",
+              "text": "I always save this balcony for last. Best view of the strait in the whole world."
+            },
+            {
+              "together": [
+                {
+                  "exit": "grumbald"
+                },
+                {
+                  "exit": "gubbins"
+                }
+              ]
+            },
+            {
+              "together": [
+                {
+                  "enter": "pootle",
+                  "at": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "enter": "granny",
+                  "at": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "say": "pootle",
+              "text": "Is it over? I forgot it was going to end."
+            },
+            {
+              "say": "granny",
+              "text": "Shows end, chick. Seasons end. Then you find your way back."
+            },
+            {
+              "say": "pootle",
+              "text": "I won't find it. But I'll turn up."
+            },
+            {
+              "caption": "The Knucklebox closes for the winter. Merry Selunemas from Maudie, Brannie and every puppet in the box."
+            }
+          ]
+        }
+      ],
+      "bow": [
+        "pootle",
+        "granny",
+        "grumbald",
+        "gubbins",
+        "dfain"
+      ]
+    }
+  ]
+}

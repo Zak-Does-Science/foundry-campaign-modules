@@ -1,0 +1,35 @@
+<section class="maul-shop-body">
+  <header class="maul-vendor">
+    <div class="maul-vendor-name">{{title}}</div>
+    {{#if keeper}}<div class="maul-vendor-meta">{{keeper}}</div>{{/if}}
+  </header>
+
+  {{#if actor}}
+  <div class="maul-wallet">
+    <span class="maul-wallet-who">{{actor.name}}</span>
+    <span class="maul-coin">{{actor.purse}}</span>
+  </div>
+  {{else}}
+  <div class="maul-wallet maul-warn">No character assigned to you, so you can look but not buy. Ask the DM to assign yours.</div>
+  {{/if}}
+
+  <ul class="maul-stock">
+    {{#each items}}
+    <li class="maul-stock-item">
+      <div class="maul-stock-head">
+        <span class="maul-stock-name">{{name}}</span>
+        <span class="maul-stock-price">{{priceLabel}}</span>
+      </div>
+      {{#if desc}}<div class="maul-stock-desc">{{desc}}</div>{{/if}}
+      <div class="maul-stock-foot">
+        {{#if homologated}}<span class="maul-tag" title="Goolax-approved: legal in matches">match-legal</span>{{/if}}
+        <button type="button" class="maul-btn" data-action="buy" data-index="{{index}}" {{#unless affordable}}disabled{{/unless}}>
+          {{#if affordable}}Buy{{else}}Can't afford{{/if}}
+        </button>
+      </div>
+    </li>
+    {{else}}
+    <li class="maul-stock-empty">Nothing on the shelves right now.</li>
+    {{/each}}
+  </ul>
+</section>

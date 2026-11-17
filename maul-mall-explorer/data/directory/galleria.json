@@ -1,0 +1,709 @@
+{
+ "mall": "galleria",
+ "name": "Galleria Overlook",
+ "tilePx": 16,
+ "categories": [
+  "Clothing & Style",
+  "Gear & Weapons",
+  "Magic & Curios",
+  "Food & Drink",
+  "Mounts & Travel",
+  "Home & Gifts",
+  "Fun & Games",
+  "Services",
+  "Arena",
+  "Facilities"
+ ],
+ "floors": [
+  {
+   "id": "L2",
+   "name": "Level 2 — Skeeton's",
+   "img": "assets/maps/directory/galleria_L2.webp",
+   "w": 44,
+   "h": 40
+  },
+  {
+   "id": "L1",
+   "name": "Level 1 — Ground: the Stem, Gardens & Arena",
+   "img": "assets/maps/directory/galleria_L1.webp",
+   "w": 72,
+   "h": 52
+  },
+  {
+   "id": "S1",
+   "name": "Sub-level 1 — Shops in the Rock",
+   "img": "assets/maps/directory/galleria_S1.webp",
+   "w": 50,
+   "h": 38
+  },
+  {
+   "id": "S2",
+   "name": "Sub-level 2 — Food Court & Dining Balcony",
+   "img": "assets/maps/directory/galleria_S2.webp",
+   "w": 66,
+   "h": 46
+  }
+ ],
+ "pins": [
+  {
+   "floor": "L2",
+   "x": 19,
+   "y": 0,
+   "label": "SKEETON'S",
+   "unit": null,
+   "name": "Skeeton's",
+   "category": "Clothing & Style",
+   "sells": "The whole cap: clothes, sport, home and gifts. Returns? Ha."
+  },
+  {
+   "floor": "L2",
+   "x": 18,
+   "y": 9,
+   "label": "APPAREL",
+   "unit": null,
+   "name": "Skeeton's Apparel",
+   "category": "Clothing & Style",
+   "sells": "Arena-wear: breathable, stretchy, resistant to some stains.",
+   "sign": {
+    "icon": "shirt",
+    "x": 16,
+    "y": 7
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 30,
+   "y": 11,
+   "label": "SEA & SPORT",
+   "unit": null,
+   "name": "Skeeton's Sea & Sport",
+   "category": "Gear & Weapons",
+   "sells": "Surfboards, fishing rods, swim fins in six sizes.",
+   "sign": {
+    "icon": "fish",
+    "x": 31,
+    "y": 11
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 17,
+   "y": 29,
+   "label": "HOME & HEARTH",
+   "unit": null,
+   "name": "Skeeton's Home & Hearth",
+   "category": "Home & Gifts",
+   "sells": "Pots, rugs, cosy chairs and kettles that whistle in tune.",
+   "sign": {
+    "icon": "kettle",
+    "x": 20,
+    "y": 26
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 5,
+   "y": 11,
+   "label": "BEAUTY & GIFTS",
+   "unit": null,
+   "name": "Skeeton's Beauty & Gifts",
+   "category": "Home & Gifts",
+   "sells": "Pixie-bottled perfumes, PikPik feather boas, and gifts.",
+   "sign": {
+    "icon": "gift",
+    "x": 6,
+    "y": 11
+   }
+  },
+  {
+   "floor": "L2",
+   "x": 14,
+   "y": 3,
+   "label": "FITTING ROOMS",
+   "unit": null,
+   "name": "Skeeton's Fitting Rooms",
+   "category": "Facilities",
+   "sells": "Try before you buy. Limit six items, one sword."
+  },
+  {
+   "floor": "L2",
+   "x": 18,
+   "y": 16,
+   "label": "ROOT STAIR",
+   "unit": null,
+   "name": "Root Stair",
+   "category": "Facilities",
+   "sells": "The mushroom's spiral stair, linking every level."
+  },
+  {
+   "floor": "L2",
+   "x": 19,
+   "y": 35,
+   "label": "STOCKROOM",
+   "unit": null,
+   "name": "Skeeton's Stockroom",
+   "category": "Facilities",
+   "sells": "Staff only. Boxes of socks, boxes of hats."
+  },
+  {
+   "floor": "L1",
+   "x": 5,
+   "y": 7,
+   "label": "101 SUDS&DUDS&BEYOND",
+   "unit": "101",
+   "name": "Suds & Duds & Beyond",
+   "category": "Clothing & Style",
+   "sells": "Soap AND trousers. Lather, rinse, wear.",
+   "sign": {
+    "icon": "shirt",
+    "x": 12,
+    "y": 9
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 5,
+   "y": 13,
+   "label": "102 SAVVY SAILOR",
+   "unit": "102",
+   "name": "Savvy Sailor",
+   "category": "Clothing & Style",
+   "sells": "Oilskins, sou'westers and itchy (warm!) knitted jumpers.",
+   "sign": {
+    "icon": "shirt",
+    "x": 12,
+    "y": 13
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 5,
+   "y": 19,
+   "label": "103 DAVY J'S",
+   "unit": "103",
+   "name": "Davy J's Footlocker",
+   "category": "Clothing & Style",
+   "sells": "Boots for feet, fins and whatever that is.",
+   "sign": {
+    "icon": "boot",
+    "x": 12,
+    "y": 18
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 6,
+   "y": 25,
+   "label": "WC",
+   "unit": "WC",
+   "name": "Restrooms",
+   "category": "Facilities",
+   "sells": "Restrooms. Please do not attune anything in here."
+  },
+  {
+   "floor": "L1",
+   "x": 13,
+   "y": 2,
+   "label": "104 CORAL CORRAL",
+   "unit": "104",
+   "name": "Coral Corral",
+   "category": "Clothing & Style",
+   "sells": "Reef finery: pearl-stitched gowns and kindly grown coral.",
+   "sign": {
+    "icon": "shirt",
+    "x": 17,
+    "y": 10
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 21,
+   "y": 2,
+   "label": "105 SUDS & BEYOND",
+   "unit": "105",
+   "name": "Suds & Beyond",
+   "category": "Home & Gifts",
+   "sells": "Soap. Just soap. Absolutely no socks inside.",
+   "sign": {
+    "icon": "soap",
+    "x": 25,
+    "y": 10
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 31,
+   "y": 10,
+   "label": "106 KELPSHELL'S",
+   "unit": "106",
+   "name": "Kelpshell's Rarities",
+   "category": "Magic & Curios",
+   "sells": "Oddities from every coast, storms in bottles included.",
+   "sign": {
+    "icon": "gem",
+    "x": 30,
+    "y": 13
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 31,
+   "y": 16,
+   "label": "107 POINT AND CHUTE",
+   "unit": "107",
+   "name": "Point and Chute",
+   "category": "Gear & Weapons",
+   "sells": "Magic weapons over two floors. Buy a blade, take the chute.",
+   "sign": {
+    "icon": "sword",
+    "x": 30,
+    "y": 19
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 31,
+   "y": 22,
+   "label": "108 POTPOTPOT POTIONS",
+   "unit": "108",
+   "name": "PotPotPot Potions",
+   "category": "Magic & Curios",
+   "sells": "Potions in pots: healing, climbing, smell-like-rain.",
+   "sign": {
+    "icon": "potion",
+    "x": 30,
+    "y": 25
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 12,
+   "y": 17,
+   "label": "ROOT STAIR",
+   "unit": null,
+   "name": "Root Stair",
+   "category": "Facilities",
+   "sells": "The mushroom's spiral stair, linking every level."
+  },
+  {
+   "floor": "L1",
+   "x": 5,
+   "y": 38,
+   "label": "MAIN ENTRANCE",
+   "unit": null,
+   "name": "Main Entrance",
+   "category": "Facilities",
+   "sells": "Front doors, plaza, founder's statue and directory."
+  },
+  {
+   "floor": "L1",
+   "x": 47,
+   "y": 3,
+   "label": "ABSULINAUGHT ARENA",
+   "unit": null,
+   "name": "Absulinaught Arena",
+   "category": "Arena",
+   "sells": "The Galleria's MALL BRAWL arena, perched on the cliff."
+  },
+  {
+   "floor": "L1",
+   "x": 51,
+   "y": 19,
+   "label": "FIGHTING PIT",
+   "unit": null,
+   "name": "The Fighting Pit",
+   "category": "Arena",
+   "sells": "Raked sand, scuffed boards. The referee revives, no refunds."
+  },
+  {
+   "floor": "L1",
+   "x": 23,
+   "y": 42,
+   "label": "RAINFOREST GARDENS",
+   "unit": null,
+   "name": "Rainforest Gardens",
+   "category": "Facilities",
+   "sells": "The oldest bit of the mall: koi pond, gazebo, wild PikPiks."
+  },
+  {
+   "floor": "L1",
+   "x": 61,
+   "y": 45,
+   "label": "CLIFF STAIRS",
+   "unit": null,
+   "name": "Cliff Stairs",
+   "category": "Facilities",
+   "sells": "Switchback stair from the arena down to the Dining Balcony."
+  },
+  {
+   "floor": "L1",
+   "x": 6,
+   "y": 41,
+   "label": "INFO",
+   "unit": null,
+   "name": "Info Kiosk",
+   "category": "Services",
+   "sells": "Directions, welcomes, and reassurance that everyone's lost."
+  },
+  {
+   "floor": "L1",
+   "x": 65,
+   "y": 14,
+   "label": "JUDGES",
+   "unit": null,
+   "name": "Judges' Box",
+   "category": "Arena",
+   "sells": "Solid stone seats for the judges. No climbing, pixies."
+  },
+  {
+   "floor": "L1",
+   "x": 29,
+   "y": 31,
+   "label": "LEYLINE OPERATOR",
+   "unit": null,
+   "name": "Leyline Operator",
+   "category": "Mounts & Travel",
+   "sells": "One-rider leyline trips to Cogskill Arcade. 50 gp round trip."
+  },
+  {
+   "floor": "S1",
+   "x": 4,
+   "y": 1,
+   "label": "S101 420 BLAZE IT",
+   "unit": "S101",
+   "name": "420 Blaze It",
+   "category": "Magic & Curios",
+   "sells": "J'haras: Sweet Grass, Spice Grass and NAP. Mossy vibes.",
+   "sign": {
+    "icon": "leaf",
+    "x": 6,
+    "y": 9
+   }
+  },
+  {
+   "floor": "S1",
+   "x": 14,
+   "y": 1,
+   "label": "S102 NAVIGATION WENCH",
+   "unit": "S102",
+   "name": "The Navigation Wench",
+   "category": "Mounts & Travel",
+   "sells": "Charts, compasses, sextants and one very proud globe.",
+   "sign": {
+    "icon": "compass",
+    "x": 15,
+    "y": 3
+   }
+  },
+  {
+   "floor": "S1",
+   "x": 23,
+   "y": 1,
+   "label": "S103 MASTER'S BAIT",
+   "unit": "S103",
+   "name": "Master's Bait",
+   "category": "Gear & Weapons",
+   "sells": "Worms, hooks, lures, nets. And worms.",
+   "sign": {
+    "icon": "fish",
+    "x": 27,
+    "y": 9
+   }
+  },
+  {
+   "floor": "S1",
+   "x": 34,
+   "y": 1,
+   "label": "MALL OFFICE",
+   "unit": null,
+   "name": "Mall Office",
+   "category": "Services",
+   "sells": "Mall management. Rent queries welcome; rent cuts, less so."
+  },
+  {
+   "floor": "S1",
+   "x": 41,
+   "y": 10,
+   "label": "WC",
+   "unit": "WC",
+   "name": "Restrooms",
+   "category": "Facilities",
+   "sells": "Restrooms. Please do not attune anything in here."
+  },
+  {
+   "floor": "S1",
+   "x": 4,
+   "y": 10,
+   "label": "S106 POP-UP BOOTHS",
+   "unit": "S106",
+   "name": "Pop-Up Booths",
+   "category": "Services",
+   "sells": "Visiting vendors set up here weekly. Open to every competitor."
+  },
+  {
+   "floor": "S1",
+   "x": 21,
+   "y": 15,
+   "label": "ROOT STAIR",
+   "unit": null,
+   "name": "Root Stair",
+   "category": "Facilities",
+   "sells": "The mushroom's spiral stair, linking every level."
+  },
+  {
+   "floor": "S1",
+   "x": 35,
+   "y": 15,
+   "label": "FOUNTAIN",
+   "unit": null,
+   "name": "Rock Fountain",
+   "category": "Facilities",
+   "sells": "Spring water in the stone. Toss a coin, make a wish."
+  },
+  {
+   "floor": "S1",
+   "x": 6,
+   "y": 23,
+   "label": "S104 T.R.A.S.H.",
+   "unit": "S104",
+   "name": "T.R.A.S.H.",
+   "category": "Magic & Curios",
+   "sells": "Crystals and arcane supplies. Totally real. Says so on the sign.",
+   "sign": {
+    "icon": "gem",
+    "x": 7,
+    "y": 24
+   }
+  },
+  {
+   "floor": "S1",
+   "x": 29,
+   "y": 23,
+   "label": "S105 CRYSTO-HUT",
+   "unit": "S105",
+   "name": "Crysto-Hut",
+   "category": "Gear & Weapons",
+   "sells": "Charge crystals, cables, gizmos and an adaptor for everything.",
+   "sign": {
+    "icon": "gear",
+    "x": 26,
+    "y": 24
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 7,
+   "y": 9,
+   "label": "S201 GOBLIN GOBLIN",
+   "unit": "S201",
+   "name": "Goblin Goblin",
+   "category": "Food & Drink",
+   "sells": "Goblin-sized deep-fried kelp on a stick. Order three.",
+   "sign": {
+    "icon": "skewer",
+    "x": 8,
+    "y": 10
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 15,
+   "y": 9,
+   "label": "S202 BANAÑON THE HOUSE",
+   "unit": "S202",
+   "name": "Banañon the House",
+   "category": "Food & Drink",
+   "sells": "Everything banañon: bread, soup, banañon on a banañon.",
+   "sign": {
+    "icon": "banana",
+    "x": 16,
+    "y": 10
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 23,
+   "y": 9,
+   "label": "S203 CHOW-WOW!",
+   "unit": "S203",
+   "name": "Chow-Wow!",
+   "category": "Food & Drink",
+   "sells": "Grilled skewers: spicy, extra spicy, and NOPE spicy.",
+   "sign": {
+    "icon": "chili",
+    "x": 24,
+    "y": 10
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 31,
+   "y": 9,
+   "label": "S204 PLEASED TO MEAT",
+   "unit": "S204",
+   "name": "Pleased to Meat",
+   "category": "Food & Drink",
+   "sells": "Roasts, ribs, and a Brawler Platter that fights back.",
+   "sign": {
+    "icon": "meat",
+    "x": 32,
+    "y": 10
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 10,
+   "y": 15,
+   "label": "S205 GROG NOIRE",
+   "unit": "S205",
+   "name": "Grog Noire",
+   "category": "Food & Drink",
+   "sells": "Dark grog, dark coffee, dark music, dimmer lights.",
+   "sign": {
+    "icon": "mug",
+    "x": 11,
+    "y": 16
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 10,
+   "y": 21,
+   "label": "S206 PIXIEATS",
+   "unit": "S206",
+   "name": "Pixieats",
+   "category": "Food & Drink",
+   "sells": "Dew-cakes, petal tea, nectar tarts. Order thirty.",
+   "sign": {
+    "icon": "cake",
+    "x": 11,
+    "y": 22
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 10,
+   "y": 27,
+   "label": "S207 PUNCHY PALADIN",
+   "unit": "S207",
+   "name": "The Punchy Paladin",
+   "category": "Food & Drink",
+   "sells": "Righteously strong smoothies, like the oath-sworn Smite Shake.",
+   "sign": {
+    "icon": "mug",
+    "x": 11,
+    "y": 28
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 15,
+   "y": 32,
+   "label": "S208 SWEENY'S PIES",
+   "unit": "S208",
+   "name": "Sweeny's Pies",
+   "category": "Food & Drink",
+   "sells": "Fish pie, banañon pie, and the Mystery Pie.",
+   "sign": {
+    "icon": "pie",
+    "x": 16,
+    "y": 31
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 23,
+   "y": 32,
+   "label": "S209 HERBIVORACIOUS",
+   "unit": "S209",
+   "name": "Herbivoracious",
+   "category": "Food & Drink",
+   "sells": "Kelp wraps, fern bowls and salads with feelings.",
+   "sign": {
+    "icon": "leaf",
+    "x": 24,
+    "y": 31
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 28,
+   "y": 38,
+   "label": "WC",
+   "unit": "WC",
+   "name": "Restrooms",
+   "category": "Facilities",
+   "sells": "Restrooms. Please do not attune anything in here."
+  },
+  {
+   "floor": "S2",
+   "x": 37,
+   "y": 11,
+   "label": "107 POINT AND CHUTE",
+   "unit": "107",
+   "name": "Point and Chute",
+   "category": "Gear & Weapons",
+   "sells": "Magic weapons over two floors. Buy a blade, take the chute.",
+   "sign": {
+    "icon": "sword",
+    "x": 42,
+    "y": 12
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 16,
+   "y": 11,
+   "label": "INDOOR DINING",
+   "unit": null,
+   "name": "Indoor Dining",
+   "category": "Facilities",
+   "sells": "Food court seating, carved into the rock. Jingles every nine minutes."
+  },
+  {
+   "floor": "S2",
+   "x": 20,
+   "y": 18,
+   "label": "ROOT STAIR",
+   "unit": null,
+   "name": "Root Stair",
+   "category": "Facilities",
+   "sells": "The mushroom's spiral stair, linking every level."
+  },
+  {
+   "floor": "S2",
+   "x": 36,
+   "y": 38,
+   "label": "CHAIN ROW",
+   "unit": null,
+   "name": "Chain Row",
+   "category": "Food & Drink",
+   "sells": "Eight chains in a row: Whet, Carna, Goo to Go and more.",
+   "sign": {
+    "icon": "bowl",
+    "x": 37,
+    "y": 31
+   }
+  },
+  {
+   "floor": "S2",
+   "x": 50,
+   "y": 1,
+   "label": "DINING BALCONY",
+   "unit": null,
+   "name": "Dining Balcony",
+   "category": "Food & Drink",
+   "sells": "Open-air tables over the strait. Don't feed the gulls."
+  },
+  {
+   "floor": "S2",
+   "x": 47,
+   "y": 44,
+   "label": "CLIFF STAIRS",
+   "unit": null,
+   "name": "Cliff Stairs",
+   "category": "Facilities",
+   "sells": "Switchback stair from the arena down to the Dining Balcony."
+  }
+ ]
+}

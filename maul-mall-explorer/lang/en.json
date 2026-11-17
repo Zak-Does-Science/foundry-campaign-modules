@@ -1,0 +1,65 @@
+{
+  "MAUL": {
+    "Settings": {
+      "CurrentWeek": {
+        "Name": "Current MAUL week",
+        "Hint": "0 = pre-season, 1 = after tryouts ... 6 = after the finale. Change it from MAUL GM tools."
+      },
+      "Webhook": {
+        "Name": "Discord webhook URL (optional)",
+        "Hint": "If set, the module posts a short message to this Discord webhook when a player finds a secret office or triggers another notify-the-GM interactable. World settings can be read by player clients, so anyone in the world could find this URL."
+      },
+      "ShowHints": {
+        "Name": "Show interaction hints",
+        "Hint": "Show a bouncing ! over interactables within one tile of the player's token. The highlighted tile can also be clicked."
+      },
+      "ShowWeekChip": {
+        "Name": "Show MAUL calendar chip",
+        "Hint": "Show the small date / week chip at the top of the screen."
+      },
+      "TextSpeed": {
+        "Name": "Dialogue text speed",
+        "Hint": "Characters per second for the typewriter effect. 0 = show each box instantly."
+      },
+      "SfxVolume": {
+        "Name": "MAUL: sound effects",
+        "Hint": "Volume of the little 8-bit sounds: talk blips, the notice chime, coins, the leyline whoosh. 0 = off. Only affects you."
+      },
+      "MusicVolume": {
+        "Name": "MAUL: music volume",
+        "Hint": "Volume of the mall music, which changes as you walk between areas. 0 = off. Only affects you; starts after your first key press or click."
+      }
+    },
+    "Menu": {
+      "Name": "MAUL GM tools",
+      "Label": "Open GM tools",
+      "Hint": "Build mall scenes, advance the week, create player users, view or reset player progress, discoveries, character logs and update files."
+    },
+    "Keybindings": {
+      "Interact": {
+        "Name": "Interact (Mall Explorer)",
+        "Hint": "Talk to / inspect the thing next to your token. Also advances the dialogue box."
+      },
+      "TogglePause": {
+        "Name": "MAUL: Pause / unpause the game (GM)",
+        "Hint": "Shift+Space or the Pause key. Plain Space talks to people inside the malls, so pausing lives here."
+      },
+      "Search": {
+        "Name": "MAUL: Search",
+        "Hint": "Search the area around your token (Perception roll) for hidden things. Once per spot per minute."
+      },
+      "StoreNames": {
+        "Name": "MAUL: Store names",
+        "Hint": "Show or hide every store's name on the map."
+      },
+      "Feedback": {
+        "Name": "MAUL: Notebook (notes for Zak)",
+        "Hint": "Open your notebook: write a note, idea or problem for Zak about where you stand, something you pick on the map, a store or an item, and see the notes you've sent."
+      },
+      "MallMap": {
+        "Name": "Mall directory map",
+        "Hint": "Open the map of this mall: every store, what it sells, and where you are."
+      }
+    }
+  }
+}

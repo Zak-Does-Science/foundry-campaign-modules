@@ -1,0 +1,153 @@
+/* Acorndr: phone-style social media app (scripts/acorndr.js). Campaign modules can restyle it through the --acd-* variables. */
+:root {
+  --acd-font: "Press Start 2P", "PressStart2P", "VT323", "Pixelify Sans", "Lucida Console", "Consolas", monospace;
+  --acd-ink: #1c1c28;
+  --acd-paper: #fbf7ea;
+  --acd-edge: #2a2a40;
+  --acd-accent: #e8443a;
+}
+.acorndr-app {
+  --acd-bark: #6b3e1f;
+  --acd-bark-dark: #3d2210;
+  --acd-cap: #a8642c;
+  --acd-cream: #fbf3e2;
+  --acd-leaf: #4f8a3a;
+  --acd-line: #e3d4b8;
+}
+.acorndr-app .window-content { padding: 0; background: var(--acd-bark-dark); color: var(--acd-ink); overflow: hidden; }
+.acorndr-app .acd-phone { display: flex; flex-direction: column; height: 100%; border: 6px solid var(--acd-bark-dark);
+  border-radius: 18px; background: var(--acd-cream); overflow: hidden; }
+
+/* Acorn icon, pure CSS: cap + nut */
+.acd-acorn-ico { position: relative; display: inline-block; width: 12px; height: 14px; vertical-align: -2px; }
+.acd-acorn-ico::before { content: ""; position: absolute; left: 0; top: 1px; width: 12px; height: 5px; background: #6b3e1f;
+  border-radius: 6px 6px 2px 2px; box-shadow: 0 -2px 0 -1px #3d2210; }
+.acd-acorn-ico::after { content: ""; position: absolute; left: 2px; top: 5px; width: 8px; height: 9px; background: #d99a4e;
+  border-radius: 2px 2px 5px 5px; }
+
+.acd-top { display: flex; justify-content: space-between; align-items: center; padding: 8px 10px; background: var(--acd-bark);
+  color: #ffe9c2; font-family: var(--acd-font); font-size: 11px; letter-spacing: 1px; }
+.acd-top .acd-acorn-ico::after { background: #ffd34d; }
+.acd-wk { font-size: 9px; opacity: 0.85; }
+.acd-tabs { display: flex; background: var(--acd-cap); border-bottom: 3px solid var(--acd-bark-dark); }
+.acd-tab { flex: 1 1 0; margin: 0; padding: 7px 2px; border: none; border-radius: 0; background: transparent; color: #fff4dd;
+  font-family: var(--acd-font); font-size: 9px; line-height: 1.2; cursor: pointer; }
+.acd-tab.active { background: var(--acd-cream); color: var(--acd-bark-dark); }
+.acd-tab:hover:not(.active) { background: rgba(255, 255, 255, 0.15); }
+.acd-badge { display: inline-block; min-width: 16px; padding: 2px 4px; margin-left: 3px; border-radius: 8px; background: var(--acd-accent);
+  color: #fff; font-family: var(--acd-font); font-size: 8px; line-height: 1; text-align: center; vertical-align: 1px; }
+
+.acd-screen { flex: 1 1 auto; overflow-y: auto; padding: 0 0 10px; font-family: Signika, sans-serif; font-size: 13px; }
+.acd-h { margin: 12px 10px 4px; padding: 0 0 3px; border-bottom: 2px solid var(--acd-line); color: var(--acd-bark);
+  font-family: var(--acd-font); font-size: 9px; text-transform: uppercase; }
+.acd-note { margin: 8px 10px; color: #7a6a55; font-size: 12px; font-style: italic; }
+.acd-empty { padding: 30px 18px; text-align: center; color: #7a6a55; }
+.acd-empty a, .acd-screen a[data-action] { color: var(--acd-bark); font-weight: bold; cursor: pointer; }
+
+/* Avatars: sprite (first frame of a live sheet), portrait image, or initials */
+.acd-av { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; overflow: hidden;
+  border: 2px solid var(--acd-bark-dark); border-radius: 50%; color: #fff; font-family: var(--acd-font); }
+.acd-av-s { width: 36px; height: 36px; font-size: 9px; }
+.acd-av-l { width: 64px; height: 64px; font-size: 14px; }
+.acd-av img { width: 100%; height: 100%; object-fit: cover; border: none; }
+.acd-av-px { display: block; width: 80%; height: 80%; margin-top: 10%; background-repeat: no-repeat; background-position: 0 0;
+  image-rendering: pixelated; }
+.acd-av-sprite { background-image: radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.35), transparent 70%); }
+
+.acd-name { color: var(--acd-ink); font-weight: bold; cursor: pointer; }
+.acd-name:hover { text-decoration: underline; }
+.acd-handle { color: #8a7a65; font-size: 12px; }
+.acd-tick { color: #3c6fd8; font-size: 11px; }
+
+/* Posts */
+.acd-post { margin: 8px 8px 0; padding: 8px 10px; background: #fff; border: 2px solid var(--acd-line); border-radius: 8px; }
+.acd-post header { display: flex; gap: 8px; align-items: center; margin-bottom: 4px; }
+.acd-post p { margin: 0 0 6px; line-height: 1.4; white-space: pre-wrap; }
+.acd-post footer { display: flex; align-items: center; gap: 8px; font-size: 11px; color: #8a7a65; }
+.acd-when { margin-left: auto; }
+.acd-friends-only { border-color: #b9d7a8; background: #f7fbf2; }
+.acd-locked { color: #8a7a65; font-style: italic; background: #f4ede0; }
+.acd-acorn { display: inline-flex; align-items: center; gap: 4px; width: auto; height: auto; margin: 0; padding: 2px 8px;
+  border: 2px solid var(--acd-line); border-radius: 12px; background: var(--acd-cream); color: var(--acd-bark);
+  font-family: var(--acd-font); font-size: 9px; line-height: 1.4; cursor: pointer; }
+.acd-acorn:hover { border-color: var(--acd-cap); }
+.acd-acorn.on { background: #ffe9a8; border-color: var(--acd-cap); }
+.acd-tag { padding: 1px 6px; border-radius: 6px; background: #dcebd2; color: #2f5a22; font-size: 10px; }
+
+/* Lists */
+.acd-list { list-style: none; margin: 0; padding: 0; }
+.acd-row { display: flex; gap: 8px; align-items: center; padding: 7px 10px; border-bottom: 1px solid var(--acd-line); }
+.acd-row-main { flex: 1 1 auto; min-width: 0; }
+.acd-row-bio { overflow: hidden; color: #6a5a45; font-size: 11px; white-space: nowrap; text-overflow: ellipsis; }
+.acd-row-side { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+.acd-count { color: #8a7a65; font-size: 10px; }
+.acd-btn { width: auto; margin: 0; padding: 4px 10px; border: 2px solid var(--acd-bark-dark); border-radius: 12px; background: var(--acd-cap);
+  color: #fff; font-family: var(--acd-font); font-size: 8px; line-height: 1.4; cursor: pointer; white-space: nowrap; }
+.acd-btn:hover:not([disabled]) { background: var(--acd-bark); }
+.acd-btn.on { background: #fff; color: var(--acd-bark-dark); }
+.acd-btn[disabled] { opacity: 0.45; cursor: not-allowed; }
+
+/* Profile */
+.acd-profile { padding: 8px 10px 4px; border-bottom: 3px solid var(--acd-line); }
+.acd-back { width: auto; margin: 0 0 6px; padding: 2px 6px; border: none; background: none; color: var(--acd-bark);
+  font-family: var(--acd-font); font-size: 8px; cursor: pointer; }
+.acd-prof-head { display: flex; gap: 10px; align-items: center; }
+.acd-prof-name { font-size: 16px; font-weight: bold; }
+.acd-home { color: #8a7a65; font-size: 11px; }
+.acd-bio { margin: 8px 0 4px; line-height: 1.4; }
+.acd-runby { margin-bottom: 4px; color: #8a7a65; font-size: 11px; font-style: italic; }
+.acd-stats { display: flex; gap: 10px; align-items: center; font-size: 12px; }
+.acd-buttons { display: flex; gap: 6px; margin: 8px 0 4px; }
+.acd-profile .acd-note { margin: 4px 0; }
+.acd-hang { margin: 6px 0; padding: 6px 8px; border-radius: 6px; background: #eef5e6; color: #2f4a22; font-size: 12px; }
+.acd-hang.acd-locked { background: #f4ede0; color: #8a7a65; }
+
+/* HUD chip beside the week chip */
+#acorndr-chip { position: fixed; top: 8px; left: 50%; z-index: 60; display: inline-flex; align-items: center; gap: 2px;
+  width: auto; height: auto; margin: 0; padding: 6px 9px; background: var(--acd-paper); border: 3px solid var(--acd-edge);
+  border-radius: 0; box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.45); line-height: 1; cursor: pointer; pointer-events: auto; }
+#acorndr-chip:hover { background: #ffe9a8; }
+#acorndr-chip .acd-acorn-ico { transform: scale(1.15); }
+#acorndr-chip.acd-chip-free { top: 8px; right: 320px; left: auto; }
+
+/* Player profiles (Me tab), posting, GM moderation */
+.acd-tab { font-size: 8px; }
+.acd-pc { color: #2f8f4e; font-size: 10px; }
+.acd-post p { margin: 0 0 6px; }
+.acd-mini { width: auto; height: auto; margin: 0 0 0 4px; padding: 1px 5px; border: 1px solid var(--acd-line); border-radius: 6px;
+  background: #fff; color: #8a7a65; font-size: 10px; line-height: 1.4; cursor: pointer; }
+.acd-mini:hover { color: var(--acd-bark-dark); border-color: var(--acd-cap); }
+.acd-hidden { opacity: 0.6; border-style: dashed; }
+.acd-modnote { margin: 4px 0; padding: 4px 6px; border-radius: 6px; background: #fbe3df; color: #8a2a1e; font-size: 11px; }
+.acd-tag-hid { background: #fbe3df; color: #8a2a1e; }
+.acd-compose { margin: 8px; padding: 8px; background: #fff; border: 2px solid var(--acd-cap); border-radius: 8px; }
+.acd-compose textarea, .acd-form textarea, .acd-form input[type="text"], .acd-form select {
+  width: 100%; box-sizing: border-box; padding: 6px; border: 2px solid var(--acd-line); border-radius: 6px; background: var(--acd-cream);
+  color: var(--acd-ink); font-family: Signika, sans-serif; font-size: 13px; resize: vertical; }
+.acd-compose-row { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; font-size: 12px; }
+.acd-compose-row label { display: flex; align-items: center; gap: 4px; }
+.acd-form { padding: 4px 10px 10px; }
+.acd-form label { display: block; margin: 8px 0 0; color: var(--acd-bark-dark); font-size: 12px; font-weight: bold; }
+.acd-form label input, .acd-form label textarea, .acd-form label select { margin-top: 3px; font-weight: normal; }
+.acd-hint { color: #8a7a65; font-weight: normal; font-size: 11px; }
+.acd-danger { color: #a3271a; border-color: #a3271a; }
+.acd-count-box { min-height: 0; font-size: 11px; color: #8a7a65; }
+.acd-count-box.near { color: #b07400; }
+.acd-count-box.over { color: #c0281b; font-weight: bold; }
+
+/* Comments (max 4 per post) */
+.acd-av-xs { width: 22px; height: 22px; font-size: 7px; border-width: 1px; }
+.acd-comments { margin-top: 6px; padding-top: 4px; border-top: 1px dashed var(--acd-line); font-size: 12px; }
+.acd-comments-empty { border-top: none; margin-top: 0; padding-top: 0; text-align: right; }
+.acd-ctoggle { width: auto; height: auto; margin: 0; padding: 1px 6px; border: none; background: none; color: #8a7a65;
+  font-size: 11px; line-height: 1.4; cursor: pointer; }
+.acd-ctoggle:hover { color: var(--acd-bark-dark); }
+.acd-comments ul { list-style: none; margin: 4px 0 0; padding: 0; }
+.acd-comment { display: flex; gap: 6px; align-items: flex-start; margin: 4px 0; }
+.acd-comment .acd-name { font-size: 12px; }
+.acd-ctext { display: block; line-height: 1.35; color: #3a3428; }
+.acd-creply { display: flex; gap: 6px; align-items: flex-start; margin-top: 6px; }
+.acd-creply textarea { flex: 1 1 auto; min-height: 34px; padding: 4px 6px; border: 2px solid var(--acd-line); border-radius: 6px;
+  background: var(--acd-cream); color: var(--acd-ink); font-family: Signika, sans-serif; font-size: 12px; resize: vertical; }
+.acd-creply .acd-count-box { flex-basis: 100%; }
+.acd-comments .acd-note { margin: 6px 0 0; }

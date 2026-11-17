@@ -1,0 +1,21 @@
+{
+  "id": "acorndr",
+  "title": "Acorndr",
+  "description": "Acorndr, Th'Tief's social media, as a phone-style app for players: follow celebrities and public accounts, friend locals you meet in person, read weekly posts and give acorns. Campaign content comes from content sets that other modules register (or a JSON file set in the module settings).",
+  "version": "1.0.19",
+  "authors": [
+    {
+      "name": "Zak"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "esmodules": [
+    "scripts/acorndr.js"
+  ],
+  "styles": [
+    "styles/acorndr.css"
+  ]
+}

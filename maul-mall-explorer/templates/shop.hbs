@@ -1,0 +1,41 @@
+<section class="maul-shop-body">
+  {{#if vendor}}
+  <header class="maul-vendor">
+    <div class="maul-vendor-name">{{vendor.name}}</div>
+    <div class="maul-vendor-meta">{{vendor.species}}{{#if theme}} &middot; {{theme}}{{/if}}</div>
+  </header>
+  {{/if}}
+
+  {{#if actor}}
+  <div class="maul-wallet">
+    <span class="maul-wallet-who">{{actor.name}}</span>
+    <span class="maul-coin">{{actor.gp}} gp</span>
+    <span class="maul-voucher" title="{{voucherName}}">{{actor.vouchers}} &#9733; vouchers</span>
+  </div>
+  {{else}}
+  <div class="maul-wallet maul-warn">No character assigned to you, so you can look but not buy. Ask the DM to assign yours.</div>
+  {{/if}}
+
+  <ul class="maul-stock">
+    {{#each items}}
+    <li class="maul-stock-item {{#if isPremium}}premium{{/if}} {{#if isService}}service{{/if}}">
+      <div class="maul-stock-head">
+        <span class="maul-stock-name">{{name}}</span>
+        <span class="maul-stock-price">{{priceLabel}}</span>
+      </div>
+      <div class="maul-stock-desc">{{description}}</div>
+      <div class="maul-stock-foot">
+        {{#if team}}<span class="maul-stock-team">{{team}}</span>{{/if}}
+        {{#if attunement}}<span class="maul-tag">attunement</span>{{/if}}
+        {{#if isService}}<span class="maul-tag">service</span>{{/if}}
+        {{#if placeholder}}<span class="maul-tag maul-tag-warn" title="{{priceStatus}}">price TBC</span>{{/if}}
+        <button type="button" class="maul-btn" data-action="buy" data-item-id="{{id}}" {{#unless affordable}}disabled{{/unless}}>
+          {{#if affordable}}Buy{{else}}Can't afford{{/if}}
+        </button>
+      </div>
+    </li>
+    {{else}}
+    <li class="maul-stock-empty">Nothing on the shelves yet.</li>
+    {{/each}}
+  </ul>
+</section>

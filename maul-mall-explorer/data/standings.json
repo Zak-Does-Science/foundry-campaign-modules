@@ -1,0 +1,100 @@
+{
+  "_about": "MALL BRAWL 2026 standings board (SPEC 23). Claude updates this after each session from the transcript and Zak's results; made-up results for the rival-team matches go here too. Points/placings per team per week; `note` is a short public blurb (none for week 1 tryouts). Team ids match the codex (team-<id>).",
+  "season": "MALL BRAWL 2026",
+  "updated": "2026-11-16",
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Week 1: Tryouts",
+      "date": "Seluday 9 Rest",
+      "summary": "Every mall held tryouts to pick its team. No league points this week.",
+      "results": []
+    }
+  ],
+  "table": [
+    {
+      "team": "galleria",
+      "name": "Galleria Overlook",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "cogskill",
+      "name": "Cogskill Arcade",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "broad",
+      "name": "The Broad Squad",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "stalling",
+      "name": "Stalling",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "pocketsand",
+      "name": "Pocket Sand",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "bluetsunami",
+      "name": "Blue Tsunami",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "nobut",
+      "name": "No, But",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "bdibom",
+      "name": "B'dibom Bombs",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "fiefdoms",
+      "name": "Glorious Fiefdoms",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "moffidge",
+      "name": "Holy Rollers",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "fairrest",
+      "name": "Fairrest Federation",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    },
+    {
+      "team": "slymez",
+      "name": "The Slymez",
+      "played": 0,
+      "points": 0,
+      "note": ""
+    }
+  ]
+}

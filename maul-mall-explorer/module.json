@@ -1,0 +1,49 @@
+{
+  "id": "maul-mall-explorer",
+  "title": "MAUL Mall Explorer",
+  "description": "Pokémon-style 8-bit exploration of the MAUL home malls (Galleria Overlook and Cogskill Arcade): living NPCs, hidden things to notice or search for, secret areas, overheard chatter, knowledge-aware dialogue with codex links, per-character discovery logs, music and 8-bit sound, a weekly season clock, and visiting pop-up booths.",
+  "version": "0.3.48",
+  "authors": [
+    {
+      "name": "Zak"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "acorndr",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.0.0"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/maul.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": true
+}

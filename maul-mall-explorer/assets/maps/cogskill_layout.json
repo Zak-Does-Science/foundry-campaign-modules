@@ -1,0 +1,1434 @@
+{
+  "mall": "cogskill",
+  "tilePx": 16,
+  "scale": 4,
+  "gridPx": 64,
+  "widthTiles": 78,
+  "heightTiles": 88,
+  "floors": {
+    "L1": {
+      "ox": 0,
+      "oy": 0,
+      "w": 78,
+      "h": 42
+    },
+    "L2": {
+      "ox": 0,
+      "oy": 46,
+      "w": 78,
+      "h": 42
+    }
+  },
+  "labels": [
+    {
+      "floor": "L1",
+      "x": 13,
+      "y": 7,
+      "text": "A XILLIFORTH THEATRE",
+      "signX": 15,
+      "signY": 15,
+      "unit": "A",
+      "door": [
+        16,
+        15
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 23,
+      "y": 12,
+      "text": "WC",
+      "signX": 22,
+      "signY": 15,
+      "unit": "WC",
+      "door": [
+        23,
+        15
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 30,
+      "y": 5,
+      "text": "B TOGGLETEC EMPORIUM",
+      "signX": 34,
+      "signY": 13,
+      "unit": "B",
+      "door": [
+        34,
+        14
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 3,
+      "y": 21,
+      "text": "101 CLOCKPUNK&GIZMO'S",
+      "signX": 5,
+      "signY": 20,
+      "unit": "101",
+      "door": [
+        5,
+        21
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 11,
+      "y": 23,
+      "text": "102 LODCC",
+      "signX": 14,
+      "signY": 21,
+      "unit": "102",
+      "door": [
+        14,
+        22
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 17,
+      "y": 22,
+      "text": "GNORMAN FOUNTAIN",
+      "signX": 14,
+      "signY": 23,
+      "unit": null,
+      "door": [
+        14,
+        22
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 27,
+      "y": 20,
+      "text": "C DULLARD'S",
+      "signX": 27,
+      "signY": 18,
+      "unit": "C",
+      "door": [
+        26,
+        18
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 6,
+      "y": 29,
+      "text": "103 TEXTILE STRIP",
+      "signX": 5,
+      "signY": 28,
+      "unit": "103",
+      "door": [
+        6,
+        28
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 6,
+      "y": 32,
+      "text": "CHASM",
+      "signX": 7,
+      "signY": 28,
+      "unit": null,
+      "door": [
+        6,
+        28
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 21,
+      "y": 29,
+      "text": "104 AMMO",
+      "signX": 22,
+      "signY": 28,
+      "unit": "104",
+      "door": [
+        21,
+        28
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 28,
+      "y": 29,
+      "text": "105 PRACTICE RANGE",
+      "signX": 26,
+      "signY": 28,
+      "unit": "105",
+      "door": [
+        25,
+        28
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 16,
+      "y": 29,
+      "text": "INFO KIOSK",
+      "signX": 20,
+      "signY": 28,
+      "unit": null,
+      "door": [
+        21,
+        28
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 16,
+      "y": 36,
+      "text": "MAIN ENTRANCE",
+      "signX": 14,
+      "signY": 37,
+      "unit": null,
+      "door": [
+        15,
+        37
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 43,
+      "y": 11,
+      "text": "106 SHIMOTO MOTORS",
+      "signX": 43,
+      "signY": 13,
+      "unit": "106",
+      "door": [
+        42,
+        13
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 43,
+      "y": 22,
+      "text": "107 RIDE OR DIE",
+      "signX": 43,
+      "signY": 20,
+      "unit": "107",
+      "door": [
+        42,
+        20
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 62,
+      "y": 13,
+      "text": "116 MAYOR KLERP ARENA",
+      "signX": 62,
+      "signY": 11,
+      "unit": "116",
+      "door": [
+        63,
+        11
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 50,
+      "y": 11,
+      "text": "WC",
+      "signX": 50,
+      "signY": 13,
+      "unit": "WC",
+      "door": [
+        51,
+        13
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 50,
+      "y": 22,
+      "text": "STAIRS",
+      "signX": 50,
+      "signY": 20,
+      "unit": null,
+      "door": [
+        51,
+        20
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 59,
+      "y": 5,
+      "text": "108 BELIEVE U-ME",
+      "signX": 59,
+      "signY": 8,
+      "unit": "108",
+      "door": [
+        60,
+        8
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 66,
+      "y": 5,
+      "text": "109 'GENTS",
+      "signX": 66,
+      "signY": 8,
+      "unit": "109",
+      "door": [
+        65,
+        8
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 73,
+      "y": 11,
+      "text": "110 MORT N' MORE",
+      "signX": 71,
+      "signY": 12,
+      "unit": "110",
+      "door": [
+        71,
+        13
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 73,
+      "y": 22,
+      "text": "111 SOARDENBORT",
+      "signX": 71,
+      "signY": 21,
+      "unit": "111",
+      "door": [
+        71,
+        20
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 66,
+      "y": 28,
+      "text": "112 DARANIRN'S",
+      "signX": 66,
+      "signY": 25,
+      "unit": "112",
+      "door": [
+        65,
+        25
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 59,
+      "y": 28,
+      "text": "113 HEX TOPIC",
+      "signX": 59,
+      "signY": 25,
+      "unit": "113",
+      "door": [
+        60,
+        25
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 54,
+      "y": 24,
+      "text": "114 FAESTROLOGIC",
+      "signX": 52,
+      "signY": 20,
+      "unit": "114",
+      "door": [
+        51,
+        20
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 54,
+      "y": 9,
+      "text": "115 ALL KIMY",
+      "signX": 52,
+      "signY": 13,
+      "unit": "115",
+      "door": [
+        51,
+        13
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L1",
+      "x": 36,
+      "y": 34,
+      "text": "LEYLINE OPERATOR",
+      "signX": 29,
+      "signY": 38,
+      "unit": null,
+      "door": [
+        29,
+        39
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L2",
+      "x": 13,
+      "y": 7,
+      "text": "A XILLIFORTH THEATRE",
+      "signX": 15,
+      "signY": 15,
+      "unit": "A",
+      "door": [
+        16,
+        15
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 30,
+      "y": 5,
+      "text": "B TOGGLETEC EMPORIUM",
+      "signX": 29,
+      "signY": 15,
+      "unit": "B",
+      "door": [
+        30,
+        15
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 3,
+      "y": 26,
+      "text": "201 SMITHY SECTION",
+      "signX": 2,
+      "signY": 18,
+      "unit": "201",
+      "door": [
+        3,
+        18
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 11,
+      "y": 24,
+      "text": "202 POP-UP BOOTHS",
+      "signX": 10,
+      "signY": 19,
+      "unit": "202",
+      "door": [
+        11,
+        19
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 27,
+      "y": 29,
+      "text": "203 LET HER! LEATHER",
+      "signX": 20,
+      "signY": 28,
+      "unit": "203",
+      "door": [
+        20,
+        29
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 27,
+      "y": 20,
+      "text": "C DULLARD'S",
+      "signX": 27,
+      "signY": 18,
+      "unit": "C",
+      "door": [
+        26,
+        18
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 42,
+      "y": 11,
+      "text": "204 CRYST-O-GAMES",
+      "signX": 41,
+      "signY": 13,
+      "unit": "204",
+      "door": [
+        42,
+        13
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 44,
+      "y": 23,
+      "text": "205 GAGA GARDENIA",
+      "signX": 43,
+      "signY": 20,
+      "unit": "205",
+      "door": [
+        42,
+        20
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 16,
+      "y": 35,
+      "text": "ENTRANCE BALCONY",
+      "signX": 20,
+      "signY": 30,
+      "unit": null,
+      "door": [
+        20,
+        29
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L2",
+      "x": 62,
+      "y": 16,
+      "text": "215 ARENA OVERLOOK",
+      "signX": 62,
+      "signY": 16,
+      "unit": "215",
+      "door": null,
+      "plaque": false
+    },
+    {
+      "floor": "L2",
+      "x": 62,
+      "y": 8,
+      "text": "FOOD COURT",
+      "signX": 57,
+      "signY": 7,
+      "unit": null,
+      "door": [
+        58,
+        7
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L2",
+      "x": 50,
+      "y": 11,
+      "text": "WC",
+      "signX": 50,
+      "signY": 13,
+      "unit": "WC",
+      "door": [
+        51,
+        13
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 50,
+      "y": 22,
+      "text": "STAIRS",
+      "signX": 50,
+      "signY": 20,
+      "unit": null,
+      "door": [
+        51,
+        20
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L2",
+      "x": 56,
+      "y": 12,
+      "text": "214 OBSERVATION DECK",
+      "signX": 56,
+      "signY": 7,
+      "unit": "214",
+      "door": [
+        56,
+        8
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 59,
+      "y": 5,
+      "text": "206 CLARA'S BREWS",
+      "signX": 57,
+      "signY": 7,
+      "unit": "206",
+      "door": [
+        58,
+        7
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 66,
+      "y": 5,
+      "text": "207 GOO TO GO",
+      "signX": 68,
+      "signY": 7,
+      "unit": "207",
+      "door": [
+        67,
+        7
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 73,
+      "y": 11,
+      "text": "208 OH BANAÑONS!",
+      "signX": 69,
+      "signY": 7,
+      "unit": "208",
+      "door": [
+        69,
+        8
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 73,
+      "y": 22,
+      "text": "209 CARNA",
+      "signX": 69,
+      "signY": 26,
+      "unit": "209",
+      "door": [
+        69,
+        25
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 66,
+      "y": 28,
+      "text": "210 WHET",
+      "signX": 68,
+      "signY": 26,
+      "unit": "210",
+      "door": [
+        67,
+        26
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 59,
+      "y": 28,
+      "text": "211 GRAB GRASS",
+      "signX": 57,
+      "signY": 26,
+      "unit": "211",
+      "door": [
+        58,
+        26
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 53,
+      "y": 25,
+      "text": "212 PANTO'S TRY",
+      "signX": 56,
+      "signY": 26,
+      "unit": "212",
+      "door": [
+        56,
+        25
+      ],
+      "plaque": true
+    },
+    {
+      "floor": "L2",
+      "x": 53,
+      "y": 8,
+      "text": "213 FURIOUS FREJA",
+      "signX": 56,
+      "signY": 6,
+      "unit": "213",
+      "door": [
+        56,
+        8
+      ],
+      "plaque": true
+    }
+  ],
+  "reveals": {
+    "cog-L1-gear-door": {
+      "floor": "L1",
+      "x": 40,
+      "y": 29,
+      "w": 1,
+      "h": 1,
+      "file": "cogskill_reveals/cog-L1-gear-door.png"
+    },
+    "cog-L1-ladder-up": {
+      "floor": "L1",
+      "x": 36,
+      "y": 31,
+      "w": 1,
+      "h": 1,
+      "file": "cogskill_reveals/cog-L1-ladder-up.png"
+    },
+    "cog-L2-vent": {
+      "floor": "L2",
+      "x": 49,
+      "y": 12,
+      "w": 1,
+      "h": 1,
+      "file": "cogskill_reveals/cog-L2-vent.png"
+    },
+    "cog-L2-ladder-down": {
+      "floor": "L2",
+      "x": 36,
+      "y": 4,
+      "w": 1,
+      "h": 1,
+      "file": "cogskill_reveals/cog-L2-ladder-down.png"
+    }
+  },
+  "areas": {
+    "cog-ducts": {
+      "floor": "L2",
+      "x": 35,
+      "y": 1,
+      "w": 13,
+      "h": 6,
+      "file": "cogskill_areas/cog-ducts.png"
+    },
+    "cog-vestibule": {
+      "floor": "L1",
+      "x": 35,
+      "y": 27,
+      "w": 5,
+      "h": 6,
+      "file": "cogskill_areas/cog-vestibule.png"
+    },
+    "cog-office": {
+      "floor": "L1",
+      "x": 40,
+      "y": 26,
+      "w": 11,
+      "h": 8,
+      "file": "cogskill_areas/cog-office.png"
+    }
+  },
+  "liveSprites": {
+    "cog-L1-info-desk": "npc:gnome:2",
+    "cog-L1-security": "npc:goblin:5",
+    "cog-L1-street-vendor": "npc:goblin:1",
+    "cog-L1-canvasser-rigrod": "npc:gnome:4",
+    "cog-L1-volunteer-bosco": "npc:goblin:3",
+    "cog-L1-maint-gnome": "npc:gnome:6:elder",
+    "cog-L1-mall-cat": "obj:cat",
+    "cog-L1-influencer": "npc:goblin:6",
+    "cog-L1-kid-dottie": "npc:gnome:1:child",
+    "cog-L1-granny": "npc:gnome:7:elder|sit",
+    "cog-L1-theatre-boxoffice": "npc:goblin:2",
+    "cog-L1-theatre-usher": "npc:hobgoblin:1",
+    "cog-L1-toggletec-clerk": "npc:gnome:3",
+    "cog-L1-toggletec-shopper": "npc:goblin:4",
+    "cog-L1-clockpunk-keeper": "npc:gnome:5",
+    "cog-L1-102-mabsy": "npc:halfling:2",
+    "cog-L1-102-ozzle": "npc:goblin:0:child",
+    "cog-L1-dullards-clerk": "npc:dwarf:1:nobeard",
+    "cog-L1-dullards-shopper": "npc:goo:2",
+    "cog-L1-chasm-clerk": "npc:goblin:7",
+    "cog-L1-chasm-shopper": "npc:gnome:0",
+    "cog-L1-ammo-clerk": "npc:dwarf:3:nobeard",
+    "cog-L1-range-master": "npc:hobgoblin:3",
+    "cog-L1-shimoto-sales": "npc:goblin:5",
+    "cog-L1-rideordie-hand": "npc:halfling:4",
+    "cog-L1-snail-tourist": "npc:snail:1",
+    "cog-L1-scout-wexley": "npc:goblin:2",
+    "cog-L1-believe-clerk": "npc:gnome:2",
+    "cog-L1-gents-clerk": "npc:goblin:6",
+    "cog-L1-mort-clerk": "npc:gnome:6",
+    "cog-L1-soardenbort-smith": "npc:dwarf:5",
+    "cog-L1-daranirn": "npc:dragonborn:3",
+    "cog-L1-daranirn-customer": "npc:gnome:1",
+    "cog-L1-hextopic-clerk": "npc:goblin:3",
+    "cog-L1-hextopic-customer": "npc:gnome:7:teen",
+    "cog-L1-faestrologic-clerk": "npc:gnome:4",
+    "cog-L1-allkimy-clerk": "npc:goblin:4",
+    "cog-L1-groundskeeper": "npc:hobgoblin:2",
+    "cog-L1-influencer-2": "npc:gnome:5",
+    "cog-L1-gossip-lumi": "npc:goblin:1",
+    "cog-L1-scout-brisk": "npc:halfling:4",
+    "cog-L1-office-liaison": "npc:hobgoblin:5",
+    "cog-L2-theatre-usher": "npc:goblin:0",
+    "cog-L2-theatre-snacks": "npc:gnome:3",
+    "cog-L2-toggletec-clerk": "npc:automaton:1",
+    "cog-L2-smith": "npc:dwarf:2:nobeard",
+    "cog-L2-booth-coordinator": "npc:hobgoblin:4",
+    "cog-L2-booth-1": "npc:gnome:6",
+    "cog-L2-booth-2": "npc:halfling:3",
+    "cog-L2-booth-3": "npc:human:2",
+    "cog-L2-booth-4": "npc:human:5",
+    "cog-L2-booth-5": "npc:halfling:6",
+    "cog-L2-booth-6": "npc:human:7",
+    "cog-L2-dullards-clerk": "npc:gnome:2",
+    "cog-L2-leather-clerk": "npc:goblin:5",
+    "cog-L2-arcade-clerk": "npc:goblin:6",
+    "cog-L2-arcade-kid": "npc:gnome:1:child",
+    "cog-L2-205-mirabel": "npc:halfling:1:elder",
+    "cog-L2-bench-shopper": "npc:dwarf:6:elder:beard|sit",
+    "cog-L2-claras": "npc:dwarf:4",
+    "cog-L2-gootogo": "npc:snail:3",
+    "cog-L2-ohbananons": "npc:halfling:5",
+    "cog-L2-carna": "npc:orc:2",
+    "cog-L2-whet": "npc:fishfolk:2",
+    "cog-L2-grabgrass": "npc:mole:1",
+    "cog-L2-pantostry": "npc:gnome:4",
+    "cog-L2-furiousfreja": "npc:human:3",
+    "cog-L2-foodie": "npc:gnome:6",
+    "cog-L2-diners": "npc:hobgoblin:6",
+    "cog-L2-diner-tabby": "npc:gnome:3",
+    "cog-L2-dfain": "npc:goblin:7:beard",
+    "cog-L2-wc-attendant": "npc:automaton:4",
+    "cog-L2-duct-cat": "obj:cat",
+    "cog-L1-leyline-operator": "npc:gnome:7",
+    "cog-L1-busker": "npc:human:4:elder",
+    "cog-L1-mopper": "npc:goblin:2",
+    "cog-L1-window-shopper": "npc:halfling:6",
+    "cog-L2-mallwalker": "npc:gnome:5:elder",
+    "cog-L1-theatre-oldfan": "npc:dwarf:7:elder:nobeard|sit",
+    "cog-L1-theatre-fan": "npc:tiefling:2:teen|sit",
+    "cog-L1-theatre-stagehand": "npc:hobgoblin:0",
+    "cog-L1-toggletec-demo-staffer": "npc:gnome:0",
+    "cog-L1-102-wisteria": "npc:halfling:5",
+    "cog-L2-family-mum": "npc:gnome:3",
+    "cog-L2-family-pip": "npc:gnome:1:child",
+    "cog-L2-family-fennel": "npc:gnome:6:child",
+    "cog-L1-fountain-dad": "npc:goblin:4",
+    "cog-L1-fountain-kid": "npc:goblin:2:child",
+    "cog-L2-arcade-teen": "npc:halfling:2:teen",
+    "cog-L1-pikpik-tourist": "npc:elf:3",
+    "cog-L1-pikpik": "npc:pikpik:0",
+    "cog-L1-coach-wire": "npc:automaton:2",
+    "cog-L1-goolax-outfitters": "npc:hobgoblin:3",
+    "cog-L1-crud-slick": "npc:crud:1",
+    "cog-L2-crud-fumewell": "npc:crud:2",
+    "cog-L2-crud-corrugatha": "npc:crud:4",
+    "cog-L1-bot-plinky": "npc:automaton:5",
+    "cog-L1-bot-bertie": "npc:automaton:6",
+    "cog-L2-goo-wibbla": "npc:goo:4",
+    "cog-L2-plant-basil": "npc:plantling:2",
+    "cog-L1-plant-prickle": "npc:plantling:6",
+    "cog-L1-aud-dad": "npc:gnome:2|sit",
+    "cog-L1-aud-tilly": "npc:gnome:5:child|sit",
+    "cog-L1-aud-sleeper": "npc:dwarf:6:elder:beard|sit",
+    "cog-L1-aud-heckler": "npc:orc:3|sit",
+    "cog-L1-aud-axle": "npc:automaton:3|sit",
+    "cog-L1-aud-mum": "npc:gnome:4|sit",
+    "cog-L1-aud-oskar": "npc:gnome:0:child|sit",
+    "cog-L1-aud-junie": "npc:halfling:3:teen|sit",
+    "cog-L2-aud-verbena": "npc:gnome:7:elder|sit",
+    "cog-L2-aud-tobble": "npc:mushroomfolk:4|sit"
+  },
+  "chatSprites": {
+    "npc:fishfolk:1": "npc:fishfolk:1",
+    "npc:mushroomfolk:2": "npc:mushroomfolk:2",
+    "npc:pixie:3": "npc:pixie:3",
+    "npc:mushroomfolk:5": "npc:mushroomfolk:5",
+    "npc:gnome:4": "npc:gnome:4"
+  },
+  "spritesPath": "assets/sprites/live/",
+  "depth": {
+    "file": "cogskill_depth.png",
+    "scale": 4,
+    "pieces": [
+      {
+        "x": 60,
+        "y": 599,
+        "w": 58,
+        "h": 56,
+        "ax": 0,
+        "ay": 0,
+        "base": 648
+      },
+      {
+        "x": 351,
+        "y": 636,
+        "w": 37,
+        "h": 35,
+        "ax": 59,
+        "ay": 0,
+        "base": 664
+      }
+    ]
+  },
+  "lights": [
+    {
+      "x": 7,
+      "y": 436,
+      "kind": "lamp",
+      "color": "#ffd27a",
+      "dim": 2.5,
+      "bright": 0.6,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 488,
+      "y": 104,
+      "kind": "crystal-cluster",
+      "color": "#b8f0ff",
+      "dim": 1.8,
+      "bright": 0.4,
+      "alpha": 0.4,
+      "anim": "pulse"
+    },
+    {
+      "x": 536,
+      "y": 876,
+      "kind": "crystal-lamp",
+      "color": "#e0fff0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 472,
+      "y": 56,
+      "kind": "crystal-cluster",
+      "color": "#b8f0ff",
+      "dim": 1.8,
+      "bright": 0.4,
+      "alpha": 0.4,
+      "anim": "pulse"
+    },
+    {
+      "x": 312,
+      "y": 136,
+      "kind": "crystal-cluster",
+      "color": "#b8f0ff",
+      "dim": 1.8,
+      "bright": 0.4,
+      "alpha": 0.4,
+      "anim": "pulse"
+    },
+    {
+      "x": 456,
+      "y": 24,
+      "kind": "crystal-cluster",
+      "color": "#b8f0ff",
+      "dim": 1.8,
+      "bright": 0.4,
+      "alpha": 0.4,
+      "anim": "pulse"
+    },
+    {
+      "x": 520,
+      "y": 28,
+      "kind": "crystal-lamp",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 504,
+      "y": 60,
+      "kind": "crystal-lamp",
+      "color": "#e0fff0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 504,
+      "y": 108,
+      "kind": "crystal-lamp",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 440,
+      "y": 764,
+      "kind": "crystal-lamp",
+      "color": "#e0fff0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 536,
+      "y": 764,
+      "kind": "crystal-lamp",
+      "color": "#ffe0f0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 472,
+      "y": 840,
+      "kind": "crystal-cluster",
+      "color": "#b8f0ff",
+      "dim": 1.8,
+      "bright": 0.4,
+      "alpha": 0.4,
+      "anim": "pulse"
+    },
+    {
+      "x": 520,
+      "y": 840,
+      "kind": "crystal-cluster",
+      "color": "#b8f0ff",
+      "dim": 1.8,
+      "bright": 0.4,
+      "alpha": 0.4,
+      "anim": "pulse"
+    },
+    {
+      "x": 1128,
+      "y": 124,
+      "kind": "crystal-lamp",
+      "color": "#f0e0ff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 1192,
+      "y": 156,
+      "kind": "crystal-lamp",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 776,
+      "y": 184,
+      "kind": "neon-sign",
+      "color": "#ff6ac8",
+      "dim": 1.6,
+      "bright": 0.3,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 1208,
+      "y": 188,
+      "kind": "crystal-lamp",
+      "color": "#f0e0ff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 1112,
+      "y": 236,
+      "kind": "crystal-lamp",
+      "color": "#f0e0ff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 488,
+      "y": 280,
+      "kind": "lamp-post",
+      "color": "#ffd27a",
+      "dim": 3.0,
+      "bright": 0.8,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 840,
+      "y": 412,
+      "kind": "crystal-lamp",
+      "color": "#ffe0f0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 952,
+      "y": 472,
+      "kind": "neon-sign",
+      "color": "#ff6ac8",
+      "dim": 1.6,
+      "bright": 0.3,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 504,
+      "y": 648,
+      "kind": "lamp-post",
+      "color": "#ffd27a",
+      "dim": 3.0,
+      "bright": 0.8,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 536,
+      "y": 648,
+      "kind": "lamp-post",
+      "color": "#ffd27a",
+      "dim": 3.0,
+      "bright": 0.8,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 664,
+      "y": 648,
+      "kind": "lamp-post",
+      "color": "#ffd27a",
+      "dim": 3.0,
+      "bright": 0.8,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 600,
+      "y": 968,
+      "kind": "lamp-post",
+      "color": "#ffd27a",
+      "dim": 3.0,
+      "bright": 0.8,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 488,
+      "y": 1016,
+      "kind": "lamp-post",
+      "color": "#ffd27a",
+      "dim": 3.0,
+      "bright": 0.8,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 152,
+      "y": 621,
+      "kind": "crystal-lamp-floor",
+      "color": "#e0faff",
+      "dim": 2.4,
+      "bright": 0.6,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 344,
+      "y": 621,
+      "kind": "crystal-lamp-floor",
+      "color": "#f0e0ff",
+      "dim": 2.4,
+      "bright": 0.6,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 600,
+      "y": 886,
+      "kind": "crystal-sconce",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 664,
+      "y": 886,
+      "kind": "crystal-sconce",
+      "color": "#ffe0f0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 728,
+      "y": 886,
+      "kind": "crystal-sconce",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 168,
+      "y": 262,
+      "kind": "crystal-sconce",
+      "color": "#e0fff0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 248,
+      "y": 262,
+      "kind": "crystal-sconce",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 920,
+      "y": 870,
+      "kind": "crystal-sconce",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 1096,
+      "y": 1174,
+      "kind": "crystal-sconce",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 840,
+      "y": 1078,
+      "kind": "crystal-sconce",
+      "color": "#f0e0ff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 536,
+      "y": 262,
+      "kind": "crystal-sconce",
+      "color": "#ffe0f0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 456,
+      "y": 758,
+      "kind": "crystal-sconce",
+      "color": "#e0fff0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 328,
+      "y": 214,
+      "kind": "crystal-sconce",
+      "color": "#e0fff0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 424,
+      "y": 102,
+      "kind": "crystal-sconce",
+      "color": "#f0e0ff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 552,
+      "y": 198,
+      "kind": "crystal-sconce",
+      "color": "#f0e0ff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 584,
+      "y": 966,
+      "kind": "crystal-sconce",
+      "color": "#ffe0f0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 776,
+      "y": 966,
+      "kind": "crystal-sconce",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 424,
+      "y": 838,
+      "kind": "crystal-sconce",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 552,
+      "y": 934,
+      "kind": "crystal-sconce",
+      "color": "#ffe0f0",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 424,
+      "y": 166,
+      "kind": "crystal-sconce",
+      "color": "#e0faff",
+      "dim": 2.2,
+      "bright": 0.5,
+      "alpha": 0.35,
+      "anim": "pulse"
+    },
+    {
+      "x": 72,
+      "y": 56,
+      "kind": "spotlight",
+      "color": "#fff4d0",
+      "dim": 3.0,
+      "bright": 1.0,
+      "alpha": 0.25,
+      "anim": null
+    },
+    {
+      "x": 136,
+      "y": 56,
+      "kind": "spotlight",
+      "color": "#fff4d0",
+      "dim": 3.0,
+      "bright": 1.0,
+      "alpha": 0.25,
+      "anim": null
+    },
+    {
+      "x": 200,
+      "y": 56,
+      "kind": "spotlight",
+      "color": "#fff4d0",
+      "dim": 3.0,
+      "bright": 1.0,
+      "alpha": 0.25,
+      "anim": null
+    },
+    {
+      "x": 264,
+      "y": 56,
+      "kind": "spotlight",
+      "color": "#fff4d0",
+      "dim": 3.0,
+      "bright": 1.0,
+      "alpha": 0.25,
+      "anim": null
+    },
+    {
+      "x": 72,
+      "y": 808,
+      "kind": "spotlight",
+      "color": "#fff4d0",
+      "dim": 3.0,
+      "bright": 1.0,
+      "alpha": 0.25,
+      "anim": null
+    },
+    {
+      "x": 264,
+      "y": 808,
+      "kind": "spotlight",
+      "color": "#fff4d0",
+      "dim": 3.0,
+      "bright": 1.0,
+      "alpha": 0.25,
+      "anim": null
+    }
+  ]
+}

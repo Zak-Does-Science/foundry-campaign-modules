@@ -1,0 +1,356 @@
+{
+  "mall": "immia",
+  "tilePx": 16,
+  "scale": 4,
+  "gridPx": 64,
+  "widthTiles": 64,
+  "heightTiles": 48,
+  "floors": {
+    "L1": {
+      "ox": 0,
+      "oy": 0,
+      "w": 64,
+      "h": 48
+    }
+  },
+  "labels": [
+    {
+      "floor": "L1",
+      "x": 5,
+      "y": 5,
+      "text": "HOLLOW HALO",
+      "signX": 4,
+      "signY": 9,
+      "unit": null,
+      "door": [
+        5,
+        9
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 15,
+      "y": 5,
+      "text": "SHADY BEACHES",
+      "signX": 14,
+      "signY": 9,
+      "unit": null,
+      "door": [
+        15,
+        9
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 25,
+      "y": 7,
+      "text": "GRAPFRAP DRAG EMPORIUM",
+      "signX": 26,
+      "signY": 9,
+      "unit": null,
+      "door": [
+        25,
+        9
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 40,
+      "y": 5,
+      "text": "GLASS HALF FOOL",
+      "signX": 41,
+      "signY": 9,
+      "unit": null,
+      "door": [
+        40,
+        9
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 49,
+      "y": 5,
+      "text": "BREATH TAKING",
+      "signX": 50,
+      "signY": 9,
+      "unit": null,
+      "door": [
+        49,
+        9
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 58,
+      "y": 5,
+      "text": "TWIZZLE ME THIS",
+      "signX": 59,
+      "signY": 9,
+      "unit": null,
+      "door": [
+        58,
+        9
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 6,
+      "y": 18,
+      "text": "LEYLINE ARRIVALS",
+      "signX": 5,
+      "signY": 14,
+      "unit": null,
+      "door": [
+        6,
+        14
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 6,
+      "y": 25,
+      "text": "HALL OF QUEENS",
+      "signX": 12,
+      "signY": 24,
+      "unit": null,
+      "door": [
+        12,
+        25
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 32,
+      "y": 22,
+      "text": "CANAL THRONE HALL",
+      "signX": 32,
+      "signY": 22,
+      "unit": null,
+      "door": null,
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 55,
+      "y": 22,
+      "text": "FOOD COURT",
+      "signX": 55,
+      "signY": 31,
+      "unit": null,
+      "door": [
+        54,
+        31
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 19,
+      "y": 33,
+      "text": "DUNE BUNS",
+      "signX": 16,
+      "signY": 31,
+      "unit": null,
+      "door": [
+        15,
+        31
+      ],
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 26,
+      "y": 33,
+      "text": "JOZZY PRAYER JUICE",
+      "signX": 26,
+      "signY": 33,
+      "unit": null,
+      "door": null,
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 40,
+      "y": 33,
+      "text": "OASIS IS AS OASIS DOES",
+      "signX": 40,
+      "signY": 33,
+      "unit": null,
+      "door": null,
+      "plaque": false
+    },
+    {
+      "floor": "L1",
+      "x": 30,
+      "y": 40,
+      "text": "IMMIA BEACH",
+      "signX": 30,
+      "signY": 40,
+      "unit": null,
+      "door": null,
+      "plaque": false
+    }
+  ],
+  "reveals": {
+    "imm-L1-dry-draught": {
+      "floor": "L1",
+      "x": 7,
+      "y": 28,
+      "w": 3,
+      "h": 2,
+      "file": "immia_reveals/imm-L1-dry-draught.png"
+    }
+  },
+  "areas": {
+    "imm-dry-room": {
+      "floor": "L1",
+      "x": 1,
+      "y": 29,
+      "w": 11,
+      "h": 2,
+      "file": "immia_areas/imm-dry-room.png"
+    }
+  },
+  "liveSprites": {
+    "imm-L1-ley-pim": "npc:gnome:5:goolax",
+    "imm-L1-guide-zahir": "npc:tiefling:4:goolax",
+    "imm-L1-noor": "npc:human:6:elder:beachwear",
+    "imm-L1-kassim": "npc:dragonborn:3:security",
+    "imm-L1-tilly": "npc:gnome:2:tourist",
+    "imm-L1-rafi": "npc:halfling:3:child:beachwear",
+    "imm-L1-wadiwad": "npc:crud:3",
+    "imm-L1-ascetus": "npc:human:2:elder:monk-robe",
+    "imm-L1-wrenna": "npc:elf:5:teen:monk-robe",
+    "imm-L1-marisol": "npc:fishfolk:3:beachwear",
+    "imm-L1-sahara": "npc:human:7:stage-costume",
+    "imm-L1-pashmina": "npc:tiefling:6:stage-costume",
+    "imm-L1-mirage": "npc:elf:3:stage-costume",
+    "imm-L1-ottoline": "npc:goblin:4:apron",
+    "imm-L1-idris": "npc:dwarf:2:beard",
+    "imm-L1-bina": "npc:halfling:5:market-apron",
+    "imm-L1-velour": "npc:halfling:6:stage-costume",
+    "imm-L1-tamarind": "npc:human:3:elder:stage-costume",
+    "imm-L1-fc-whet": "npc:human:4:chef",
+    "imm-L1-fc-claras": "npc:dwarf:6:apron",
+    "imm-L1-fc-goo": "npc:goo:2",
+    "imm-L1-fc-freja": "npc:orc:3:chef",
+    "imm-L1-fc-bananons": "npc:halfling:2:apron",
+    "imm-L1-hob": "npc:halfling:4:market-apron",
+    "imm-L1-greta": "npc:dwarf:5:market-apron",
+    "imm-L1-esme": "npc:orc:6:beachwear",
+    "imm-L1-dunebuns": "npc:human:5:apron",
+    "imm-L1-jozzy": "npc:tiefling:2:apron",
+    "imm-L1-hadra": "npc:human:1:elder:market-apron",
+    "imm-L1-brannock": "npc:gnome:6:market-apron",
+    "imm-L1-fan-stall": "npc:halfling:6:beachwear",
+    "imm-L1-marlo": "npc:fishfolk:5:beachwear",
+    "imm-L1-splorp": "npc:goo:5",
+    "imm-L1-castlekid": "npc:dragonborn:5:child:beachwear",
+    "imm-L1-sunbather": "npc:elf:6:beachwear"
+  },
+  "chatSprites": {
+    "npc:goo:5": "npc:goo:5"
+  },
+  "spritesPath": "assets/sprites/live/",
+  "depth": null,
+  "lights": [
+    {
+      "x": 472,
+      "y": 40,
+      "kind": "spotlight",
+      "color": "#fff4d0",
+      "dim": 3.0,
+      "bright": 1.0,
+      "alpha": 0.25,
+      "anim": null
+    },
+    {
+      "x": 344,
+      "y": 24,
+      "kind": "spotlight",
+      "color": "#fff4d0",
+      "dim": 3.0,
+      "bright": 1.0,
+      "alpha": 0.25,
+      "anim": null
+    },
+    {
+      "x": 56,
+      "y": 104,
+      "kind": "candle-stand",
+      "color": "#ffb050",
+      "dim": 1.8,
+      "bright": 0.4,
+      "alpha": 0.4,
+      "anim": "torch"
+    },
+    {
+      "x": 824,
+      "y": 120,
+      "kind": "crystal-cluster",
+      "color": "#b8f0ff",
+      "dim": 1.8,
+      "bright": 0.4,
+      "alpha": 0.4,
+      "anim": "pulse"
+    },
+    {
+      "x": 56,
+      "y": 392,
+      "kind": "spotlight",
+      "color": "#fff4d0",
+      "dim": 3.0,
+      "bright": 1.0,
+      "alpha": 0.25,
+      "anim": null
+    },
+    {
+      "x": 200,
+      "y": 184,
+      "kind": "lamp-post",
+      "color": "#ffd27a",
+      "dim": 3.0,
+      "bright": 0.8,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 472,
+      "y": 200,
+      "kind": "lamp-post",
+      "color": "#ffd27a",
+      "dim": 3.0,
+      "bright": 0.8,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 616,
+      "y": 168,
+      "kind": "lamp-post",
+      "color": "#ffd27a",
+      "dim": 3.0,
+      "bright": 0.8,
+      "alpha": 0.35,
+      "anim": null
+    },
+    {
+      "x": 968,
+      "y": 200,
+      "kind": "lamp-post",
+      "color": "#ffd27a",
+      "dim": 3.0,
+      "bright": 0.8,
+      "alpha": 0.35,
+      "anim": null
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+ "mall": "immia",
+ "name": "Immia Beach Mega Mall",
+ "tilePx": 16,
+ "categories": [
+  "Clothing & Style",
+  "Gear & Weapons",
+  "Magic & Curios",
+  "Food & Drink",
+  "Mounts & Travel",
+  "Home & Gifts",
+  "Fun & Games",
+  "Services",
+  "Arena",
+  "Facilities"
+ ],
+ "floors": [
+  {
+   "id": "L1",
+   "name": "The Old Palace and the Beach",
+   "img": "assets/maps/directory/immia_L1.webp",
+   "w": 64,
+   "h": 48
+  }
+ ],
+ "pins": [
+  {
+   "floor": "L1",
+   "x": 5,
+   "y": 5,
+   "label": "HOLLOW HALO",
+   "unit": null,
+   "name": "Hollow Halo",
+   "category": "Magic & Curios",
+   "sells": "The Alt Righteous shrine shop: prayer beads, prayer sand, holy water, plain bread.",
+   "sign": {
+    "icon": "candle",
+    "x": 4,
+    "y": 9
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 15,
+   "y": 5,
+   "label": "SHADY BEACHES",
+   "unit": null,
+   "name": "Shady Beaches",
+   "category": "Clothing & Style",
+   "sells": "Sun hats, very dark sunglasses, swimwear with pockets you'll never find.",
+   "sign": {
+    "icon": "shirt",
+    "x": 14,
+    "y": 9
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 25,
+   "y": 7,
+   "label": "GRAPFRAP DRAG EMPORIUM",
+   "unit": null,
+   "name": "GrapFrap Drag Emporium",
+   "category": "Clothing & Style",
+   "sells": "Wigs, heels, lashes, fans and attitude. Home of the Broad Squad.",
+   "sign": {
+    "icon": "masks",
+    "x": 26,
+    "y": 9
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 40,
+   "y": 5,
+   "label": "GLASS HALF FOOL",
+   "unit": null,
+   "name": "Glass Half Fool",
+   "category": "Magic & Curios",
+   "sells": "Potions and tonics in Jozzy desert glass.",
+   "sign": {
+    "icon": "potion",
+    "x": 41,
+    "y": 9
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 49,
+   "y": 5,
+   "label": "BREATH TAKING",
+   "unit": null,
+   "name": "Breath Taking",
+   "category": "Home & Gifts",
+   "sells": "Castori Breath sapphires, desert glass, adamantine trinkets.",
+   "sign": {
+    "icon": "gem",
+    "x": 50,
+    "y": 9
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 58,
+   "y": 5,
+   "label": "TWIZZLE ME THIS",
+   "unit": null,
+   "name": "Twizzle Me This",
+   "category": "Food & Drink",
+   "sells": "Twizzlewood fruit: strawberry taste, coconut smell.",
+   "sign": {
+    "icon": "leaf",
+    "x": 59,
+    "y": 9
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 6,
+   "y": 18,
+   "label": "LEYLINE ARRIVALS",
+   "unit": null,
+   "name": "Leyline Arrivals & Heritage Walk",
+   "category": "Services",
+   "sells": "The tube home, and Zahir's seven-plaque Heritage Walk."
+  },
+  {
+   "floor": "L1",
+   "x": 6,
+   "y": 25,
+   "label": "HALL OF QUEENS",
+   "unit": null,
+   "name": "Hall of Queens",
+   "category": "Fun & Games",
+   "sells": "Dry Fest history, portraits, and the Queens' Wall.",
+   "sign": {
+    "icon": "star",
+    "x": 12,
+    "y": 24
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 32,
+   "y": 22,
+   "label": "CANAL THRONE HALL",
+   "unit": null,
+   "name": "Canal Throne Hall",
+   "category": "Arena",
+   "sells": "MALL BRAWL Week 2 arena. Closed between match days."
+  },
+  {
+   "floor": "L1",
+   "x": 55,
+   "y": 22,
+   "label": "FOOD COURT",
+   "unit": null,
+   "name": "Food Court",
+   "category": "Food & Drink",
+   "sells": "Whet, Clara's Brews, Goo to Go, Furious Freja, Oh Banañons!"
+  },
+  {
+   "floor": "L1",
+   "x": 19,
+   "y": 33,
+   "label": "DUNE BUNS",
+   "unit": null,
+   "name": "Dune Buns",
+   "category": "Food & Drink",
+   "sells": "Sand-oven buns: honey, sesame, date.",
+   "sign": {
+    "icon": "pie",
+    "x": 17,
+    "y": 31
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 26,
+   "y": 33,
+   "label": "JOZZY PRAYER JUICE",
+   "unit": null,
+   "name": "Jozzy Prayer Juice",
+   "category": "Food & Drink",
+   "sells": "Lime, mint, rose and salt. No alcohol, as the faith wants.",
+   "sign": {
+    "icon": "mug",
+    "x": 25,
+    "y": 33
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 40,
+   "y": 33,
+   "label": "OASIS IS AS OASIS DOES",
+   "unit": null,
+   "name": "Oasis Is As Oasis Does",
+   "category": "Food & Drink",
+   "sells": "Dates and melon off Old Hadra's wagon.",
+   "sign": {
+    "icon": "banana",
+    "x": 39,
+    "y": 33
+   }
+  },
+  {
+   "floor": "L1",
+   "x": 30,
+   "y": 40,
+   "label": "IMMIA BEACH",
+   "unit": null,
+   "name": "Immia Beach",
+   "category": "Fun & Games",
+   "sells": "Sand, sun, lifeguard flags. Don't swim in the canal."
+  }
+ ]
+}

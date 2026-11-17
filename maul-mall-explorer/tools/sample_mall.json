@@ -1,0 +1,497 @@
+{
+ "id": "sample",
+ "name": "Sample Mall",
+ "town": "Testville",
+ "table": "monday",
+ "theme": "galleria",
+ "start": {
+  "floor": "L1",
+  "x": 12,
+  "y": 8
+ },
+ "floors": [
+  {
+   "id": "L1",
+   "name": "Level 1",
+   "grid": [
+    "                            ",
+    " ########################## ",
+    " #,,,,,,,#....p..p...#SSSS# ",
+    " #,S,,S,,w...........w,,,,# ",
+    " #,,,,,,,w..ff.......+,,,,# ",
+    " #,=====,#..ff..b....#,==,# ",
+    " ####+####...........##+### ",
+    " #.......:::::::::........# ",
+    " #.T\"\"\"T.:::ooo::::.~~~~..# ",
+    " #.\"\"\"\"\".:::ooo::::.~~~~..# ",
+    " #.T\"r\"T.:::::::::...~~...# ",
+    " #.......tc..tc.....kk.x..# ",
+    " #^......tc..tc...........H ",
+    " #####D####E######___###### ",
+    "                            ",
+    "                            "
+   ],
+   "labels": [
+    {
+     "x": 4,
+     "y": 1,
+     "text": "107 POINT AND CHUTE"
+    },
+    {
+     "x": 15,
+     "y": 1,
+     "text": "OH BANAÑONS!"
+    },
+    {
+     "x": 23,
+     "y": 1,
+     "text": "CLARA'S BREWS"
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "name": "Level 2",
+   "grid": [
+    "                      ",
+    " #################### ",
+    " #v.......#,,,,,,,,,# ",
+    " #........w,,t,,t,,,# ",
+    " #..f.....w,,c,,c,,,# ",
+    " #........+,,,,,,,,,# ",
+    " #____....##########  ",
+    "  :::_....#S..x..pp#  ",
+    "  :::_....+...x....#  ",
+    "  :::_....#ooo.....#  ",
+    " #____....#ooo..k..#  ",
+    " #E.......#.....T..#  ",
+    " ##########D########  ",
+    "                      "
+   ],
+   "labels": [
+    {
+     "x": 15,
+     "y": 1,
+     "text": "GOO TO GO"
+    }
+   ]
+  }
+ ],
+ "interactables": [
+  {
+   "id": "s-1",
+   "floor": "L1",
+   "x": 4,
+   "y": 5,
+   "kind": "npc",
+   "name": "Pip",
+   "sprite": "npc:goblin:3",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-2",
+   "floor": "L1",
+   "x": 23,
+   "y": 5,
+   "kind": "npc",
+   "name": "Mo",
+   "sprite": "npc:mushroomfolk:0",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-3",
+   "floor": "L1",
+   "x": 16,
+   "y": 3,
+   "kind": "npc",
+   "name": "Ro",
+   "sprite": "npc:human:1",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-4",
+   "floor": "L1",
+   "x": 17,
+   "y": 8,
+   "kind": "npc",
+   "name": "Ed",
+   "sprite": "npc:elf:2",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-5",
+   "floor": "L1",
+   "x": 12,
+   "y": 10,
+   "kind": "npc",
+   "name": "Gn",
+   "sprite": "npc:gnome:4",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-6",
+   "floor": "L1",
+   "x": 6,
+   "y": 10,
+   "kind": "npc",
+   "name": "Dw",
+   "sprite": "npc:dwarf:5",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-7",
+   "floor": "L1",
+   "x": 14,
+   "y": 4,
+   "kind": "npc",
+   "name": "Ha",
+   "sprite": "npc:halfling:6",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-8",
+   "floor": "L1",
+   "x": 10,
+   "y": 3,
+   "kind": "npc",
+   "name": "Or",
+   "sprite": "npc:orc:7",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-9",
+   "floor": "L1",
+   "x": 3,
+   "y": 7,
+   "kind": "npc",
+   "name": "Li",
+   "sprite": "npc:lizardfolk:0",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-10",
+   "floor": "L1",
+   "x": 18,
+   "y": 11,
+   "kind": "npc",
+   "name": "Dr",
+   "sprite": "npc:dragonborn:1",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-11",
+   "floor": "L1",
+   "x": 12,
+   "y": 12,
+   "kind": "npc",
+   "name": "Px",
+   "sprite": "npc:pixie:2",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-12",
+   "floor": "L1",
+   "x": 24,
+   "y": 9,
+   "kind": "npc",
+   "name": "Fi",
+   "sprite": "npc:fishfolk:3",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-13",
+   "floor": "L1",
+   "x": 5,
+   "y": 3,
+   "kind": "npc",
+   "name": "Sn",
+   "sprite": "npc:snail:4",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-14",
+   "floor": "L1",
+   "x": 24,
+   "y": 11,
+   "kind": "npc",
+   "name": "Au",
+   "sprite": "npc:automaton:5",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-15",
+   "floor": "L1",
+   "x": 15,
+   "y": 7,
+   "kind": "npc",
+   "name": "Ti",
+   "sprite": "npc:tiefling:6",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-16",
+   "floor": "L1",
+   "x": 7,
+   "y": 12,
+   "kind": "npc",
+   "name": "Ko",
+   "sprite": "npc:kobold:7",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-17",
+   "floor": "L1",
+   "x": 4,
+   "y": 12,
+   "kind": "npc",
+   "name": "Mo",
+   "sprite": "npc:mole:0",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-18",
+   "floor": "L1",
+   "x": 9,
+   "y": 12,
+   "kind": "npc",
+   "name": "Hb",
+   "sprite": "npc:hobgoblin:1",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "s-19",
+   "floor": "L1",
+   "x": 20,
+   "y": 12,
+   "kind": "npc",
+   "name": "Zz",
+   "sprite": "npc:owlbear:1",
+   "pages": [
+    "hi"
+   ]
+  },
+  {
+   "id": "o-1",
+   "floor": "L2",
+   "x": 3,
+   "y": 3,
+   "kind": "sign",
+   "name": "sign",
+   "sprite": "obj:sign",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-2",
+   "floor": "L2",
+   "x": 5,
+   "y": 2,
+   "kind": "object",
+   "name": "poster",
+   "sprite": "obj:poster",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-3",
+   "floor": "L2",
+   "x": 6,
+   "y": 3,
+   "kind": "object",
+   "name": "chest",
+   "sprite": "obj:chest",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-4",
+   "floor": "L2",
+   "x": 7,
+   "y": 3,
+   "kind": "object",
+   "name": "crate",
+   "sprite": "obj:crate",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-5",
+   "floor": "L2",
+   "x": 8,
+   "y": 3,
+   "kind": "object",
+   "name": "trash",
+   "sprite": "obj:trashcan",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-6",
+   "floor": "L2",
+   "x": 6,
+   "y": 5,
+   "kind": "object",
+   "name": "plant",
+   "sprite": "obj:plant",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-7",
+   "floor": "L2",
+   "x": 7,
+   "y": 5,
+   "kind": "object",
+   "name": "crystal",
+   "sprite": "obj:crystal",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-8",
+   "floor": "L2",
+   "x": 8,
+   "y": 5,
+   "kind": "object",
+   "name": "cart",
+   "sprite": "obj:cart",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-9",
+   "floor": "L2",
+   "x": 6,
+   "y": 8,
+   "kind": "object",
+   "name": "statue",
+   "sprite": "obj:statue",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-10",
+   "floor": "L2",
+   "x": 7,
+   "y": 8,
+   "kind": "object",
+   "name": "lamp",
+   "sprite": "obj:lamp",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-11",
+   "floor": "L2",
+   "x": 8,
+   "y": 8,
+   "kind": "object",
+   "name": "note",
+   "sprite": "obj:note",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-12",
+   "floor": "L2",
+   "x": 6,
+   "y": 10,
+   "kind": "object",
+   "name": "cat",
+   "sprite": "obj:cat",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "o-13",
+   "floor": "L2",
+   "x": 7,
+   "y": 10,
+   "kind": "object",
+   "name": "weird",
+   "sprite": "obj:hoverboard",
+   "pages": [
+    "x"
+   ]
+  },
+  {
+   "id": "w-1",
+   "floor": "L1",
+   "x": 2,
+   "y": 12,
+   "kind": "warp",
+   "name": "Up",
+   "pages": [
+    "up"
+   ],
+   "warp": {
+    "floor": "L2",
+    "x": 3,
+    "y": 2
+   }
+  }
+ ],
+ "popupBooths": [
+  {
+   "slot": 1,
+   "floor": "L1",
+   "x": 15,
+   "y": 9
+  }
+ ],
+ "office": {
+  "floor": "L2",
+  "x": 11,
+  "y": 7,
+  "w": 8,
+  "h": 4
+ }
+}

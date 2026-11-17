@@ -1,0 +1,19 @@
+{
+ "kinds": [["celeb", "Celebrities"], ["local", "Locals you've met"]],
+ "profiles": [
+  {"id": "example-bard", "handle": "TheTownBard", "name": "Wren Tallow", "kind": "celeb", "verified": true,
+   "avatar": {"initials": "WT", "color": "#7a4fd1"}, "home": "Somewhere", "bio": "Songs about your town, sung in other towns.",
+   "followers": [1200, 1350, 1500],
+   "posts": [
+    {"id": "example-bard-w0a", "week": 0, "text": "First night of the tour. The inn's cat sat on the lute case and the audience voted for the cat.", "acorns": 88},
+    {"id": "example-bard-w1a", "week": 1, "text": "New verse tonight. It rhymes 'portcullis' with nothing, on purpose.", "acorns": 140}
+   ]},
+  {"id": "example-baker", "handle": "CrumbsByOda", "name": "Oda Crumb", "kind": "local",
+   "npc": {"id": "baker"}, "avatar": {"initials": "OC", "color": "#d1702f"}, "bio": "Bread at dawn. Gossip at noon.",
+   "followers": 64, "hangout": {"text": "Behind the bakery counter until the rolls run out.", "friends": true},
+   "posts": [
+    {"id": "example-baker-w0a", "week": 0, "text": "Sold out of rye by nine. Whoever bought eleven loaves: I know it was you, Marten.", "acorns": 12},
+    {"id": "example-baker-w1a", "week": 1, "text": "Burnt a batch thinking about my mum's recipe book. The whole street smelled like her kitchen.", "acorns": 4, "friends": true}
+   ]}
+ ]
+}

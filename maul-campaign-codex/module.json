@@ -1,0 +1,118 @@
+{
+  "id": "maul-campaign-codex",
+  "title": "MAUL Campaign Codex",
+  "description": "Player-browsable lore for the MALL BRAWL 2026 campaign: season rules, recaps, teams, people, places, sponsors and the competitor shop. Built from the campaign's source files by build/build_codex.py.",
+  "version": "0.1.40",
+  "authors": [
+    {
+      "name": "Zak"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.331"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0",
+          "verified": "4.0.3"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/codex.js"
+  ],
+  "styles": [
+    "styles/codex.css"
+  ],
+  "socket": true,
+  "packs": [
+    {
+      "name": "maul-season",
+      "label": "MAUL · Season & Rules",
+      "path": "packs/maul-season",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "maul-teams",
+      "label": "MAUL · Teams",
+      "path": "packs/maul-teams",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "maul-people",
+      "label": "MAUL · People",
+      "path": "packs/maul-people",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "maul-places",
+      "label": "MAUL · Places",
+      "path": "packs/maul-places",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "maul-factions",
+      "label": "MAUL · Sponsors & Factions",
+      "path": "packs/maul-factions",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "maul-items",
+      "label": "MAUL · Shop Items",
+      "path": "packs/maul-items",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {},
+      "system": "dnd5e"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "MAUL Campaign Codex",
+      "sorting": "m",
+      "color": "#3b1f4a",
+      "packs": [
+        "maul-season",
+        "maul-teams",
+        "maul-people",
+        "maul-places",
+        "maul-factions",
+        "maul-items"
+      ]
+    }
+  ]
+}
